@@ -16,14 +16,13 @@ namespace ServiciosLinqTutorias.Modelo
             resultado.Error = false;
             try
             {
-                var usuarioIniciado = from usuarioEncontrado in conexionBD.Usuarios
-                                      join academico in conexionBD.Academicos on usuarioEncontrado.academico_idAcademico
-                                      equals academico.idAcademico select academico;
+                var encontrarUsuario = conexionBD.Usuarios.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
+                && ConvertidorSHA256.Comparar(password,usuarioEncontrado.password));
 
-                if (usuarioIniciado != null) 
+                if (encontrarUsuario != null) 
                 {
                     resultado.Error = false;
-                    resultado.Mensaje = "Bienvenido " + usuarioIniciado;
+                    resultado.Mensaje = "Bienvenido " + encontrarUsuario.Academico.nombre + " al sistema";
                 }
             }
             catch   (Exception)
