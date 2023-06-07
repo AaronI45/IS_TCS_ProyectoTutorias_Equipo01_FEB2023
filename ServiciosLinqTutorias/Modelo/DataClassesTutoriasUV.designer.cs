@@ -497,7 +497,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Usuarios", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_Usuario", Storage="_Usuarios", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
 		public EntitySet<Usuario> Usuarios
 		{
 			get
@@ -510,7 +510,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ReporteTutoria", Storage="_ReporteTutorias", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
 		public EntitySet<ReporteTutoria> ReporteTutorias
 		{
 			get
@@ -523,7 +523,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_estudiante", Storage="_Estudiantes", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_Estudiante", Storage="_Estudiantes", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
 		public EntitySet<Estudiante> Estudiantes
 		{
 			get
@@ -536,7 +536,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_programa_educativo", Storage="_ProgramaEducativos", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ProgramaEducativo", Storage="_ProgramaEducativos", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
 		public EntitySet<ProgramaEducativo> ProgramaEducativos
 		{
 			get
@@ -549,7 +549,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ExperienciaEducativa", Storage="_ExperienciaEducativas", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
 		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
 		{
 			get
@@ -562,7 +562,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_Academico", Storage="_Rol", ThisKey="rol_idRol", OtherKey="idRol", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rol_Academico", Storage="_Rol", ThisKey="rol_idRol", OtherKey="idRol", IsForeignKey=true)]
 		public Rol Rol
 		{
 			get
@@ -797,7 +797,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_Usuario", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -920,7 +920,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ClasificacionProblematica_problematica", Storage="_Problematicas", ThisKey="idClasificacion_problematica", OtherKey="clasificacion_problematica_idClasificacion_problematica")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ClasificacionProblematica_Problematica", Storage="_Problematicas", ThisKey="idClasificacion_problematica", OtherKey="clasificacion_problematica_idClasificacion_problematica")]
 		public EntitySet<Problematica> Problematicas
 		{
 			get
@@ -1130,7 +1130,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_Problematicas", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ReporteTutoria_Problematica", Storage="_Problematicas", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
 		public EntitySet<Problematica> Problematicas
 		{
 			get
@@ -1143,7 +1143,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_Comentarios", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ReporteTutoria_Comentario", Storage="_Comentarios", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
 		public EntitySet<Comentario> Comentarios
 		{
 			get
@@ -1156,7 +1156,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_reporte_tutoria", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ReporteTutoria", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -1190,7 +1190,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_ReporteTutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
 		public Tutoria Tutoria
 		{
 			get
@@ -1224,7 +1224,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="programa_educativo_reporte_tutoria", Storage="_ProgramaEducativo", ThisKey="programa_educativo_idPrograma_educativo", OtherKey="idPrograma_educativo", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ProgramaEducativo_ReporteTutoria", Storage="_ProgramaEducativo", ThisKey="programa_educativo_idPrograma_educativo", OtherKey="idPrograma_educativo", IsForeignKey=true)]
 		public ProgramaEducativo ProgramaEducativo
 		{
 			get
@@ -1580,7 +1580,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_SesionTutoria", Storage="_SesionTutorias", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
 		public EntitySet<SesionTutoria> SesionTutorias
 		{
 			get
@@ -1593,7 +1593,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_ProblematicaEstudiante", Storage="_ProblematicaEstudiantes", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
 		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
 		{
 			get
@@ -1606,7 +1606,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_estudiante", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_Estudiante", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -1640,7 +1640,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_Estudiante", Storage="_EstadoEstudiante", ThisKey="estado_estudiante_idEstado_estudiante", OtherKey="idEstado_estudiante", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoEstudiante_Estudiante", Storage="_EstadoEstudiante", ThisKey="estado_estudiante_idEstado_estudiante", OtherKey="idEstado_estudiante", IsForeignKey=true)]
 		public EstadoEstudiante EstadoEstudiante
 		{
 			get
@@ -1787,7 +1787,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_Estudiante", Storage="_Estudiantes", ThisKey="idEstado_estudiante", OtherKey="estado_estudiante_idEstado_estudiante")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoEstudiante_Estudiante", Storage="_Estudiantes", ThisKey="idEstado_estudiante", OtherKey="estado_estudiante_idEstado_estudiante")]
 		public EntitySet<Estudiante> Estudiantes
 		{
 			get
@@ -1901,7 +1901,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoProblematica_problematica", Storage="_Problematicas", ThisKey="idestado_problematica", OtherKey="estado_problematica_idestado_problematica")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoProblematica_Problematica", Storage="_Problematicas", ThisKey="idestado_problematica", OtherKey="estado_problematica_idestado_problematica")]
 		public EntitySet<Problematica> Problematicas
 		{
 			get
@@ -2097,7 +2097,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_ReporteTutoria", Storage="_ReporteTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
 		public EntitySet<ReporteTutoria> ReporteTutorias
 		{
 			get
@@ -2110,7 +2110,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_SesionTutoria", Storage="_SesionTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
 		public EntitySet<SesionTutoria> SesionTutorias
 		{
 			get
@@ -2123,7 +2123,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_Tutoria", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PeriodoEscolar_Tutoria", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
 		public PeriodoEscolar PeriodoEscolar
 		{
 			get
@@ -2353,7 +2353,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Problematica_Solucion", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
 		public Problematica Problematica
 		{
 			get
@@ -2387,7 +2387,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="jefe_carrera_solucion", Storage="_JefeCarrera", ThisKey="jefe_carrera_idjefe_carrera", OtherKey="idjefe_carrera", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="JefeCarrera_Solucion", Storage="_JefeCarrera", ThisKey="jefe_carrera_idjefe_carrera", OtherKey="idjefe_carrera", IsForeignKey=true)]
 		public JefeCarrera JefeCarrera
 		{
 			get
@@ -2545,7 +2545,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_sesion_tutoria", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_SesionTutoria", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
 		public Estudiante Estudiante
 		{
 			get
@@ -2579,7 +2579,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_sesion_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_SesionTutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
 		public Tutoria Tutoria
 		{
 			get
@@ -2702,7 +2702,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_Academico", Storage="_Academicos", ThisKey="idRol", OtherKey="rol_idRol")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rol_Academico", Storage="_Academicos", ThisKey="idRol", OtherKey="rol_idRol")]
 		public EntitySet<Academico> Academicos
 		{
 			get
@@ -2919,7 +2919,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="programa_educativo_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idPrograma_educativo", OtherKey="programa_educativo_idPrograma_educativo")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ProgramaEducativo_ReporteTutoria", Storage="_ReporteTutorias", ThisKey="idPrograma_educativo", OtherKey="programa_educativo_idPrograma_educativo")]
 		public EntitySet<ReporteTutoria> ReporteTutorias
 		{
 			get
@@ -2932,7 +2932,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_programa_educativo", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ProgramaEducativo", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -3078,7 +3078,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_problematica_estudiante", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_ProblematicaEstudiante", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
 		public Estudiante Estudiante
 		{
 			get
@@ -3112,7 +3112,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Problematica_ProblematicaEstudiante", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
 		public Problematica Problematica
 		{
 			get
@@ -3355,7 +3355,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Solucions", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Problematica_Solucion", Storage="_Solucions", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
 		public EntitySet<Solucion> Solucions
 		{
 			get
@@ -3368,7 +3368,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Problematica_ProblematicaEstudiante", Storage="_ProblematicaEstudiantes", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
 		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
 		{
 			get
@@ -3381,7 +3381,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ClasificacionProblematica_problematica", Storage="_ClasificacionProblematica", ThisKey="clasificacion_problematica_idClasificacion_problematica", OtherKey="idClasificacion_problematica", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ClasificacionProblematica_Problematica", Storage="_ClasificacionProblematica", ThisKey="clasificacion_problematica_idClasificacion_problematica", OtherKey="idClasificacion_problematica", IsForeignKey=true)]
 		public ClasificacionProblematica ClasificacionProblematica
 		{
 			get
@@ -3415,7 +3415,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoProblematica_problematica", Storage="_EstadoProblematica", ThisKey="estado_problematica_idestado_problematica", OtherKey="idestado_problematica", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoProblematica_Problematica", Storage="_EstadoProblematica", ThisKey="estado_problematica_idestado_problematica", OtherKey="idestado_problematica", IsForeignKey=true)]
 		public EstadoProblematica EstadoProblematica
 		{
 			get
@@ -3449,7 +3449,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ReporteTutoria_Problematica", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
 		public ReporteTutoria ReporteTutoria
 		{
 			get
@@ -3695,7 +3695,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_Tutoria", Storage="_Tutorias", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PeriodoEscolar_Tutoria", Storage="_Tutorias", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
 		public EntitySet<Tutoria> Tutorias
 		{
 			get
@@ -3708,7 +3708,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PeriodoEscolar_ExperienciaEducativa", Storage="_ExperienciaEducativas", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
 		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
 		{
 			get
@@ -3862,7 +3862,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_ExperienciaEducativa", ThisKey="experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ExperienciaEducativa_Materia", Storage="_ExperienciaEducativa", ThisKey="experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
 		public ExperienciaEducativa ExperienciaEducativa
 		{
 			get
@@ -4105,7 +4105,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="jefe_carrera_solucion", Storage="_Solucions", ThisKey="idjefe_carrera", OtherKey="jefe_carrera_idjefe_carrera")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="JefeCarrera_Solucion", Storage="_Solucions", ThisKey="idjefe_carrera", OtherKey="jefe_carrera_idjefe_carrera")]
 		public EntitySet<Solucion> Solucions
 		{
 			get
@@ -4281,7 +4281,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_Materias", ThisKey="idExperiencia_educativa", OtherKey="experiencia_educativa_idExperiencia_educativa")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ExperienciaEducativa_Materia", Storage="_Materias", ThisKey="idExperiencia_educativa", OtherKey="experiencia_educativa_idExperiencia_educativa")]
 		public EntitySet<Materia> Materias
 		{
 			get
@@ -4294,7 +4294,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PeriodoEscolar_ExperienciaEducativa", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
 		public PeriodoEscolar PeriodoEscolar
 		{
 			get
@@ -4328,7 +4328,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_experiencia_educativa", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Academico_ExperienciaEducativa", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -4491,7 +4491,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ReporteTutoria_Comentario", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
 		public ReporteTutoria ReporteTutoria
 		{
 			get
