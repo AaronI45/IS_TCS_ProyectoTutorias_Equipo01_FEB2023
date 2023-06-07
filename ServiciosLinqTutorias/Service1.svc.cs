@@ -1,4 +1,5 @@
 ﻿using ServiciosLinqTutorias.AdministracionApp;
+using ServiciosLinqTutorias.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,12 @@ namespace ServiciosLinqTutorias
 
         public ResultadoOperacion iniciarSesion(string username, string password)
         {
-            return 
+            throw new NotImplementedException();
+        }
+
+        public ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante)
+        {
+            return EstudianteDAO.registrarEstudiante(nuevoEstudiante);
         }
     }
 }

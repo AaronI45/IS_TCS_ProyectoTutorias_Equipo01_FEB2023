@@ -1,4 +1,5 @@
 ﻿using ServiciosLinqTutorias.AdministracionApp;
+using ServiciosLinqTutorias.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,11 +18,8 @@ namespace ServiciosLinqTutorias
         [OperationContract]
         ResultadoOperacion iniciarSesion(string username, string password);
 
-    
-
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-        
+        ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);
         // TODO: Add your service operations here
     }
 
