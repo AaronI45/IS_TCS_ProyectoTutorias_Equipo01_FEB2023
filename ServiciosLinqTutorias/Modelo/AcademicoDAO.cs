@@ -27,9 +27,40 @@ namespace ServiciosLinqTutorias.Modelo
             }
             catch   (Exception)
             {
-                
+                return null;
             }
             return null;
+        }
+
+        public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
+        {
+            ResultadoOperacion resultado = new ResultadoOperacion();
+            resultado.Error = true;
+
+            try
+            {
+                var tutor = new Academico()
+                {
+                    rol_idRol = 1,
+                    numerPersonal = nuevoTutor.numerPersonal,
+                    correoInstitucional = nuevoTutor.correoInstitucional,
+                    nombre = nuevoTutor.nombre,
+                    apellidoPaterno = nuevoTutor.apellidoPaterno,
+                    apellidoMaterno = nuevoTutor.apellidoMaterno,
+                    telefono = nuevoTutor.telefono
+                };
+                conexionBD.Academicos.InsertOnSubmit(tutor);
+                conexionBD.SubmitChanges();
+                resultado.Error = false;
+                resultado.Mensaje = "El tutor se registró correctamente";
+
+            }
+            catch (Exception e) 
+            {
+                resultado.Mensaje = e.Message;
+                Console.WriteLine(e.Message);
+            }
+            return resultado;
         }
     }
 }
