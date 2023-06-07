@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministracionApp\ResultadoOperacion.cs" />
+    <Compile Include="Modelo\AcademicoDAO.cs" />
+    <Compile Include="Modelo\ConexionBD.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -74,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Modelo\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

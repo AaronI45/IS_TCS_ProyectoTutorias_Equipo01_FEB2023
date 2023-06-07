@@ -7,8 +7,8 @@ namespace ServiciosLinqTutorias.AdministracionApp
 {
     public class ResultadoOperacion
     {
-        private string Mensaje { get; set; }
-        private bool Error { get; set; }
+        public string Mensaje { get; set; }
+        public bool Error { get; set; }
         public ResultadoOperacion() { }
     }
 }

@@ -17,9 +17,11 @@ namespace ServiciosLinqTutorias
         [OperationContract]
         ResultadoOperacion iniciarSesion(string username, string password);
 
+    
+
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
-
+        
         // TODO: Add your service operations here
     }
 
