@@ -10,7 +10,7 @@ namespace ServiciosLinqTutorias.Modelo
     {
         public static ResultadoOperacion iniciarSesion(string usuario, string password)
         {
-            DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerContexto();
+            DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = false;
 

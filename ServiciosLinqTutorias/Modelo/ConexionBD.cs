@@ -9,23 +9,23 @@ namespace ServiciosLinqTutorias.Modelo
     {
         private ConexionBD() { }
         private static ConexionBD instancia;
-        private static DataClassesTutoriasUVDataContext Contexto { get; set; }
+        private static DataClassesTutoriasUVDataContext Conexion { get; set; }
 
         public static ConexionBD Instancia
         {
             get
             {
                 if (instancia == null)
-                    Contexto = new DataClassesTutoriasUVDataContext(global::System.Configuration.
+                    Conexion = new DataClassesTutoriasUVDataContext(global::System.Configuration.
                         ConfigurationManager.ConnectionStrings["ConexionBDTutorias"].ConnectionString); 
                     instancia = new ConexionBD();
                 return instancia;
             }
         }
 
-        public DataClassesTutoriasUVDataContext ObtenerContexto()
+        public DataClassesTutoriasUVDataContext ObtenerConexion()
         {
-            return Contexto;
+            return Conexion;
         }
     }
 }
