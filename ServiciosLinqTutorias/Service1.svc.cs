@@ -34,5 +34,10 @@ namespace ServiciosLinqTutorias
         {
             return PeriodoDAO.registrarFechaSesiontutoria(periodoFechas);
         }
+
+        public ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion)
+        {
+            return EstudianteDAO.asignacionTutorAEstudiante(estudianteAsignacion);
+        }
     }
 }

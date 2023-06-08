@@ -40,5 +40,30 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return resultado;
         }
+
+        public static ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion)
+        {
+            ResultadoOperacion resultado = new ResultadoOperacion();
+            resultado.Error = true;
+
+            try
+            {
+                var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado
+                => estudianteEncontrado.idEstudiante == estudianteAsignacion.idEstudiante);
+                if (estudiante != null) 
+                {
+                    estudiante.academico_idAcademico = estudianteAsignacion.academico_idAcademico;
+                    conexionBD.SubmitChanges();
+                    resultado.Error = false;
+                    resultado.Mensaje = "La asignacion fue realizada con exito";
+                }
+                else { resultado.Mensaje = "Estudiante no encontrado"; }
+            }
+            catch(Exception ex)
+            {
+                resultado.Mensaje = "Error de conexion";
+            }
+            return resultado;
+        }
     }
 }
