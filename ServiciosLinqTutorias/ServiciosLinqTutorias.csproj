@@ -76,6 +76,7 @@
       <DependentUpon>DataClassesTutoriasUV.dbml</DependentUpon>
     </Compile>
     <Compile Include="Modelo\EstudianteDAO.cs" />
+    <Compile Include="Modelo\PeriodoDAO.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
