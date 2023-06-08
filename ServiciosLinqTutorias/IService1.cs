@@ -20,7 +20,9 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);
-        // TODO: Add your service operations here
+
+        [OperationContract]
+        ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor);
     }
 
 

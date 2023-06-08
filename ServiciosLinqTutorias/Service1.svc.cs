@@ -24,5 +24,10 @@ namespace ServiciosLinqTutorias
         {
             return EstudianteDAO.registrarEstudiante(nuevoEstudiante);
         }
+
+        public ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
+        {
+            return AcademicoDAO.registrarTutorAcademico(nuevoTutor);
+        }
     }
 }
