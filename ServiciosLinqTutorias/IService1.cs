@@ -29,28 +29,38 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion);
+
+        [OperationContract]
+        ResultadoOperacion registrarProblematica(Problematica problematicaPresentada);
+
+        [OperationContract]
+        List<Problematica> obtenerProblematicas();
+
+        [OperationContract]
+        Problematica consultarProblematicaPorId(int idProblematica);
+
+        [OperationContract]
+        ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado);
+
+        [OperationContract]
+        ResultadoOperacion editarComentariosGenerales(Comentario comentarioPresentado);
     }
-
-
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
+        namespace Tipos
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            [DataContract]
+            public class Problematica
+            {
+                [DataMember]
+                public int idProblematica { get; set; }
+                [DataMember]
+                public string descripcionProblematica { get; set; }
+                [DataMember]
+                public string titulo { get; set; }
+                [DataMember]
+                public int clasificacion { get; set; }
+                [DataMember]
+                public int estado{ get; set; }
+            }   
         }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
-    }
+    
 }

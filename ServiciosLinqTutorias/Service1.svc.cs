@@ -17,7 +17,7 @@ namespace ServiciosLinqTutorias
 
         public ResultadoOperacion iniciarSesion(string username, string password)
         {
-            throw new NotImplementedException();
+            return AcademicoDAO.iniciarSesion(username, password);
         }
 
         public ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante)
@@ -38,6 +38,31 @@ namespace ServiciosLinqTutorias
         public ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion)
         {
             return EstudianteDAO.asignacionTutorAEstudiante(estudianteAsignacion);
+        }
+
+        public ResultadoOperacion registrarProblematica(Problematica problematicaPresentada)
+        {
+            return TutoriaDAO.registrarProblematica(problematicaPresentada);
+        }
+
+        public List<Problematica> obtenerProblematicas()
+        {
+            return TutoriaDAO.consultarProblematicas();
+        }
+
+        public Problematica consultarProblematicaPorId(int idProblematica)
+        {
+            return TutoriaDAO.consultarProblematicaPorID(idProblematica);
+        }
+
+        public ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado)
+        {
+            return TutoriaDAO.registrarComentariosGenerales(comentarioPresentado);
+        }
+
+        public ResultadoOperacion editarComentariosGenerales(Comentario comentarioPresentado)
+        {
+            return TutoriaDAO.editarComentariosGenerales(comentarioPresentado);
         }
     }
 }
