@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ServiciosLinqTutorias.Modelo
 {
-    public class TutoriaDAO
+    public class PeriodoDAO
     {
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         public static ResultadoOperacion registrarFechaSesiontutoria(PeriodoEscolar periodoFechas)

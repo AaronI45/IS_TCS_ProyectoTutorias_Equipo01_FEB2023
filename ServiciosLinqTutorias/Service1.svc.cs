@@ -29,5 +29,10 @@ namespace ServiciosLinqTutorias
         {
             return AcademicoDAO.registrarTutorAcademico(nuevoTutor);
         }
+
+        public ResultadoOperacion registrarFechaSesiontutoria(PeriodoEscolar periodoFechas)
+        {
+            return PeriodoDAO.registrarFechaSesiontutoria(periodoFechas);
+        }
     }
 }

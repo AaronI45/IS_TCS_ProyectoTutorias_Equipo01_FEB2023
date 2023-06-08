@@ -23,6 +23,9 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor);
+
+        [OperationContract]
+        ResultadoOperacion registrarFechaSesiontutoria(PeriodoEscolar periodoFechas);
     }
 
 
