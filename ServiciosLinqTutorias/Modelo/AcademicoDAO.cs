@@ -10,6 +10,8 @@ namespace ServiciosLinqTutorias.Modelo
     public static class AcademicoDAO
     {
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
+        private static int TUTOR_ACADEMICO = 3;
+
         public static ResultadoOperacion iniciarSesion(string usuario, string password)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
@@ -41,7 +43,7 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 var tutor = new Academico()
                 {
-                    rol_idRol = 1,
+                    rol_idRol = TUTOR_ACADEMICO,
                     numerPersonal = nuevoTutor.numerPersonal,
                     correoInstitucional = nuevoTutor.correoInstitucional,
                     nombre = nuevoTutor.nombre,

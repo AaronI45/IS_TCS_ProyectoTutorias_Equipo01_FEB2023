@@ -18,14 +18,13 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 var studiante = new Estudiante()
                 {
-                    academico_idAcademico = 1,
                     estado_estudiante_idEstado_estudiante = 1,
                     nombre = nuevoEstudiante.nombre,
                     matricula = nuevoEstudiante.matricula,
                     apellidoPaterno = nuevoEstudiante.apellidoPaterno,
                     apellidoMaterno = nuevoEstudiante.apellidoMaterno,
                     correoElectronico = nuevoEstudiante.correoElectronico,
-                    SemestreCursando = nuevoEstudiante.SemestreCursando,
+                    semestreCursando = nuevoEstudiante.semestreCursando,
                     telefono = nuevoEstudiante.telefono,
                 };
                 conexionBD.Estudiantes.InsertOnSubmit(studiante);

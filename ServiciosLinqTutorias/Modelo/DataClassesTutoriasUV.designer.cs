@@ -30,66 +30,66 @@ namespace ServiciosLinqTutorias.Modelo
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertAcademico(Academico instance);
-    partial void UpdateAcademico(Academico instance);
-    partial void DeleteAcademico(Academico instance);
-    partial void InsertClasificacionProblematica(ClasificacionProblematica instance);
-    partial void UpdateClasificacionProblematica(ClasificacionProblematica instance);
-    partial void DeleteClasificacionProblematica(ClasificacionProblematica instance);
-    partial void InsertComentario(Comentario instance);
-    partial void UpdateComentario(Comentario instance);
-    partial void DeleteComentario(Comentario instance);
-    partial void InsertEstadoEstudiante(EstadoEstudiante instance);
-    partial void UpdateEstadoEstudiante(EstadoEstudiante instance);
-    partial void DeleteEstadoEstudiante(EstadoEstudiante instance);
-    partial void InsertEstadoProblematica(EstadoProblematica instance);
-    partial void UpdateEstadoProblematica(EstadoProblematica instance);
-    partial void DeleteEstadoProblematica(EstadoProblematica instance);
-    partial void InsertEstudiante(Estudiante instance);
-    partial void UpdateEstudiante(Estudiante instance);
-    partial void DeleteEstudiante(Estudiante instance);
-    partial void InsertExperienciaEducativa(ExperienciaEducativa instance);
-    partial void UpdateExperienciaEducativa(ExperienciaEducativa instance);
-    partial void DeleteExperienciaEducativa(ExperienciaEducativa instance);
-    partial void InsertExperienciaEducativaCursando(ExperienciaEducativaCursando instance);
-    partial void UpdateExperienciaEducativaCursando(ExperienciaEducativaCursando instance);
-    partial void DeleteExperienciaEducativaCursando(ExperienciaEducativaCursando instance);
-    partial void InsertMateria(Materia instance);
-    partial void UpdateMateria(Materia instance);
-    partial void DeleteMateria(Materia instance);
-    partial void InsertPeriodoEscolar(PeriodoEscolar instance);
-    partial void UpdatePeriodoEscolar(PeriodoEscolar instance);
-    partial void DeletePeriodoEscolar(PeriodoEscolar instance);
-    partial void InsertProblematica(Problematica instance);
-    partial void UpdateProblematica(Problematica instance);
-    partial void DeleteProblematica(Problematica instance);
-    partial void InsertProblematicaAcademica(ProblematicaAcademica instance);
-    partial void UpdateProblematicaAcademica(ProblematicaAcademica instance);
-    partial void DeleteProblematicaAcademica(ProblematicaAcademica instance);
-    partial void InsertProblematicaEstudiante(ProblematicaEstudiante instance);
-    partial void UpdateProblematicaEstudiante(ProblematicaEstudiante instance);
-    partial void DeleteProblematicaEstudiante(ProblematicaEstudiante instance);
-    partial void InsertProgramaEducativo(ProgramaEducativo instance);
-    partial void UpdateProgramaEducativo(ProgramaEducativo instance);
-    partial void DeleteProgramaEducativo(ProgramaEducativo instance);
-    partial void InsertReporteTutoria(ReporteTutoria instance);
-    partial void UpdateReporteTutoria(ReporteTutoria instance);
-    partial void DeleteReporteTutoria(ReporteTutoria instance);
-    partial void InsertRol(Rol instance);
-    partial void UpdateRol(Rol instance);
-    partial void DeleteRol(Rol instance);
-    partial void InsertSesionTutoria(SesionTutoria instance);
-    partial void UpdateSesionTutoria(SesionTutoria instance);
-    partial void DeleteSesionTutoria(SesionTutoria instance);
-    partial void InsertSolucion(Solucion instance);
-    partial void UpdateSolucion(Solucion instance);
-    partial void DeleteSolucion(Solucion instance);
-    partial void InsertTutoria(Tutoria instance);
-    partial void UpdateTutoria(Tutoria instance);
-    partial void DeleteTutoria(Tutoria instance);
     partial void InsertUsuario(Usuario instance);
     partial void UpdateUsuario(Usuario instance);
     partial void DeleteUsuario(Usuario instance);
+    partial void InsertTutoria(Tutoria instance);
+    partial void UpdateTutoria(Tutoria instance);
+    partial void DeleteTutoria(Tutoria instance);
+    partial void InsertSolucion(Solucion instance);
+    partial void UpdateSolucion(Solucion instance);
+    partial void DeleteSolucion(Solucion instance);
+    partial void InsertSesionTutoria(SesionTutoria instance);
+    partial void UpdateSesionTutoria(SesionTutoria instance);
+    partial void DeleteSesionTutoria(SesionTutoria instance);
+    partial void InsertRol(Rol instance);
+    partial void UpdateRol(Rol instance);
+    partial void DeleteRol(Rol instance);
+    partial void InsertReporteTutoria(ReporteTutoria instance);
+    partial void UpdateReporteTutoria(ReporteTutoria instance);
+    partial void DeleteReporteTutoria(ReporteTutoria instance);
+    partial void InsertProgramaEducativo(ProgramaEducativo instance);
+    partial void UpdateProgramaEducativo(ProgramaEducativo instance);
+    partial void DeleteProgramaEducativo(ProgramaEducativo instance);
+    partial void InsertProblematicaEstudiante(ProblematicaEstudiante instance);
+    partial void UpdateProblematicaEstudiante(ProblematicaEstudiante instance);
+    partial void DeleteProblematicaEstudiante(ProblematicaEstudiante instance);
+    partial void InsertProblematicaAcademica(ProblematicaAcademica instance);
+    partial void UpdateProblematicaAcademica(ProblematicaAcademica instance);
+    partial void DeleteProblematicaAcademica(ProblematicaAcademica instance);
+    partial void InsertProblematica(Problematica instance);
+    partial void UpdateProblematica(Problematica instance);
+    partial void DeleteProblematica(Problematica instance);
+    partial void InsertPeriodoEscolar(PeriodoEscolar instance);
+    partial void UpdatePeriodoEscolar(PeriodoEscolar instance);
+    partial void DeletePeriodoEscolar(PeriodoEscolar instance);
+    partial void InsertMateria(Materia instance);
+    partial void UpdateMateria(Materia instance);
+    partial void DeleteMateria(Materia instance);
+    partial void InsertExperienciasEducativasCursando(ExperienciasEducativasCursando instance);
+    partial void UpdateExperienciasEducativasCursando(ExperienciasEducativasCursando instance);
+    partial void DeleteExperienciasEducativasCursando(ExperienciasEducativasCursando instance);
+    partial void InsertExperienciaEducativa(ExperienciaEducativa instance);
+    partial void UpdateExperienciaEducativa(ExperienciaEducativa instance);
+    partial void DeleteExperienciaEducativa(ExperienciaEducativa instance);
+    partial void InsertEstudiante(Estudiante instance);
+    partial void UpdateEstudiante(Estudiante instance);
+    partial void DeleteEstudiante(Estudiante instance);
+    partial void InsertEstadoProblematica(EstadoProblematica instance);
+    partial void UpdateEstadoProblematica(EstadoProblematica instance);
+    partial void DeleteEstadoProblematica(EstadoProblematica instance);
+    partial void InsertEstadoEstudiante(EstadoEstudiante instance);
+    partial void UpdateEstadoEstudiante(EstadoEstudiante instance);
+    partial void DeleteEstadoEstudiante(EstadoEstudiante instance);
+    partial void InsertComentario(Comentario instance);
+    partial void UpdateComentario(Comentario instance);
+    partial void DeleteComentario(Comentario instance);
+    partial void InsertClasificacionEstudiante(ClasificacionEstudiante instance);
+    partial void UpdateClasificacionEstudiante(ClasificacionEstudiante instance);
+    partial void DeleteClasificacionEstudiante(ClasificacionEstudiante instance);
+    partial void InsertAcademico(Academico instance);
+    partial void UpdateAcademico(Academico instance);
+    partial void DeleteAcademico(Academico instance);
     #endregion
 		
 		public DataClassesTutoriasUVDataContext(string connection) : 
@@ -116,147 +116,11 @@ namespace ServiciosLinqTutorias.Modelo
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Academico> Academicos
+		public System.Data.Linq.Table<Usuario> Usuarios
 		{
 			get
 			{
-				return this.GetTable<Academico>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ClasificacionProblematica> ClasificacionProblematicas
-		{
-			get
-			{
-				return this.GetTable<ClasificacionProblematica>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Comentario> Comentarios
-		{
-			get
-			{
-				return this.GetTable<Comentario>();
-			}
-		}
-		
-		public System.Data.Linq.Table<EstadoEstudiante> EstadoEstudiantes
-		{
-			get
-			{
-				return this.GetTable<EstadoEstudiante>();
-			}
-		}
-		
-		public System.Data.Linq.Table<EstadoProblematica> EstadoProblematicas
-		{
-			get
-			{
-				return this.GetTable<EstadoProblematica>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Estudiante> Estudiantes
-		{
-			get
-			{
-				return this.GetTable<Estudiante>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ExperienciaEducativa> ExperienciaEducativas
-		{
-			get
-			{
-				return this.GetTable<ExperienciaEducativa>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ExperienciaEducativaCursando> ExperienciaEducativaCursandos
-		{
-			get
-			{
-				return this.GetTable<ExperienciaEducativaCursando>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Materia> Materias
-		{
-			get
-			{
-				return this.GetTable<Materia>();
-			}
-		}
-		
-		public System.Data.Linq.Table<PeriodoEscolar> PeriodoEscolars
-		{
-			get
-			{
-				return this.GetTable<PeriodoEscolar>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Problematica> Problematicas
-		{
-			get
-			{
-				return this.GetTable<Problematica>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ProblematicaAcademica> ProblematicaAcademicas
-		{
-			get
-			{
-				return this.GetTable<ProblematicaAcademica>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ProblematicaEstudiante> ProblematicaEstudiantes
-		{
-			get
-			{
-				return this.GetTable<ProblematicaEstudiante>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ProgramaEducativo> ProgramaEducativos
-		{
-			get
-			{
-				return this.GetTable<ProgramaEducativo>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ReporteTutoria> ReporteTutorias
-		{
-			get
-			{
-				return this.GetTable<ReporteTutoria>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Rol> Rols
-		{
-			get
-			{
-				return this.GetTable<Rol>();
-			}
-		}
-		
-		public System.Data.Linq.Table<SesionTutoria> SesionTutorias
-		{
-			get
-			{
-				return this.GetTable<SesionTutoria>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Solucion> Solucions
-		{
-			get
-			{
-				return this.GetTable<Solucion>();
+				return this.GetTable<Usuario>();
 			}
 		}
 		
@@ -268,1038 +132,203 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		public System.Data.Linq.Table<Usuario> Usuarios
+		public System.Data.Linq.Table<Solucion> Solucions
 		{
 			get
 			{
-				return this.GetTable<Usuario>();
+				return this.GetTable<Solucion>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SesionTutoria> SesionTutorias
+		{
+			get
+			{
+				return this.GetTable<SesionTutoria>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Rol> Rols
+		{
+			get
+			{
+				return this.GetTable<Rol>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ReporteTutoria> ReporteTutorias
+		{
+			get
+			{
+				return this.GetTable<ReporteTutoria>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ProgramaEducativo> ProgramaEducativos
+		{
+			get
+			{
+				return this.GetTable<ProgramaEducativo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ProblematicaEstudiante> ProblematicaEstudiantes
+		{
+			get
+			{
+				return this.GetTable<ProblematicaEstudiante>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ProblematicaAcademica> ProblematicaAcademicas
+		{
+			get
+			{
+				return this.GetTable<ProblematicaAcademica>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Problematica> Problematicas
+		{
+			get
+			{
+				return this.GetTable<Problematica>();
+			}
+		}
+		
+		public System.Data.Linq.Table<PeriodoEscolar> PeriodoEscolars
+		{
+			get
+			{
+				return this.GetTable<PeriodoEscolar>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Materia> Materias
+		{
+			get
+			{
+				return this.GetTable<Materia>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ExperienciasEducativasCursando> ExperienciasEducativasCursandos
+		{
+			get
+			{
+				return this.GetTable<ExperienciasEducativasCursando>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ExperienciaEducativa> ExperienciaEducativas
+		{
+			get
+			{
+				return this.GetTable<ExperienciaEducativa>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Estudiante> Estudiantes
+		{
+			get
+			{
+				return this.GetTable<Estudiante>();
+			}
+		}
+		
+		public System.Data.Linq.Table<EstadoProblematica> EstadoProblematicas
+		{
+			get
+			{
+				return this.GetTable<EstadoProblematica>();
+			}
+		}
+		
+		public System.Data.Linq.Table<EstadoEstudiante> EstadoEstudiantes
+		{
+			get
+			{
+				return this.GetTable<EstadoEstudiante>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Comentario> Comentarios
+		{
+			get
+			{
+				return this.GetTable<Comentario>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ClasificacionEstudiante> ClasificacionEstudiantes
+		{
+			get
+			{
+				return this.GetTable<ClasificacionEstudiante>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Academico> Academicos
+		{
+			get
+			{
+				return this.GetTable<Academico>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.academico")]
-	public partial class Academico : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.usuario")]
+	public partial class Usuario : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idAcademico;
-		
-		private int _rol_idRol;
-		
-		private System.Nullable<int> _numerPersonal;
-		
-		private string _correoInstitucional;
-		
-		private string _nombre;
-		
-		private string _apellidoPaterno;
-		
-		private string _apellidoMaterno;
-		
-		private System.Nullable<long> _telefono;
-		
-		private EntitySet<Estudiante> _Estudiantes;
-		
-		private EntitySet<ExperienciaEducativa> _ExperienciaEducativas;
-		
-		private EntitySet<ProgramaEducativo> _programa_educativos;
-		
-		private EntitySet<ProgramaEducativo> _ProgramaEducativos;
-		
-		private EntitySet<ReporteTutoria> _ReporteTutorias;
-		
-		private EntitySet<Usuario> _Usuarios;
-		
-		private EntityRef<Rol> _Rol;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidAcademicoChanging(int value);
-    partial void OnidAcademicoChanged();
-    partial void Onrol_idRolChanging(int value);
-    partial void Onrol_idRolChanged();
-    partial void OnnumerPersonalChanging(System.Nullable<int> value);
-    partial void OnnumerPersonalChanged();
-    partial void OncorreoInstitucionalChanging(string value);
-    partial void OncorreoInstitucionalChanged();
-    partial void OnnombreChanging(string value);
-    partial void OnnombreChanged();
-    partial void OnapellidoPaternoChanging(string value);
-    partial void OnapellidoPaternoChanged();
-    partial void OnapellidoMaternoChanging(string value);
-    partial void OnapellidoMaternoChanged();
-    partial void OntelefonoChanging(System.Nullable<long> value);
-    partial void OntelefonoChanged();
-    #endregion
-		
-		public Academico()
-		{
-			this._Estudiantes = new EntitySet<Estudiante>(new Action<Estudiante>(this.attach_Estudiantes), new Action<Estudiante>(this.detach_Estudiantes));
-			this._ExperienciaEducativas = new EntitySet<ExperienciaEducativa>(new Action<ExperienciaEducativa>(this.attach_ExperienciaEducativas), new Action<ExperienciaEducativa>(this.detach_ExperienciaEducativas));
-			this._programa_educativos = new EntitySet<ProgramaEducativo>(new Action<ProgramaEducativo>(this.attach_programa_educativos), new Action<ProgramaEducativo>(this.detach_programa_educativos));
-			this._ProgramaEducativos = new EntitySet<ProgramaEducativo>(new Action<ProgramaEducativo>(this.attach_ProgramaEducativos), new Action<ProgramaEducativo>(this.detach_ProgramaEducativos));
-			this._ReporteTutorias = new EntitySet<ReporteTutoria>(new Action<ReporteTutoria>(this.attach_ReporteTutorias), new Action<ReporteTutoria>(this.detach_ReporteTutorias));
-			this._Usuarios = new EntitySet<Usuario>(new Action<Usuario>(this.attach_Usuarios), new Action<Usuario>(this.detach_Usuarios));
-			this._Rol = default(EntityRef<Rol>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idAcademico", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idAcademico
-		{
-			get
-			{
-				return this._idAcademico;
-			}
-			set
-			{
-				if ((this._idAcademico != value))
-				{
-					this.OnidAcademicoChanging(value);
-					this.SendPropertyChanging();
-					this._idAcademico = value;
-					this.SendPropertyChanged("idAcademico");
-					this.OnidAcademicoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rol_idRol", DbType="Int NOT NULL")]
-		public int rol_idRol
-		{
-			get
-			{
-				return this._rol_idRol;
-			}
-			set
-			{
-				if ((this._rol_idRol != value))
-				{
-					if (this._Rol.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onrol_idRolChanging(value);
-					this.SendPropertyChanging();
-					this._rol_idRol = value;
-					this.SendPropertyChanged("rol_idRol");
-					this.Onrol_idRolChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numerPersonal", DbType="Int")]
-		public System.Nullable<int> numerPersonal
-		{
-			get
-			{
-				return this._numerPersonal;
-			}
-			set
-			{
-				if ((this._numerPersonal != value))
-				{
-					this.OnnumerPersonalChanging(value);
-					this.SendPropertyChanging();
-					this._numerPersonal = value;
-					this.SendPropertyChanged("numerPersonal");
-					this.OnnumerPersonalChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_correoInstitucional", DbType="NVarChar(100)")]
-		public string correoInstitucional
-		{
-			get
-			{
-				return this._correoInstitucional;
-			}
-			set
-			{
-				if ((this._correoInstitucional != value))
-				{
-					this.OncorreoInstitucionalChanging(value);
-					this.SendPropertyChanging();
-					this._correoInstitucional = value;
-					this.SendPropertyChanged("correoInstitucional");
-					this.OncorreoInstitucionalChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this.OnnombreChanging(value);
-					this.SendPropertyChanging();
-					this._nombre = value;
-					this.SendPropertyChanged("nombre");
-					this.OnnombreChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="NVarChar(100)")]
-		public string apellidoPaterno
-		{
-			get
-			{
-				return this._apellidoPaterno;
-			}
-			set
-			{
-				if ((this._apellidoPaterno != value))
-				{
-					this.OnapellidoPaternoChanging(value);
-					this.SendPropertyChanging();
-					this._apellidoPaterno = value;
-					this.SendPropertyChanged("apellidoPaterno");
-					this.OnapellidoPaternoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="NVarChar(100)")]
-		public string apellidoMaterno
-		{
-			get
-			{
-				return this._apellidoMaterno;
-			}
-			set
-			{
-				if ((this._apellidoMaterno != value))
-				{
-					this.OnapellidoMaternoChanging(value);
-					this.SendPropertyChanging();
-					this._apellidoMaterno = value;
-					this.SendPropertyChanged("apellidoMaterno");
-					this.OnapellidoMaternoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefono", DbType="BigInt")]
-		public System.Nullable<long> telefono
-		{
-			get
-			{
-				return this._telefono;
-			}
-			set
-			{
-				if ((this._telefono != value))
-				{
-					this.OntelefonoChanging(value);
-					this.SendPropertyChanging();
-					this._telefono = value;
-					this.SendPropertyChanged("telefono");
-					this.OntelefonoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_estudiante", Storage="_Estudiantes", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
-		public EntitySet<Estudiante> Estudiantes
-		{
-			get
-			{
-				return this._Estudiantes;
-			}
-			set
-			{
-				this._Estudiantes.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
-		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
-		{
-			get
-			{
-				return this._ExperienciaEducativas;
-			}
-			set
-			{
-				this._ExperienciaEducativas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_programa_educativo", Storage="_programa_educativos", ThisKey="idAcademico", OtherKey="jefeCarrera")]
-		public EntitySet<ProgramaEducativo> programa_educativos
-		{
-			get
-			{
-				return this._programa_educativos;
-			}
-			set
-			{
-				this._programa_educativos.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_programa_educativo1", Storage="_ProgramaEducativos", ThisKey="idAcademico", OtherKey="coordinadorTutor")]
-		public EntitySet<ProgramaEducativo> ProgramaEducativos
-		{
-			get
-			{
-				return this._ProgramaEducativos;
-			}
-			set
-			{
-				this._ProgramaEducativos.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
-		public EntitySet<ReporteTutoria> ReporteTutorias
-		{
-			get
-			{
-				return this._ReporteTutorias;
-			}
-			set
-			{
-				this._ReporteTutorias.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Usuarios", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
-		public EntitySet<Usuario> Usuarios
-		{
-			get
-			{
-				return this._Usuarios;
-			}
-			set
-			{
-				this._Usuarios.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_academico", Storage="_Rol", ThisKey="rol_idRol", OtherKey="idRol", IsForeignKey=true)]
-		public Rol Rol
-		{
-			get
-			{
-				return this._Rol.Entity;
-			}
-			set
-			{
-				Rol previousValue = this._Rol.Entity;
-				if (((previousValue != value) 
-							|| (this._Rol.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Rol.Entity = null;
-						previousValue.Academicos.Remove(this);
-					}
-					this._Rol.Entity = value;
-					if ((value != null))
-					{
-						value.Academicos.Add(this);
-						this._rol_idRol = value.idRol;
-					}
-					else
-					{
-						this._rol_idRol = default(int);
-					}
-					this.SendPropertyChanged("Rol");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Estudiantes(Estudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = this;
-		}
-		
-		private void detach_Estudiantes(Estudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = null;
-		}
-		
-		private void attach_ExperienciaEducativas(ExperienciaEducativa entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = this;
-		}
-		
-		private void detach_ExperienciaEducativas(ExperienciaEducativa entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = null;
-		}
-		
-		private void attach_programa_educativos(ProgramaEducativo entity)
-		{
-			this.SendPropertyChanging();
-			entity.academico = this;
-		}
-		
-		private void detach_programa_educativos(ProgramaEducativo entity)
-		{
-			this.SendPropertyChanging();
-			entity.academico = null;
-		}
-		
-		private void attach_ProgramaEducativos(ProgramaEducativo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico1 = this;
-		}
-		
-		private void detach_ProgramaEducativos(ProgramaEducativo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico1 = null;
-		}
-		
-		private void attach_ReporteTutorias(ReporteTutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = this;
-		}
-		
-		private void detach_ReporteTutorias(ReporteTutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = null;
-		}
-		
-		private void attach_Usuarios(Usuario entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = this;
-		}
-		
-		private void detach_Usuarios(Usuario entity)
-		{
-			this.SendPropertyChanging();
-			entity.Academico = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.clasificacion_problematica")]
-	public partial class ClasificacionProblematica : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idClasificacion_problematica;
-		
-		private string _clasificacion;
-		
-		private EntitySet<Problematica> _Problematicas;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidClasificacion_problematicaChanging(int value);
-    partial void OnidClasificacion_problematicaChanged();
-    partial void OnclasificacionChanging(string value);
-    partial void OnclasificacionChanged();
-    #endregion
-		
-		public ClasificacionProblematica()
-		{
-			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idClasificacion_problematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idClasificacion_problematica
-		{
-			get
-			{
-				return this._idClasificacion_problematica;
-			}
-			set
-			{
-				if ((this._idClasificacion_problematica != value))
-				{
-					this.OnidClasificacion_problematicaChanging(value);
-					this.SendPropertyChanging();
-					this._idClasificacion_problematica = value;
-					this.SendPropertyChanged("idClasificacion_problematica");
-					this.OnidClasificacion_problematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clasificacion", DbType="NVarChar(100)")]
-		public string clasificacion
-		{
-			get
-			{
-				return this._clasificacion;
-			}
-			set
-			{
-				if ((this._clasificacion != value))
-				{
-					this.OnclasificacionChanging(value);
-					this.SendPropertyChanging();
-					this._clasificacion = value;
-					this.SendPropertyChanged("clasificacion");
-					this.OnclasificacionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clasificacion_problematica_problematica", Storage="_Problematicas", ThisKey="idClasificacion_problematica", OtherKey="clasificacion_problematica_idClasificacion_problematica")]
-		public EntitySet<Problematica> Problematicas
-		{
-			get
-			{
-				return this._Problematicas;
-			}
-			set
-			{
-				this._Problematicas.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ClasificacionProblematica = this;
-		}
-		
-		private void detach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ClasificacionProblematica = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.comentario")]
-	public partial class Comentario : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idComentario;
-		
-		private int _reporte_Tutoria_idReporte_Tutoria;
-		
-		private string _comentarios;
-		
-		private EntityRef<ReporteTutoria> _ReporteTutoria;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidComentarioChanging(int value);
-    partial void OnidComentarioChanged();
-    partial void Onreporte_Tutoria_idReporte_TutoriaChanging(int value);
-    partial void Onreporte_Tutoria_idReporte_TutoriaChanged();
-    partial void OncomentariosChanging(string value);
-    partial void OncomentariosChanged();
-    #endregion
-		
-		public Comentario()
-		{
-			this._ReporteTutoria = default(EntityRef<ReporteTutoria>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idComentario", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idComentario
-		{
-			get
-			{
-				return this._idComentario;
-			}
-			set
-			{
-				if ((this._idComentario != value))
-				{
-					this.OnidComentarioChanging(value);
-					this.SendPropertyChanging();
-					this._idComentario = value;
-					this.SendPropertyChanged("idComentario");
-					this.OnidComentarioChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_reporte_Tutoria_idReporte_Tutoria", DbType="Int NOT NULL")]
-		public int reporte_Tutoria_idReporte_Tutoria
-		{
-			get
-			{
-				return this._reporte_Tutoria_idReporte_Tutoria;
-			}
-			set
-			{
-				if ((this._reporte_Tutoria_idReporte_Tutoria != value))
-				{
-					if (this._ReporteTutoria.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onreporte_Tutoria_idReporte_TutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._reporte_Tutoria_idReporte_Tutoria = value;
-					this.SendPropertyChanged("reporte_Tutoria_idReporte_Tutoria");
-					this.Onreporte_Tutoria_idReporte_TutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_comentarios", DbType="NVarChar(500)")]
-		public string comentarios
-		{
-			get
-			{
-				return this._comentarios;
-			}
-			set
-			{
-				if ((this._comentarios != value))
-				{
-					this.OncomentariosChanging(value);
-					this.SendPropertyChanging();
-					this._comentarios = value;
-					this.SendPropertyChanged("comentarios");
-					this.OncomentariosChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
-		public ReporteTutoria ReporteTutoria
-		{
-			get
-			{
-				return this._ReporteTutoria.Entity;
-			}
-			set
-			{
-				ReporteTutoria previousValue = this._ReporteTutoria.Entity;
-				if (((previousValue != value) 
-							|| (this._ReporteTutoria.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ReporteTutoria.Entity = null;
-						previousValue.Comentarios.Remove(this);
-					}
-					this._ReporteTutoria.Entity = value;
-					if ((value != null))
-					{
-						value.Comentarios.Add(this);
-						this._reporte_Tutoria_idReporte_Tutoria = value.idReporte_Tutoria;
-					}
-					else
-					{
-						this._reporte_Tutoria_idReporte_Tutoria = default(int);
-					}
-					this.SendPropertyChanged("ReporteTutoria");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estado_estudiante")]
-	public partial class EstadoEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idEstado_estudiante;
-		
-		private string _estado;
-		
-		private EntitySet<Estudiante> _Estudiantes;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidEstado_estudianteChanging(int value);
-    partial void OnidEstado_estudianteChanged();
-    partial void OnestadoChanging(string value);
-    partial void OnestadoChanged();
-    #endregion
-		
-		public EstadoEstudiante()
-		{
-			this._Estudiantes = new EntitySet<Estudiante>(new Action<Estudiante>(this.attach_Estudiantes), new Action<Estudiante>(this.detach_Estudiantes));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstado_estudiante", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idEstado_estudiante
-		{
-			get
-			{
-				return this._idEstado_estudiante;
-			}
-			set
-			{
-				if ((this._idEstado_estudiante != value))
-				{
-					this.OnidEstado_estudianteChanging(value);
-					this.SendPropertyChanging();
-					this._idEstado_estudiante = value;
-					this.SendPropertyChanged("idEstado_estudiante");
-					this.OnidEstado_estudianteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado", DbType="NVarChar(45)")]
-		public string estado
-		{
-			get
-			{
-				return this._estado;
-			}
-			set
-			{
-				if ((this._estado != value))
-				{
-					this.OnestadoChanging(value);
-					this.SendPropertyChanging();
-					this._estado = value;
-					this.SendPropertyChanged("estado");
-					this.OnestadoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_estudiante", Storage="_Estudiantes", ThisKey="idEstado_estudiante", OtherKey="estado_estudiante_idEstado_estudiante")]
-		public EntitySet<Estudiante> Estudiantes
-		{
-			get
-			{
-				return this._Estudiantes;
-			}
-			set
-			{
-				this._Estudiantes.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Estudiantes(Estudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.EstadoEstudiante = this;
-		}
-		
-		private void detach_Estudiantes(Estudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.EstadoEstudiante = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estado_problematica")]
-	public partial class EstadoProblematica : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idestado_problematica;
-		
-		private string _estado;
-		
-		private EntitySet<Problematica> _Problematicas;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void Onidestado_problematicaChanging(int value);
-    partial void Onidestado_problematicaChanged();
-    partial void OnestadoChanging(string value);
-    partial void OnestadoChanged();
-    #endregion
-		
-		public EstadoProblematica()
-		{
-			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idestado_problematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idestado_problematica
-		{
-			get
-			{
-				return this._idestado_problematica;
-			}
-			set
-			{
-				if ((this._idestado_problematica != value))
-				{
-					this.Onidestado_problematicaChanging(value);
-					this.SendPropertyChanging();
-					this._idestado_problematica = value;
-					this.SendPropertyChanged("idestado_problematica");
-					this.Onidestado_problematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado", DbType="NVarChar(100)")]
-		public string estado
-		{
-			get
-			{
-				return this._estado;
-			}
-			set
-			{
-				if ((this._estado != value))
-				{
-					this.OnestadoChanging(value);
-					this.SendPropertyChanging();
-					this._estado = value;
-					this.SendPropertyChanged("estado");
-					this.OnestadoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_problematica_problematica", Storage="_Problematicas", ThisKey="idestado_problematica", OtherKey="estado_problematica_idestado_problematica")]
-		public EntitySet<Problematica> Problematicas
-		{
-			get
-			{
-				return this._Problematicas;
-			}
-			set
-			{
-				this._Problematicas.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.EstadoProblematica = this;
-		}
-		
-		private void detach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.EstadoProblematica = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estudiante")]
-	public partial class Estudiante : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idEstudiante;
+		private int _idUsuario;
 		
 		private int _academico_idAcademico;
 		
-		private int _estado_estudiante_idEstado_estudiante;
+		private string _username;
 		
-		private string _matricula;
-		
-		private string _nombre;
-		
-		private string _apellidoPaterno;
-		
-		private string _apellidoMaterno;
-		
-		private string _correoElectronico;
-		
-		private System.Nullable<int> _SemestreCursando;
-		
-		private System.Nullable<long> _telefono;
-		
-		private EntitySet<ExperienciaEducativaCursando> _ExperienciaEducativaCursandos;
-		
-		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
-		
-		private EntitySet<ProblematicaEstudiante> _ProblematicaEstudiantes;
-		
-		private EntitySet<SesionTutoria> _SesionTutorias;
+		private string _password;
 		
 		private EntityRef<Academico> _Academico;
-		
-		private EntityRef<EstadoEstudiante> _EstadoEstudiante;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidEstudianteChanging(int value);
-    partial void OnidEstudianteChanged();
+    partial void OnidUsuarioChanging(int value);
+    partial void OnidUsuarioChanged();
     partial void Onacademico_idAcademicoChanging(int value);
     partial void Onacademico_idAcademicoChanged();
-    partial void Onestado_estudiante_idEstado_estudianteChanging(int value);
-    partial void Onestado_estudiante_idEstado_estudianteChanged();
-    partial void OnmatriculaChanging(string value);
-    partial void OnmatriculaChanged();
-    partial void OnnombreChanging(string value);
-    partial void OnnombreChanged();
-    partial void OnapellidoPaternoChanging(string value);
-    partial void OnapellidoPaternoChanged();
-    partial void OnapellidoMaternoChanging(string value);
-    partial void OnapellidoMaternoChanged();
-    partial void OncorreoElectronicoChanging(string value);
-    partial void OncorreoElectronicoChanged();
-    partial void OnSemestreCursandoChanging(System.Nullable<int> value);
-    partial void OnSemestreCursandoChanged();
-    partial void OntelefonoChanging(System.Nullable<long> value);
-    partial void OntelefonoChanged();
+    partial void OnusernameChanging(string value);
+    partial void OnusernameChanged();
+    partial void OnpasswordChanging(string value);
+    partial void OnpasswordChanged();
     #endregion
 		
-		public Estudiante()
+		public Usuario()
 		{
-			this._ExperienciaEducativaCursandos = new EntitySet<ExperienciaEducativaCursando>(new Action<ExperienciaEducativaCursando>(this.attach_ExperienciaEducativaCursandos), new Action<ExperienciaEducativaCursando>(this.detach_ExperienciaEducativaCursandos));
-			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
-			this._ProblematicaEstudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_ProblematicaEstudiantes), new Action<ProblematicaEstudiante>(this.detach_ProblematicaEstudiantes));
-			this._SesionTutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_SesionTutorias), new Action<SesionTutoria>(this.detach_SesionTutorias));
 			this._Academico = default(EntityRef<Academico>);
-			this._EstadoEstudiante = default(EntityRef<EstadoEstudiante>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstudiante", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idEstudiante
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUsuario", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int idUsuario
 		{
 			get
 			{
-				return this._idEstudiante;
+				return this._idUsuario;
 			}
 			set
 			{
-				if ((this._idEstudiante != value))
+				if ((this._idUsuario != value))
 				{
-					this.OnidEstudianteChanging(value);
+					this.OnidUsuarioChanging(value);
 					this.SendPropertyChanging();
-					this._idEstudiante = value;
-					this.SendPropertyChanged("idEstudiante");
-					this.OnidEstudianteChanged();
+					this._idUsuario = value;
+					this.SendPropertyChanged("idUsuario");
+					this.OnidUsuarioChanged();
 				}
 			}
 		}
@@ -1328,223 +357,47 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado_estudiante_idEstado_estudiante", DbType="Int NOT NULL")]
-		public int estado_estudiante_idEstado_estudiante
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NVarChar(45)")]
+		public string username
 		{
 			get
 			{
-				return this._estado_estudiante_idEstado_estudiante;
+				return this._username;
 			}
 			set
 			{
-				if ((this._estado_estudiante_idEstado_estudiante != value))
+				if ((this._username != value))
 				{
-					if (this._EstadoEstudiante.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onestado_estudiante_idEstado_estudianteChanging(value);
+					this.OnusernameChanging(value);
 					this.SendPropertyChanging();
-					this._estado_estudiante_idEstado_estudiante = value;
-					this.SendPropertyChanged("estado_estudiante_idEstado_estudiante");
-					this.Onestado_estudiante_idEstado_estudianteChanged();
+					this._username = value;
+					this.SendPropertyChanged("username");
+					this.OnusernameChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_matricula", DbType="NVarChar(9)")]
-		public string matricula
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NVarChar(80)")]
+		public string password
 		{
 			get
 			{
-				return this._matricula;
+				return this._password;
 			}
 			set
 			{
-				if ((this._matricula != value))
+				if ((this._password != value))
 				{
-					this.OnmatriculaChanging(value);
+					this.OnpasswordChanging(value);
 					this.SendPropertyChanging();
-					this._matricula = value;
-					this.SendPropertyChanged("matricula");
-					this.OnmatriculaChanged();
+					this._password = value;
+					this.SendPropertyChanged("password");
+					this.OnpasswordChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this.OnnombreChanging(value);
-					this.SendPropertyChanging();
-					this._nombre = value;
-					this.SendPropertyChanged("nombre");
-					this.OnnombreChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="NVarChar(100)")]
-		public string apellidoPaterno
-		{
-			get
-			{
-				return this._apellidoPaterno;
-			}
-			set
-			{
-				if ((this._apellidoPaterno != value))
-				{
-					this.OnapellidoPaternoChanging(value);
-					this.SendPropertyChanging();
-					this._apellidoPaterno = value;
-					this.SendPropertyChanged("apellidoPaterno");
-					this.OnapellidoPaternoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="NVarChar(100)")]
-		public string apellidoMaterno
-		{
-			get
-			{
-				return this._apellidoMaterno;
-			}
-			set
-			{
-				if ((this._apellidoMaterno != value))
-				{
-					this.OnapellidoMaternoChanging(value);
-					this.SendPropertyChanging();
-					this._apellidoMaterno = value;
-					this.SendPropertyChanged("apellidoMaterno");
-					this.OnapellidoMaternoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_correoElectronico", DbType="NVarChar(100)")]
-		public string correoElectronico
-		{
-			get
-			{
-				return this._correoElectronico;
-			}
-			set
-			{
-				if ((this._correoElectronico != value))
-				{
-					this.OncorreoElectronicoChanging(value);
-					this.SendPropertyChanging();
-					this._correoElectronico = value;
-					this.SendPropertyChanged("correoElectronico");
-					this.OncorreoElectronicoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SemestreCursando", DbType="Int")]
-		public System.Nullable<int> SemestreCursando
-		{
-			get
-			{
-				return this._SemestreCursando;
-			}
-			set
-			{
-				if ((this._SemestreCursando != value))
-				{
-					this.OnSemestreCursandoChanging(value);
-					this.SendPropertyChanging();
-					this._SemestreCursando = value;
-					this.SendPropertyChanged("SemestreCursando");
-					this.OnSemestreCursandoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefono", DbType="BigInt")]
-		public System.Nullable<long> telefono
-		{
-			get
-			{
-				return this._telefono;
-			}
-			set
-			{
-				if ((this._telefono != value))
-				{
-					this.OntelefonoChanging(value);
-					this.SendPropertyChanging();
-					this._telefono = value;
-					this.SendPropertyChanged("telefono");
-					this.OntelefonoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_experienciaseducativascursando", Storage="_ExperienciaEducativaCursandos", ThisKey="idEstudiante", OtherKey="Estudiante_idEstudiante")]
-		public EntitySet<ExperienciaEducativaCursando> ExperienciaEducativaCursandos
-		{
-			get
-			{
-				return this._ExperienciaEducativaCursandos;
-			}
-			set
-			{
-				this._ExperienciaEducativaCursandos.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idEstudiante", OtherKey="Estudiante_idEstudiante")]
-		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
-		{
-			get
-			{
-				return this._ProblematicaAcademicas;
-			}
-			set
-			{
-				this._ProblematicaAcademicas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
-		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
-		{
-			get
-			{
-				return this._ProblematicaEstudiantes;
-			}
-			set
-			{
-				this._ProblematicaEstudiantes.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
-		public EntitySet<SesionTutoria> SesionTutorias
-		{
-			get
-			{
-				return this._SesionTutorias;
-			}
-			set
-			{
-				this._SesionTutorias.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_estudiante", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -1561,12 +414,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Academico.Entity = null;
-						previousValue.Estudiantes.Remove(this);
+						previousValue.Usuarios.Remove(this);
 					}
 					this._Academico.Entity = value;
 					if ((value != null))
 					{
-						value.Estudiantes.Add(this);
+						value.Usuarios.Add(this);
 						this._academico_idAcademico = value.idAcademico;
 					}
 					else
@@ -1574,40 +427,6 @@ namespace ServiciosLinqTutorias.Modelo
 						this._academico_idAcademico = default(int);
 					}
 					this.SendPropertyChanged("Academico");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_estudiante", Storage="_EstadoEstudiante", ThisKey="estado_estudiante_idEstado_estudiante", OtherKey="idEstado_estudiante", IsForeignKey=true)]
-		public EstadoEstudiante EstadoEstudiante
-		{
-			get
-			{
-				return this._EstadoEstudiante.Entity;
-			}
-			set
-			{
-				EstadoEstudiante previousValue = this._EstadoEstudiante.Entity;
-				if (((previousValue != value) 
-							|| (this._EstadoEstudiante.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._EstadoEstudiante.Entity = null;
-						previousValue.Estudiantes.Remove(this);
-					}
-					this._EstadoEstudiante.Entity = value;
-					if ((value != null))
-					{
-						value.Estudiantes.Add(this);
-						this._estado_estudiante_idEstado_estudiante = value.idEstado_estudiante;
-					}
-					else
-					{
-						this._estado_estudiante_idEstado_estudiante = default(int);
-					}
-					this.SendPropertyChanged("EstadoEstudiante");
 				}
 			}
 		}
@@ -1631,77 +450,27 @@ namespace ServiciosLinqTutorias.Modelo
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
-		
-		private void attach_ExperienciaEducativaCursandos(ExperienciaEducativaCursando entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = this;
-		}
-		
-		private void detach_ExperienciaEducativaCursandos(ExperienciaEducativaCursando entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = null;
-		}
-		
-		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = this;
-		}
-		
-		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = null;
-		}
-		
-		private void attach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = this;
-		}
-		
-		private void detach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = null;
-		}
-		
-		private void attach_SesionTutorias(SesionTutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = this;
-		}
-		
-		private void detach_SesionTutorias(SesionTutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.Estudiante = null;
-		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.experiencia_educativa")]
-	public partial class ExperienciaEducativa : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.tutoria")]
+	public partial class Tutoria : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idExperiencia_educativa;
-		
-		private int _academico_idAcademico;
+		private int _idTutoria;
 		
 		private int _periodo_escolar_idPeriodo_escolar;
 		
-		private string _nombre;
+		private System.Nullable<int> _numeroTutoria;
 		
-		private EntitySet<ExperienciaEducativaCursando> _ExperienciaEducativaCursandos;
+		private System.Nullable<System.DateTime> _fechaTutoria;
 		
-		private EntitySet<Materia> _Materias;
+		private System.Nullable<System.DateTime> _fechaEntrega;
 		
-		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
+		private EntitySet<SesionTutoria> _SesionTutorias;
 		
-		private EntityRef<Academico> _Academico;
+		private EntitySet<ReporteTutoria> _ReporteTutorias;
 		
 		private EntityRef<PeriodoEscolar> _PeriodoEscolar;
 		
@@ -1709,66 +478,42 @@ namespace ServiciosLinqTutorias.Modelo
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidExperiencia_educativaChanging(int value);
-    partial void OnidExperiencia_educativaChanged();
-    partial void Onacademico_idAcademicoChanging(int value);
-    partial void Onacademico_idAcademicoChanged();
+    partial void OnidTutoriaChanging(int value);
+    partial void OnidTutoriaChanged();
     partial void Onperiodo_escolar_idPeriodo_escolarChanging(int value);
     partial void Onperiodo_escolar_idPeriodo_escolarChanged();
-    partial void OnnombreChanging(string value);
-    partial void OnnombreChanged();
+    partial void OnnumeroTutoriaChanging(System.Nullable<int> value);
+    partial void OnnumeroTutoriaChanged();
+    partial void OnfechaTutoriaChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaTutoriaChanged();
+    partial void OnfechaEntregaChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaEntregaChanged();
     #endregion
 		
-		public ExperienciaEducativa()
+		public Tutoria()
 		{
-			this._ExperienciaEducativaCursandos = new EntitySet<ExperienciaEducativaCursando>(new Action<ExperienciaEducativaCursando>(this.attach_ExperienciaEducativaCursandos), new Action<ExperienciaEducativaCursando>(this.detach_ExperienciaEducativaCursandos));
-			this._Materias = new EntitySet<Materia>(new Action<Materia>(this.attach_Materias), new Action<Materia>(this.detach_Materias));
-			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
-			this._Academico = default(EntityRef<Academico>);
+			this._SesionTutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_SesionTutorias), new Action<SesionTutoria>(this.detach_SesionTutorias));
+			this._ReporteTutorias = new EntitySet<ReporteTutoria>(new Action<ReporteTutoria>(this.attach_ReporteTutorias), new Action<ReporteTutoria>(this.detach_ReporteTutorias));
 			this._PeriodoEscolar = default(EntityRef<PeriodoEscolar>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idExperiencia_educativa", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idExperiencia_educativa
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTutoria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idTutoria
 		{
 			get
 			{
-				return this._idExperiencia_educativa;
+				return this._idTutoria;
 			}
 			set
 			{
-				if ((this._idExperiencia_educativa != value))
+				if ((this._idTutoria != value))
 				{
-					this.OnidExperiencia_educativaChanging(value);
+					this.OnidTutoriaChanging(value);
 					this.SendPropertyChanging();
-					this._idExperiencia_educativa = value;
-					this.SendPropertyChanged("idExperiencia_educativa");
-					this.OnidExperiencia_educativaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_academico_idAcademico", DbType="Int NOT NULL")]
-		public int academico_idAcademico
-		{
-			get
-			{
-				return this._academico_idAcademico;
-			}
-			set
-			{
-				if ((this._academico_idAcademico != value))
-				{
-					if (this._Academico.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onacademico_idAcademicoChanging(value);
-					this.SendPropertyChanging();
-					this._academico_idAcademico = value;
-					this.SendPropertyChanged("academico_idAcademico");
-					this.Onacademico_idAcademicoChanged();
+					this._idTutoria = value;
+					this.SendPropertyChanged("idTutoria");
+					this.OnidTutoriaChanged();
 				}
 			}
 		}
@@ -1797,100 +542,93 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
-		public string nombre
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numeroTutoria", DbType="Int")]
+		public System.Nullable<int> numeroTutoria
 		{
 			get
 			{
-				return this._nombre;
+				return this._numeroTutoria;
 			}
 			set
 			{
-				if ((this._nombre != value))
+				if ((this._numeroTutoria != value))
 				{
-					this.OnnombreChanging(value);
+					this.OnnumeroTutoriaChanging(value);
 					this.SendPropertyChanging();
-					this._nombre = value;
-					this.SendPropertyChanged("nombre");
-					this.OnnombreChanged();
+					this._numeroTutoria = value;
+					this.SendPropertyChanged("numeroTutoria");
+					this.OnnumeroTutoriaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_experienciaseducativascursando", Storage="_ExperienciaEducativaCursandos", ThisKey="idExperiencia_educativa", OtherKey="Experiencia_educativa_idExperiencia_educativa")]
-		public EntitySet<ExperienciaEducativaCursando> ExperienciaEducativaCursandos
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaTutoria", DbType="Date")]
+		public System.Nullable<System.DateTime> fechaTutoria
 		{
 			get
 			{
-				return this._ExperienciaEducativaCursandos;
+				return this._fechaTutoria;
 			}
 			set
 			{
-				this._ExperienciaEducativaCursandos.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_Materias", ThisKey="idExperiencia_educativa", OtherKey="experiencia_educativa_idExperiencia_educativa")]
-		public EntitySet<Materia> Materias
-		{
-			get
-			{
-				return this._Materias;
-			}
-			set
-			{
-				this._Materias.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idExperiencia_educativa", OtherKey="Experiencia_educativa_idExperiencia_educativa")]
-		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
-		{
-			get
-			{
-				return this._ProblematicaAcademicas;
-			}
-			set
-			{
-				this._ProblematicaAcademicas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_experiencia_educativa", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
-		public Academico Academico
-		{
-			get
-			{
-				return this._Academico.Entity;
-			}
-			set
-			{
-				Academico previousValue = this._Academico.Entity;
-				if (((previousValue != value) 
-							|| (this._Academico.HasLoadedOrAssignedValue == false)))
+				if ((this._fechaTutoria != value))
 				{
+					this.OnfechaTutoriaChanging(value);
 					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Academico.Entity = null;
-						previousValue.ExperienciaEducativas.Remove(this);
-					}
-					this._Academico.Entity = value;
-					if ((value != null))
-					{
-						value.ExperienciaEducativas.Add(this);
-						this._academico_idAcademico = value.idAcademico;
-					}
-					else
-					{
-						this._academico_idAcademico = default(int);
-					}
-					this.SendPropertyChanged("Academico");
+					this._fechaTutoria = value;
+					this.SendPropertyChanged("fechaTutoria");
+					this.OnfechaTutoriaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaEntrega", DbType="Date")]
+		public System.Nullable<System.DateTime> fechaEntrega
+		{
+			get
+			{
+				return this._fechaEntrega;
+			}
+			set
+			{
+				if ((this._fechaEntrega != value))
+				{
+					this.OnfechaEntregaChanging(value);
+					this.SendPropertyChanging();
+					this._fechaEntrega = value;
+					this.SendPropertyChanged("fechaEntrega");
+					this.OnfechaEntregaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
+		public EntitySet<SesionTutoria> SesionTutorias
+		{
+			get
+			{
+				return this._SesionTutorias;
+			}
+			set
+			{
+				this._SesionTutorias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
+		public EntitySet<ReporteTutoria> ReporteTutorias
+		{
+			get
+			{
+				return this._ReporteTutorias;
+			}
+			set
+			{
+				this._ReporteTutorias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_tutoria", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
 		public PeriodoEscolar PeriodoEscolar
 		{
 			get
@@ -1907,12 +645,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._PeriodoEscolar.Entity = null;
-						previousValue.ExperienciaEducativas.Remove(this);
+						previousValue.Tutorias.Remove(this);
 					}
 					this._PeriodoEscolar.Entity = value;
 					if ((value != null))
 					{
-						value.ExperienciaEducativas.Add(this);
+						value.Tutorias.Add(this);
 						this._periodo_escolar_idPeriodo_escolar = value.idPeriodo_escolar;
 					}
 					else
@@ -1944,747 +682,107 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		private void attach_ExperienciaEducativaCursandos(ExperienciaEducativaCursando entity)
+		private void attach_SesionTutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = this;
+			entity.Tutoria = this;
 		}
 		
-		private void detach_ExperienciaEducativaCursandos(ExperienciaEducativaCursando entity)
+		private void detach_SesionTutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = null;
+			entity.Tutoria = null;
 		}
 		
-		private void attach_Materias(Materia entity)
+		private void attach_ReporteTutorias(ReporteTutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = this;
+			entity.Tutoria = this;
 		}
 		
-		private void detach_Materias(Materia entity)
+		private void detach_ReporteTutorias(ReporteTutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = null;
-		}
-		
-		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = this;
-		}
-		
-		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ExperienciaEducativa = null;
+			entity.Tutoria = null;
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.experienciaseducativascursando")]
-	public partial class ExperienciaEducativaCursando : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.solucion")]
+	public partial class Solucion : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _Experiencia_educativa_idExperiencia_educativa;
+		private int _idSolucion;
 		
-		private int _Estudiante_idEstudiante;
-		
-		private EntityRef<Estudiante> _Estudiante;
-		
-		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnExperiencia_educativa_idExperiencia_educativaChanging(int value);
-    partial void OnExperiencia_educativa_idExperiencia_educativaChanged();
-    partial void OnEstudiante_idEstudianteChanging(int value);
-    partial void OnEstudiante_idEstudianteChanged();
-    #endregion
-		
-		public ExperienciaEducativaCursando()
-		{
-			this._Estudiante = default(EntityRef<Estudiante>);
-			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Experiencia_educativa_idExperiencia_educativa
-		{
-			get
-			{
-				return this._Experiencia_educativa_idExperiencia_educativa;
-			}
-			set
-			{
-				if ((this._Experiencia_educativa_idExperiencia_educativa != value))
-				{
-					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnExperiencia_educativa_idExperiencia_educativaChanging(value);
-					this.SendPropertyChanging();
-					this._Experiencia_educativa_idExperiencia_educativa = value;
-					this.SendPropertyChanged("Experiencia_educativa_idExperiencia_educativa");
-					this.OnExperiencia_educativa_idExperiencia_educativaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Estudiante_idEstudiante
-		{
-			get
-			{
-				return this._Estudiante_idEstudiante;
-			}
-			set
-			{
-				if ((this._Estudiante_idEstudiante != value))
-				{
-					if (this._Estudiante.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnEstudiante_idEstudianteChanging(value);
-					this.SendPropertyChanging();
-					this._Estudiante_idEstudiante = value;
-					this.SendPropertyChanged("Estudiante_idEstudiante");
-					this.OnEstudiante_idEstudianteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_experienciaseducativascursando", Storage="_Estudiante", ThisKey="Estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
-		public Estudiante Estudiante
-		{
-			get
-			{
-				return this._Estudiante.Entity;
-			}
-			set
-			{
-				Estudiante previousValue = this._Estudiante.Entity;
-				if (((previousValue != value) 
-							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Estudiante.Entity = null;
-						previousValue.ExperienciaEducativaCursandos.Remove(this);
-					}
-					this._Estudiante.Entity = value;
-					if ((value != null))
-					{
-						value.ExperienciaEducativaCursandos.Add(this);
-						this._Estudiante_idEstudiante = value.idEstudiante;
-					}
-					else
-					{
-						this._Estudiante_idEstudiante = default(int);
-					}
-					this.SendPropertyChanged("Estudiante");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_experienciaseducativascursando", Storage="_ExperienciaEducativa", ThisKey="Experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
-		public ExperienciaEducativa ExperienciaEducativa
-		{
-			get
-			{
-				return this._ExperienciaEducativa.Entity;
-			}
-			set
-			{
-				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
-				if (((previousValue != value) 
-							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ExperienciaEducativa.Entity = null;
-						previousValue.ExperienciaEducativaCursandos.Remove(this);
-					}
-					this._ExperienciaEducativa.Entity = value;
-					if ((value != null))
-					{
-						value.ExperienciaEducativaCursandos.Add(this);
-						this._Experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
-					}
-					else
-					{
-						this._Experiencia_educativa_idExperiencia_educativa = default(int);
-					}
-					this.SendPropertyChanged("ExperienciaEducativa");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.materia")]
-	public partial class Materia : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idMateria;
-		
-		private int _experiencia_educativa_idExperiencia_educativa;
-		
-		private System.Nullable<int> _NRC;
-		
-		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidMateriaChanging(int value);
-    partial void OnidMateriaChanged();
-    partial void Onexperiencia_educativa_idExperiencia_educativaChanging(int value);
-    partial void Onexperiencia_educativa_idExperiencia_educativaChanged();
-    partial void OnNRCChanging(System.Nullable<int> value);
-    partial void OnNRCChanged();
-    #endregion
-		
-		public Materia()
-		{
-			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idMateria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idMateria
-		{
-			get
-			{
-				return this._idMateria;
-			}
-			set
-			{
-				if ((this._idMateria != value))
-				{
-					this.OnidMateriaChanging(value);
-					this.SendPropertyChanging();
-					this._idMateria = value;
-					this.SendPropertyChanged("idMateria");
-					this.OnidMateriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL")]
-		public int experiencia_educativa_idExperiencia_educativa
-		{
-			get
-			{
-				return this._experiencia_educativa_idExperiencia_educativa;
-			}
-			set
-			{
-				if ((this._experiencia_educativa_idExperiencia_educativa != value))
-				{
-					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onexperiencia_educativa_idExperiencia_educativaChanging(value);
-					this.SendPropertyChanging();
-					this._experiencia_educativa_idExperiencia_educativa = value;
-					this.SendPropertyChanged("experiencia_educativa_idExperiencia_educativa");
-					this.Onexperiencia_educativa_idExperiencia_educativaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NRC", DbType="Int")]
-		public System.Nullable<int> NRC
-		{
-			get
-			{
-				return this._NRC;
-			}
-			set
-			{
-				if ((this._NRC != value))
-				{
-					this.OnNRCChanging(value);
-					this.SendPropertyChanging();
-					this._NRC = value;
-					this.SendPropertyChanged("NRC");
-					this.OnNRCChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_ExperienciaEducativa", ThisKey="experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
-		public ExperienciaEducativa ExperienciaEducativa
-		{
-			get
-			{
-				return this._ExperienciaEducativa.Entity;
-			}
-			set
-			{
-				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
-				if (((previousValue != value) 
-							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ExperienciaEducativa.Entity = null;
-						previousValue.Materias.Remove(this);
-					}
-					this._ExperienciaEducativa.Entity = value;
-					if ((value != null))
-					{
-						value.Materias.Add(this);
-						this._experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
-					}
-					else
-					{
-						this._experiencia_educativa_idExperiencia_educativa = default(int);
-					}
-					this.SendPropertyChanged("ExperienciaEducativa");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.periodo_escolar")]
-	public partial class PeriodoEscolar : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idPeriodo_escolar;
-		
-		private System.Nullable<System.DateTime> _inicioPeriodo;
-		
-		private System.Nullable<System.DateTime> _finPeriodo;
-		
-		private System.Nullable<System.DateTime> _primeraFechaTutoria;
-		
-		private System.Nullable<System.DateTime> _segundaFechaTutoria;
-		
-		private System.Nullable<System.DateTime> _terceraFechaTutoria;
-		
-		private EntitySet<ExperienciaEducativa> _ExperienciaEducativas;
-		
-		private EntitySet<Tutoria> _Tutorias;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidPeriodo_escolarChanging(int value);
-    partial void OnidPeriodo_escolarChanged();
-    partial void OninicioPeriodoChanging(System.Nullable<System.DateTime> value);
-    partial void OninicioPeriodoChanged();
-    partial void OnfinPeriodoChanging(System.Nullable<System.DateTime> value);
-    partial void OnfinPeriodoChanged();
-    partial void OnprimeraFechaTutoriaChanging(System.Nullable<System.DateTime> value);
-    partial void OnprimeraFechaTutoriaChanged();
-    partial void OnsegundaFechaTutoriaChanging(System.Nullable<System.DateTime> value);
-    partial void OnsegundaFechaTutoriaChanged();
-    partial void OnterceraFechaTutoriaChanging(System.Nullable<System.DateTime> value);
-    partial void OnterceraFechaTutoriaChanged();
-    #endregion
-		
-		public PeriodoEscolar()
-		{
-			this._ExperienciaEducativas = new EntitySet<ExperienciaEducativa>(new Action<ExperienciaEducativa>(this.attach_ExperienciaEducativas), new Action<ExperienciaEducativa>(this.detach_ExperienciaEducativas));
-			this._Tutorias = new EntitySet<Tutoria>(new Action<Tutoria>(this.attach_Tutorias), new Action<Tutoria>(this.detach_Tutorias));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPeriodo_escolar", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idPeriodo_escolar
-		{
-			get
-			{
-				return this._idPeriodo_escolar;
-			}
-			set
-			{
-				if ((this._idPeriodo_escolar != value))
-				{
-					this.OnidPeriodo_escolarChanging(value);
-					this.SendPropertyChanging();
-					this._idPeriodo_escolar = value;
-					this.SendPropertyChanged("idPeriodo_escolar");
-					this.OnidPeriodo_escolarChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_inicioPeriodo", DbType="Date")]
-		public System.Nullable<System.DateTime> inicioPeriodo
-		{
-			get
-			{
-				return this._inicioPeriodo;
-			}
-			set
-			{
-				if ((this._inicioPeriodo != value))
-				{
-					this.OninicioPeriodoChanging(value);
-					this.SendPropertyChanging();
-					this._inicioPeriodo = value;
-					this.SendPropertyChanged("inicioPeriodo");
-					this.OninicioPeriodoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_finPeriodo", DbType="Date")]
-		public System.Nullable<System.DateTime> finPeriodo
-		{
-			get
-			{
-				return this._finPeriodo;
-			}
-			set
-			{
-				if ((this._finPeriodo != value))
-				{
-					this.OnfinPeriodoChanging(value);
-					this.SendPropertyChanging();
-					this._finPeriodo = value;
-					this.SendPropertyChanged("finPeriodo");
-					this.OnfinPeriodoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_primeraFechaTutoria", DbType="Date")]
-		public System.Nullable<System.DateTime> primeraFechaTutoria
-		{
-			get
-			{
-				return this._primeraFechaTutoria;
-			}
-			set
-			{
-				if ((this._primeraFechaTutoria != value))
-				{
-					this.OnprimeraFechaTutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._primeraFechaTutoria = value;
-					this.SendPropertyChanged("primeraFechaTutoria");
-					this.OnprimeraFechaTutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_segundaFechaTutoria", DbType="Date")]
-		public System.Nullable<System.DateTime> segundaFechaTutoria
-		{
-			get
-			{
-				return this._segundaFechaTutoria;
-			}
-			set
-			{
-				if ((this._segundaFechaTutoria != value))
-				{
-					this.OnsegundaFechaTutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._segundaFechaTutoria = value;
-					this.SendPropertyChanged("segundaFechaTutoria");
-					this.OnsegundaFechaTutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_terceraFechaTutoria", DbType="Date")]
-		public System.Nullable<System.DateTime> terceraFechaTutoria
-		{
-			get
-			{
-				return this._terceraFechaTutoria;
-			}
-			set
-			{
-				if ((this._terceraFechaTutoria != value))
-				{
-					this.OnterceraFechaTutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._terceraFechaTutoria = value;
-					this.SendPropertyChanged("terceraFechaTutoria");
-					this.OnterceraFechaTutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
-		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
-		{
-			get
-			{
-				return this._ExperienciaEducativas;
-			}
-			set
-			{
-				this._ExperienciaEducativas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_tutoria", Storage="_Tutorias", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
-		public EntitySet<Tutoria> Tutorias
-		{
-			get
-			{
-				return this._Tutorias;
-			}
-			set
-			{
-				this._Tutorias.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_ExperienciaEducativas(ExperienciaEducativa entity)
-		{
-			this.SendPropertyChanging();
-			entity.PeriodoEscolar = this;
-		}
-		
-		private void detach_ExperienciaEducativas(ExperienciaEducativa entity)
-		{
-			this.SendPropertyChanging();
-			entity.PeriodoEscolar = null;
-		}
-		
-		private void attach_Tutorias(Tutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.PeriodoEscolar = this;
-		}
-		
-		private void detach_Tutorias(Tutoria entity)
-		{
-			this.SendPropertyChanging();
-			entity.PeriodoEscolar = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica")]
-	public partial class Problematica : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idproblematica;
-		
-		private int _clasificacion_problematica_idClasificacion_problematica;
-		
-		private int _estado_problematica_idestado_problematica;
-		
-		private int _reporte_Tutoria_idReporte_Tutoria;
+		private int _problematica_idproblematica;
 		
 		private string _titulo;
 		
 		private string _descripcion;
 		
-		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
-		
-		private EntitySet<ProblematicaEstudiante> _ProblematicaEstudiantes;
-		
-		private EntitySet<Solucion> _Solucions;
-		
-		private EntityRef<ClasificacionProblematica> _ClasificacionProblematica;
-		
-		private EntityRef<EstadoProblematica> _EstadoProblematica;
-		
-		private EntityRef<ReporteTutoria> _ReporteTutoria;
+		private EntityRef<Problematica> _Problematica;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidproblematicaChanging(int value);
-    partial void OnidproblematicaChanged();
-    partial void Onclasificacion_problematica_idClasificacion_problematicaChanging(int value);
-    partial void Onclasificacion_problematica_idClasificacion_problematicaChanged();
-    partial void Onestado_problematica_idestado_problematicaChanging(int value);
-    partial void Onestado_problematica_idestado_problematicaChanged();
-    partial void Onreporte_Tutoria_idReporte_TutoriaChanging(int value);
-    partial void Onreporte_Tutoria_idReporte_TutoriaChanged();
+    partial void OnidSolucionChanging(int value);
+    partial void OnidSolucionChanged();
+    partial void Onproblematica_idproblematicaChanging(int value);
+    partial void Onproblematica_idproblematicaChanged();
     partial void OntituloChanging(string value);
     partial void OntituloChanged();
     partial void OndescripcionChanging(string value);
     partial void OndescripcionChanged();
     #endregion
 		
-		public Problematica()
+		public Solucion()
 		{
-			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
-			this._ProblematicaEstudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_ProblematicaEstudiantes), new Action<ProblematicaEstudiante>(this.detach_ProblematicaEstudiantes));
-			this._Solucions = new EntitySet<Solucion>(new Action<Solucion>(this.attach_Solucions), new Action<Solucion>(this.detach_Solucions));
-			this._ClasificacionProblematica = default(EntityRef<ClasificacionProblematica>);
-			this._EstadoProblematica = default(EntityRef<EstadoProblematica>);
-			this._ReporteTutoria = default(EntityRef<ReporteTutoria>);
+			this._Problematica = default(EntityRef<Problematica>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idproblematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idproblematica
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idSolucion", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int idSolucion
 		{
 			get
 			{
-				return this._idproblematica;
+				return this._idSolucion;
 			}
 			set
 			{
-				if ((this._idproblematica != value))
+				if ((this._idSolucion != value))
 				{
-					this.OnidproblematicaChanging(value);
+					this.OnidSolucionChanging(value);
 					this.SendPropertyChanging();
-					this._idproblematica = value;
-					this.SendPropertyChanged("idproblematica");
-					this.OnidproblematicaChanged();
+					this._idSolucion = value;
+					this.SendPropertyChanged("idSolucion");
+					this.OnidSolucionChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clasificacion_problematica_idClasificacion_problematica", DbType="Int NOT NULL")]
-		public int clasificacion_problematica_idClasificacion_problematica
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_problematica_idproblematica", DbType="Int NOT NULL")]
+		public int problematica_idproblematica
 		{
 			get
 			{
-				return this._clasificacion_problematica_idClasificacion_problematica;
+				return this._problematica_idproblematica;
 			}
 			set
 			{
-				if ((this._clasificacion_problematica_idClasificacion_problematica != value))
+				if ((this._problematica_idproblematica != value))
 				{
-					if (this._ClasificacionProblematica.HasLoadedOrAssignedValue)
+					if (this._Problematica.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.Onclasificacion_problematica_idClasificacion_problematicaChanging(value);
+					this.Onproblematica_idproblematicaChanging(value);
 					this.SendPropertyChanging();
-					this._clasificacion_problematica_idClasificacion_problematica = value;
-					this.SendPropertyChanged("clasificacion_problematica_idClasificacion_problematica");
-					this.Onclasificacion_problematica_idClasificacion_problematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado_problematica_idestado_problematica", DbType="Int NOT NULL")]
-		public int estado_problematica_idestado_problematica
-		{
-			get
-			{
-				return this._estado_problematica_idestado_problematica;
-			}
-			set
-			{
-				if ((this._estado_problematica_idestado_problematica != value))
-				{
-					if (this._EstadoProblematica.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onestado_problematica_idestado_problematicaChanging(value);
-					this.SendPropertyChanging();
-					this._estado_problematica_idestado_problematica = value;
-					this.SendPropertyChanged("estado_problematica_idestado_problematica");
-					this.Onestado_problematica_idestado_problematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_reporte_Tutoria_idReporte_Tutoria", DbType="Int NOT NULL")]
-		public int reporte_Tutoria_idReporte_Tutoria
-		{
-			get
-			{
-				return this._reporte_Tutoria_idReporte_Tutoria;
-			}
-			set
-			{
-				if ((this._reporte_Tutoria_idReporte_Tutoria != value))
-				{
-					if (this._ReporteTutoria.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onreporte_Tutoria_idReporte_TutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._reporte_Tutoria_idReporte_Tutoria = value;
-					this.SendPropertyChanged("reporte_Tutoria_idReporte_Tutoria");
-					this.Onreporte_Tutoria_idReporte_TutoriaChanged();
+					this._problematica_idproblematica = value;
+					this.SendPropertyChanged("problematica_idproblematica");
+					this.Onproblematica_idproblematicaChanged();
 				}
 			}
 		}
@@ -2729,383 +827,7 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idproblematica", OtherKey="Problematica_idproblematica")]
-		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
-		{
-			get
-			{
-				return this._ProblematicaAcademicas;
-			}
-			set
-			{
-				this._ProblematicaAcademicas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
-		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
-		{
-			get
-			{
-				return this._ProblematicaEstudiantes;
-			}
-			set
-			{
-				this._ProblematicaEstudiantes.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Solucions", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
-		public EntitySet<Solucion> Solucions
-		{
-			get
-			{
-				return this._Solucions;
-			}
-			set
-			{
-				this._Solucions.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clasificacion_problematica_problematica", Storage="_ClasificacionProblematica", ThisKey="clasificacion_problematica_idClasificacion_problematica", OtherKey="idClasificacion_problematica", IsForeignKey=true)]
-		public ClasificacionProblematica ClasificacionProblematica
-		{
-			get
-			{
-				return this._ClasificacionProblematica.Entity;
-			}
-			set
-			{
-				ClasificacionProblematica previousValue = this._ClasificacionProblematica.Entity;
-				if (((previousValue != value) 
-							|| (this._ClasificacionProblematica.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ClasificacionProblematica.Entity = null;
-						previousValue.Problematicas.Remove(this);
-					}
-					this._ClasificacionProblematica.Entity = value;
-					if ((value != null))
-					{
-						value.Problematicas.Add(this);
-						this._clasificacion_problematica_idClasificacion_problematica = value.idClasificacion_problematica;
-					}
-					else
-					{
-						this._clasificacion_problematica_idClasificacion_problematica = default(int);
-					}
-					this.SendPropertyChanged("ClasificacionProblematica");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_problematica_problematica", Storage="_EstadoProblematica", ThisKey="estado_problematica_idestado_problematica", OtherKey="idestado_problematica", IsForeignKey=true)]
-		public EstadoProblematica EstadoProblematica
-		{
-			get
-			{
-				return this._EstadoProblematica.Entity;
-			}
-			set
-			{
-				EstadoProblematica previousValue = this._EstadoProblematica.Entity;
-				if (((previousValue != value) 
-							|| (this._EstadoProblematica.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._EstadoProblematica.Entity = null;
-						previousValue.Problematicas.Remove(this);
-					}
-					this._EstadoProblematica.Entity = value;
-					if ((value != null))
-					{
-						value.Problematicas.Add(this);
-						this._estado_problematica_idestado_problematica = value.idestado_problematica;
-					}
-					else
-					{
-						this._estado_problematica_idestado_problematica = default(int);
-					}
-					this.SendPropertyChanged("EstadoProblematica");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
-		public ReporteTutoria ReporteTutoria
-		{
-			get
-			{
-				return this._ReporteTutoria.Entity;
-			}
-			set
-			{
-				ReporteTutoria previousValue = this._ReporteTutoria.Entity;
-				if (((previousValue != value) 
-							|| (this._ReporteTutoria.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ReporteTutoria.Entity = null;
-						previousValue.Problematicas.Remove(this);
-					}
-					this._ReporteTutoria.Entity = value;
-					if ((value != null))
-					{
-						value.Problematicas.Add(this);
-						this._reporte_Tutoria_idReporte_Tutoria = value.idReporte_Tutoria;
-					}
-					else
-					{
-						this._reporte_Tutoria_idReporte_Tutoria = default(int);
-					}
-					this.SendPropertyChanged("ReporteTutoria");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = this;
-		}
-		
-		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = null;
-		}
-		
-		private void attach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = this;
-		}
-		
-		private void detach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = null;
-		}
-		
-		private void attach_Solucions(Solucion entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = this;
-		}
-		
-		private void detach_Solucions(Solucion entity)
-		{
-			this.SendPropertyChanging();
-			entity.Problematica = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica_academica")]
-	public partial class ProblematicaAcademica : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Problematica_idproblematica;
-		
-		private int _Estudiante_idEstudiante;
-		
-		private int _Experiencia_educativa_idExperiencia_educativa;
-		
-		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
-		
-		private EntityRef<Estudiante> _Estudiante;
-		
-		private EntityRef<Problematica> _Problematica;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnProblematica_idproblematicaChanging(int value);
-    partial void OnProblematica_idproblematicaChanged();
-    partial void OnEstudiante_idEstudianteChanging(int value);
-    partial void OnEstudiante_idEstudianteChanged();
-    partial void OnExperiencia_educativa_idExperiencia_educativaChanging(int value);
-    partial void OnExperiencia_educativa_idExperiencia_educativaChanged();
-    #endregion
-		
-		public ProblematicaAcademica()
-		{
-			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
-			this._Estudiante = default(EntityRef<Estudiante>);
-			this._Problematica = default(EntityRef<Problematica>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Problematica_idproblematica", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Problematica_idproblematica
-		{
-			get
-			{
-				return this._Problematica_idproblematica;
-			}
-			set
-			{
-				if ((this._Problematica_idproblematica != value))
-				{
-					if (this._Problematica.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnProblematica_idproblematicaChanging(value);
-					this.SendPropertyChanging();
-					this._Problematica_idproblematica = value;
-					this.SendPropertyChanged("Problematica_idproblematica");
-					this.OnProblematica_idproblematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Estudiante_idEstudiante
-		{
-			get
-			{
-				return this._Estudiante_idEstudiante;
-			}
-			set
-			{
-				if ((this._Estudiante_idEstudiante != value))
-				{
-					if (this._Estudiante.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnEstudiante_idEstudianteChanging(value);
-					this.SendPropertyChanging();
-					this._Estudiante_idEstudiante = value;
-					this.SendPropertyChanged("Estudiante_idEstudiante");
-					this.OnEstudiante_idEstudianteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Experiencia_educativa_idExperiencia_educativa
-		{
-			get
-			{
-				return this._Experiencia_educativa_idExperiencia_educativa;
-			}
-			set
-			{
-				if ((this._Experiencia_educativa_idExperiencia_educativa != value))
-				{
-					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnExperiencia_educativa_idExperiencia_educativaChanging(value);
-					this.SendPropertyChanging();
-					this._Experiencia_educativa_idExperiencia_educativa = value;
-					this.SendPropertyChanged("Experiencia_educativa_idExperiencia_educativa");
-					this.OnExperiencia_educativa_idExperiencia_educativaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_problematica_academica", Storage="_ExperienciaEducativa", ThisKey="Experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
-		public ExperienciaEducativa ExperienciaEducativa
-		{
-			get
-			{
-				return this._ExperienciaEducativa.Entity;
-			}
-			set
-			{
-				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
-				if (((previousValue != value) 
-							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ExperienciaEducativa.Entity = null;
-						previousValue.ProblematicaAcademicas.Remove(this);
-					}
-					this._ExperienciaEducativa.Entity = value;
-					if ((value != null))
-					{
-						value.ProblematicaAcademicas.Add(this);
-						this._Experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
-					}
-					else
-					{
-						this._Experiencia_educativa_idExperiencia_educativa = default(int);
-					}
-					this.SendPropertyChanged("ExperienciaEducativa");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_academica", Storage="_Estudiante", ThisKey="Estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
-		public Estudiante Estudiante
-		{
-			get
-			{
-				return this._Estudiante.Entity;
-			}
-			set
-			{
-				Estudiante previousValue = this._Estudiante.Entity;
-				if (((previousValue != value) 
-							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Estudiante.Entity = null;
-						previousValue.ProblematicaAcademicas.Remove(this);
-					}
-					this._Estudiante.Entity = value;
-					if ((value != null))
-					{
-						value.ProblematicaAcademicas.Add(this);
-						this._Estudiante_idEstudiante = value.idEstudiante;
-					}
-					else
-					{
-						this._Estudiante_idEstudiante = default(int);
-					}
-					this.SendPropertyChanged("Estudiante");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_academica", Storage="_Problematica", ThisKey="Problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
 		public Problematica Problematica
 		{
 			get
@@ -3122,180 +844,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Problematica.Entity = null;
-						previousValue.ProblematicaAcademicas.Remove(this);
+						previousValue.Solucions.Remove(this);
 					}
 					this._Problematica.Entity = value;
 					if ((value != null))
 					{
-						value.ProblematicaAcademicas.Add(this);
-						this._Problematica_idproblematica = value.idproblematica;
-					}
-					else
-					{
-						this._Problematica_idproblematica = default(int);
-					}
-					this.SendPropertyChanged("Problematica");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica_estudiante")]
-	public partial class ProblematicaEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _problematica_idproblematica;
-		
-		private int _estudiante_idEstudiante;
-		
-		private EntityRef<Estudiante> _Estudiante;
-		
-		private EntityRef<Problematica> _Problematica;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void Onproblematica_idproblematicaChanging(int value);
-    partial void Onproblematica_idproblematicaChanged();
-    partial void Onestudiante_idEstudianteChanging(int value);
-    partial void Onestudiante_idEstudianteChanged();
-    #endregion
-		
-		public ProblematicaEstudiante()
-		{
-			this._Estudiante = default(EntityRef<Estudiante>);
-			this._Problematica = default(EntityRef<Problematica>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_problematica_idproblematica", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int problematica_idproblematica
-		{
-			get
-			{
-				return this._problematica_idproblematica;
-			}
-			set
-			{
-				if ((this._problematica_idproblematica != value))
-				{
-					if (this._Problematica.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onproblematica_idproblematicaChanging(value);
-					this.SendPropertyChanging();
-					this._problematica_idproblematica = value;
-					this.SendPropertyChanged("problematica_idproblematica");
-					this.Onproblematica_idproblematicaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int estudiante_idEstudiante
-		{
-			get
-			{
-				return this._estudiante_idEstudiante;
-			}
-			set
-			{
-				if ((this._estudiante_idEstudiante != value))
-				{
-					if (this._Estudiante.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onestudiante_idEstudianteChanging(value);
-					this.SendPropertyChanging();
-					this._estudiante_idEstudiante = value;
-					this.SendPropertyChanged("estudiante_idEstudiante");
-					this.Onestudiante_idEstudianteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_estudiante", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
-		public Estudiante Estudiante
-		{
-			get
-			{
-				return this._Estudiante.Entity;
-			}
-			set
-			{
-				Estudiante previousValue = this._Estudiante.Entity;
-				if (((previousValue != value) 
-							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Estudiante.Entity = null;
-						previousValue.ProblematicaEstudiantes.Remove(this);
-					}
-					this._Estudiante.Entity = value;
-					if ((value != null))
-					{
-						value.ProblematicaEstudiantes.Add(this);
-						this._estudiante_idEstudiante = value.idEstudiante;
-					}
-					else
-					{
-						this._estudiante_idEstudiante = default(int);
-					}
-					this.SendPropertyChanged("Estudiante");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
-		public Problematica Problematica
-		{
-			get
-			{
-				return this._Problematica.Entity;
-			}
-			set
-			{
-				Problematica previousValue = this._Problematica.Entity;
-				if (((previousValue != value) 
-							|| (this._Problematica.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Problematica.Entity = null;
-						previousValue.ProblematicaEstudiantes.Remove(this);
-					}
-					this._Problematica.Entity = value;
-					if ((value != null))
-					{
-						value.ProblematicaEstudiantes.Add(this);
+						value.Solucions.Add(this);
 						this._problematica_idproblematica = value.idproblematica;
 					}
 					else
@@ -3325,6 +879,649 @@ namespace ServiciosLinqTutorias.Modelo
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.sesion_tutoria")]
+	public partial class SesionTutoria : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _tutoria_idTutoria;
+		
+		private int _estudiante_idEstudiante;
+		
+		private string _listaComentarios;
+		
+		private EntityRef<Tutoria> _Tutoria;
+		
+		private EntityRef<Estudiante> _Estudiante;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Ontutoria_idTutoriaChanging(int value);
+    partial void Ontutoria_idTutoriaChanged();
+    partial void Onestudiante_idEstudianteChanging(int value);
+    partial void Onestudiante_idEstudianteChanged();
+    partial void OnlistaComentariosChanging(string value);
+    partial void OnlistaComentariosChanged();
+    #endregion
+		
+		public SesionTutoria()
+		{
+			this._Tutoria = default(EntityRef<Tutoria>);
+			this._Estudiante = default(EntityRef<Estudiante>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tutoria_idTutoria", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int tutoria_idTutoria
+		{
+			get
+			{
+				return this._tutoria_idTutoria;
+			}
+			set
+			{
+				if ((this._tutoria_idTutoria != value))
+				{
+					if (this._Tutoria.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Ontutoria_idTutoriaChanging(value);
+					this.SendPropertyChanging();
+					this._tutoria_idTutoria = value;
+					this.SendPropertyChanged("tutoria_idTutoria");
+					this.Ontutoria_idTutoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int estudiante_idEstudiante
+		{
+			get
+			{
+				return this._estudiante_idEstudiante;
+			}
+			set
+			{
+				if ((this._estudiante_idEstudiante != value))
+				{
+					if (this._Estudiante.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onestudiante_idEstudianteChanging(value);
+					this.SendPropertyChanging();
+					this._estudiante_idEstudiante = value;
+					this.SendPropertyChanged("estudiante_idEstudiante");
+					this.Onestudiante_idEstudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_listaComentarios", DbType="NVarChar(100)")]
+		public string listaComentarios
+		{
+			get
+			{
+				return this._listaComentarios;
+			}
+			set
+			{
+				if ((this._listaComentarios != value))
+				{
+					this.OnlistaComentariosChanging(value);
+					this.SendPropertyChanging();
+					this._listaComentarios = value;
+					this.SendPropertyChanged("listaComentarios");
+					this.OnlistaComentariosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_sesion_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
+		public Tutoria Tutoria
+		{
+			get
+			{
+				return this._Tutoria.Entity;
+			}
+			set
+			{
+				Tutoria previousValue = this._Tutoria.Entity;
+				if (((previousValue != value) 
+							|| (this._Tutoria.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Tutoria.Entity = null;
+						previousValue.SesionTutorias.Remove(this);
+					}
+					this._Tutoria.Entity = value;
+					if ((value != null))
+					{
+						value.SesionTutorias.Add(this);
+						this._tutoria_idTutoria = value.idTutoria;
+					}
+					else
+					{
+						this._tutoria_idTutoria = default(int);
+					}
+					this.SendPropertyChanged("Tutoria");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_sesion_tutoria", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		public Estudiante Estudiante
+		{
+			get
+			{
+				return this._Estudiante.Entity;
+			}
+			set
+			{
+				Estudiante previousValue = this._Estudiante.Entity;
+				if (((previousValue != value) 
+							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Estudiante.Entity = null;
+						previousValue.SesionTutorias.Remove(this);
+					}
+					this._Estudiante.Entity = value;
+					if ((value != null))
+					{
+						value.SesionTutorias.Add(this);
+						this._estudiante_idEstudiante = value.idEstudiante;
+					}
+					else
+					{
+						this._estudiante_idEstudiante = default(int);
+					}
+					this.SendPropertyChanged("Estudiante");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.rol")]
+	public partial class Rol : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idRol;
+		
+		private string _tipoRol;
+		
+		private EntitySet<Academico> _Academicos;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidRolChanging(int value);
+    partial void OnidRolChanged();
+    partial void OntipoRolChanging(string value);
+    partial void OntipoRolChanged();
+    #endregion
+		
+		public Rol()
+		{
+			this._Academicos = new EntitySet<Academico>(new Action<Academico>(this.attach_Academicos), new Action<Academico>(this.detach_Academicos));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idRol", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int idRol
+		{
+			get
+			{
+				return this._idRol;
+			}
+			set
+			{
+				if ((this._idRol != value))
+				{
+					this.OnidRolChanging(value);
+					this.SendPropertyChanging();
+					this._idRol = value;
+					this.SendPropertyChanged("idRol");
+					this.OnidRolChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tipoRol", DbType="NVarChar(60)")]
+		public string tipoRol
+		{
+			get
+			{
+				return this._tipoRol;
+			}
+			set
+			{
+				if ((this._tipoRol != value))
+				{
+					this.OntipoRolChanging(value);
+					this.SendPropertyChanging();
+					this._tipoRol = value;
+					this.SendPropertyChanged("tipoRol");
+					this.OntipoRolChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_academico", Storage="_Academicos", ThisKey="idRol", OtherKey="rol_idRol")]
+		public EntitySet<Academico> Academicos
+		{
+			get
+			{
+				return this._Academicos;
+			}
+			set
+			{
+				this._Academicos.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Academicos(Academico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Rol = this;
+		}
+		
+		private void detach_Academicos(Academico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Rol = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.reporte_tutoria")]
+	public partial class ReporteTutoria : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idReporte_Tutoria;
+		
+		private string _descripcion;
+		
+		private int _programa_educativo_idPrograma_educativo;
+		
+		private int _tutoria_idTutoria;
+		
+		private int _academico_idAcademico;
+		
+		private EntitySet<Problematica> _Problematicas;
+		
+		private EntitySet<Comentario> _Comentarios;
+		
+		private EntityRef<Tutoria> _Tutoria;
+		
+		private EntityRef<ProgramaEducativo> _ProgramaEducativo;
+		
+		private EntityRef<Academico> _Academico;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidReporte_TutoriaChanging(int value);
+    partial void OnidReporte_TutoriaChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onprograma_educativo_idPrograma_educativoChanging(int value);
+    partial void Onprograma_educativo_idPrograma_educativoChanged();
+    partial void Ontutoria_idTutoriaChanging(int value);
+    partial void Ontutoria_idTutoriaChanged();
+    partial void Onacademico_idAcademicoChanging(int value);
+    partial void Onacademico_idAcademicoChanged();
+    #endregion
+		
+		public ReporteTutoria()
+		{
+			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
+			this._Comentarios = new EntitySet<Comentario>(new Action<Comentario>(this.attach_Comentarios), new Action<Comentario>(this.detach_Comentarios));
+			this._Tutoria = default(EntityRef<Tutoria>);
+			this._ProgramaEducativo = default(EntityRef<ProgramaEducativo>);
+			this._Academico = default(EntityRef<Academico>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idReporte_Tutoria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idReporte_Tutoria
+		{
+			get
+			{
+				return this._idReporte_Tutoria;
+			}
+			set
+			{
+				if ((this._idReporte_Tutoria != value))
+				{
+					this.OnidReporte_TutoriaChanging(value);
+					this.SendPropertyChanging();
+					this._idReporte_Tutoria = value;
+					this.SendPropertyChanged("idReporte_Tutoria");
+					this.OnidReporte_TutoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(100)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_programa_educativo_idPrograma_educativo", DbType="Int NOT NULL")]
+		public int programa_educativo_idPrograma_educativo
+		{
+			get
+			{
+				return this._programa_educativo_idPrograma_educativo;
+			}
+			set
+			{
+				if ((this._programa_educativo_idPrograma_educativo != value))
+				{
+					if (this._ProgramaEducativo.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onprograma_educativo_idPrograma_educativoChanging(value);
+					this.SendPropertyChanging();
+					this._programa_educativo_idPrograma_educativo = value;
+					this.SendPropertyChanged("programa_educativo_idPrograma_educativo");
+					this.Onprograma_educativo_idPrograma_educativoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tutoria_idTutoria", DbType="Int NOT NULL")]
+		public int tutoria_idTutoria
+		{
+			get
+			{
+				return this._tutoria_idTutoria;
+			}
+			set
+			{
+				if ((this._tutoria_idTutoria != value))
+				{
+					if (this._Tutoria.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Ontutoria_idTutoriaChanging(value);
+					this.SendPropertyChanging();
+					this._tutoria_idTutoria = value;
+					this.SendPropertyChanged("tutoria_idTutoria");
+					this.Ontutoria_idTutoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_academico_idAcademico", DbType="Int NOT NULL")]
+		public int academico_idAcademico
+		{
+			get
+			{
+				return this._academico_idAcademico;
+			}
+			set
+			{
+				if ((this._academico_idAcademico != value))
+				{
+					if (this._Academico.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onacademico_idAcademicoChanging(value);
+					this.SendPropertyChanging();
+					this._academico_idAcademico = value;
+					this.SendPropertyChanged("academico_idAcademico");
+					this.Onacademico_idAcademicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_Problematicas", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
+		public EntitySet<Problematica> Problematicas
+		{
+			get
+			{
+				return this._Problematicas;
+			}
+			set
+			{
+				this._Problematicas.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_Comentarios", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
+		public EntitySet<Comentario> Comentarios
+		{
+			get
+			{
+				return this._Comentarios;
+			}
+			set
+			{
+				this._Comentarios.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
+		public Tutoria Tutoria
+		{
+			get
+			{
+				return this._Tutoria.Entity;
+			}
+			set
+			{
+				Tutoria previousValue = this._Tutoria.Entity;
+				if (((previousValue != value) 
+							|| (this._Tutoria.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Tutoria.Entity = null;
+						previousValue.ReporteTutorias.Remove(this);
+					}
+					this._Tutoria.Entity = value;
+					if ((value != null))
+					{
+						value.ReporteTutorias.Add(this);
+						this._tutoria_idTutoria = value.idTutoria;
+					}
+					else
+					{
+						this._tutoria_idTutoria = default(int);
+					}
+					this.SendPropertyChanged("Tutoria");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="programa_educativo_reporte_tutoria", Storage="_ProgramaEducativo", ThisKey="programa_educativo_idPrograma_educativo", OtherKey="idPrograma_educativo", IsForeignKey=true)]
+		public ProgramaEducativo ProgramaEducativo
+		{
+			get
+			{
+				return this._ProgramaEducativo.Entity;
+			}
+			set
+			{
+				ProgramaEducativo previousValue = this._ProgramaEducativo.Entity;
+				if (((previousValue != value) 
+							|| (this._ProgramaEducativo.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ProgramaEducativo.Entity = null;
+						previousValue.ReporteTutorias.Remove(this);
+					}
+					this._ProgramaEducativo.Entity = value;
+					if ((value != null))
+					{
+						value.ReporteTutorias.Add(this);
+						this._programa_educativo_idPrograma_educativo = value.idPrograma_educativo;
+					}
+					else
+					{
+						this._programa_educativo_idPrograma_educativo = default(int);
+					}
+					this.SendPropertyChanged("ProgramaEducativo");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_reporte_tutoria", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		public Academico Academico
+		{
+			get
+			{
+				return this._Academico.Entity;
+			}
+			set
+			{
+				Academico previousValue = this._Academico.Entity;
+				if (((previousValue != value) 
+							|| (this._Academico.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Academico.Entity = null;
+						previousValue.ReporteTutorias.Remove(this);
+					}
+					this._Academico.Entity = value;
+					if ((value != null))
+					{
+						value.ReporteTutorias.Add(this);
+						this._academico_idAcademico = value.idAcademico;
+					}
+					else
+					{
+						this._academico_idAcademico = default(int);
+					}
+					this.SendPropertyChanged("Academico");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ReporteTutoria = this;
+		}
+		
+		private void detach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ReporteTutoria = null;
+		}
+		
+		private void attach_Comentarios(Comentario entity)
+		{
+			this.SendPropertyChanging();
+			entity.ReporteTutoria = this;
+		}
+		
+		private void detach_Comentarios(Comentario entity)
+		{
+			this.SendPropertyChanging();
+			entity.ReporteTutoria = null;
 		}
 	}
 	
@@ -3620,512 +1817,57 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.reporte_tutoria")]
-	public partial class ReporteTutoria : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica_estudiante")]
+	public partial class ProblematicaEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idReporte_Tutoria;
-		
-		private string _descripcion;
-		
-		private int _programa_educativo_idPrograma_educativo;
-		
-		private int _tutoria_idTutoria;
-		
-		private int _academico_idAcademico;
-		
-		private EntitySet<Comentario> _Comentarios;
-		
-		private EntitySet<Problematica> _Problematicas;
-		
-		private EntityRef<Academico> _Academico;
-		
-		private EntityRef<ProgramaEducativo> _ProgramaEducativo;
-		
-		private EntityRef<Tutoria> _Tutoria;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidReporte_TutoriaChanging(int value);
-    partial void OnidReporte_TutoriaChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    partial void Onprograma_educativo_idPrograma_educativoChanging(int value);
-    partial void Onprograma_educativo_idPrograma_educativoChanged();
-    partial void Ontutoria_idTutoriaChanging(int value);
-    partial void Ontutoria_idTutoriaChanged();
-    partial void Onacademico_idAcademicoChanging(int value);
-    partial void Onacademico_idAcademicoChanged();
-    #endregion
-		
-		public ReporteTutoria()
-		{
-			this._Comentarios = new EntitySet<Comentario>(new Action<Comentario>(this.attach_Comentarios), new Action<Comentario>(this.detach_Comentarios));
-			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
-			this._Academico = default(EntityRef<Academico>);
-			this._ProgramaEducativo = default(EntityRef<ProgramaEducativo>);
-			this._Tutoria = default(EntityRef<Tutoria>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idReporte_Tutoria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idReporte_Tutoria
-		{
-			get
-			{
-				return this._idReporte_Tutoria;
-			}
-			set
-			{
-				if ((this._idReporte_Tutoria != value))
-				{
-					this.OnidReporte_TutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._idReporte_Tutoria = value;
-					this.SendPropertyChanged("idReporte_Tutoria");
-					this.OnidReporte_TutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(100)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_programa_educativo_idPrograma_educativo", DbType="Int NOT NULL")]
-		public int programa_educativo_idPrograma_educativo
-		{
-			get
-			{
-				return this._programa_educativo_idPrograma_educativo;
-			}
-			set
-			{
-				if ((this._programa_educativo_idPrograma_educativo != value))
-				{
-					if (this._ProgramaEducativo.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onprograma_educativo_idPrograma_educativoChanging(value);
-					this.SendPropertyChanging();
-					this._programa_educativo_idPrograma_educativo = value;
-					this.SendPropertyChanged("programa_educativo_idPrograma_educativo");
-					this.Onprograma_educativo_idPrograma_educativoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tutoria_idTutoria", DbType="Int NOT NULL")]
-		public int tutoria_idTutoria
-		{
-			get
-			{
-				return this._tutoria_idTutoria;
-			}
-			set
-			{
-				if ((this._tutoria_idTutoria != value))
-				{
-					if (this._Tutoria.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Ontutoria_idTutoriaChanging(value);
-					this.SendPropertyChanging();
-					this._tutoria_idTutoria = value;
-					this.SendPropertyChanged("tutoria_idTutoria");
-					this.Ontutoria_idTutoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_academico_idAcademico", DbType="Int NOT NULL")]
-		public int academico_idAcademico
-		{
-			get
-			{
-				return this._academico_idAcademico;
-			}
-			set
-			{
-				if ((this._academico_idAcademico != value))
-				{
-					if (this._Academico.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onacademico_idAcademicoChanging(value);
-					this.SendPropertyChanging();
-					this._academico_idAcademico = value;
-					this.SendPropertyChanged("academico_idAcademico");
-					this.Onacademico_idAcademicoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_Comentarios", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
-		public EntitySet<Comentario> Comentarios
-		{
-			get
-			{
-				return this._Comentarios;
-			}
-			set
-			{
-				this._Comentarios.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_Problematicas", ThisKey="idReporte_Tutoria", OtherKey="reporte_Tutoria_idReporte_Tutoria")]
-		public EntitySet<Problematica> Problematicas
-		{
-			get
-			{
-				return this._Problematicas;
-			}
-			set
-			{
-				this._Problematicas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_reporte_tutoria", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
-		public Academico Academico
-		{
-			get
-			{
-				return this._Academico.Entity;
-			}
-			set
-			{
-				Academico previousValue = this._Academico.Entity;
-				if (((previousValue != value) 
-							|| (this._Academico.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Academico.Entity = null;
-						previousValue.ReporteTutorias.Remove(this);
-					}
-					this._Academico.Entity = value;
-					if ((value != null))
-					{
-						value.ReporteTutorias.Add(this);
-						this._academico_idAcademico = value.idAcademico;
-					}
-					else
-					{
-						this._academico_idAcademico = default(int);
-					}
-					this.SendPropertyChanged("Academico");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="programa_educativo_reporte_tutoria", Storage="_ProgramaEducativo", ThisKey="programa_educativo_idPrograma_educativo", OtherKey="idPrograma_educativo", IsForeignKey=true)]
-		public ProgramaEducativo ProgramaEducativo
-		{
-			get
-			{
-				return this._ProgramaEducativo.Entity;
-			}
-			set
-			{
-				ProgramaEducativo previousValue = this._ProgramaEducativo.Entity;
-				if (((previousValue != value) 
-							|| (this._ProgramaEducativo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ProgramaEducativo.Entity = null;
-						previousValue.ReporteTutorias.Remove(this);
-					}
-					this._ProgramaEducativo.Entity = value;
-					if ((value != null))
-					{
-						value.ReporteTutorias.Add(this);
-						this._programa_educativo_idPrograma_educativo = value.idPrograma_educativo;
-					}
-					else
-					{
-						this._programa_educativo_idPrograma_educativo = default(int);
-					}
-					this.SendPropertyChanged("ProgramaEducativo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
-		public Tutoria Tutoria
-		{
-			get
-			{
-				return this._Tutoria.Entity;
-			}
-			set
-			{
-				Tutoria previousValue = this._Tutoria.Entity;
-				if (((previousValue != value) 
-							|| (this._Tutoria.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Tutoria.Entity = null;
-						previousValue.ReporteTutorias.Remove(this);
-					}
-					this._Tutoria.Entity = value;
-					if ((value != null))
-					{
-						value.ReporteTutorias.Add(this);
-						this._tutoria_idTutoria = value.idTutoria;
-					}
-					else
-					{
-						this._tutoria_idTutoria = default(int);
-					}
-					this.SendPropertyChanged("Tutoria");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Comentarios(Comentario entity)
-		{
-			this.SendPropertyChanging();
-			entity.ReporteTutoria = this;
-		}
-		
-		private void detach_Comentarios(Comentario entity)
-		{
-			this.SendPropertyChanging();
-			entity.ReporteTutoria = null;
-		}
-		
-		private void attach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ReporteTutoria = this;
-		}
-		
-		private void detach_Problematicas(Problematica entity)
-		{
-			this.SendPropertyChanging();
-			entity.ReporteTutoria = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.rol")]
-	public partial class Rol : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idRol;
-		
-		private string _tipoRol;
-		
-		private EntitySet<Academico> _Academicos;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidRolChanging(int value);
-    partial void OnidRolChanged();
-    partial void OntipoRolChanging(string value);
-    partial void OntipoRolChanged();
-    #endregion
-		
-		public Rol()
-		{
-			this._Academicos = new EntitySet<Academico>(new Action<Academico>(this.attach_Academicos), new Action<Academico>(this.detach_Academicos));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idRol", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int idRol
-		{
-			get
-			{
-				return this._idRol;
-			}
-			set
-			{
-				if ((this._idRol != value))
-				{
-					this.OnidRolChanging(value);
-					this.SendPropertyChanging();
-					this._idRol = value;
-					this.SendPropertyChanged("idRol");
-					this.OnidRolChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tipoRol", DbType="NVarChar(60)")]
-		public string tipoRol
-		{
-			get
-			{
-				return this._tipoRol;
-			}
-			set
-			{
-				if ((this._tipoRol != value))
-				{
-					this.OntipoRolChanging(value);
-					this.SendPropertyChanging();
-					this._tipoRol = value;
-					this.SendPropertyChanged("tipoRol");
-					this.OntipoRolChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_academico", Storage="_Academicos", ThisKey="idRol", OtherKey="rol_idRol")]
-		public EntitySet<Academico> Academicos
-		{
-			get
-			{
-				return this._Academicos;
-			}
-			set
-			{
-				this._Academicos.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Academicos(Academico entity)
-		{
-			this.SendPropertyChanging();
-			entity.Rol = this;
-		}
-		
-		private void detach_Academicos(Academico entity)
-		{
-			this.SendPropertyChanging();
-			entity.Rol = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.sesion_tutoria")]
-	public partial class SesionTutoria : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _tutoria_idTutoria;
+		private int _problematica_idproblematica;
 		
 		private int _estudiante_idEstudiante;
 		
-		private string _listaComentarios;
+		private EntityRef<Problematica> _Problematica;
 		
 		private EntityRef<Estudiante> _Estudiante;
-		
-		private EntityRef<Tutoria> _Tutoria;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void Ontutoria_idTutoriaChanging(int value);
-    partial void Ontutoria_idTutoriaChanged();
+    partial void Onproblematica_idproblematicaChanging(int value);
+    partial void Onproblematica_idproblematicaChanged();
     partial void Onestudiante_idEstudianteChanging(int value);
     partial void Onestudiante_idEstudianteChanged();
-    partial void OnlistaComentariosChanging(string value);
-    partial void OnlistaComentariosChanged();
     #endregion
 		
-		public SesionTutoria()
+		public ProblematicaEstudiante()
 		{
+			this._Problematica = default(EntityRef<Problematica>);
 			this._Estudiante = default(EntityRef<Estudiante>);
-			this._Tutoria = default(EntityRef<Tutoria>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tutoria_idTutoria", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int tutoria_idTutoria
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_problematica_idproblematica", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int problematica_idproblematica
 		{
 			get
 			{
-				return this._tutoria_idTutoria;
+				return this._problematica_idproblematica;
 			}
 			set
 			{
-				if ((this._tutoria_idTutoria != value))
+				if ((this._problematica_idproblematica != value))
 				{
-					if (this._Tutoria.HasLoadedOrAssignedValue)
+					if (this._Problematica.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.Ontutoria_idTutoriaChanging(value);
+					this.Onproblematica_idproblematicaChanging(value);
 					this.SendPropertyChanging();
-					this._tutoria_idTutoria = value;
-					this.SendPropertyChanged("tutoria_idTutoria");
-					this.Ontutoria_idTutoriaChanged();
+					this._problematica_idproblematica = value;
+					this.SendPropertyChanged("problematica_idproblematica");
+					this.Onproblematica_idproblematicaChanged();
 				}
 			}
 		}
@@ -4154,27 +1896,41 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_listaComentarios", DbType="NVarChar(100)")]
-		public string listaComentarios
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
+		public Problematica Problematica
 		{
 			get
 			{
-				return this._listaComentarios;
+				return this._Problematica.Entity;
 			}
 			set
 			{
-				if ((this._listaComentarios != value))
+				Problematica previousValue = this._Problematica.Entity;
+				if (((previousValue != value) 
+							|| (this._Problematica.HasLoadedOrAssignedValue == false)))
 				{
-					this.OnlistaComentariosChanging(value);
 					this.SendPropertyChanging();
-					this._listaComentarios = value;
-					this.SendPropertyChanged("listaComentarios");
-					this.OnlistaComentariosChanged();
+					if ((previousValue != null))
+					{
+						this._Problematica.Entity = null;
+						previousValue.ProblematicaEstudiantes.Remove(this);
+					}
+					this._Problematica.Entity = value;
+					if ((value != null))
+					{
+						value.ProblematicaEstudiantes.Add(this);
+						this._problematica_idproblematica = value.idproblematica;
+					}
+					else
+					{
+						this._problematica_idproblematica = default(int);
+					}
+					this.SendPropertyChanged("Problematica");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_sesion_tutoria", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_estudiante", Storage="_Estudiante", ThisKey="estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
 		public Estudiante Estudiante
 		{
 			get
@@ -4191,12 +1947,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Estudiante.Entity = null;
-						previousValue.SesionTutorias.Remove(this);
+						previousValue.ProblematicaEstudiantes.Remove(this);
 					}
 					this._Estudiante.Entity = value;
 					if ((value != null))
 					{
-						value.SesionTutorias.Add(this);
+						value.ProblematicaEstudiantes.Add(this);
 						this._estudiante_idEstudiante = value.idEstudiante;
 					}
 					else
@@ -4204,40 +1960,6 @@ namespace ServiciosLinqTutorias.Modelo
 						this._estudiante_idEstudiante = default(int);
 					}
 					this.SendPropertyChanged("Estudiante");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_sesion_tutoria", Storage="_Tutoria", ThisKey="tutoria_idTutoria", OtherKey="idTutoria", IsForeignKey=true)]
-		public Tutoria Tutoria
-		{
-			get
-			{
-				return this._Tutoria.Entity;
-			}
-			set
-			{
-				Tutoria previousValue = this._Tutoria.Entity;
-				if (((previousValue != value) 
-							|| (this._Tutoria.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Tutoria.Entity = null;
-						previousValue.SesionTutorias.Remove(this);
-					}
-					this._Tutoria.Entity = value;
-					if ((value != null))
-					{
-						value.SesionTutorias.Add(this);
-						this._tutoria_idTutoria = value.idTutoria;
-					}
-					else
-					{
-						this._tutoria_idTutoria = default(int);
-					}
-					this.SendPropertyChanged("Tutoria");
 				}
 			}
 		}
@@ -4263,82 +1985,386 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.solucion")]
-	public partial class Solucion : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica_academica")]
+	public partial class ProblematicaAcademica : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idSolucion;
+		private int _Problematica_idproblematica;
 		
-		private int _problematica_idproblematica;
+		private int _Estudiante_idEstudiante;
 		
-		private string _titulo;
-		
-		private string _descripcion;
+		private int _Experiencia_educativa_idExperiencia_educativa;
 		
 		private EntityRef<Problematica> _Problematica;
+		
+		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
+		
+		private EntityRef<Estudiante> _Estudiante;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidSolucionChanging(int value);
-    partial void OnidSolucionChanged();
-    partial void Onproblematica_idproblematicaChanging(int value);
-    partial void Onproblematica_idproblematicaChanged();
+    partial void OnProblematica_idproblematicaChanging(int value);
+    partial void OnProblematica_idproblematicaChanged();
+    partial void OnEstudiante_idEstudianteChanging(int value);
+    partial void OnEstudiante_idEstudianteChanged();
+    partial void OnExperiencia_educativa_idExperiencia_educativaChanging(int value);
+    partial void OnExperiencia_educativa_idExperiencia_educativaChanged();
+    #endregion
+		
+		public ProblematicaAcademica()
+		{
+			this._Problematica = default(EntityRef<Problematica>);
+			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
+			this._Estudiante = default(EntityRef<Estudiante>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Problematica_idproblematica", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Problematica_idproblematica
+		{
+			get
+			{
+				return this._Problematica_idproblematica;
+			}
+			set
+			{
+				if ((this._Problematica_idproblematica != value))
+				{
+					if (this._Problematica.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnProblematica_idproblematicaChanging(value);
+					this.SendPropertyChanging();
+					this._Problematica_idproblematica = value;
+					this.SendPropertyChanged("Problematica_idproblematica");
+					this.OnProblematica_idproblematicaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Estudiante_idEstudiante
+		{
+			get
+			{
+				return this._Estudiante_idEstudiante;
+			}
+			set
+			{
+				if ((this._Estudiante_idEstudiante != value))
+				{
+					if (this._Estudiante.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnEstudiante_idEstudianteChanging(value);
+					this.SendPropertyChanging();
+					this._Estudiante_idEstudiante = value;
+					this.SendPropertyChanged("Estudiante_idEstudiante");
+					this.OnEstudiante_idEstudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Experiencia_educativa_idExperiencia_educativa
+		{
+			get
+			{
+				return this._Experiencia_educativa_idExperiencia_educativa;
+			}
+			set
+			{
+				if ((this._Experiencia_educativa_idExperiencia_educativa != value))
+				{
+					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnExperiencia_educativa_idExperiencia_educativaChanging(value);
+					this.SendPropertyChanging();
+					this._Experiencia_educativa_idExperiencia_educativa = value;
+					this.SendPropertyChanged("Experiencia_educativa_idExperiencia_educativa");
+					this.OnExperiencia_educativa_idExperiencia_educativaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_academica", Storage="_Problematica", ThisKey="Problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
+		public Problematica Problematica
+		{
+			get
+			{
+				return this._Problematica.Entity;
+			}
+			set
+			{
+				Problematica previousValue = this._Problematica.Entity;
+				if (((previousValue != value) 
+							|| (this._Problematica.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Problematica.Entity = null;
+						previousValue.ProblematicaAcademicas.Remove(this);
+					}
+					this._Problematica.Entity = value;
+					if ((value != null))
+					{
+						value.ProblematicaAcademicas.Add(this);
+						this._Problematica_idproblematica = value.idproblematica;
+					}
+					else
+					{
+						this._Problematica_idproblematica = default(int);
+					}
+					this.SendPropertyChanged("Problematica");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_problematica_academica", Storage="_ExperienciaEducativa", ThisKey="Experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
+		public ExperienciaEducativa ExperienciaEducativa
+		{
+			get
+			{
+				return this._ExperienciaEducativa.Entity;
+			}
+			set
+			{
+				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
+				if (((previousValue != value) 
+							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ExperienciaEducativa.Entity = null;
+						previousValue.ProblematicaAcademicas.Remove(this);
+					}
+					this._ExperienciaEducativa.Entity = value;
+					if ((value != null))
+					{
+						value.ProblematicaAcademicas.Add(this);
+						this._Experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
+					}
+					else
+					{
+						this._Experiencia_educativa_idExperiencia_educativa = default(int);
+					}
+					this.SendPropertyChanged("ExperienciaEducativa");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_academica", Storage="_Estudiante", ThisKey="Estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		public Estudiante Estudiante
+		{
+			get
+			{
+				return this._Estudiante.Entity;
+			}
+			set
+			{
+				Estudiante previousValue = this._Estudiante.Entity;
+				if (((previousValue != value) 
+							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Estudiante.Entity = null;
+						previousValue.ProblematicaAcademicas.Remove(this);
+					}
+					this._Estudiante.Entity = value;
+					if ((value != null))
+					{
+						value.ProblematicaAcademicas.Add(this);
+						this._Estudiante_idEstudiante = value.idEstudiante;
+					}
+					else
+					{
+						this._Estudiante_idEstudiante = default(int);
+					}
+					this.SendPropertyChanged("Estudiante");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica")]
+	public partial class Problematica : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idproblematica;
+		
+		private int _clasificacion_problematica_idClasificacion_problematica;
+		
+		private int _estado_problematica_idestado_problematica;
+		
+		private int _reporte_Tutoria_idReporte_Tutoria;
+		
+		private string _titulo;
+		
+		private string _descripcion;
+		
+		private EntitySet<Solucion> _Solucions;
+		
+		private EntitySet<ProblematicaEstudiante> _ProblematicaEstudiantes;
+		
+		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
+		
+		private EntityRef<ReporteTutoria> _ReporteTutoria;
+		
+		private EntityRef<EstadoProblematica> _EstadoProblematica;
+		
+		private EntityRef<ClasificacionEstudiante> _ClasificacionEstudiante;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidproblematicaChanging(int value);
+    partial void OnidproblematicaChanged();
+    partial void Onclasificacion_problematica_idClasificacion_problematicaChanging(int value);
+    partial void Onclasificacion_problematica_idClasificacion_problematicaChanged();
+    partial void Onestado_problematica_idestado_problematicaChanging(int value);
+    partial void Onestado_problematica_idestado_problematicaChanged();
+    partial void Onreporte_Tutoria_idReporte_TutoriaChanging(int value);
+    partial void Onreporte_Tutoria_idReporte_TutoriaChanged();
     partial void OntituloChanging(string value);
     partial void OntituloChanged();
     partial void OndescripcionChanging(string value);
     partial void OndescripcionChanged();
     #endregion
 		
-		public Solucion()
+		public Problematica()
 		{
-			this._Problematica = default(EntityRef<Problematica>);
+			this._Solucions = new EntitySet<Solucion>(new Action<Solucion>(this.attach_Solucions), new Action<Solucion>(this.detach_Solucions));
+			this._ProblematicaEstudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_ProblematicaEstudiantes), new Action<ProblematicaEstudiante>(this.detach_ProblematicaEstudiantes));
+			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
+			this._ReporteTutoria = default(EntityRef<ReporteTutoria>);
+			this._EstadoProblematica = default(EntityRef<EstadoProblematica>);
+			this._ClasificacionEstudiante = default(EntityRef<ClasificacionEstudiante>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idSolucion", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int idSolucion
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idproblematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idproblematica
 		{
 			get
 			{
-				return this._idSolucion;
+				return this._idproblematica;
 			}
 			set
 			{
-				if ((this._idSolucion != value))
+				if ((this._idproblematica != value))
 				{
-					this.OnidSolucionChanging(value);
+					this.OnidproblematicaChanging(value);
 					this.SendPropertyChanging();
-					this._idSolucion = value;
-					this.SendPropertyChanged("idSolucion");
-					this.OnidSolucionChanged();
+					this._idproblematica = value;
+					this.SendPropertyChanged("idproblematica");
+					this.OnidproblematicaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_problematica_idproblematica", DbType="Int NOT NULL")]
-		public int problematica_idproblematica
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clasificacion_problematica_idClasificacion_problematica", DbType="Int NOT NULL")]
+		public int clasificacion_problematica_idClasificacion_problematica
 		{
 			get
 			{
-				return this._problematica_idproblematica;
+				return this._clasificacion_problematica_idClasificacion_problematica;
 			}
 			set
 			{
-				if ((this._problematica_idproblematica != value))
+				if ((this._clasificacion_problematica_idClasificacion_problematica != value))
 				{
-					if (this._Problematica.HasLoadedOrAssignedValue)
+					if (this._ClasificacionEstudiante.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.Onproblematica_idproblematicaChanging(value);
+					this.Onclasificacion_problematica_idClasificacion_problematicaChanging(value);
 					this.SendPropertyChanging();
-					this._problematica_idproblematica = value;
-					this.SendPropertyChanged("problematica_idproblematica");
-					this.Onproblematica_idproblematicaChanged();
+					this._clasificacion_problematica_idClasificacion_problematica = value;
+					this.SendPropertyChanged("clasificacion_problematica_idClasificacion_problematica");
+					this.Onclasificacion_problematica_idClasificacion_problematicaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado_problematica_idestado_problematica", DbType="Int NOT NULL")]
+		public int estado_problematica_idestado_problematica
+		{
+			get
+			{
+				return this._estado_problematica_idestado_problematica;
+			}
+			set
+			{
+				if ((this._estado_problematica_idestado_problematica != value))
+				{
+					if (this._EstadoProblematica.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onestado_problematica_idestado_problematicaChanging(value);
+					this.SendPropertyChanging();
+					this._estado_problematica_idestado_problematica = value;
+					this.SendPropertyChanged("estado_problematica_idestado_problematica");
+					this.Onestado_problematica_idestado_problematicaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_reporte_Tutoria_idReporte_Tutoria", DbType="Int NOT NULL")]
+		public int reporte_Tutoria_idReporte_Tutoria
+		{
+			get
+			{
+				return this._reporte_Tutoria_idReporte_Tutoria;
+			}
+			set
+			{
+				if ((this._reporte_Tutoria_idReporte_Tutoria != value))
+				{
+					if (this._ReporteTutoria.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onreporte_Tutoria_idReporte_TutoriaChanging(value);
+					this.SendPropertyChanging();
+					this._reporte_Tutoria_idReporte_Tutoria = value;
+					this.SendPropertyChanged("reporte_Tutoria_idReporte_Tutoria");
+					this.Onreporte_Tutoria_idReporte_TutoriaChanged();
 				}
 			}
 		}
@@ -4383,36 +2409,143 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Problematica", ThisKey="problematica_idproblematica", OtherKey="idproblematica", IsForeignKey=true)]
-		public Problematica Problematica
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_solucion", Storage="_Solucions", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
+		public EntitySet<Solucion> Solucions
 		{
 			get
 			{
-				return this._Problematica.Entity;
+				return this._Solucions;
 			}
 			set
 			{
-				Problematica previousValue = this._Problematica.Entity;
+				this._Solucions.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
+		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
+		{
+			get
+			{
+				return this._ProblematicaEstudiantes;
+			}
+			set
+			{
+				this._ProblematicaEstudiantes.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="problematica_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idproblematica", OtherKey="Problematica_idproblematica")]
+		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
+		{
+			get
+			{
+				return this._ProblematicaAcademicas;
+			}
+			set
+			{
+				this._ProblematicaAcademicas.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_problematica", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
+		public ReporteTutoria ReporteTutoria
+		{
+			get
+			{
+				return this._ReporteTutoria.Entity;
+			}
+			set
+			{
+				ReporteTutoria previousValue = this._ReporteTutoria.Entity;
 				if (((previousValue != value) 
-							|| (this._Problematica.HasLoadedOrAssignedValue == false)))
+							|| (this._ReporteTutoria.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._Problematica.Entity = null;
-						previousValue.Solucions.Remove(this);
+						this._ReporteTutoria.Entity = null;
+						previousValue.Problematicas.Remove(this);
 					}
-					this._Problematica.Entity = value;
+					this._ReporteTutoria.Entity = value;
 					if ((value != null))
 					{
-						value.Solucions.Add(this);
-						this._problematica_idproblematica = value.idproblematica;
+						value.Problematicas.Add(this);
+						this._reporte_Tutoria_idReporte_Tutoria = value.idReporte_Tutoria;
 					}
 					else
 					{
-						this._problematica_idproblematica = default(int);
+						this._reporte_Tutoria_idReporte_Tutoria = default(int);
 					}
-					this.SendPropertyChanged("Problematica");
+					this.SendPropertyChanged("ReporteTutoria");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_problematica_problematica", Storage="_EstadoProblematica", ThisKey="estado_problematica_idestado_problematica", OtherKey="idestado_problematica", IsForeignKey=true)]
+		public EstadoProblematica EstadoProblematica
+		{
+			get
+			{
+				return this._EstadoProblematica.Entity;
+			}
+			set
+			{
+				EstadoProblematica previousValue = this._EstadoProblematica.Entity;
+				if (((previousValue != value) 
+							|| (this._EstadoProblematica.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._EstadoProblematica.Entity = null;
+						previousValue.Problematicas.Remove(this);
+					}
+					this._EstadoProblematica.Entity = value;
+					if ((value != null))
+					{
+						value.Problematicas.Add(this);
+						this._estado_problematica_idestado_problematica = value.idestado_problematica;
+					}
+					else
+					{
+						this._estado_problematica_idestado_problematica = default(int);
+					}
+					this.SendPropertyChanged("EstadoProblematica");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clasificacion_problematica_problematica", Storage="_ClasificacionEstudiante", ThisKey="clasificacion_problematica_idClasificacion_problematica", OtherKey="idClasificacion_problematica", IsForeignKey=true)]
+		public ClasificacionEstudiante ClasificacionEstudiante
+		{
+			get
+			{
+				return this._ClasificacionEstudiante.Entity;
+			}
+			set
+			{
+				ClasificacionEstudiante previousValue = this._ClasificacionEstudiante.Entity;
+				if (((previousValue != value) 
+							|| (this._ClasificacionEstudiante.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ClasificacionEstudiante.Entity = null;
+						previousValue.Problematicas.Remove(this);
+					}
+					this._ClasificacionEstudiante.Entity = value;
+					if ((value != null))
+					{
+						value.Problematicas.Add(this);
+						this._clasificacion_problematica_idClasificacion_problematica = value.idClasificacion_problematica;
+					}
+					else
+					{
+						this._clasificacion_problematica_idClasificacion_problematica = default(int);
+					}
+					this.SendPropertyChanged("ClasificacionEstudiante");
 				}
 			}
 		}
@@ -4436,215 +2569,234 @@ namespace ServiciosLinqTutorias.Modelo
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+		
+		private void attach_Solucions(Solucion entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = this;
+		}
+		
+		private void detach_Solucions(Solucion entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = null;
+		}
+		
+		private void attach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = this;
+		}
+		
+		private void detach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = null;
+		}
+		
+		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = this;
+		}
+		
+		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.Problematica = null;
+		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.tutoria")]
-	public partial class Tutoria : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.periodo_escolar")]
+	public partial class PeriodoEscolar : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idTutoria;
+		private int _idPeriodo_escolar;
 		
-		private int _periodo_escolar_idPeriodo_escolar;
+		private System.Nullable<System.DateTime> _inicioPeriodo;
 		
-		private System.Nullable<int> _numeroTutoria;
+		private System.Nullable<System.DateTime> _finPeriodo;
 		
-		private System.Nullable<System.DateTime> _fechaTutoria;
+		private System.Nullable<System.DateTime> _primeraFechaTutoria;
 		
-		private System.Nullable<System.DateTime> _fechaEntrega;
+		private System.Nullable<System.DateTime> _segundaFechaTutoria;
 		
-		private EntitySet<ReporteTutoria> _ReporteTutorias;
+		private System.Nullable<System.DateTime> _terceraFechaTutoria;
 		
-		private EntitySet<SesionTutoria> _SesionTutorias;
+		private EntitySet<Tutoria> _Tutorias;
 		
-		private EntityRef<PeriodoEscolar> _PeriodoEscolar;
+		private EntitySet<ExperienciaEducativa> _ExperienciaEducativas;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidTutoriaChanging(int value);
-    partial void OnidTutoriaChanged();
-    partial void Onperiodo_escolar_idPeriodo_escolarChanging(int value);
-    partial void Onperiodo_escolar_idPeriodo_escolarChanged();
-    partial void OnnumeroTutoriaChanging(System.Nullable<int> value);
-    partial void OnnumeroTutoriaChanged();
-    partial void OnfechaTutoriaChanging(System.Nullable<System.DateTime> value);
-    partial void OnfechaTutoriaChanged();
-    partial void OnfechaEntregaChanging(System.Nullable<System.DateTime> value);
-    partial void OnfechaEntregaChanged();
+    partial void OnidPeriodo_escolarChanging(int value);
+    partial void OnidPeriodo_escolarChanged();
+    partial void OninicioPeriodoChanging(System.Nullable<System.DateTime> value);
+    partial void OninicioPeriodoChanged();
+    partial void OnfinPeriodoChanging(System.Nullable<System.DateTime> value);
+    partial void OnfinPeriodoChanged();
+    partial void OnprimeraFechaTutoriaChanging(System.Nullable<System.DateTime> value);
+    partial void OnprimeraFechaTutoriaChanged();
+    partial void OnsegundaFechaTutoriaChanging(System.Nullable<System.DateTime> value);
+    partial void OnsegundaFechaTutoriaChanged();
+    partial void OnterceraFechaTutoriaChanging(System.Nullable<System.DateTime> value);
+    partial void OnterceraFechaTutoriaChanged();
     #endregion
 		
-		public Tutoria()
+		public PeriodoEscolar()
 		{
-			this._ReporteTutorias = new EntitySet<ReporteTutoria>(new Action<ReporteTutoria>(this.attach_ReporteTutorias), new Action<ReporteTutoria>(this.detach_ReporteTutorias));
-			this._SesionTutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_SesionTutorias), new Action<SesionTutoria>(this.detach_SesionTutorias));
-			this._PeriodoEscolar = default(EntityRef<PeriodoEscolar>);
+			this._Tutorias = new EntitySet<Tutoria>(new Action<Tutoria>(this.attach_Tutorias), new Action<Tutoria>(this.detach_Tutorias));
+			this._ExperienciaEducativas = new EntitySet<ExperienciaEducativa>(new Action<ExperienciaEducativa>(this.attach_ExperienciaEducativas), new Action<ExperienciaEducativa>(this.detach_ExperienciaEducativas));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTutoria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idTutoria
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPeriodo_escolar", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idPeriodo_escolar
 		{
 			get
 			{
-				return this._idTutoria;
+				return this._idPeriodo_escolar;
 			}
 			set
 			{
-				if ((this._idTutoria != value))
+				if ((this._idPeriodo_escolar != value))
 				{
-					this.OnidTutoriaChanging(value);
+					this.OnidPeriodo_escolarChanging(value);
 					this.SendPropertyChanging();
-					this._idTutoria = value;
-					this.SendPropertyChanged("idTutoria");
-					this.OnidTutoriaChanged();
+					this._idPeriodo_escolar = value;
+					this.SendPropertyChanged("idPeriodo_escolar");
+					this.OnidPeriodo_escolarChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_periodo_escolar_idPeriodo_escolar", DbType="Int NOT NULL")]
-		public int periodo_escolar_idPeriodo_escolar
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_inicioPeriodo", DbType="Date")]
+		public System.Nullable<System.DateTime> inicioPeriodo
 		{
 			get
 			{
-				return this._periodo_escolar_idPeriodo_escolar;
+				return this._inicioPeriodo;
 			}
 			set
 			{
-				if ((this._periodo_escolar_idPeriodo_escolar != value))
+				if ((this._inicioPeriodo != value))
 				{
-					if (this._PeriodoEscolar.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onperiodo_escolar_idPeriodo_escolarChanging(value);
+					this.OninicioPeriodoChanging(value);
 					this.SendPropertyChanging();
-					this._periodo_escolar_idPeriodo_escolar = value;
-					this.SendPropertyChanged("periodo_escolar_idPeriodo_escolar");
-					this.Onperiodo_escolar_idPeriodo_escolarChanged();
+					this._inicioPeriodo = value;
+					this.SendPropertyChanged("inicioPeriodo");
+					this.OninicioPeriodoChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numeroTutoria", DbType="Int")]
-		public System.Nullable<int> numeroTutoria
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_finPeriodo", DbType="Date")]
+		public System.Nullable<System.DateTime> finPeriodo
 		{
 			get
 			{
-				return this._numeroTutoria;
+				return this._finPeriodo;
 			}
 			set
 			{
-				if ((this._numeroTutoria != value))
+				if ((this._finPeriodo != value))
 				{
-					this.OnnumeroTutoriaChanging(value);
+					this.OnfinPeriodoChanging(value);
 					this.SendPropertyChanging();
-					this._numeroTutoria = value;
-					this.SendPropertyChanged("numeroTutoria");
-					this.OnnumeroTutoriaChanged();
+					this._finPeriodo = value;
+					this.SendPropertyChanged("finPeriodo");
+					this.OnfinPeriodoChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaTutoria", DbType="Date")]
-		public System.Nullable<System.DateTime> fechaTutoria
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_primeraFechaTutoria", DbType="Date")]
+		public System.Nullable<System.DateTime> primeraFechaTutoria
 		{
 			get
 			{
-				return this._fechaTutoria;
+				return this._primeraFechaTutoria;
 			}
 			set
 			{
-				if ((this._fechaTutoria != value))
+				if ((this._primeraFechaTutoria != value))
 				{
-					this.OnfechaTutoriaChanging(value);
+					this.OnprimeraFechaTutoriaChanging(value);
 					this.SendPropertyChanging();
-					this._fechaTutoria = value;
-					this.SendPropertyChanged("fechaTutoria");
-					this.OnfechaTutoriaChanged();
+					this._primeraFechaTutoria = value;
+					this.SendPropertyChanged("primeraFechaTutoria");
+					this.OnprimeraFechaTutoriaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaEntrega", DbType="Date")]
-		public System.Nullable<System.DateTime> fechaEntrega
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_segundaFechaTutoria", DbType="Date")]
+		public System.Nullable<System.DateTime> segundaFechaTutoria
 		{
 			get
 			{
-				return this._fechaEntrega;
+				return this._segundaFechaTutoria;
 			}
 			set
 			{
-				if ((this._fechaEntrega != value))
+				if ((this._segundaFechaTutoria != value))
 				{
-					this.OnfechaEntregaChanging(value);
+					this.OnsegundaFechaTutoriaChanging(value);
 					this.SendPropertyChanging();
-					this._fechaEntrega = value;
-					this.SendPropertyChanged("fechaEntrega");
-					this.OnfechaEntregaChanged();
+					this._segundaFechaTutoria = value;
+					this.SendPropertyChanged("segundaFechaTutoria");
+					this.OnsegundaFechaTutoriaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
-		public EntitySet<ReporteTutoria> ReporteTutorias
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_terceraFechaTutoria", DbType="Date")]
+		public System.Nullable<System.DateTime> terceraFechaTutoria
 		{
 			get
 			{
-				return this._ReporteTutorias;
+				return this._terceraFechaTutoria;
 			}
 			set
 			{
-				this._ReporteTutorias.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tutoria_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
-		public EntitySet<SesionTutoria> SesionTutorias
-		{
-			get
-			{
-				return this._SesionTutorias;
-			}
-			set
-			{
-				this._SesionTutorias.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_tutoria", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
-		public PeriodoEscolar PeriodoEscolar
-		{
-			get
-			{
-				return this._PeriodoEscolar.Entity;
-			}
-			set
-			{
-				PeriodoEscolar previousValue = this._PeriodoEscolar.Entity;
-				if (((previousValue != value) 
-							|| (this._PeriodoEscolar.HasLoadedOrAssignedValue == false)))
+				if ((this._terceraFechaTutoria != value))
 				{
+					this.OnterceraFechaTutoriaChanging(value);
 					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._PeriodoEscolar.Entity = null;
-						previousValue.Tutorias.Remove(this);
-					}
-					this._PeriodoEscolar.Entity = value;
-					if ((value != null))
-					{
-						value.Tutorias.Add(this);
-						this._periodo_escolar_idPeriodo_escolar = value.idPeriodo_escolar;
-					}
-					else
-					{
-						this._periodo_escolar_idPeriodo_escolar = default(int);
-					}
-					this.SendPropertyChanged("PeriodoEscolar");
+					this._terceraFechaTutoria = value;
+					this.SendPropertyChanged("terceraFechaTutoria");
+					this.OnterceraFechaTutoriaChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_tutoria", Storage="_Tutorias", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
+		public EntitySet<Tutoria> Tutorias
+		{
+			get
+			{
+				return this._Tutorias;
+			}
+			set
+			{
+				this._Tutorias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idPeriodo_escolar", OtherKey="periodo_escolar_idPeriodo_escolar")]
+		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
+		{
+			get
+			{
+				return this._ExperienciaEducativas;
+			}
+			set
+			{
+				this._ExperienciaEducativas.Assign(value);
 			}
 		}
 		
@@ -4668,44 +2820,371 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		private void attach_ReporteTutorias(ReporteTutoria entity)
+		private void attach_Tutorias(Tutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.Tutoria = this;
+			entity.PeriodoEscolar = this;
 		}
 		
-		private void detach_ReporteTutorias(ReporteTutoria entity)
+		private void detach_Tutorias(Tutoria entity)
 		{
 			this.SendPropertyChanging();
-			entity.Tutoria = null;
+			entity.PeriodoEscolar = null;
 		}
 		
-		private void attach_SesionTutorias(SesionTutoria entity)
+		private void attach_ExperienciaEducativas(ExperienciaEducativa entity)
 		{
 			this.SendPropertyChanging();
-			entity.Tutoria = this;
+			entity.PeriodoEscolar = this;
 		}
 		
-		private void detach_SesionTutorias(SesionTutoria entity)
+		private void detach_ExperienciaEducativas(ExperienciaEducativa entity)
 		{
 			this.SendPropertyChanging();
-			entity.Tutoria = null;
+			entity.PeriodoEscolar = null;
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.usuario")]
-	public partial class Usuario : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.materia")]
+	public partial class Materia : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _idUsuario;
+		private int _idMateria;
+		
+		private int _experiencia_educativa_idExperiencia_educativa;
+		
+		private System.Nullable<int> _NRC;
+		
+		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidMateriaChanging(int value);
+    partial void OnidMateriaChanged();
+    partial void Onexperiencia_educativa_idExperiencia_educativaChanging(int value);
+    partial void Onexperiencia_educativa_idExperiencia_educativaChanged();
+    partial void OnNRCChanging(System.Nullable<int> value);
+    partial void OnNRCChanged();
+    #endregion
+		
+		public Materia()
+		{
+			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idMateria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idMateria
+		{
+			get
+			{
+				return this._idMateria;
+			}
+			set
+			{
+				if ((this._idMateria != value))
+				{
+					this.OnidMateriaChanging(value);
+					this.SendPropertyChanging();
+					this._idMateria = value;
+					this.SendPropertyChanged("idMateria");
+					this.OnidMateriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL")]
+		public int experiencia_educativa_idExperiencia_educativa
+		{
+			get
+			{
+				return this._experiencia_educativa_idExperiencia_educativa;
+			}
+			set
+			{
+				if ((this._experiencia_educativa_idExperiencia_educativa != value))
+				{
+					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onexperiencia_educativa_idExperiencia_educativaChanging(value);
+					this.SendPropertyChanging();
+					this._experiencia_educativa_idExperiencia_educativa = value;
+					this.SendPropertyChanged("experiencia_educativa_idExperiencia_educativa");
+					this.Onexperiencia_educativa_idExperiencia_educativaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NRC", DbType="Int")]
+		public System.Nullable<int> NRC
+		{
+			get
+			{
+				return this._NRC;
+			}
+			set
+			{
+				if ((this._NRC != value))
+				{
+					this.OnNRCChanging(value);
+					this.SendPropertyChanging();
+					this._NRC = value;
+					this.SendPropertyChanged("NRC");
+					this.OnNRCChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_ExperienciaEducativa", ThisKey="experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
+		public ExperienciaEducativa ExperienciaEducativa
+		{
+			get
+			{
+				return this._ExperienciaEducativa.Entity;
+			}
+			set
+			{
+				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
+				if (((previousValue != value) 
+							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ExperienciaEducativa.Entity = null;
+						previousValue.Materias.Remove(this);
+					}
+					this._ExperienciaEducativa.Entity = value;
+					if ((value != null))
+					{
+						value.Materias.Add(this);
+						this._experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
+					}
+					else
+					{
+						this._experiencia_educativa_idExperiencia_educativa = default(int);
+					}
+					this.SendPropertyChanged("ExperienciaEducativa");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.experienciaseducativascursando")]
+	public partial class ExperienciasEducativasCursando : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Experiencia_educativa_idExperiencia_educativa;
+		
+		private int _Estudiante_idEstudiante;
+		
+		private EntityRef<ExperienciaEducativa> _ExperienciaEducativa;
+		
+		private EntityRef<Estudiante> _Estudiante;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnExperiencia_educativa_idExperiencia_educativaChanging(int value);
+    partial void OnExperiencia_educativa_idExperiencia_educativaChanged();
+    partial void OnEstudiante_idEstudianteChanging(int value);
+    partial void OnEstudiante_idEstudianteChanged();
+    #endregion
+		
+		public ExperienciasEducativasCursando()
+		{
+			this._ExperienciaEducativa = default(EntityRef<ExperienciaEducativa>);
+			this._Estudiante = default(EntityRef<Estudiante>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Experiencia_educativa_idExperiencia_educativa", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Experiencia_educativa_idExperiencia_educativa
+		{
+			get
+			{
+				return this._Experiencia_educativa_idExperiencia_educativa;
+			}
+			set
+			{
+				if ((this._Experiencia_educativa_idExperiencia_educativa != value))
+				{
+					if (this._ExperienciaEducativa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnExperiencia_educativa_idExperiencia_educativaChanging(value);
+					this.SendPropertyChanging();
+					this._Experiencia_educativa_idExperiencia_educativa = value;
+					this.SendPropertyChanged("Experiencia_educativa_idExperiencia_educativa");
+					this.OnExperiencia_educativa_idExperiencia_educativaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estudiante_idEstudiante", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Estudiante_idEstudiante
+		{
+			get
+			{
+				return this._Estudiante_idEstudiante;
+			}
+			set
+			{
+				if ((this._Estudiante_idEstudiante != value))
+				{
+					if (this._Estudiante.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnEstudiante_idEstudianteChanging(value);
+					this.SendPropertyChanging();
+					this._Estudiante_idEstudiante = value;
+					this.SendPropertyChanged("Estudiante_idEstudiante");
+					this.OnEstudiante_idEstudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_experienciaseducativascursando", Storage="_ExperienciaEducativa", ThisKey="Experiencia_educativa_idExperiencia_educativa", OtherKey="idExperiencia_educativa", IsForeignKey=true)]
+		public ExperienciaEducativa ExperienciaEducativa
+		{
+			get
+			{
+				return this._ExperienciaEducativa.Entity;
+			}
+			set
+			{
+				ExperienciaEducativa previousValue = this._ExperienciaEducativa.Entity;
+				if (((previousValue != value) 
+							|| (this._ExperienciaEducativa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ExperienciaEducativa.Entity = null;
+						previousValue.ExperienciasEducativasCursandos.Remove(this);
+					}
+					this._ExperienciaEducativa.Entity = value;
+					if ((value != null))
+					{
+						value.ExperienciasEducativasCursandos.Add(this);
+						this._Experiencia_educativa_idExperiencia_educativa = value.idExperiencia_educativa;
+					}
+					else
+					{
+						this._Experiencia_educativa_idExperiencia_educativa = default(int);
+					}
+					this.SendPropertyChanged("ExperienciaEducativa");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_experienciaseducativascursando", Storage="_Estudiante", ThisKey="Estudiante_idEstudiante", OtherKey="idEstudiante", IsForeignKey=true)]
+		public Estudiante Estudiante
+		{
+			get
+			{
+				return this._Estudiante.Entity;
+			}
+			set
+			{
+				Estudiante previousValue = this._Estudiante.Entity;
+				if (((previousValue != value) 
+							|| (this._Estudiante.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Estudiante.Entity = null;
+						previousValue.ExperienciasEducativasCursandos.Remove(this);
+					}
+					this._Estudiante.Entity = value;
+					if ((value != null))
+					{
+						value.ExperienciasEducativasCursandos.Add(this);
+						this._Estudiante_idEstudiante = value.idEstudiante;
+					}
+					else
+					{
+						this._Estudiante_idEstudiante = default(int);
+					}
+					this.SendPropertyChanged("Estudiante");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.experiencia_educativa")]
+	public partial class ExperienciaEducativa : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idExperiencia_educativa;
 		
 		private int _academico_idAcademico;
 		
-		private string _username;
+		private int _periodo_escolar_idPeriodo_escolar;
 		
-		private string _password;
+		private string _nombre;
+		
+		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
+		
+		private EntitySet<Materia> _Materias;
+		
+		private EntitySet<ExperienciasEducativasCursando> _ExperienciasEducativasCursandos;
+		
+		private EntityRef<PeriodoEscolar> _PeriodoEscolar;
 		
 		private EntityRef<Academico> _Academico;
 		
@@ -4713,38 +3192,42 @@ namespace ServiciosLinqTutorias.Modelo
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnidUsuarioChanging(int value);
-    partial void OnidUsuarioChanged();
+    partial void OnidExperiencia_educativaChanging(int value);
+    partial void OnidExperiencia_educativaChanged();
     partial void Onacademico_idAcademicoChanging(int value);
     partial void Onacademico_idAcademicoChanged();
-    partial void OnusernameChanging(string value);
-    partial void OnusernameChanged();
-    partial void OnpasswordChanging(string value);
-    partial void OnpasswordChanged();
+    partial void Onperiodo_escolar_idPeriodo_escolarChanging(int value);
+    partial void Onperiodo_escolar_idPeriodo_escolarChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
     #endregion
 		
-		public Usuario()
+		public ExperienciaEducativa()
 		{
+			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
+			this._Materias = new EntitySet<Materia>(new Action<Materia>(this.attach_Materias), new Action<Materia>(this.detach_Materias));
+			this._ExperienciasEducativasCursandos = new EntitySet<ExperienciasEducativasCursando>(new Action<ExperienciasEducativasCursando>(this.attach_ExperienciasEducativasCursandos), new Action<ExperienciasEducativasCursando>(this.detach_ExperienciasEducativasCursandos));
+			this._PeriodoEscolar = default(EntityRef<PeriodoEscolar>);
 			this._Academico = default(EntityRef<Academico>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUsuario", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int idUsuario
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idExperiencia_educativa", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idExperiencia_educativa
 		{
 			get
 			{
-				return this._idUsuario;
+				return this._idExperiencia_educativa;
 			}
 			set
 			{
-				if ((this._idUsuario != value))
+				if ((this._idExperiencia_educativa != value))
 				{
-					this.OnidUsuarioChanging(value);
+					this.OnidExperiencia_educativaChanging(value);
 					this.SendPropertyChanging();
-					this._idUsuario = value;
-					this.SendPropertyChanged("idUsuario");
-					this.OnidUsuarioChanged();
+					this._idExperiencia_educativa = value;
+					this.SendPropertyChanged("idExperiencia_educativa");
+					this.OnidExperiencia_educativaChanged();
 				}
 			}
 		}
@@ -4773,47 +3256,124 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NVarChar(45)")]
-		public string username
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_periodo_escolar_idPeriodo_escolar", DbType="Int NOT NULL")]
+		public int periodo_escolar_idPeriodo_escolar
 		{
 			get
 			{
-				return this._username;
+				return this._periodo_escolar_idPeriodo_escolar;
 			}
 			set
 			{
-				if ((this._username != value))
+				if ((this._periodo_escolar_idPeriodo_escolar != value))
 				{
-					this.OnusernameChanging(value);
+					if (this._PeriodoEscolar.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onperiodo_escolar_idPeriodo_escolarChanging(value);
 					this.SendPropertyChanging();
-					this._username = value;
-					this.SendPropertyChanged("username");
-					this.OnusernameChanged();
+					this._periodo_escolar_idPeriodo_escolar = value;
+					this.SendPropertyChanged("periodo_escolar_idPeriodo_escolar");
+					this.Onperiodo_escolar_idPeriodo_escolarChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NVarChar(80)")]
-		public string password
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
+		public string nombre
 		{
 			get
 			{
-				return this._password;
+				return this._nombre;
 			}
 			set
 			{
-				if ((this._password != value))
+				if ((this._nombre != value))
 				{
-					this.OnpasswordChanging(value);
+					this.OnnombreChanging(value);
 					this.SendPropertyChanging();
-					this._password = value;
-					this.SendPropertyChanged("password");
-					this.OnpasswordChanged();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idExperiencia_educativa", OtherKey="Experiencia_educativa_idExperiencia_educativa")]
+		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
+		{
+			get
+			{
+				return this._ProblematicaAcademicas;
+			}
+			set
+			{
+				this._ProblematicaAcademicas.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_materia", Storage="_Materias", ThisKey="idExperiencia_educativa", OtherKey="experiencia_educativa_idExperiencia_educativa")]
+		public EntitySet<Materia> Materias
+		{
+			get
+			{
+				return this._Materias;
+			}
+			set
+			{
+				this._Materias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="experiencia_educativa_experienciaseducativascursando", Storage="_ExperienciasEducativasCursandos", ThisKey="idExperiencia_educativa", OtherKey="Experiencia_educativa_idExperiencia_educativa")]
+		public EntitySet<ExperienciasEducativasCursando> ExperienciasEducativasCursandos
+		{
+			get
+			{
+				return this._ExperienciasEducativasCursandos;
+			}
+			set
+			{
+				this._ExperienciasEducativasCursandos.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="periodo_escolar_experiencia_educativa", Storage="_PeriodoEscolar", ThisKey="periodo_escolar_idPeriodo_escolar", OtherKey="idPeriodo_escolar", IsForeignKey=true)]
+		public PeriodoEscolar PeriodoEscolar
+		{
+			get
+			{
+				return this._PeriodoEscolar.Entity;
+			}
+			set
+			{
+				PeriodoEscolar previousValue = this._PeriodoEscolar.Entity;
+				if (((previousValue != value) 
+							|| (this._PeriodoEscolar.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PeriodoEscolar.Entity = null;
+						previousValue.ExperienciaEducativas.Remove(this);
+					}
+					this._PeriodoEscolar.Entity = value;
+					if ((value != null))
+					{
+						value.ExperienciaEducativas.Add(this);
+						this._periodo_escolar_idPeriodo_escolar = value.idPeriodo_escolar;
+					}
+					else
+					{
+						this._periodo_escolar_idPeriodo_escolar = default(int);
+					}
+					this.SendPropertyChanged("PeriodoEscolar");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_experiencia_educativa", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
 		public Academico Academico
 		{
 			get
@@ -4830,12 +3390,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Academico.Entity = null;
-						previousValue.Usuarios.Remove(this);
+						previousValue.ExperienciaEducativas.Remove(this);
 					}
 					this._Academico.Entity = value;
 					if ((value != null))
 					{
-						value.Usuarios.Add(this);
+						value.ExperienciaEducativas.Add(this);
 						this._academico_idAcademico = value.idAcademico;
 					}
 					else
@@ -4865,6 +3425,1446 @@ namespace ServiciosLinqTutorias.Modelo
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = this;
+		}
+		
+		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = null;
+		}
+		
+		private void attach_Materias(Materia entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = this;
+		}
+		
+		private void detach_Materias(Materia entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = null;
+		}
+		
+		private void attach_ExperienciasEducativasCursandos(ExperienciasEducativasCursando entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = this;
+		}
+		
+		private void detach_ExperienciasEducativasCursandos(ExperienciasEducativasCursando entity)
+		{
+			this.SendPropertyChanging();
+			entity.ExperienciaEducativa = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estudiante")]
+	public partial class Estudiante : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idEstudiante;
+		
+		private System.Nullable<int> _academico_idAcademico;
+		
+		private int _estado_estudiante_idEstado_estudiante;
+		
+		private string _matricula;
+		
+		private string _nombre;
+		
+		private string _apellidoPaterno;
+		
+		private string _apellidoMaterno;
+		
+		private string _correoElectronico;
+		
+		private System.Nullable<int> _semestreCursando;
+		
+		private System.Nullable<long> _telefono;
+		
+		private EntitySet<SesionTutoria> _SesionTutorias;
+		
+		private EntitySet<ProblematicaEstudiante> _ProblematicaEstudiantes;
+		
+		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
+		
+		private EntitySet<ExperienciasEducativasCursando> _ExperienciasEducativasCursandos;
+		
+		private EntityRef<EstadoEstudiante> _EstadoEstudiante;
+		
+		private EntityRef<Academico> _Academico;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidEstudianteChanging(int value);
+    partial void OnidEstudianteChanged();
+    partial void Onacademico_idAcademicoChanging(System.Nullable<int> value);
+    partial void Onacademico_idAcademicoChanged();
+    partial void Onestado_estudiante_idEstado_estudianteChanging(int value);
+    partial void Onestado_estudiante_idEstado_estudianteChanged();
+    partial void OnmatriculaChanging(string value);
+    partial void OnmatriculaChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OnapellidoPaternoChanging(string value);
+    partial void OnapellidoPaternoChanged();
+    partial void OnapellidoMaternoChanging(string value);
+    partial void OnapellidoMaternoChanged();
+    partial void OncorreoElectronicoChanging(string value);
+    partial void OncorreoElectronicoChanged();
+    partial void OnsemestreCursandoChanging(System.Nullable<int> value);
+    partial void OnsemestreCursandoChanged();
+    partial void OntelefonoChanging(System.Nullable<long> value);
+    partial void OntelefonoChanged();
+    #endregion
+		
+		public Estudiante()
+		{
+			this._SesionTutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_SesionTutorias), new Action<SesionTutoria>(this.detach_SesionTutorias));
+			this._ProblematicaEstudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_ProblematicaEstudiantes), new Action<ProblematicaEstudiante>(this.detach_ProblematicaEstudiantes));
+			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
+			this._ExperienciasEducativasCursandos = new EntitySet<ExperienciasEducativasCursando>(new Action<ExperienciasEducativasCursando>(this.attach_ExperienciasEducativasCursandos), new Action<ExperienciasEducativasCursando>(this.detach_ExperienciasEducativasCursandos));
+			this._EstadoEstudiante = default(EntityRef<EstadoEstudiante>);
+			this._Academico = default(EntityRef<Academico>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstudiante", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idEstudiante
+		{
+			get
+			{
+				return this._idEstudiante;
+			}
+			set
+			{
+				if ((this._idEstudiante != value))
+				{
+					this.OnidEstudianteChanging(value);
+					this.SendPropertyChanging();
+					this._idEstudiante = value;
+					this.SendPropertyChanged("idEstudiante");
+					this.OnidEstudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_academico_idAcademico", DbType="Int")]
+		public System.Nullable<int> academico_idAcademico
+		{
+			get
+			{
+				return this._academico_idAcademico;
+			}
+			set
+			{
+				if ((this._academico_idAcademico != value))
+				{
+					if (this._Academico.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onacademico_idAcademicoChanging(value);
+					this.SendPropertyChanging();
+					this._academico_idAcademico = value;
+					this.SendPropertyChanged("academico_idAcademico");
+					this.Onacademico_idAcademicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado_estudiante_idEstado_estudiante", DbType="Int NOT NULL")]
+		public int estado_estudiante_idEstado_estudiante
+		{
+			get
+			{
+				return this._estado_estudiante_idEstado_estudiante;
+			}
+			set
+			{
+				if ((this._estado_estudiante_idEstado_estudiante != value))
+				{
+					if (this._EstadoEstudiante.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onestado_estudiante_idEstado_estudianteChanging(value);
+					this.SendPropertyChanging();
+					this._estado_estudiante_idEstado_estudiante = value;
+					this.SendPropertyChanged("estado_estudiante_idEstado_estudiante");
+					this.Onestado_estudiante_idEstado_estudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_matricula", DbType="NVarChar(9)")]
+		public string matricula
+		{
+			get
+			{
+				return this._matricula;
+			}
+			set
+			{
+				if ((this._matricula != value))
+				{
+					this.OnmatriculaChanging(value);
+					this.SendPropertyChanging();
+					this._matricula = value;
+					this.SendPropertyChanged("matricula");
+					this.OnmatriculaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="NVarChar(100)")]
+		public string apellidoPaterno
+		{
+			get
+			{
+				return this._apellidoPaterno;
+			}
+			set
+			{
+				if ((this._apellidoPaterno != value))
+				{
+					this.OnapellidoPaternoChanging(value);
+					this.SendPropertyChanging();
+					this._apellidoPaterno = value;
+					this.SendPropertyChanged("apellidoPaterno");
+					this.OnapellidoPaternoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="NVarChar(100)")]
+		public string apellidoMaterno
+		{
+			get
+			{
+				return this._apellidoMaterno;
+			}
+			set
+			{
+				if ((this._apellidoMaterno != value))
+				{
+					this.OnapellidoMaternoChanging(value);
+					this.SendPropertyChanging();
+					this._apellidoMaterno = value;
+					this.SendPropertyChanged("apellidoMaterno");
+					this.OnapellidoMaternoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_correoElectronico", DbType="NVarChar(100)")]
+		public string correoElectronico
+		{
+			get
+			{
+				return this._correoElectronico;
+			}
+			set
+			{
+				if ((this._correoElectronico != value))
+				{
+					this.OncorreoElectronicoChanging(value);
+					this.SendPropertyChanging();
+					this._correoElectronico = value;
+					this.SendPropertyChanged("correoElectronico");
+					this.OncorreoElectronicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_semestreCursando", DbType="Int")]
+		public System.Nullable<int> semestreCursando
+		{
+			get
+			{
+				return this._semestreCursando;
+			}
+			set
+			{
+				if ((this._semestreCursando != value))
+				{
+					this.OnsemestreCursandoChanging(value);
+					this.SendPropertyChanging();
+					this._semestreCursando = value;
+					this.SendPropertyChanged("semestreCursando");
+					this.OnsemestreCursandoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefono", DbType="BigInt")]
+		public System.Nullable<long> telefono
+		{
+			get
+			{
+				return this._telefono;
+			}
+			set
+			{
+				if ((this._telefono != value))
+				{
+					this.OntelefonoChanging(value);
+					this.SendPropertyChanging();
+					this._telefono = value;
+					this.SendPropertyChanged("telefono");
+					this.OntelefonoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_sesion_tutoria", Storage="_SesionTutorias", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
+		public EntitySet<SesionTutoria> SesionTutorias
+		{
+			get
+			{
+				return this._SesionTutorias;
+			}
+			set
+			{
+				this._SesionTutorias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_estudiante", Storage="_ProblematicaEstudiantes", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
+		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
+		{
+			get
+			{
+				return this._ProblematicaEstudiantes;
+			}
+			set
+			{
+				this._ProblematicaEstudiantes.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_problematica_academica", Storage="_ProblematicaAcademicas", ThisKey="idEstudiante", OtherKey="Estudiante_idEstudiante")]
+		public EntitySet<ProblematicaAcademica> ProblematicaAcademicas
+		{
+			get
+			{
+				return this._ProblematicaAcademicas;
+			}
+			set
+			{
+				this._ProblematicaAcademicas.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estudiante_experienciaseducativascursando", Storage="_ExperienciasEducativasCursandos", ThisKey="idEstudiante", OtherKey="Estudiante_idEstudiante")]
+		public EntitySet<ExperienciasEducativasCursando> ExperienciasEducativasCursandos
+		{
+			get
+			{
+				return this._ExperienciasEducativasCursandos;
+			}
+			set
+			{
+				this._ExperienciasEducativasCursandos.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_estudiante", Storage="_EstadoEstudiante", ThisKey="estado_estudiante_idEstado_estudiante", OtherKey="idEstado_estudiante", IsForeignKey=true)]
+		public EstadoEstudiante EstadoEstudiante
+		{
+			get
+			{
+				return this._EstadoEstudiante.Entity;
+			}
+			set
+			{
+				EstadoEstudiante previousValue = this._EstadoEstudiante.Entity;
+				if (((previousValue != value) 
+							|| (this._EstadoEstudiante.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._EstadoEstudiante.Entity = null;
+						previousValue.Estudiantes.Remove(this);
+					}
+					this._EstadoEstudiante.Entity = value;
+					if ((value != null))
+					{
+						value.Estudiantes.Add(this);
+						this._estado_estudiante_idEstado_estudiante = value.idEstado_estudiante;
+					}
+					else
+					{
+						this._estado_estudiante_idEstado_estudiante = default(int);
+					}
+					this.SendPropertyChanged("EstadoEstudiante");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_estudiante", Storage="_Academico", ThisKey="academico_idAcademico", OtherKey="idAcademico", IsForeignKey=true)]
+		public Academico Academico
+		{
+			get
+			{
+				return this._Academico.Entity;
+			}
+			set
+			{
+				Academico previousValue = this._Academico.Entity;
+				if (((previousValue != value) 
+							|| (this._Academico.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Academico.Entity = null;
+						previousValue.Estudiantes.Remove(this);
+					}
+					this._Academico.Entity = value;
+					if ((value != null))
+					{
+						value.Estudiantes.Add(this);
+						this._academico_idAcademico = value.idAcademico;
+					}
+					else
+					{
+						this._academico_idAcademico = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Academico");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_SesionTutorias(SesionTutoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = this;
+		}
+		
+		private void detach_SesionTutorias(SesionTutoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = null;
+		}
+		
+		private void attach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = this;
+		}
+		
+		private void detach_ProblematicaEstudiantes(ProblematicaEstudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = null;
+		}
+		
+		private void attach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = this;
+		}
+		
+		private void detach_ProblematicaAcademicas(ProblematicaAcademica entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = null;
+		}
+		
+		private void attach_ExperienciasEducativasCursandos(ExperienciasEducativasCursando entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = this;
+		}
+		
+		private void detach_ExperienciasEducativasCursandos(ExperienciasEducativasCursando entity)
+		{
+			this.SendPropertyChanging();
+			entity.Estudiante = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estado_problematica")]
+	public partial class EstadoProblematica : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idestado_problematica;
+		
+		private string _estado;
+		
+		private EntitySet<Problematica> _Problematicas;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onidestado_problematicaChanging(int value);
+    partial void Onidestado_problematicaChanged();
+    partial void OnestadoChanging(string value);
+    partial void OnestadoChanged();
+    #endregion
+		
+		public EstadoProblematica()
+		{
+			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idestado_problematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idestado_problematica
+		{
+			get
+			{
+				return this._idestado_problematica;
+			}
+			set
+			{
+				if ((this._idestado_problematica != value))
+				{
+					this.Onidestado_problematicaChanging(value);
+					this.SendPropertyChanging();
+					this._idestado_problematica = value;
+					this.SendPropertyChanged("idestado_problematica");
+					this.Onidestado_problematicaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado", DbType="NVarChar(100)")]
+		public string estado
+		{
+			get
+			{
+				return this._estado;
+			}
+			set
+			{
+				if ((this._estado != value))
+				{
+					this.OnestadoChanging(value);
+					this.SendPropertyChanging();
+					this._estado = value;
+					this.SendPropertyChanged("estado");
+					this.OnestadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_problematica_problematica", Storage="_Problematicas", ThisKey="idestado_problematica", OtherKey="estado_problematica_idestado_problematica")]
+		public EntitySet<Problematica> Problematicas
+		{
+			get
+			{
+				return this._Problematicas;
+			}
+			set
+			{
+				this._Problematicas.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.EstadoProblematica = this;
+		}
+		
+		private void detach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.EstadoProblematica = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.estado_estudiante")]
+	public partial class EstadoEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idEstado_estudiante;
+		
+		private string _estado;
+		
+		private EntitySet<Estudiante> _Estudiantes;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidEstado_estudianteChanging(int value);
+    partial void OnidEstado_estudianteChanged();
+    partial void OnestadoChanging(string value);
+    partial void OnestadoChanged();
+    #endregion
+		
+		public EstadoEstudiante()
+		{
+			this._Estudiantes = new EntitySet<Estudiante>(new Action<Estudiante>(this.attach_Estudiantes), new Action<Estudiante>(this.detach_Estudiantes));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstado_estudiante", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idEstado_estudiante
+		{
+			get
+			{
+				return this._idEstado_estudiante;
+			}
+			set
+			{
+				if ((this._idEstado_estudiante != value))
+				{
+					this.OnidEstado_estudianteChanging(value);
+					this.SendPropertyChanging();
+					this._idEstado_estudiante = value;
+					this.SendPropertyChanged("idEstado_estudiante");
+					this.OnidEstado_estudianteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado", DbType="NVarChar(45)")]
+		public string estado
+		{
+			get
+			{
+				return this._estado;
+			}
+			set
+			{
+				if ((this._estado != value))
+				{
+					this.OnestadoChanging(value);
+					this.SendPropertyChanging();
+					this._estado = value;
+					this.SendPropertyChanged("estado");
+					this.OnestadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="estado_estudiante_estudiante", Storage="_Estudiantes", ThisKey="idEstado_estudiante", OtherKey="estado_estudiante_idEstado_estudiante")]
+		public EntitySet<Estudiante> Estudiantes
+		{
+			get
+			{
+				return this._Estudiantes;
+			}
+			set
+			{
+				this._Estudiantes.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Estudiantes(Estudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.EstadoEstudiante = this;
+		}
+		
+		private void detach_Estudiantes(Estudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.EstadoEstudiante = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.comentario")]
+	public partial class Comentario : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idComentario;
+		
+		private int _reporte_Tutoria_idReporte_Tutoria;
+		
+		private string _comentarios;
+		
+		private EntityRef<ReporteTutoria> _ReporteTutoria;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidComentarioChanging(int value);
+    partial void OnidComentarioChanged();
+    partial void Onreporte_Tutoria_idReporte_TutoriaChanging(int value);
+    partial void Onreporte_Tutoria_idReporte_TutoriaChanged();
+    partial void OncomentariosChanging(string value);
+    partial void OncomentariosChanged();
+    #endregion
+		
+		public Comentario()
+		{
+			this._ReporteTutoria = default(EntityRef<ReporteTutoria>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idComentario", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idComentario
+		{
+			get
+			{
+				return this._idComentario;
+			}
+			set
+			{
+				if ((this._idComentario != value))
+				{
+					this.OnidComentarioChanging(value);
+					this.SendPropertyChanging();
+					this._idComentario = value;
+					this.SendPropertyChanged("idComentario");
+					this.OnidComentarioChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_reporte_Tutoria_idReporte_Tutoria", DbType="Int NOT NULL")]
+		public int reporte_Tutoria_idReporte_Tutoria
+		{
+			get
+			{
+				return this._reporte_Tutoria_idReporte_Tutoria;
+			}
+			set
+			{
+				if ((this._reporte_Tutoria_idReporte_Tutoria != value))
+				{
+					if (this._ReporteTutoria.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onreporte_Tutoria_idReporte_TutoriaChanging(value);
+					this.SendPropertyChanging();
+					this._reporte_Tutoria_idReporte_Tutoria = value;
+					this.SendPropertyChanged("reporte_Tutoria_idReporte_Tutoria");
+					this.Onreporte_Tutoria_idReporte_TutoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_comentarios", DbType="NVarChar(500)")]
+		public string comentarios
+		{
+			get
+			{
+				return this._comentarios;
+			}
+			set
+			{
+				if ((this._comentarios != value))
+				{
+					this.OncomentariosChanging(value);
+					this.SendPropertyChanging();
+					this._comentarios = value;
+					this.SendPropertyChanged("comentarios");
+					this.OncomentariosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="reporte_tutoria_comentario", Storage="_ReporteTutoria", ThisKey="reporte_Tutoria_idReporte_Tutoria", OtherKey="idReporte_Tutoria", IsForeignKey=true)]
+		public ReporteTutoria ReporteTutoria
+		{
+			get
+			{
+				return this._ReporteTutoria.Entity;
+			}
+			set
+			{
+				ReporteTutoria previousValue = this._ReporteTutoria.Entity;
+				if (((previousValue != value) 
+							|| (this._ReporteTutoria.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ReporteTutoria.Entity = null;
+						previousValue.Comentarios.Remove(this);
+					}
+					this._ReporteTutoria.Entity = value;
+					if ((value != null))
+					{
+						value.Comentarios.Add(this);
+						this._reporte_Tutoria_idReporte_Tutoria = value.idReporte_Tutoria;
+					}
+					else
+					{
+						this._reporte_Tutoria_idReporte_Tutoria = default(int);
+					}
+					this.SendPropertyChanged("ReporteTutoria");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.clasificacion_problematica")]
+	public partial class ClasificacionEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idClasificacion_problematica;
+		
+		private string _clasificacion;
+		
+		private EntitySet<Problematica> _Problematicas;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidClasificacion_problematicaChanging(int value);
+    partial void OnidClasificacion_problematicaChanged();
+    partial void OnclasificacionChanging(string value);
+    partial void OnclasificacionChanged();
+    #endregion
+		
+		public ClasificacionEstudiante()
+		{
+			this._Problematicas = new EntitySet<Problematica>(new Action<Problematica>(this.attach_Problematicas), new Action<Problematica>(this.detach_Problematicas));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idClasificacion_problematica", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idClasificacion_problematica
+		{
+			get
+			{
+				return this._idClasificacion_problematica;
+			}
+			set
+			{
+				if ((this._idClasificacion_problematica != value))
+				{
+					this.OnidClasificacion_problematicaChanging(value);
+					this.SendPropertyChanging();
+					this._idClasificacion_problematica = value;
+					this.SendPropertyChanged("idClasificacion_problematica");
+					this.OnidClasificacion_problematicaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clasificacion", DbType="NVarChar(100)")]
+		public string clasificacion
+		{
+			get
+			{
+				return this._clasificacion;
+			}
+			set
+			{
+				if ((this._clasificacion != value))
+				{
+					this.OnclasificacionChanging(value);
+					this.SendPropertyChanging();
+					this._clasificacion = value;
+					this.SendPropertyChanged("clasificacion");
+					this.OnclasificacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clasificacion_problematica_problematica", Storage="_Problematicas", ThisKey="idClasificacion_problematica", OtherKey="clasificacion_problematica_idClasificacion_problematica")]
+		public EntitySet<Problematica> Problematicas
+		{
+			get
+			{
+				return this._Problematicas;
+			}
+			set
+			{
+				this._Problematicas.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ClasificacionEstudiante = this;
+		}
+		
+		private void detach_Problematicas(Problematica entity)
+		{
+			this.SendPropertyChanging();
+			entity.ClasificacionEstudiante = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.academico")]
+	public partial class Academico : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idAcademico;
+		
+		private int _rol_idRol;
+		
+		private System.Nullable<int> _numerPersonal;
+		
+		private string _correoInstitucional;
+		
+		private string _nombre;
+		
+		private string _apellidoPaterno;
+		
+		private string _apellidoMaterno;
+		
+		private System.Nullable<long> _telefono;
+		
+		private EntitySet<Usuario> _Usuarios;
+		
+		private EntitySet<ReporteTutoria> _ReporteTutorias;
+		
+		private EntitySet<ProgramaEducativo> _programa_educativos;
+		
+		private EntitySet<ProgramaEducativo> _ProgramaEducativos;
+		
+		private EntitySet<ExperienciaEducativa> _ExperienciaEducativas;
+		
+		private EntitySet<Estudiante> _Estudiantes;
+		
+		private EntityRef<Rol> _Rol;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidAcademicoChanging(int value);
+    partial void OnidAcademicoChanged();
+    partial void Onrol_idRolChanging(int value);
+    partial void Onrol_idRolChanged();
+    partial void OnnumerPersonalChanging(System.Nullable<int> value);
+    partial void OnnumerPersonalChanged();
+    partial void OncorreoInstitucionalChanging(string value);
+    partial void OncorreoInstitucionalChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OnapellidoPaternoChanging(string value);
+    partial void OnapellidoPaternoChanged();
+    partial void OnapellidoMaternoChanging(string value);
+    partial void OnapellidoMaternoChanged();
+    partial void OntelefonoChanging(System.Nullable<long> value);
+    partial void OntelefonoChanged();
+    #endregion
+		
+		public Academico()
+		{
+			this._Usuarios = new EntitySet<Usuario>(new Action<Usuario>(this.attach_Usuarios), new Action<Usuario>(this.detach_Usuarios));
+			this._ReporteTutorias = new EntitySet<ReporteTutoria>(new Action<ReporteTutoria>(this.attach_ReporteTutorias), new Action<ReporteTutoria>(this.detach_ReporteTutorias));
+			this._programa_educativos = new EntitySet<ProgramaEducativo>(new Action<ProgramaEducativo>(this.attach_programa_educativos), new Action<ProgramaEducativo>(this.detach_programa_educativos));
+			this._ProgramaEducativos = new EntitySet<ProgramaEducativo>(new Action<ProgramaEducativo>(this.attach_ProgramaEducativos), new Action<ProgramaEducativo>(this.detach_ProgramaEducativos));
+			this._ExperienciaEducativas = new EntitySet<ExperienciaEducativa>(new Action<ExperienciaEducativa>(this.attach_ExperienciaEducativas), new Action<ExperienciaEducativa>(this.detach_ExperienciaEducativas));
+			this._Estudiantes = new EntitySet<Estudiante>(new Action<Estudiante>(this.attach_Estudiantes), new Action<Estudiante>(this.detach_Estudiantes));
+			this._Rol = default(EntityRef<Rol>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idAcademico", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idAcademico
+		{
+			get
+			{
+				return this._idAcademico;
+			}
+			set
+			{
+				if ((this._idAcademico != value))
+				{
+					this.OnidAcademicoChanging(value);
+					this.SendPropertyChanging();
+					this._idAcademico = value;
+					this.SendPropertyChanged("idAcademico");
+					this.OnidAcademicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rol_idRol", DbType="Int NOT NULL")]
+		public int rol_idRol
+		{
+			get
+			{
+				return this._rol_idRol;
+			}
+			set
+			{
+				if ((this._rol_idRol != value))
+				{
+					if (this._Rol.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onrol_idRolChanging(value);
+					this.SendPropertyChanging();
+					this._rol_idRol = value;
+					this.SendPropertyChanged("rol_idRol");
+					this.Onrol_idRolChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numerPersonal", DbType="Int")]
+		public System.Nullable<int> numerPersonal
+		{
+			get
+			{
+				return this._numerPersonal;
+			}
+			set
+			{
+				if ((this._numerPersonal != value))
+				{
+					this.OnnumerPersonalChanging(value);
+					this.SendPropertyChanging();
+					this._numerPersonal = value;
+					this.SendPropertyChanged("numerPersonal");
+					this.OnnumerPersonalChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_correoInstitucional", DbType="NVarChar(100)")]
+		public string correoInstitucional
+		{
+			get
+			{
+				return this._correoInstitucional;
+			}
+			set
+			{
+				if ((this._correoInstitucional != value))
+				{
+					this.OncorreoInstitucionalChanging(value);
+					this.SendPropertyChanging();
+					this._correoInstitucional = value;
+					this.SendPropertyChanged("correoInstitucional");
+					this.OncorreoInstitucionalChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(100)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="NVarChar(100)")]
+		public string apellidoPaterno
+		{
+			get
+			{
+				return this._apellidoPaterno;
+			}
+			set
+			{
+				if ((this._apellidoPaterno != value))
+				{
+					this.OnapellidoPaternoChanging(value);
+					this.SendPropertyChanging();
+					this._apellidoPaterno = value;
+					this.SendPropertyChanged("apellidoPaterno");
+					this.OnapellidoPaternoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="NVarChar(100)")]
+		public string apellidoMaterno
+		{
+			get
+			{
+				return this._apellidoMaterno;
+			}
+			set
+			{
+				if ((this._apellidoMaterno != value))
+				{
+					this.OnapellidoMaternoChanging(value);
+					this.SendPropertyChanging();
+					this._apellidoMaterno = value;
+					this.SendPropertyChanged("apellidoMaterno");
+					this.OnapellidoMaternoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefono", DbType="BigInt")]
+		public System.Nullable<long> telefono
+		{
+			get
+			{
+				return this._telefono;
+			}
+			set
+			{
+				if ((this._telefono != value))
+				{
+					this.OntelefonoChanging(value);
+					this.SendPropertyChanging();
+					this._telefono = value;
+					this.SendPropertyChanged("telefono");
+					this.OntelefonoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_usuario", Storage="_Usuarios", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		public EntitySet<Usuario> Usuarios
+		{
+			get
+			{
+				return this._Usuarios;
+			}
+			set
+			{
+				this._Usuarios.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_reporte_tutoria", Storage="_ReporteTutorias", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		public EntitySet<ReporteTutoria> ReporteTutorias
+		{
+			get
+			{
+				return this._ReporteTutorias;
+			}
+			set
+			{
+				this._ReporteTutorias.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_programa_educativo", Storage="_programa_educativos", ThisKey="idAcademico", OtherKey="jefeCarrera")]
+		public EntitySet<ProgramaEducativo> programa_educativos
+		{
+			get
+			{
+				return this._programa_educativos;
+			}
+			set
+			{
+				this._programa_educativos.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_programa_educativo1", Storage="_ProgramaEducativos", ThisKey="idAcademico", OtherKey="coordinadorTutor")]
+		public EntitySet<ProgramaEducativo> ProgramaEducativos
+		{
+			get
+			{
+				return this._ProgramaEducativos;
+			}
+			set
+			{
+				this._ProgramaEducativos.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_experiencia_educativa", Storage="_ExperienciaEducativas", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		public EntitySet<ExperienciaEducativa> ExperienciaEducativas
+		{
+			get
+			{
+				return this._ExperienciaEducativas;
+			}
+			set
+			{
+				this._ExperienciaEducativas.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="academico_estudiante", Storage="_Estudiantes", ThisKey="idAcademico", OtherKey="academico_idAcademico")]
+		public EntitySet<Estudiante> Estudiantes
+		{
+			get
+			{
+				return this._Estudiantes;
+			}
+			set
+			{
+				this._Estudiantes.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="rol_academico", Storage="_Rol", ThisKey="rol_idRol", OtherKey="idRol", IsForeignKey=true)]
+		public Rol Rol
+		{
+			get
+			{
+				return this._Rol.Entity;
+			}
+			set
+			{
+				Rol previousValue = this._Rol.Entity;
+				if (((previousValue != value) 
+							|| (this._Rol.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Rol.Entity = null;
+						previousValue.Academicos.Remove(this);
+					}
+					this._Rol.Entity = value;
+					if ((value != null))
+					{
+						value.Academicos.Add(this);
+						this._rol_idRol = value.idRol;
+					}
+					else
+					{
+						this._rol_idRol = default(int);
+					}
+					this.SendPropertyChanged("Rol");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Usuarios(Usuario entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = this;
+		}
+		
+		private void detach_Usuarios(Usuario entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = null;
+		}
+		
+		private void attach_ReporteTutorias(ReporteTutoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = this;
+		}
+		
+		private void detach_ReporteTutorias(ReporteTutoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = null;
+		}
+		
+		private void attach_programa_educativos(ProgramaEducativo entity)
+		{
+			this.SendPropertyChanging();
+			entity.academico = this;
+		}
+		
+		private void detach_programa_educativos(ProgramaEducativo entity)
+		{
+			this.SendPropertyChanging();
+			entity.academico = null;
+		}
+		
+		private void attach_ProgramaEducativos(ProgramaEducativo entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico1 = this;
+		}
+		
+		private void detach_ProgramaEducativos(ProgramaEducativo entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico1 = null;
+		}
+		
+		private void attach_ExperienciaEducativas(ExperienciaEducativa entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = this;
+		}
+		
+		private void detach_ExperienciaEducativas(ExperienciaEducativa entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = null;
+		}
+		
+		private void attach_Estudiantes(Estudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = this;
+		}
+		
+		private void detach_Estudiantes(Estudiante entity)
+		{
+			this.SendPropertyChanging();
+			entity.Academico = null;
 		}
 	}
 }
