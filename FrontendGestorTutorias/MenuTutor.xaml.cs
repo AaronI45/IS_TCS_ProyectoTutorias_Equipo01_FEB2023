@@ -56,5 +56,10 @@ namespace FrontendGestorTutorias
             ventanaModificarFechas.Show();
             this.Close();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
