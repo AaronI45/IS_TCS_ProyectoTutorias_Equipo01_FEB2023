@@ -22,6 +22,7 @@ namespace FrontendGestorTutorias
         public ProblematicasAcademicas()
         {
             InitializeComponent();
+            
         }
 
     }
