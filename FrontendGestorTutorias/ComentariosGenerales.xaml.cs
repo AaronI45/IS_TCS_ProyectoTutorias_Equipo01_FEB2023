@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiciosTutorias;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace FrontendGestorTutorias
         public ComentariosGenerales()
         {
             InitializeComponent();
+            tbComentarioGeneral.PreviewTextInput += new TextCompositionEventHandler(soloLetras);
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -38,7 +40,50 @@ namespace FrontendGestorTutorias
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
+            if (!hayCamposVacios())
+            {
+                registrarComentariosGeneralesAsync();
+            }
+        }
 
+        private async void registrarComentariosGeneralesAsync()
+        {
+            var conexionServicios = new Service1Client();
+            if (conexionServicios != null)
+            {
+                Comentario comentarioGeneral = new Comentario()
+                {
+                    comentarios = tbComentarioGeneral.Text
+                };
+                MessageBox.Show("Comentario registrado exitosamente", "Registro exitoso");
+                ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica();
+                ventanaReporteTutoria.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo conectar con el servidor", "Error");
+            }
+        }
+
+        private void soloLetras(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !e.Text.Any(char.IsLetter);
+        }
+
+        private bool hayCamposVacios()
+        {
+            bool camposVacios = false;
+            if (tbComentarioGeneral.Text == "")
+            {
+                tbComentarioGeneral.BorderBrush = Brushes.Red;
+                camposVacios = true;
+            }
+            else
+            {
+                tbComentarioGeneral.BorderBrush = Brushes.Black;
+            }
+            return camposVacios;
         }
     }
 }
