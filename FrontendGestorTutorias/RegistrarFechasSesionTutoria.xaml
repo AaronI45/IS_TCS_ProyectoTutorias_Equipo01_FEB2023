@@ -1,0 +1,22 @@
+﻿<Window x:Class="FrontendGestorTutorias.RegistrarFechasSesionTutoria"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontendGestorTutorias"
+        mc:Ignorable="d"
+        Title="Registrar fechas de sesion de tutoria" Height="350" Width="600">
+    <Grid>
+        <ComboBox x:Name="cbPeriodoEscolar" HorizontalAlignment="Left" Margin="300,47,0,0" VerticalAlignment="Top" Width="210" Height="30"/>
+        <Label Content="Seleccione periodo escolar:" HorizontalAlignment="Left" Margin="141,49,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="365,276,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="478,276,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White"/>
+        <DatePicker x:Name="dpPrimeraFecha" HorizontalAlignment="Left" Margin="300,117,0,0" VerticalAlignment="Top" Width="145"/>
+        <Label Content="Primera fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="102,116,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpSegundaFecha" HorizontalAlignment="Left" Margin="300,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Segunda fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="96,163,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpTerceraFecha" HorizontalAlignment="Left" Margin="300,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tercera fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="105,208,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

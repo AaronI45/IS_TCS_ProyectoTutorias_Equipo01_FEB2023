@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="MenuPrincipal" Height="450" Width="800">
+        Title="Menu Principal" Height="450" Width="800">
     <Grid>
         
     </Grid>

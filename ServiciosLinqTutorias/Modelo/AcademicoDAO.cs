@@ -20,7 +20,6 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
                 && usuarioEncontrado.password == ConvertidorSHA256.Convertir(password));
-
                 if (encontrarUsuario != null) 
                 {
                     resultado.AcademicoEncontrado = encontrarUsuario;
@@ -55,7 +54,10 @@ namespace ServiciosLinqTutorias.Modelo
                     nombre = nuevoTutor.nombre,
                     apellidoPaterno = nuevoTutor.apellidoPaterno,
                     apellidoMaterno = nuevoTutor.apellidoMaterno,
-                    telefono = nuevoTutor.telefono
+                    telefono = nuevoTutor.telefono,
+                    programa_educativo_idPrograma_educativo = nuevoTutor.programa_educativo_idPrograma_educativo,
+                    username = nuevoTutor.username,
+                    password = ConvertidorSHA256.Convertir(nuevoTutor.password)
                 };
                 conexionBD.Academicos.InsertOnSubmit(tutor);
                 conexionBD.SubmitChanges();
