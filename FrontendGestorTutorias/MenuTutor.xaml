@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="MenuTutor" Height="450" Width="800">
+        Title="Menu Tutor" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="558,344,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
+
     </Grid>
 </Window>
