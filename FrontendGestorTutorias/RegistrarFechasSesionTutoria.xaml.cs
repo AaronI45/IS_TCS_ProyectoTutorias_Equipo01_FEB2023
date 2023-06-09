@@ -23,6 +23,7 @@ namespace FrontendGestorTutorias
         public RegistrarFechasSesionTutoria()
         {
             InitializeComponent();
+            cargarCbPeriodosEscolares();
         }
 
         private async void cargarCbPeriodosEscolares()
@@ -47,6 +48,23 @@ namespace FrontendGestorTutorias
             {
                 MessageBox.Show("No se pudo conectar con el servidor", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            var confirmacion = MessageBox.Show("¿Está seguro de querer cancelar la operación?", "Cancelar",
+                MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (confirmacion == MessageBoxResult.Yes)
+            {
+                MenuTutor ventanaMenuTutor = new MenuTutor();
+                ventanaMenuTutor.Show();
+                this.Close();
+            }
+        }
+
+        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

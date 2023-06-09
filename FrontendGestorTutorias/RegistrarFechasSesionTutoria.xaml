@@ -9,8 +9,8 @@
     <Grid>
         <ComboBox x:Name="cbPeriodoEscolar" HorizontalAlignment="Left" Margin="300,47,0,0" VerticalAlignment="Top" Width="210" Height="30"/>
         <Label Content="Seleccione periodo escolar:" HorizontalAlignment="Left" Margin="141,49,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="365,276,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="478,276,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="365,276,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="478,276,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White" Click="btnRegistrar_Click"/>
         <DatePicker x:Name="dpPrimeraFecha" HorizontalAlignment="Left" Margin="300,117,0,0" VerticalAlignment="Top" Width="145"/>
         <Label Content="Primera fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="102,116,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="dpSegundaFecha" HorizontalAlignment="Left" Margin="300,164,0,0" VerticalAlignment="Top"/>

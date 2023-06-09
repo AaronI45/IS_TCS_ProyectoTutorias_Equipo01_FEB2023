@@ -26,7 +26,28 @@ namespace FrontendGestorTutorias
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var confirmacion = MessageBox.Show("¿Está seguro de querer cerrar sesión?", "Cerrar sesión",
+                MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (confirmacion == MessageBoxResult.Yes)
+            {
+                MainWindow ventanaLogin = new MainWindow();
+                ventanaLogin.Show();
+                this.Close();
+            }
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            RegistrarFechasSesionTutoria ventanaFechasTutorias = new RegistrarFechasSesionTutoria();
+            ventanaFechasTutorias.Show();
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica();
+            ventanaReporteTutoria.Show();
+            this.Close();
         }
     }
 }
