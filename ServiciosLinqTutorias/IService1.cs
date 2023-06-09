@@ -59,6 +59,8 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         List<Academico> recuperarTutoresPorProgramaEducativo(int idProgramaEducativo);
+        [OperationContract]
+        bool validarUsername(string username);
     }
 
     [DataContract]

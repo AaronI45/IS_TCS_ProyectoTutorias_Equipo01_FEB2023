@@ -89,5 +89,10 @@ namespace ServiciosLinqTutorias
         {
             return AcademicoDAO.RecuperarTutoresPorProgramaEducativo(idProgramaEducativo);
         }
+
+        public bool validarUsername(string username)
+        {
+            return AcademicoDAO.validarUsername(username);
+        }
     }
 }

@@ -115,5 +115,23 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return tutores;
         }
+
+        public static bool validarUsername (string username)
+        {
+            bool usernameValido = false;
+            try
+            {
+                var encontrarUsername = conexionBD.Academicos.FirstOrDefault(usernameEncontrado => usernameEncontrado.username == username);
+                if (encontrarUsername == null)
+                {
+                    usernameValido = true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return usernameValido;
+        }
     }
 }
