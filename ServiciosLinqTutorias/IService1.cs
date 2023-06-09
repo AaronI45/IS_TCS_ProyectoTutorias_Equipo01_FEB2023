@@ -37,6 +37,9 @@ namespace ServiciosLinqTutorias
         List<Problematica> obtenerProblematicas();
 
         [OperationContract]
+        List<PeriodoEscolar> obtenerPeriodosEscolares();
+
+        [OperationContract]
         ResultadoProblematica consultarProblematicaPorId(int idProblematica);
 
         [OperationContract]
