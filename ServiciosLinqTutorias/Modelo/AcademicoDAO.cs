@@ -18,13 +18,13 @@ namespace ServiciosLinqTutorias.Modelo
             resultado.Error = false;
             try
             {
-                var encontrarUsuario = conexionBD.Usuarios.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
+                var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
                 && ConvertidorSHA256.Comparar(password,usuarioEncontrado.password));
 
                 if (encontrarUsuario != null) 
                 {
                     resultado.Error = false;
-                    resultado.Mensaje = "Bienvenido " + encontrarUsuario.Academico.nombre + " al sistema";
+                    resultado.Mensaje = "Bienvenido al sistema";
                 }
             }
             catch   (Exception)
@@ -49,7 +49,10 @@ namespace ServiciosLinqTutorias.Modelo
                     nombre = nuevoTutor.nombre,
                     apellidoPaterno = nuevoTutor.apellidoPaterno,
                     apellidoMaterno = nuevoTutor.apellidoMaterno,
-                    telefono = nuevoTutor.telefono
+                    telefono = nuevoTutor.telefono,
+                    programa_educativo_idPrograma_educativo = nuevoTutor.programa_educativo_idPrograma_educativo,
+                    username = nuevoTutor.username,
+                    password = ConvertidorSHA256.Convertir(nuevoTutor.password)
                 };
                 conexionBD.Academicos.InsertOnSubmit(tutor);
                 conexionBD.SubmitChanges();

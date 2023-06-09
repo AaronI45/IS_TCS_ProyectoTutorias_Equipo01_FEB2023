@@ -48,7 +48,7 @@ namespace ServiciosLinqTutorias.Modelo
             Problematica problematicaEncontrada = null;
             try
             {
-                problematicaEncontrada = conexionBD.Problematicas.FirstOrDefault(problematica => problematica.idProblematica == idProblematica);
+                problematicaEncontrada = conexionBD.Problematicas.FirstOrDefault(problematica => problematica.idproblematica == idProblematica);
             }
             catch (Exception e)
             {
