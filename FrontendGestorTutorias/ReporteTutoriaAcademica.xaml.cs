@@ -45,7 +45,9 @@ namespace FrontendGestorTutorias
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            ComentariosGenerales ventanaComentario = new ComentariosGenerales();
+            ventanaComentario.Show();
+            this.Close();
         }
     }
 }
