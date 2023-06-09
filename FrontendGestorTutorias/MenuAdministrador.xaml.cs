@@ -47,7 +47,7 @@ namespace FrontendGestorTutorias
 
         private void clicRegistrarTutor(object sender, RoutedEventArgs e)
         {
-            RegistrarTutor ventanaRegistrarTutor = new RegistrarTutor();
+            RegistrarTutor ventanaRegistrarTutor = new RegistrarTutor(idProgramaEducativo);
             ventanaRegistrarTutor.Show();
             this.Close();
         }

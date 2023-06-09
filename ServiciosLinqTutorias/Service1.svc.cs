@@ -94,5 +94,15 @@ namespace ServiciosLinqTutorias
         {
             return AcademicoDAO.validarUsername(username);
         }
+
+        public List<Estudiante> recuperarEstudiantes()
+        {
+            return EstudianteDAO.obtenerEstudiantes();
+        }
+
+        public Academico recuperarAcademicoPorId(int idAcademico)
+        {
+            return AcademicoDAO.recuperarAcademicoPorId(idAcademico);
+        }
     }
 }
