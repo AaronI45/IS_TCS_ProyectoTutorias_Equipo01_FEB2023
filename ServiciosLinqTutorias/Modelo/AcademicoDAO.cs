@@ -115,5 +115,49 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return tutores;
         }
+
+        public static bool validarUsername (string username)
+        {
+            bool usernameValido = false;
+            try
+            {
+                var encontrarUsername = conexionBD.Academicos.FirstOrDefault(usernameEncontrado => usernameEncontrado.username == username);
+                if (encontrarUsername == null)
+                {
+                    usernameValido = true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return usernameValido;
+        }
+
+        public static Academico recuperarAcademicoPorId(int idAcademico)
+        {
+            Academico academico = null;
+            try
+            {
+                var academicoEncontrado = conexionBD.Academicos.FirstOrDefault(academicoAux => academicoAux.idAcademico == idAcademico);
+                academico = new Academico()
+                {
+                    idAcademico = academicoEncontrado.idAcademico,
+                    rol_idRol = academicoEncontrado.rol_idRol,
+                    numerPersonal = academicoEncontrado.numerPersonal,
+                    correoInstitucional = academicoEncontrado.correoInstitucional,
+                    nombre = academicoEncontrado.nombre,
+                    apellidoPaterno = academicoEncontrado.apellidoPaterno,
+                    apellidoMaterno = academicoEncontrado.apellidoMaterno,
+                    telefono = academicoEncontrado.telefono,
+                    programa_educativo_idPrograma_educativo = academicoEncontrado.programa_educativo_idPrograma_educativo,
+                };
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return academico;
+        }
     }
 }

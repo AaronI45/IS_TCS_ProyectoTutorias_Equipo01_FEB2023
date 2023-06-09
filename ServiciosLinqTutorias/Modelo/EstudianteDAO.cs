@@ -89,6 +89,30 @@ namespace ServiciosLinqTutorias.Modelo
             return estudiantes;
         }
 
+        public static List<Estudiante> obtenerEstudiantes()
+        {
+            List<Estudiante> estudiantes = new List<Estudiante>();
+            var estudiantesEncontrados = conexionBD.Estudiantes;
+            foreach (var estudiante in estudiantesEncontrados)
+            {
+                Estudiante estudianteAuxiliar = new Estudiante()
+                {
+                    idEstudiante = estudiante.idEstudiante,
+                    academico_idAcademico = estudiante.academico_idAcademico,
+                    enRiesgo= estudiante.enRiesgo,
+                    matricula = estudiante.matricula,
+                    nombre = estudiante.nombre,
+                    apellidoPaterno = estudiante.apellidoPaterno,
+                    apellidoMaterno = estudiante.apellidoMaterno,
+                    correoElectronico = estudiante.correoElectronico,
+                    semestreCursando = estudiante.semestreCursando,
+                    telefono = estudiante.telefono
+                };
+                estudiantes.Add(estudianteAuxiliar);
+            }
+            return estudiantes;
+        }
+
         public static Estudiante recuperarEstudiantePorMatricula(string matricula)
         {
             var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado => estudianteEncontrado.matricula == matricula);
