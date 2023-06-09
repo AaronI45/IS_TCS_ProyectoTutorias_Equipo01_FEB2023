@@ -1,4 +1,5 @@
 ﻿using FrontendGestorTutorias.modelo;
+using ServiciosTutorias;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,19 @@ namespace FrontendGestorTutorias
 
         private void clicAsignarNuevoTutor(object sender, RoutedEventArgs e)
         {
-
+            Estudiante estudianteSeleccionado = verificarSeleccion();
+            if(estudianteSeleccionado != null)
+            {
+                AsignarTutorAcademicoAEstudiante ventanaAsignarTutorAcademicoEstudiantes =
+                    new AsignarTutorAcademicoAEstudiante(this.idProgramaEducativo, estudianteSeleccionado.matricula);
+                ventanaAsignarTutorAcademicoEstudiantes.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Por favor seleccione un tutorado para realizar la nueva asignación", "Error",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void clicVolver(object sender, RoutedEventArgs e)
@@ -39,6 +52,16 @@ namespace FrontendGestorTutorias
             MenuAdministrador menuAdministrador = new MenuAdministrador(this.idProgramaEducativo);
             menuAdministrador.Show();
             this.Close();
+        }
+
+        private Estudiante verificarSeleccion()
+        {
+            Estudiante estudianteSeleccionado = null;
+            if(dgEstudiantes.SelectedItem != null)
+            {
+                estudianteSeleccionado = (Estudiante)dgEstudiantes.SelectedItem;
+            }
+            return estudianteSeleccionado;
         }
     }
 }

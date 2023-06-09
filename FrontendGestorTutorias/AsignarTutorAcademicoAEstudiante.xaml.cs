@@ -21,14 +21,14 @@ namespace FrontendGestorTutorias
     public partial class AsignarTutorAcademicoAEstudiante : Window
     {
         private int idProgramaEducativo;
-        private string matriculaIngresada;
+        private string matriculaIngresada = null;
         private Estudiante estudianteEncontrado = null;
         private Academico[] academicos = null;
         public AsignarTutorAcademicoAEstudiante(int idProgramaEducativo, string matriculaIngresada)
         {
+            InitializeComponent();
             this.idProgramaEducativo = idProgramaEducativo;
             this.matriculaIngresada = matriculaIngresada;
-            InitializeComponent();
             cargarCbTutores(this.idProgramaEducativo);
             cbTutorAcademico.Items.Insert(0, "Seleccionar Tutor académico");
             if (!string.IsNullOrEmpty(matriculaIngresada))
@@ -89,6 +89,8 @@ namespace FrontendGestorTutorias
                     if (!string.IsNullOrEmpty(matriculaIngresada))
                     {
                         this.estudianteEncontrado = estudiante;
+                        tbMatricula.Text = matricula;
+                        tbMatricula.IsReadOnly = true;
                         tbEstudiante.Text = estudiante.nombre + " " + estudiante.apellidoPaterno + " " + estudiante.apellidoMaterno;
                     }
                     else
