@@ -48,7 +48,7 @@ namespace ServiciosLinqTutorias.Modelo
             Problematica problematicaEncontrada = null;
             try
             {
-                problematicaEncontrada = conexionBD.Problematicas.FirstOrDefault(problematica => problematica.idProblematica == idProblematica);
+                problematicaEncontrada = conexionBD.Problematicas.FirstOrDefault(problematica => problematica.idproblematica == idProblematica);
             }
             catch (Exception e)
             {
@@ -81,16 +81,16 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static ResultadoOperacion editarComentariosGenerales(Comentario comentarioEdicion)
+        public static ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
             try
             {
-                var comentario = conexionBD.Comentarios.FirstOrDefault(comentarioEncontrado => comentarioEncontrado.idComentario == comentarioEdicion.idComentario);
+                var comentario = conexionBD.Comentarios.FirstOrDefault(comentarioEncontrado => comentarioEncontrado.reporte_Tutoria_idReporte_Tutoria == idTutoria);
                 if(comentario != null)
                 {
-                    comentario.comentarios = comentarioEdicion.comentarios;
+                    comentario.comentarios = nuevosComentarios;
                     conexionBD.SubmitChanges();
                     resultado.Error = false;
                     resultado.Mensaje = "Los comentarios se editaron correctamente";

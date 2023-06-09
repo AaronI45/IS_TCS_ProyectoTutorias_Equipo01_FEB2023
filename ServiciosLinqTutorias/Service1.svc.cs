@@ -15,7 +15,7 @@ namespace ServiciosLinqTutorias
     public class Service1 : IService1
     {
 
-        public ResultadoOperacion iniciarSesion(string username, string password)
+        public ResultadoLogin iniciarSesion(string username, string password)
         {
             return AcademicoDAO.iniciarSesion(username, password);
         }
@@ -60,9 +60,9 @@ namespace ServiciosLinqTutorias
             return TutoriaDAO.registrarComentariosGenerales(comentarioPresentado);
         }
 
-        public ResultadoOperacion editarComentariosGenerales(Comentario comentarioPresentado)
+        public ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
         {
-            return TutoriaDAO.editarComentariosGenerales(comentarioPresentado);
+            return TutoriaDAO.editarComentariosGenerales(nuevosComentarios, idTutoria);
         }
     }
 }

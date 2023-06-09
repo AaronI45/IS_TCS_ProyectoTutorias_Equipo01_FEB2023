@@ -18,7 +18,7 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 var studiante = new Estudiante()
                 {
-                    estado_estudiante_idEstado_estudiante = 1,
+                    enRiesgo = 0,
                     nombre = nuevoEstudiante.nombre,
                     matricula = nuevoEstudiante.matricula,
                     apellidoPaterno = nuevoEstudiante.apellidoPaterno,

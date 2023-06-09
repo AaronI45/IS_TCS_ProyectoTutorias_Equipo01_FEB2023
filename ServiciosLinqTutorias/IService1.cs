@@ -16,7 +16,7 @@ namespace ServiciosLinqTutorias
     {
 
         [OperationContract]
-        ResultadoOperacion iniciarSesion(string username, string password);
+        ResultadoLogin iniciarSesion(string username, string password);
 
         [OperationContract]
         ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);
@@ -43,24 +43,22 @@ namespace ServiciosLinqTutorias
         ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado);
 
         [OperationContract]
-        ResultadoOperacion editarComentariosGenerales(Comentario comentarioPresentado);
+        ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria);
     }
-        namespace Tipos
-        {
-            [DataContract]
-            public class Problematica
-            {
-                [DataMember]
-                public int idProblematica { get; set; }
-                [DataMember]
-                public string descripcionProblematica { get; set; }
-                [DataMember]
-                public string titulo { get; set; }
-                [DataMember]
-                public int clasificacion { get; set; }
-                [DataMember]
-                public int estado{ get; set; }
-            }   
-        }
-    
+
+    [DataContract]
+    public class ResultadoOperacion
+    {
+        [DataMember]
+        public string Mensaje { get; set; }
+        [DataMember]
+        public bool Error { get; set; }
+        public ResultadoOperacion() { }
+    }
+    [DataContract]
+    public class ResultadoLogin : ResultadoOperacion
+    {
+        [DataMember]
+        public Academico AcademicoEncontrado { get; set; }
+    }
 }

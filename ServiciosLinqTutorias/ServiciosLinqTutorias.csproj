@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministracionApp\ConvertidorSHA256.cs" />
+    <Compile Include="AdministracionApp\ResultadoLogin.cs" />
     <Compile Include="AdministracionApp\ResultadoOperacion.cs" />
     <Compile Include="Modelo\AcademicoDAO.cs" />
     <Compile Include="Modelo\ConexionBD.cs" />

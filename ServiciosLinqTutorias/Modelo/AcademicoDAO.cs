@@ -12,26 +12,31 @@ namespace ServiciosLinqTutorias.Modelo
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static int TUTOR_ACADEMICO = 3;
 
-        public static ResultadoOperacion iniciarSesion(string usuario, string password)
+        public static ResultadoLogin iniciarSesion(string usuario, string password)
         {
-            ResultadoOperacion resultado = new ResultadoOperacion();
+            ResultadoLogin resultado = new ResultadoLogin();
             resultado.Error = false;
             try
             {
-                var encontrarUsuario = conexionBD.Usuarios.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
-                && ConvertidorSHA256.Comparar(password,usuarioEncontrado.password));
+                var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
+                && usuarioEncontrado.password == ConvertidorSHA256.Convertir(password));
 
                 if (encontrarUsuario != null) 
                 {
+                    resultado.AcademicoEncontrado = encontrarUsuario;
                     resultado.Error = false;
-                    resultado.Mensaje = "Bienvenido " + encontrarUsuario.Academico.nombre + " al sistema";
+                    resultado.Mensaje = "Bienvenido " + encontrarUsuario.nombre + " al sistema";
+                }
+                else
+                {
+                    resultado.Mensaje = "Usuario o contraseña incorrectos";
                 }
             }
-            catch   (Exception)
+            catch   (Exception e)
             {
-                return null;
+                resultado.Mensaje = e.Message;
             }
-            return null;
+            return resultado;
         }
 
         public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
