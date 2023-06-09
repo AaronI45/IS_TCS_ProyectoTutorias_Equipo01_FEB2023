@@ -36,7 +36,7 @@ namespace FrontendGestorTutorias
                 {
                     foreach(PeriodoEscolar periodoEscolar in periodosEscolares)
                     {
-                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo + " " + periodoEscolar.finPeriodo);
+                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo.ToString + " " + periodoEscolar.finPeriodo.ToString);
                     }
                 }
                 else
@@ -64,7 +64,9 @@ namespace FrontendGestorTutorias
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-
+            string primeraFecha = dpPrimeraFecha.ToString();
+            MessageBox.Show(primeraFecha);
         }
+
     }
 }

@@ -15,7 +15,7 @@ namespace ServiciosLinqTutorias.Modelo
         public static ResultadoLogin iniciarSesion(string usuario, string password)
         {
             ResultadoLogin resultado = new ResultadoLogin();
-            resultado.Error = false;
+            resultado.Error = true;
             try
             {
                 var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
