@@ -50,6 +50,9 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         List<Estudiante> recuperarEstudiantesPorTutor(int idTutor);
+
+        [OperationContract]
+        Estudiante recuperarEstudiantePorMatricula(string matriculaEstudiante);
     }
 
     [DataContract]

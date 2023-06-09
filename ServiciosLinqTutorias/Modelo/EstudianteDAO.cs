@@ -88,5 +88,31 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return estudiantes;
         }
+
+        public static Estudiante recuperarEstudiantePorMatricula(string matricula)
+        {
+            var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado => estudianteEncontrado.matricula == matricula);
+            if (estudiante != null)
+            {
+                var estudianteEncontrado = new Estudiante()
+                {
+                    idEstudiante = estudiante.idEstudiante,
+                    academico_idAcademico = estudiante.academico_idAcademico,
+                    enRiesgo = estudiante.enRiesgo,
+                    matricula = estudiante.matricula,
+                    nombre = estudiante.nombre,
+                    apellidoPaterno = estudiante.apellidoPaterno,
+                    apellidoMaterno = estudiante.apellidoMaterno,
+                    correoElectronico = estudiante.correoElectronico,
+                    semestreCursando = estudiante.semestreCursando,
+                    telefono = estudiante.telefono
+                };
+                return estudianteEncontrado;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
