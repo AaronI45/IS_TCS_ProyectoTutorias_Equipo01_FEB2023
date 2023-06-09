@@ -49,5 +49,12 @@ namespace FrontendGestorTutorias
             ventanaReporteTutoria.Show();
             this.Close();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            ModificarFechasSesionTutoria ventanaModificarFechas = new ModificarFechasSesionTutoria();
+            ventanaModificarFechas.Show();
+            this.Close();
+        }
     }
 }

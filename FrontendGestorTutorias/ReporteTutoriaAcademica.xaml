@@ -19,10 +19,10 @@
                 <DataGridCheckBoxColumn Header="En riesgo" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Registrar problemática académica" HorizontalAlignment="Left" Margin="601,148,0,0" VerticalAlignment="Top"/>
-        <Button Content="Registrar comentarios generales" HorizontalAlignment="Left" Margin="612,0,0,0" VerticalAlignment="Center"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="545,366,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="695,366,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="625,366,0,0" VerticalAlignment="Top" />
+        <Button Content="Registrar problemática académica" HorizontalAlignment="Left" Margin="601,145,0,0" VerticalAlignment="Top" Height="36" Click="Button_Click"/>
+        <Button Content="Registrar comentarios generales" HorizontalAlignment="Left" Margin="612,0,0,0" VerticalAlignment="Center" Height="38" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="695,366,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="625,366,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="513,361,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
     </Grid>
 </Window>

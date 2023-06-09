@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace FrontendGestorTutorias
 {
     /// <summary>
-    /// Interaction logic for ReporteTutoriaAcademica.xaml
+    /// Lógica de interacción para ModificarFechasSesionTutoria.xaml
     /// </summary>
-    public partial class ReporteTutoriaAcademica : Window
+    public partial class ModificarFechasSesionTutoria : Window
     {
-        public ReporteTutoriaAcademica()
+        public ModificarFechasSesionTutoria()
         {
             InitializeComponent();
         }
@@ -36,14 +36,7 @@ namespace FrontendGestorTutorias
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ProblematicasAcademicas ventanaProblematicas = new ProblematicasAcademicas();
-            ventanaProblematicas.Show();
-            this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
 
         }
