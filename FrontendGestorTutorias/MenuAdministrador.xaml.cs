@@ -17,9 +17,9 @@ namespace FrontendGestorTutorias
     /// <summary>
     /// Lógica de interacción para MenuPrincipal.xaml
     /// </summary>
-    public partial class MenuPrincipal : Window
+    public partial class MenuAdministrador : Window
     {
-        public MenuPrincipal()
+        public MenuAdministrador()
         {
             InitializeComponent();
         }

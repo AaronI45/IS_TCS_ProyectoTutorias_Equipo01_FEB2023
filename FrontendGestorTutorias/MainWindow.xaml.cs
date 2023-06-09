@@ -18,6 +18,9 @@ namespace FrontendGestorTutorias
 {
     public partial class MainWindow : Window
     {
+        private const int LOGIN_ADMINISTRADOR = 5;
+        private const int LOGIN_TUTOR = 3;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -51,9 +54,23 @@ namespace FrontendGestorTutorias
                 else
                 {
                     MessageBox.Show(resultado.Mensaje, "Usuario verificado");
-                    MenuPrincipal ventanaMenu = new MenuPrincipal();
-                    ventanaMenu.Show();
-                    this.Close();
+                    switch (resultado.AcademicoEncontrado.rol_idRol)
+                    {
+                        case LOGIN_ADMINISTRADOR:
+                            MenuAdministrador ventanaAdministrador = new MenuAdministrador();
+                            ventanaAdministrador.Show();
+                            ventanaAdministrador.setAcademico(resultado.AcademicoEncontrado);
+                            this.Close();
+                            break;
+                        case LOGIN_TUTOR:
+                            MenuTutor ventanaTutor = new MenuTutor();
+                            ventanaTutor.Show();
+                            this.Close();
+                            break;
+                        default:
+                            MessageBox.Show("Rol no reconocido", "Error al iniciar sesion");
+                            break;
+                    }
                 }  
             }
             
