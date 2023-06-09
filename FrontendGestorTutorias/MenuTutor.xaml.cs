@@ -59,7 +59,9 @@ namespace FrontendGestorTutorias
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            ConsultarProblematicas ventanaProblematicas = new ConsultarProblematicas();
+            ventanaProblematicas.Show();
+            this.Close();
         }
     }
 }
