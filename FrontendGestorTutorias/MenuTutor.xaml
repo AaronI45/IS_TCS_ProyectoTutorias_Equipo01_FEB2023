@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="MenuTutor" Height="450" Width="800">
+        Title="Menu Tutor" Height="400" Width="700">
     <Grid>
-        
+        <Button Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="493,298,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
+        <Button Content="Registrar Fechas de Sesiones de Tutoría" HorizontalAlignment="Left" Margin="68,83,0,0" VerticalAlignment="Top" Height="50" Width="210"/>
+        <Button Content="Modificar Fechas de Sesiones de Tutoría" HorizontalAlignment="Left" Margin="383,83,0,0" VerticalAlignment="Top" Height="50" Width="210"/>
+        <Button Content="Reporte de Tutoría Académica" HorizontalAlignment="Center" Margin="0,192,0,0" VerticalAlignment="Top" Height="50" Width="210"/>
+
     </Grid>
 </Window>
