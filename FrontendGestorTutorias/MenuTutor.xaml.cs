@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace FrontendGestorTutorias
 {
     /// <summary>
-    /// Lógica de interacción para MenuPrincipal.xaml
+    /// Lógica de interacción para MenuTutor.xaml
     /// </summary>
-    public partial class MenuPrincipal : Window
+    public partial class MenuTutor : Window
     {
-        public MenuPrincipal()
+        public MenuTutor()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
