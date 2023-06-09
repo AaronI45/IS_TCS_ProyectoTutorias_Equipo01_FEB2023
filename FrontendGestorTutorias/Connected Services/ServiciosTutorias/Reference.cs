@@ -2346,6 +2346,9 @@ namespace ServiciosTutorias
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerProblematicas", ReplyAction="http://tempuri.org/IService1/obtenerProblematicasResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.Problematica[]> obtenerProblematicasAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerPeriodosEscolares", ReplyAction="http://tempuri.org/IService1/obtenerPeriodosEscolaresResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar[]> obtenerPeriodosEscolaresAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/consultarProblematicaPorId", ReplyAction="http://tempuri.org/IService1/consultarProblematicaPorIdResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.ResultadoProblematica> consultarProblematicaPorIdAsync(int idProblematica);
         
@@ -2451,6 +2454,11 @@ namespace ServiciosTutorias
         public System.Threading.Tasks.Task<ServiciosTutorias.Problematica[]> obtenerProblematicasAsync()
         {
             return base.Channel.obtenerProblematicasAsync();
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar[]> obtenerPeriodosEscolaresAsync()
+        {
+            return base.Channel.obtenerPeriodosEscolaresAsync();
         }
         
         public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoProblematica> consultarProblematicaPorIdAsync(int idProblematica)

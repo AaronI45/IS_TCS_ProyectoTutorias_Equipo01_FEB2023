@@ -50,6 +50,11 @@ namespace ServiciosLinqTutorias
             return TutoriaDAO.consultarProblematicas();
         }
 
+        public List<PeriodoEscolar> obtenerPeriodosEscolares() 
+        {
+            return PeriodoDAO.obtenerPeriodosEscolares();
+        }
+
         public ResultadoProblematica consultarProblematicaPorId(int idProblematica)
         {
             return TutoriaDAO.consultarProblematicaPorID(idProblematica);
