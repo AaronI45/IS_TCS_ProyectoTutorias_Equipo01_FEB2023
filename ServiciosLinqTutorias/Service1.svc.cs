@@ -104,5 +104,10 @@ namespace ServiciosLinqTutorias
         {
             return AcademicoDAO.recuperarAcademicoPorId(idAcademico);
         }
+
+        public List<Comentario> recuperarComentarios()
+        {
+            return TutoriaDAO.recuperarComentarios();
+        }
     }
 }

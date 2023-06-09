@@ -1,0 +1,19 @@
+﻿<Window x:Class="FrontendGestorTutorias.ConsultarComentarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontendGestorTutorias"
+        mc:Ignorable="d"
+        Title="Consultar Comentarios" Height="450" Width="600">
+    <Grid>
+        <DataGrid x:Name="dgComentarios" Margin="66,100,66,133">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Comentario" Binding="{Binding comentario}" Width="*"/>
+            </DataGrid.Columns> 
+        </DataGrid>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar"/>
+        <Button Content="Consultar" HorizontalAlignment="Left" Margin="476,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickConsultar"/>
+
+    </Grid>
+</Window>

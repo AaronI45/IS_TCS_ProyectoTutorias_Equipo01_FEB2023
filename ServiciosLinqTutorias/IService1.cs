@@ -65,6 +65,9 @@ namespace ServiciosLinqTutorias
         List<Estudiante> recuperarEstudiantes();
         [OperationContract]
         Academico recuperarAcademicoPorId(int idAcademico);
+
+        [OperationContract]
+        List<Comentario> recuperarComentarios();
     }
 
     [DataContract]

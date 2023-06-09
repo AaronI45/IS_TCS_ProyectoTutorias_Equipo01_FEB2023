@@ -154,6 +154,22 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
+        public static List<Comentario> recuperarComentarios()
+        {
+            var listaComentarios = conexionBD.Comentarios;
+            List<Comentario> comentariosGenerales = new List<Comentario>();
+            foreach (Comentario comentarioRegistrado in listaComentarios)
+            {
+                Comentario comentarioGeneral = new Comentario()
+                {
+                    comentarios = comentarioRegistrado.comentarios
+                };
+                comentariosGenerales.Add(comentarioGeneral);
+
+            }
+            return comentariosGenerales;
+        }
+
         public static List<ReporteTutoria> recuperarReportesPorTutor (int tutorAcademico)
         {
             List<ReporteTutoria> reportes = new List<ReporteTutoria>();

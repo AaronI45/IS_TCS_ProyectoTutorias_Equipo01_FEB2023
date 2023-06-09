@@ -63,5 +63,12 @@ namespace FrontendGestorTutorias
             ventanaProblematicas.Show();
             this.Close();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            ConsultarComentarios ventanaComentariosConsulta = new ConsultarComentarios();
+            ventanaComentariosConsulta.Show();
+            this.Close();
+        }
     }
 }
