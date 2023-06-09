@@ -12,14 +12,14 @@ namespace ServiciosLinqTutorias.Modelo
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static int TUTOR_ACADEMICO = 3;
 
-        public static ResultadoOperacion iniciarSesion(string usuario, string password)
+        public static ResultadoOperacion iniciarSesion(string username, string password)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
-            resultado.Error = false;
+            resultado.Error = true;
             try
             {
-                var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == usuario
-                && ConvertidorSHA256.Comparar(password,usuarioEncontrado.password));
+                var encontrarUsuario = conexionBD.Academicos.FirstOrDefault(usuarioEncontrado => usuarioEncontrado.username == username
+                    && usuarioEncontrado.password == ConvertidorSHA256.Convertir(password));
 
                 if (encontrarUsuario != null) 
                 {
@@ -27,11 +27,12 @@ namespace ServiciosLinqTutorias.Modelo
                     resultado.Mensaje = "Bienvenido al sistema";
                 }
             }
-            catch   (Exception)
+            catch   (Exception ex)
             {
-                return null;
+                resultado.Mensaje = ex.Message;
+                Console.WriteLine(ex.Message);
             }
-            return null;
+            return resultado;
         }
 
         public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
