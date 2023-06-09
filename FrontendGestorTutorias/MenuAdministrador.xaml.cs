@@ -23,5 +23,12 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow ventanaLogin = new MainWindow();
+            ventanaLogin.Show();
+            this.Close();
+        }
     }
 }
