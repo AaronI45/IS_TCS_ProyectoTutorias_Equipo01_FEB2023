@@ -15,7 +15,7 @@ namespace ServiciosLinqTutorias
     public class Service1 : IService1
     {
 
-        public ResultadoLogin iniciarSesion(string username, string password)
+        public bool iniciarSesion(string username, string password)
         {
             return AcademicoDAO.iniciarSesion(username, password);
         }

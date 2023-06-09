@@ -16,7 +16,7 @@ namespace ServiciosLinqTutorias
     {
 
         [OperationContract]
-        ResultadoLogin iniciarSesion(string username, string password);
+        bool iniciarSesion(string username, string password);
 
         [OperationContract]
         ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);

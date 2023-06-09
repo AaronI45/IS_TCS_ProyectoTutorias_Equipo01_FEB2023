@@ -12,7 +12,7 @@ namespace ServiciosLinqTutorias.Modelo
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static int TUTOR_ACADEMICO = 3;
 
-        public static ResultadoLogin iniciarSesion(string usuario, string password)
+        public static bool iniciarSesion(string usuario, string password)
         {
             ResultadoLogin resultado = new ResultadoLogin();
             resultado.Error = false;
@@ -26,6 +26,7 @@ namespace ServiciosLinqTutorias.Modelo
                     resultado.AcademicoEncontrado = encontrarUsuario;
                     resultado.Error = false;
                     resultado.Mensaje = "Bienvenido " + encontrarUsuario.nombre + " al sistema";
+                    return true;
                 }
                 else
                 {
@@ -36,7 +37,7 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 resultado.Mensaje = e.Message;
             }
-            return resultado;
+            return false;
         }
 
         public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
