@@ -51,9 +51,9 @@ namespace ServiciosLinqTutorias.Modelo
     partial void InsertProgramaEducativo(ProgramaEducativo instance);
     partial void UpdateProgramaEducativo(ProgramaEducativo instance);
     partial void DeleteProgramaEducativo(ProgramaEducativo instance);
-    partial void Insertproblematica_estudiante(problematica_estudiante instance);
-    partial void Updateproblematica_estudiante(problematica_estudiante instance);
-    partial void Deleteproblematica_estudiante(problematica_estudiante instance);
+    partial void InsertProblematicaEstudiante(ProblematicaEstudiante instance);
+    partial void UpdateProblematicaEstudiante(ProblematicaEstudiante instance);
+    partial void DeleteProblematicaEstudiante(ProblematicaEstudiante instance);
     partial void InsertProblematicaAcademica(ProblematicaAcademica instance);
     partial void UpdateProblematicaAcademica(ProblematicaAcademica instance);
     partial void DeleteProblematicaAcademica(ProblematicaAcademica instance);
@@ -166,11 +166,11 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		public System.Data.Linq.Table<problematica_estudiante> problematica_estudiantes
+		public System.Data.Linq.Table<ProblematicaEstudiante> ProblematicaEstudiantes
 		{
 			get
 			{
-				return this.GetTable<problematica_estudiante>();
+				return this.GetTable<ProblematicaEstudiante>();
 			}
 		}
 		
@@ -2173,7 +2173,7 @@ namespace ServiciosLinqTutorias.Modelo
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.problematica_estudiante")]
-	public partial class problematica_estudiante : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class ProblematicaEstudiante : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -2196,7 +2196,7 @@ namespace ServiciosLinqTutorias.Modelo
     partial void Onestudiante_idEstudianteChanged();
     #endregion
 		
-		public problematica_estudiante()
+		public ProblematicaEstudiante()
 		{
 			this._Problematica = default(EntityRef<Problematica>);
 			this._Estudiante = default(EntityRef<Estudiante>);
@@ -2268,12 +2268,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Problematica.Entity = null;
-						previousValue.problematica_estudiantes.Remove(this);
+						previousValue.ProblematicaEstudiantes.Remove(this);
 					}
 					this._Problematica.Entity = value;
 					if ((value != null))
 					{
-						value.problematica_estudiantes.Add(this);
+						value.ProblematicaEstudiantes.Add(this);
 						this._problematica_idproblematica = value.idproblematica;
 					}
 					else
@@ -2302,12 +2302,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Estudiante.Entity = null;
-						previousValue.problematica_estudiantes.Remove(this);
+						previousValue.ProblematicaEstudiantes.Remove(this);
 					}
 					this._Estudiante.Entity = value;
 					if ((value != null))
 					{
-						value.problematica_estudiantes.Add(this);
+						value.ProblematicaEstudiantes.Add(this);
 						this._estudiante_idEstudiante = value.idEstudiante;
 					}
 					else
@@ -2593,7 +2593,7 @@ namespace ServiciosLinqTutorias.Modelo
 		
 		private EntitySet<Solucion> _Solucions;
 		
-		private EntitySet<problematica_estudiante> _problematica_estudiantes;
+		private EntitySet<ProblematicaEstudiante> _problematica_estudiantes;
 		
 		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
 		
@@ -2624,7 +2624,7 @@ namespace ServiciosLinqTutorias.Modelo
 		public Problematica()
 		{
 			this._Solucions = new EntitySet<Solucion>(new Action<Solucion>(this.attach_Solucions), new Action<Solucion>(this.detach_Solucions));
-			this._problematica_estudiantes = new EntitySet<problematica_estudiante>(new Action<problematica_estudiante>(this.attach_problematica_estudiantes), new Action<problematica_estudiante>(this.detach_problematica_estudiantes));
+			this._problematica_estudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_problematica_estudiantes), new Action<ProblematicaEstudiante>(this.detach_problematica_estudiantes));
 			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
 			this._ReporteTutoria = default(EntityRef<ReporteTutoria>);
 			this._EstadoProblematica = default(EntityRef<EstadoProblematica>);
@@ -2778,7 +2778,7 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Problematica_problematica_estudiante", Storage="_problematica_estudiantes", ThisKey="idproblematica", OtherKey="problematica_idproblematica")]
-		public EntitySet<problematica_estudiante> problematica_estudiantes
+		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
 		{
 			get
 			{
@@ -2937,13 +2937,13 @@ namespace ServiciosLinqTutorias.Modelo
 			entity.Problematica = null;
 		}
 		
-		private void attach_problematica_estudiantes(problematica_estudiante entity)
+		private void attach_problematica_estudiantes(ProblematicaEstudiante entity)
 		{
 			this.SendPropertyChanging();
 			entity.Problematica = this;
 		}
 		
-		private void detach_problematica_estudiantes(problematica_estudiante entity)
+		private void detach_problematica_estudiantes(ProblematicaEstudiante entity)
 		{
 			this.SendPropertyChanging();
 			entity.Problematica = null;
@@ -3847,7 +3847,7 @@ namespace ServiciosLinqTutorias.Modelo
 		
 		private EntitySet<SesionTutoria> _SesionTutorias;
 		
-		private EntitySet<problematica_estudiante> _problematica_estudiantes;
+		private EntitySet<ProblematicaEstudiante> _problematica_estudiantes;
 		
 		private EntitySet<ProblematicaAcademica> _ProblematicaAcademicas;
 		
@@ -3884,7 +3884,7 @@ namespace ServiciosLinqTutorias.Modelo
 		public Estudiante()
 		{
 			this._SesionTutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_SesionTutorias), new Action<SesionTutoria>(this.detach_SesionTutorias));
-			this._problematica_estudiantes = new EntitySet<problematica_estudiante>(new Action<problematica_estudiante>(this.attach_problematica_estudiantes), new Action<problematica_estudiante>(this.detach_problematica_estudiantes));
+			this._problematica_estudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_problematica_estudiantes), new Action<ProblematicaEstudiante>(this.detach_problematica_estudiantes));
 			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
 			this._ExperienciasEducativasCursandos = new EntitySet<ExperienciasEducativasCursando>(new Action<ExperienciasEducativasCursando>(this.attach_ExperienciasEducativasCursandos), new Action<ExperienciasEducativasCursando>(this.detach_ExperienciasEducativasCursandos));
 			this._Academico = default(EntityRef<Academico>);
@@ -4109,7 +4109,7 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_problematica_estudiante", Storage="_problematica_estudiantes", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
-		public EntitySet<problematica_estudiante> problematica_estudiantes
+		public EntitySet<ProblematicaEstudiante> ProblematicaEstudiantes
 		{
 			get
 			{
@@ -4213,13 +4213,13 @@ namespace ServiciosLinqTutorias.Modelo
 			entity.Estudiante = null;
 		}
 		
-		private void attach_problematica_estudiantes(problematica_estudiante entity)
+		private void attach_problematica_estudiantes(ProblematicaEstudiante entity)
 		{
 			this.SendPropertyChanging();
 			entity.Estudiante = this;
 		}
 		
-		private void detach_problematica_estudiantes(problematica_estudiante entity)
+		private void detach_problematica_estudiantes(ProblematicaEstudiante entity)
 		{
 			this.SendPropertyChanging();
 			entity.Estudiante = null;

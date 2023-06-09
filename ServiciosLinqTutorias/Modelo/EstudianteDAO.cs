@@ -64,5 +64,29 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return resultado;
         }
+
+        public static List<Estudiante> obtenerEstudiantesPorTutor(int idTutor)
+        {
+            List<Estudiante> estudiantes = new List<Estudiante>();
+            var estudiantesAsignados = conexionBD.Estudiantes.Where(estudiante => estudiante.academico_idAcademico == idTutor);
+            foreach (var estudiante in estudiantesAsignados)
+            {
+                var estudianteEncontrado = new Estudiante()
+                {
+                    idEstudiante = estudiante.idEstudiante,
+                    academico_idAcademico = estudiante.academico_idAcademico,
+                    enRiesgo = estudiante.enRiesgo,
+                    matricula = estudiante.matricula,
+                    nombre = estudiante.nombre,
+                    apellidoPaterno = estudiante.apellidoPaterno,
+                    apellidoMaterno = estudiante.apellidoMaterno,
+                    correoElectronico = estudiante.correoElectronico,
+                    semestreCursando = estudiante.semestreCursando,
+                    telefono = estudiante.telefono
+                };
+                estudiantes.Add(estudianteEncontrado);
+            }
+            return estudiantes;
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace ServiciosLinqTutorias.Modelo
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static int TUTOR_ACADEMICO = 3;
 
-        public static bool iniciarSesion(string usuario, string password)
+        public static ResultadoLogin iniciarSesion(string usuario, string password)
         {
             ResultadoLogin resultado = new ResultadoLogin();
             resultado.Error = false;
@@ -22,10 +22,21 @@ namespace ServiciosLinqTutorias.Modelo
                 && usuarioEncontrado.password == ConvertidorSHA256.Convertir(password));
                 if (encontrarUsuario != null) 
                 {
-                    resultado.AcademicoEncontrado = encontrarUsuario;
+                    Academico academico = new Academico()
+                    {
+                        rol_idRol = encontrarUsuario.rol_idRol,
+                        programa_educativo_idPrograma_educativo = encontrarUsuario.programa_educativo_idPrograma_educativo,
+                        numerPersonal = encontrarUsuario.numerPersonal,
+                        correoInstitucional = encontrarUsuario.correoInstitucional,
+                        nombre = encontrarUsuario.nombre,
+                        apellidoPaterno = encontrarUsuario.apellidoPaterno,
+                        apellidoMaterno = encontrarUsuario.apellidoMaterno,
+                        telefono = encontrarUsuario.telefono,
+                    };
+                    resultado.AcademicoEncontrado = academico;
                     resultado.Error = false;
-                    resultado.Mensaje = "Bienvenido " + encontrarUsuario.nombre + " al sistema";
-                    return true;
+                    resultado.Mensaje = "Bienvenido " + academico.nombre + " al sistema";
+                    return resultado;
                 }
                 else
                 {
@@ -36,7 +47,7 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 resultado.Mensaje = e.Message;
             }
-            return false;
+            return resultado;
         }
 
         public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)

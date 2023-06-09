@@ -15,7 +15,7 @@ namespace ServiciosLinqTutorias
     public class Service1 : IService1
     {
 
-        public bool iniciarSesion(string username, string password)
+        public ResultadoLogin iniciarSesion(string username, string password)
         {
             return AcademicoDAO.iniciarSesion(username, password);
         }
@@ -40,7 +40,7 @@ namespace ServiciosLinqTutorias
             return EstudianteDAO.asignacionTutorAEstudiante(estudianteAsignacion);
         }
 
-        public ResultadoOperacion registrarProblematica(Problematica problematicaPresentada)
+        public ResultadoOperacion registrarProblematica(RegistroProblematica problematicaPresentada)
         {
             return TutoriaDAO.registrarProblematica(problematicaPresentada);
         }
@@ -50,7 +50,7 @@ namespace ServiciosLinqTutorias
             return TutoriaDAO.consultarProblematicas();
         }
 
-        public Problematica consultarProblematicaPorId(int idProblematica)
+        public ResultadoProblematica consultarProblematicaPorId(int idProblematica)
         {
             return TutoriaDAO.consultarProblematicaPorID(idProblematica);
         }
@@ -63,6 +63,16 @@ namespace ServiciosLinqTutorias
         public ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
         {
             return TutoriaDAO.editarComentariosGenerales(nuevosComentarios, idTutoria);
+        }
+
+        public List<ReporteTutoria> recuperarReportesPorTutor(int idTutor)
+        {
+            return TutoriaDAO.recuperarReportesPorTutor(idTutor);
+        }
+
+        public List<Estudiante> recuperarEstudiantesPorTutor(int idTutor)
+        {
+            return EstudianteDAO.obtenerEstudiantesPorTutor(idTutor);
         }
     }
 }

@@ -86,8 +86,8 @@
       <Association Name="Academico_ProgramaEducativo1" Member="academico1" ThisKey="coordinadorTutor" OtherKey="idAcademico" Type="Academico" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="sistematutorias.problematica_estudiante" Member="problematica_estudiantes">
-    <Type Name="problematica_estudiante">
+  <Table Name="sistematutorias.problematica_estudiante" Member="ProblematicaEstudiantes">
+    <Type Name="ProblematicaEstudiante">
       <Column Name="problematica_idproblematica" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="estudiante_idEstudiante" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Association Name="Problematica_problematica_estudiante" Member="Problematica" ThisKey="problematica_idproblematica" OtherKey="idproblematica" Type="Problematica" IsForeignKey="true" />
@@ -113,7 +113,7 @@
       <Column Name="titulo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="descripcion" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Association Name="Problematica_Solucion" Member="Solucions" ThisKey="idproblematica" OtherKey="problematica_idproblematica" Type="Solucion" />
-      <Association Name="Problematica_problematica_estudiante" Member="problematica_estudiantes" ThisKey="idproblematica" OtherKey="problematica_idproblematica" Type="problematica_estudiante" />
+      <Association Name="Problematica_problematica_estudiante" Member="ProblematicaEstudiantes" Storage="_problematica_estudiantes" ThisKey="idproblematica" OtherKey="problematica_idproblematica" Type="ProblematicaEstudiante" />
       <Association Name="Problematica_ProblematicaAcademica" Member="ProblematicaAcademicas" ThisKey="idproblematica" OtherKey="Problematica_idproblematica" Type="ProblematicaAcademica" />
       <Association Name="ReporteTutoria_Problematica" Member="ReporteTutoria" ThisKey="reporte_Tutoria_idReporte_Tutoria" OtherKey="idReporte_Tutoria" Type="ReporteTutoria" IsForeignKey="true" />
       <Association Name="EstadoProblematica_Problematica" Member="EstadoProblematica" ThisKey="estado_problematica_idestado_problematica" OtherKey="idestado_problematica" Type="EstadoProblematica" IsForeignKey="true" />
@@ -174,7 +174,7 @@
       <Column Name="semestreCursando" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="telefono" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Association Name="Estudiante_SesionTutoria" Member="SesionTutorias" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="SesionTutoria" />
-      <Association Name="Estudiante_problematica_estudiante" Member="problematica_estudiantes" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="problematica_estudiante" />
+      <Association Name="Estudiante_problematica_estudiante" Member="ProblematicaEstudiantes" Storage="_problematica_estudiantes" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="ProblematicaEstudiante" />
       <Association Name="Estudiante_ProblematicaAcademica" Member="ProblematicaAcademicas" ThisKey="idEstudiante" OtherKey="Estudiante_idEstudiante" Type="ProblematicaAcademica" />
       <Association Name="Estudiante_ExperienciasEducativasCursando" Member="ExperienciasEducativasCursandos" ThisKey="idEstudiante" OtherKey="Estudiante_idEstudiante" Type="ExperienciasEducativasCursando" />
       <Association Name="Academico_Estudiante" Member="Academico" ThisKey="academico_idAcademico" OtherKey="idAcademico" Type="Academico" IsForeignKey="true" />

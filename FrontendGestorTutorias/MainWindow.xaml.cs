@@ -43,14 +43,14 @@ namespace FrontendGestorTutorias
             var conexionServicios = new Service1Client();
             if (conexionServicios != null)
             {
-                ResultadoOperacion resultado = await conexionServicios.iniciarSesionAsync(username, password);
-                if (resultado.Error == true)
+                ResultadoLogin resultado = await conexionServicios.iniciarSesionAsync(username, password);
+                if (resultado.Error)
                 {
                     MessageBox.Show(resultado.Mensaje, "Credenciales incorrectas");
                 }
                 else
                 {
-                    MessageBox.Show("Bienvenido(a) " + resultado.Mensaje + " al sistema", "Usuario verificado");
+                    MessageBox.Show(resultado.Mensaje, "Usuario verificado");
                     MenuPrincipal ventanaMenu = new MenuPrincipal();
                     ventanaMenu.Show();
                     this.Close();

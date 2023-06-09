@@ -16,7 +16,7 @@ namespace ServiciosLinqTutorias
     {
 
         [OperationContract]
-        bool iniciarSesion(string username, string password);
+        ResultadoLogin iniciarSesion(string username, string password);
 
         [OperationContract]
         ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);
@@ -31,19 +31,25 @@ namespace ServiciosLinqTutorias
         ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion);
 
         [OperationContract]
-        ResultadoOperacion registrarProblematica(Problematica problematicaPresentada);
+        ResultadoOperacion registrarProblematica(RegistroProblematica problematicaPresentada);
 
         [OperationContract]
         List<Problematica> obtenerProblematicas();
 
         [OperationContract]
-        Problematica consultarProblematicaPorId(int idProblematica);
+        ResultadoProblematica consultarProblematicaPorId(int idProblematica);
 
         [OperationContract]
         ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado);
 
         [OperationContract]
         ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria);
+
+        [OperationContract]
+        List<ReporteTutoria> recuperarReportesPorTutor (int idTutor);
+
+        [OperationContract]
+        List<Estudiante> recuperarEstudiantesPorTutor(int idTutor);
     }
 
     [DataContract]
