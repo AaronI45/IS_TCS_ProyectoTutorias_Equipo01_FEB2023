@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace FrontendGestorTutorias
 {
     /// <summary>
-    /// Lógica de interacción para AsingarTutorAcademicoAEstudiante.xaml
+    /// Interaction logic for EditarAsignacionTutor.xaml
     /// </summary>
-    public partial class AsingarTutorAcademicoAEstudiante : Window
+    public partial class EditarAsignacionTutor : Window
     {
-        public AsingarTutorAcademicoAEstudiante()
+        int idProgramaEducativo;
+        public EditarAsignacionTutor(int idProgramaEducativo)
         {
             InitializeComponent();
+            this.idProgramaEducativo = idProgramaEducativo;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -53,13 +53,12 @@ namespace FrontendGestorTutorias
                 }
                 else
                 {
-                    MessageBox.Show(resultado.Mensaje, "Usuario verificado");
+                    MessageBox.Show(resultado.Mensaje, "Usuario verificado", MessageBoxButton.OK, MessageBoxImage.Information);
                     switch (resultado.AcademicoEncontrado.rol_idRol)
                     {
                         case LOGIN_ADMINISTRADOR:
-                            MenuAdministrador ventanaAdministrador = new MenuAdministrador();
+                            MenuAdministrador ventanaAdministrador = new MenuAdministrador(resultado.AcademicoEncontrado.programa_educativo_idPrograma_educativo);
                             ventanaAdministrador.Show();
-                            ventanaAdministrador.setAcademico(resultado.AcademicoEncontrado);
                             this.Close();
                             break;
                         case LOGIN_TUTOR:

@@ -1,4 +1,4 @@
-﻿<Window x:Class="FrontendGestorTutorias.AsingarTutorAcademicoAEstudiante"
+﻿<Window x:Class="FrontendGestorTutorias.AsignarTutorAcademicoAEstudiante"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,14 +9,14 @@
     <Grid>
         <Label Content="Ingrese la matricula del estudiante:" HorizontalAlignment="Left" Margin="59,49,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbMatricula" HorizontalAlignment="Left" Margin="253,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
-        <Button Content="Buscar alumno" HorizontalAlignment="Left" Margin="539,52,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Buscar alumno" HorizontalAlignment="Left" Margin="539,52,0,0" VerticalAlignment="Top" Width="110" Click="clicBuscar"/>
         <Label Content="Seleccione un tutor académico para el estudiante:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbEstudiante" HorizontalAlignment="Left" Margin="122,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="211" IsEnabled="False"/>
-        <Label Content="Estudiante:" HorizontalAlignment="Left" Margin="122,182,0,0" VerticalAlignment="Top"/>
+        <Label Content="Estudiante:" HorizontalAlignment="Left" Margin="122,164,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbTutorAcademico" HorizontalAlignment="Left" Margin="489,0,0,0" VerticalAlignment="Center" Width="210"/>
-        <Label Content="Tutor académico:" HorizontalAlignment="Left" Margin="489,182,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAsignarTutorAcademico" Content="Asignar tutor académico" HorizontalAlignment="Left" Margin="594,362,0,0" VerticalAlignment="Top" IsEnabled="False" Height="30"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="478,362,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White"/>
+        <Label Content="Tutor académico:" HorizontalAlignment="Left" Margin="489,164,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAsignarTutorAcademico" Content="Asignar tutor académico" HorizontalAlignment="Left" Margin="594,362,0,0" VerticalAlignment="Top" IsEnabled="True" Height="30" Click="clicAsignarTutor"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="478,362,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicCancelar"/>
 
     </Grid>
 </Window>

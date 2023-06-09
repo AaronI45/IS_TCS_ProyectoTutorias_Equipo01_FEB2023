@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="Menu Principal" Height="450" Width="800">
     <Grid>
-        <Button Content="Registrar Tutor Académico" HorizontalAlignment="Left" Margin="120,187,0,0" VerticalAlignment="Top" Height="50" Width="210"/>
-        <Button Content="Registrar Estudiante" HorizontalAlignment="Left" Margin="468,187,0,0" VerticalAlignment="Top" Height="50" Width="210"/>
-        <Button Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="578,370,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
+        <Button Content="Registrar Tutor Académico" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="50" Width="210" Click="clicRegistrarTutor"/>
+        <Button Content="Registrar Estudiante" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Height="50" Width="210" Click="clicRegistrarEstudiante"/>
+        <Button Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="632,370,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="clicCerrarSesion"/>
+        <Button Content="Asignar tutor a estudiante" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="210" Margin="0,217,0,0" Click="clicAsignarTutorAEstudiante"/>
+        <Button Content="Modificar asignación de tutor" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="210" Margin="0,295,0,0" Click="clicModificarAsignacion"/>
 
     </Grid>
 </Window>

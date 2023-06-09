@@ -16,7 +16,7 @@ namespace ServiciosLinqTutorias.Modelo
             resultado.Error = true;
             try
             {
-                var studiante = new Estudiante()
+                var estudiante = new Estudiante()
                 {
                     enRiesgo = 0,
                     nombre = nuevoEstudiante.nombre,
@@ -27,7 +27,7 @@ namespace ServiciosLinqTutorias.Modelo
                     semestreCursando = nuevoEstudiante.semestreCursando,
                     telefono = nuevoEstudiante.telefono,
                 };
-                conexionBD.Estudiantes.InsertOnSubmit(studiante);
+                conexionBD.Estudiantes.InsertOnSubmit(estudiante);
                 conexionBD.SubmitChanges();
                 resultado.Error = false;
                 resultado.Mensaje = "El estudiante se registró correctamente, ¿Desea asignarle un tutor académico?";
@@ -40,7 +40,7 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion)
+        public static ResultadoOperacion asignacionTutorAEstudiante(int idEstudiante, int idTutor)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
@@ -48,10 +48,10 @@ namespace ServiciosLinqTutorias.Modelo
             try
             {
                 var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado
-                => estudianteEncontrado.idEstudiante == estudianteAsignacion.idEstudiante);
+                => estudianteEncontrado.idEstudiante == idEstudiante);
                 if (estudiante != null) 
                 {
-                    estudiante.academico_idAcademico = estudianteAsignacion.academico_idAcademico;
+                    estudiante.academico_idAcademico = idTutor;
                     conexionBD.SubmitChanges();
                     resultado.Error = false;
                     resultado.Mensaje = "La asignacion fue realizada con exito";

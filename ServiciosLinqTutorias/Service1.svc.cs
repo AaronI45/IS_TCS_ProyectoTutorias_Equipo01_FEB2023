@@ -35,9 +35,9 @@ namespace ServiciosLinqTutorias
             return PeriodoDAO.registrarFechaSesiontutoria(periodoFechas);
         }
 
-        public ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion)
+        public ResultadoOperacion asignacionTutorAEstudiante(int idEstudiante, int idTutor)
         {
-            return EstudianteDAO.asignacionTutorAEstudiante(estudianteAsignacion);
+            return EstudianteDAO.asignacionTutorAEstudiante(idEstudiante, idTutor);
         }
 
         public ResultadoOperacion registrarProblematica(RegistroProblematica problematicaPresentada)
@@ -73,6 +73,16 @@ namespace ServiciosLinqTutorias
         public List<Estudiante> recuperarEstudiantesPorTutor(int idTutor)
         {
             return EstudianteDAO.obtenerEstudiantesPorTutor(idTutor);
+        }
+
+        public Estudiante recuperarEstudiantePorMatricula(string matriculaEstudiante)
+        {
+            return EstudianteDAO.recuperarEstudiantePorMatricula(matriculaEstudiante);
+        }
+
+        public List<Academico> recuperarTutoresPorProgramaEducativo(int idProgramaEducativo)
+        {
+            return AcademicoDAO.RecuperarTutoresPorProgramaEducativo(idProgramaEducativo);
         }
     }
 }

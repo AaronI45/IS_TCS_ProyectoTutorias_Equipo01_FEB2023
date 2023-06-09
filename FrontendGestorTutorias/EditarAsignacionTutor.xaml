@@ -1,0 +1,16 @@
+﻿<Window x:Class="FrontendGestorTutorias.EditarAsignacionTutor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontendGestorTutorias"
+        mc:Ignorable="d"
+        Title="EditarAsignacionTutor" Height="450" Width="800">
+    <Grid>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="71,114,71,114"/>
+        <Label Content="Seleccione el estudiante al que desea cambiar el tutor académico" HorizontalAlignment="Left" Margin="71,71,0,0" VerticalAlignment="Top"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="71,364,0,0" VerticalAlignment="Top" Click="Button_Click" Height="34" Width="101"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="628,364,0,0" VerticalAlignment="Top" Click="Button_Click" Height="34" Width="101"/>
+
+    </Grid>
+</Window>

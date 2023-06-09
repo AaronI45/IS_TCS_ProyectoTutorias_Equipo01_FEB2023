@@ -83,5 +83,37 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return resultado;
         }
+
+        public static List<Academico> RecuperarTutoresPorProgramaEducativo(int idProgramaEducativo)
+        {
+            List<Academico> tutores = new List<Academico>();
+            try
+            {
+                var tutoresEncontrados = from tutor in conexionBD.Academicos
+                                         where tutor.programa_educativo_idPrograma_educativo == idProgramaEducativo && tutor.rol_idRol == TUTOR_ACADEMICO
+                                         select tutor;
+                foreach (var tutor in tutoresEncontrados)
+                {
+                    Academico tutorEncontrado = new Academico()
+                    {
+                        idAcademico = tutor.idAcademico,
+                        rol_idRol = tutor.rol_idRol,
+                        numerPersonal = tutor.numerPersonal,
+                        correoInstitucional = tutor.correoInstitucional,
+                        nombre = tutor.nombre,
+                        apellidoPaterno = tutor.apellidoPaterno,
+                        apellidoMaterno = tutor.apellidoMaterno,
+                        telefono = tutor.telefono,
+                        programa_educativo_idPrograma_educativo = tutor.programa_educativo_idPrograma_educativo
+                    };
+                    tutores.Add(tutorEncontrado);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return tutores;
+        }
     }
 }

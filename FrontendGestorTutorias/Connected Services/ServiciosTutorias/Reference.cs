@@ -2338,7 +2338,7 @@ namespace ServiciosTutorias
         System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarFechaSesiontutoriaAsync(ServiciosTutorias.PeriodoEscolar periodoFechas);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/asignacionTutorAEstudiante", ReplyAction="http://tempuri.org/IService1/asignacionTutorAEstudianteResponse")]
-        System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> asignacionTutorAEstudianteAsync(ServiciosTutorias.Estudiante estudianteAsignacion);
+        System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> asignacionTutorAEstudianteAsync(int idEstudiante, int idTutor);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarProblematica", ReplyAction="http://tempuri.org/IService1/registrarProblematicaResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarProblematicaAsync(ServiciosTutorias.RegistroProblematica problematicaPresentada);
@@ -2357,6 +2357,15 @@ namespace ServiciosTutorias
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarReportesPorTutor", ReplyAction="http://tempuri.org/IService1/recuperarReportesPorTutorResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.ReporteTutoria[]> recuperarReportesPorTutorAsync(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarEstudiantesPorTutor", ReplyAction="http://tempuri.org/IService1/recuperarEstudiantesPorTutorResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Estudiante[]> recuperarEstudiantesPorTutorAsync(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarEstudiantePorMatricula", ReplyAction="http://tempuri.org/IService1/recuperarEstudiantePorMatriculaResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Estudiante> recuperarEstudiantePorMatriculaAsync(string matriculaEstudiante);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarTutoresPorProgramaEducativo", ReplyAction="http://tempuri.org/IService1/recuperarTutoresPorProgramaEducativoResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Academico[]> recuperarTutoresPorProgramaEducativoAsync(int idProgramaEducativo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -2429,9 +2438,9 @@ namespace ServiciosTutorias
             return base.Channel.registrarFechaSesiontutoriaAsync(periodoFechas);
         }
         
-        public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> asignacionTutorAEstudianteAsync(ServiciosTutorias.Estudiante estudianteAsignacion)
+        public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> asignacionTutorAEstudianteAsync(int idEstudiante, int idTutor)
         {
-            return base.Channel.asignacionTutorAEstudianteAsync(estudianteAsignacion);
+            return base.Channel.asignacionTutorAEstudianteAsync(idEstudiante, idTutor);
         }
         
         public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarProblematicaAsync(ServiciosTutorias.RegistroProblematica problematicaPresentada)
@@ -2462,6 +2471,21 @@ namespace ServiciosTutorias
         public System.Threading.Tasks.Task<ServiciosTutorias.ReporteTutoria[]> recuperarReportesPorTutorAsync(int idTutor)
         {
             return base.Channel.recuperarReportesPorTutorAsync(idTutor);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Estudiante[]> recuperarEstudiantesPorTutorAsync(int idTutor)
+        {
+            return base.Channel.recuperarEstudiantesPorTutorAsync(idTutor);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Estudiante> recuperarEstudiantePorMatriculaAsync(string matriculaEstudiante)
+        {
+            return base.Channel.recuperarEstudiantePorMatriculaAsync(matriculaEstudiante);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Academico[]> recuperarTutoresPorProgramaEducativoAsync(int idProgramaEducativo)
+        {
+            return base.Channel.recuperarTutoresPorProgramaEducativoAsync(idProgramaEducativo);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

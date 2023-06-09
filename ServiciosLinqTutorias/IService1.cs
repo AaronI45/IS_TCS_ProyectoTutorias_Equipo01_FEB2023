@@ -28,7 +28,7 @@ namespace ServiciosLinqTutorias
         ResultadoOperacion registrarFechaSesiontutoria(PeriodoEscolar periodoFechas);
 
         [OperationContract]
-        ResultadoOperacion asignacionTutorAEstudiante(Estudiante estudianteAsignacion);
+        ResultadoOperacion asignacionTutorAEstudiante(int idEstudiante, int idTutor);
 
         [OperationContract]
         ResultadoOperacion registrarProblematica(RegistroProblematica problematicaPresentada);
@@ -53,6 +53,9 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         Estudiante recuperarEstudiantePorMatricula(string matriculaEstudiante);
+
+        [OperationContract]
+        List<Academico> recuperarTutoresPorProgramaEducativo(int idProgramaEducativo);
     }
 
     [DataContract]
