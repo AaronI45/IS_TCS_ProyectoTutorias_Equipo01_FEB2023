@@ -138,5 +138,24 @@ namespace ServiciosLinqTutorias.Modelo
                 return null;
             }
         }
+
+        public static bool validarMatricula (string matricula)
+        {
+            bool matriculaValida = false;
+            try
+            {
+                var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado => estudianteEncontrado.matricula == matricula);
+                if (estudiante != null)
+                {
+                    matriculaValida = true;
+                }
+                return matriculaValida;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return matriculaValida;
+        }
     }
 }

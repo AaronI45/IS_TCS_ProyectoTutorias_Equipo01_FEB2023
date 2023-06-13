@@ -50,7 +50,7 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
+        public static ResultadoOperacion registrarTutorAcademico(RegistroTutor nuevoTutor)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
@@ -60,13 +60,13 @@ namespace ServiciosLinqTutorias.Modelo
                 var tutor = new Academico()
                 {
                     rol_idRol = TUTOR_ACADEMICO,
-                    numerPersonal = nuevoTutor.numerPersonal,
+                    numerPersonal = nuevoTutor.numeroPersonal,
                     correoInstitucional = nuevoTutor.correoInstitucional,
                     nombre = nuevoTutor.nombre,
                     apellidoPaterno = nuevoTutor.apellidoPaterno,
                     apellidoMaterno = nuevoTutor.apellidoMaterno,
                     telefono = nuevoTutor.telefono,
-                    programa_educativo_idPrograma_educativo = nuevoTutor.programa_educativo_idPrograma_educativo,
+                    programa_educativo_idPrograma_educativo = nuevoTutor.idProgramaEducativo,
                     username = nuevoTutor.username,
                     password = ConvertidorSHA256.Convertir(nuevoTutor.password)
                 };

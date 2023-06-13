@@ -22,7 +22,7 @@ namespace ServiciosLinqTutorias
         ResultadoOperacion registrarEstudiante(Estudiante nuevoEstudiante);
 
         [OperationContract]
-        ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor);
+        ResultadoOperacion registrarTutorAcademico(RegistroTutor nuevoTutor);
 
         [OperationContract]
         ResultadoOperacion registrarFechaSesiontutoria(PeriodoEscolar periodoFechas);
@@ -68,6 +68,8 @@ namespace ServiciosLinqTutorias
 
         [OperationContract]
         List<Comentario> recuperarComentarios();
+        [OperationContract]
+        bool validarMatricula(string matricula);
     }
 
     [DataContract]
@@ -84,5 +86,43 @@ namespace ServiciosLinqTutorias
     {
         [DataMember]
         public Academico AcademicoEncontrado { get; set; }
+    }
+    [DataContract]
+    public class RegistroTutor
+    {
+        [DataMember]
+        public string nombre { get; set; }
+        [DataMember]
+        public string apellidoPaterno { get; set; }
+        [DataMember]
+        public string apellidoMaterno { get; set; }
+        [DataMember]
+        public int numeroPersonal { get; set; }
+        [DataMember]
+        public string correoInstitucional { get; set; }
+        [DataMember]
+        public long telefono { get; set; }
+        [DataMember]
+        public string username { get; set; }
+        [DataMember]
+        public string password { get; set; }
+        [DataMember]
+        public int idProgramaEducativo { get; set; }
+    }
+    [DataContract]
+    public class RegistroProblematica
+    {
+        [DataMember]
+        public int clasificacionProblematica { get; set; }
+        [DataMember]
+        public int idReporteTutoria { get; set; }
+        [DataMember]
+        public string titulo { get; set; }
+        [DataMember]
+        public string descripcion { get; set; }
+        [DataMember]
+        public int idEstudiante { get; set; }
+        [DataMember]
+        public int idExperienciaEducativa { get; set; }
     }
 }

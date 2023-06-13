@@ -1,4 +1,5 @@
-﻿using ServiciosTutorias;
+﻿using FrontendGestorTutorias.Utilidades;
+using ServiciosTutorias;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,16 +35,22 @@ namespace FrontendGestorTutorias
 
         private void clicRegistrar(object sender, RoutedEventArgs e)
         {
-            if (!hayCamposVacios())
+            Validacion validacion = hayCamposVacios();
+            if (!validacion.Error)
             {
-                if (validarCampos())
+                validacion = validarCampos();
+                if (!validacion.Error)
                 {
                     registrarTutorAsync();
+                }
+                else
+                {
+                    MessageBox.Show(validacion.Mensaje, "Error de campos inválidos", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Favor de llenar todos los campos");
+                MessageBox.Show(validacion.Mensaje,"Error de campos vacíos", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -55,9 +62,9 @@ namespace FrontendGestorTutorias
                 bool validarUsername = await conexionServicios.validarUsernameAsync(tbNombreUsuario.Text);
                 if (validarUsername)
                 {
-                    Academico academico = new Academico()
+                    RegistroTutor nuevoTutor= new RegistroTutor()
                     {
-                        numerPersonal = int.Parse(tbNumeroPersonal.Text),
+                        numeroPersonal = int.Parse(tbNumeroPersonal.Text),
                         nombre = tbNombre.Text,
                         apellidoPaterno = tbApellidoPaterno.Text,
                         apellidoMaterno = tbApellidoMaterno.Text,
@@ -65,7 +72,7 @@ namespace FrontendGestorTutorias
                         telefono = long.Parse(tbNumeroTelefonico.Text),
                         username = tbNombreUsuario.Text,
                         password = pbPassword.Password,
-                        programa_educativo_idPrograma_educativo = this.idProgramaEducativo
+                        idProgramaEducativo = this.idProgramaEducativo
                     };
                     MessageBox.Show("Tutor registrado exitosamente", "Registro exitoso");
                     MenuAdministrador menuAdministrador = new MenuAdministrador(this.idProgramaEducativo);
@@ -91,38 +98,22 @@ namespace FrontendGestorTutorias
             this.Close();
         }
 
-        private bool validarCampos()
+        private Validacion validarCampos()
         {
-            bool camposValidos = true;
-            if(!validarCorreoInstitucional())
-            {
-                camposValidos = false;
-            }
-            if(!validarNumeroPersonal())
-            {
-                camposValidos = false;
-            }
-            if(!validarTelefono())
-            {
-                camposValidos = false;
-            }
-            if(!validarNumeroPersonal())
-            {
-                camposValidos = false;
-            }
-            if(!validarPassword())
-            {
-                camposValidos = false;
-            }
+            Validacion camposValidos = new Validacion();
+            camposValidos.Mensaje = "Los siguientes campos no son válidos: ";
             return camposValidos;
         }
-        private bool hayCamposVacios()
+        private Validacion hayCamposVacios()
         {
-            bool camposVacios = false;
+            Validacion camposVacios = new Validacion();
+            camposVacios.Mensaje = "Los siguientes campos no pueden estar vacíos: ";
+            camposVacios.Error = false;
             if (tbNombre.Text == "")
             {
                 tbNombre.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Nombre"; 
+                camposVacios.Error = true;
             }
             else
             { 
@@ -131,7 +122,8 @@ namespace FrontendGestorTutorias
             if (tbApellidoPaterno.Text == "")
             {
                 tbApellidoPaterno.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Apellido paterno";
+                camposVacios.Error = true;
             }
             else
             {
@@ -140,7 +132,8 @@ namespace FrontendGestorTutorias
             if (tbApellidoMaterno.Text == "")
             {
                 tbApellidoMaterno.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Apellido materno";
+                camposVacios.Error = true;
             }
             else
             {
@@ -149,7 +142,8 @@ namespace FrontendGestorTutorias
             if (tbCorreoInstitucional.Text == "")
             {
                 tbCorreoInstitucional.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Correo institucional";
+                camposVacios.Error = true;
             }
             else
             {
@@ -158,7 +152,8 @@ namespace FrontendGestorTutorias
             if(tbNumeroTelefonico.Text == "")
             {
                 tbNumeroTelefonico.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Número telefónico";
+                camposVacios.Error = true;
             }
             else
             {
@@ -167,7 +162,8 @@ namespace FrontendGestorTutorias
             if(tbNumeroPersonal.Text == "")
             {
                 tbNumeroPersonal.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Número de personal";
+                camposVacios.Error = true;
             }
             else
             {
@@ -176,7 +172,8 @@ namespace FrontendGestorTutorias
             if(tbNombreUsuario.Text == "")
             {
                 tbNombreUsuario.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Nombre de usuario";
+                camposVacios.Error = true;
             }
             else
             {
@@ -185,7 +182,8 @@ namespace FrontendGestorTutorias
             if(pbPassword.Password == "")
             {
                 pbPassword.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Contraseña";
+                camposVacios.Error = true;
             }
             else
             {
@@ -194,7 +192,8 @@ namespace FrontendGestorTutorias
             if (pbCopiaPassword.Password == "")
             {
                 pbCopiaPassword.BorderBrush = Brushes.Red;
-                camposVacios = true;
+                camposVacios.Mensaje += "\n-Copia de contraseña";
+                camposVacios.Error= true;
             }
             else
             {
@@ -203,6 +202,7 @@ namespace FrontendGestorTutorias
             return camposVacios;
         }
 
+        //TODO : Validar que el correo institucional sea válido
         private bool validarCorreoInstitucional()
         {
             bool correoValido = false;
@@ -217,52 +217,62 @@ namespace FrontendGestorTutorias
             }
             return correoValido;
         }
-        private bool validarNumeroPersonal()
+        private Validacion validarNumeroPersonal()
         {
-            bool numeroPersonalValido = false;
+            Validacion numeroPersonalValido = new Validacion();
+            numeroPersonalValido.Mensaje = "El número personal no es válido: ";
+            numeroPersonalValido.Error = false;
             if (tbNumeroPersonal.Text.All(char.IsDigit))
             {
                 if (tbNumeroPersonal.Text.Length == 5)
                 {
                     tbNumeroPersonal.BorderBrush = Brushes.Black;
-                    numeroPersonalValido = true;
                 }
                 else
                 {
                     tbNumeroPersonal.BorderBrush = Brushes.Red;
+                    numeroPersonalValido.Error = true;
+                    numeroPersonalValido.Mensaje += "\n-El número personal debe contener 5 dígitos";
                 }
             }
             else
             {
                 tbNumeroPersonal.BorderBrush = Brushes.Red;
+                numeroPersonalValido.Error = true;
+                numeroPersonalValido.Mensaje += "\n-El número personal debe contener solo números";
             }
             return numeroPersonalValido;
         }
 
-        private bool validarTelefono()
+        private Validacion validarTelefono()
         {
-            bool telefonoValido = false;
+            Validacion telefonoValido = new Validacion();
+            telefonoValido.Mensaje = "El número telefónico no es válido: ";
+            telefonoValido.Error = false;
             if (tbNumeroTelefonico.Text.All(char.IsDigit))
             {
                 if (tbNumeroTelefonico.Text.Length == 10)
                 {
                     tbNumeroTelefonico.BorderBrush = Brushes.Black;
-                    telefonoValido = true;
 
                 }
                 else
                 {
                     tbNumeroTelefonico.BorderBrush = Brushes.Red;
+                    telefonoValido.Error = true;
+                    telefonoValido.Mensaje += "\n-El número telefónico debe contener 10 dígitos";
                 }
             }
             else
             {
                 tbNumeroTelefonico.BorderBrush = Brushes.Red;
+                telefonoValido.Error = true;
+                telefonoValido.Mensaje += "\n-El número telefónico debe contener solo números";
             }
             return telefonoValido;
         }
 
-
+        //validar que la password sea de al menos 8 caracteres, contenga caracteres especiales y numeros y que coincida con la copia
         private bool validarPassword()
         {
             bool passwordValida = false;

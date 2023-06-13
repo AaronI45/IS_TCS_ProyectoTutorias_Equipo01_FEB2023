@@ -25,7 +25,7 @@ namespace ServiciosLinqTutorias
             return EstudianteDAO.registrarEstudiante(nuevoEstudiante);
         }
 
-        public ResultadoOperacion registrarTutorAcademico(Academico nuevoTutor)
+        public ResultadoOperacion registrarTutorAcademico(RegistroTutor nuevoTutor)
         {
             return AcademicoDAO.registrarTutorAcademico(nuevoTutor);
         }
@@ -108,6 +108,11 @@ namespace ServiciosLinqTutorias
         public List<Comentario> recuperarComentarios()
         {
             return TutoriaDAO.recuperarComentarios();
+        }
+
+        public bool validarMatricula(string matricula)
+        {
+            return EstudianteDAO.validarMatricula(matricula);
         }
     }
 }
