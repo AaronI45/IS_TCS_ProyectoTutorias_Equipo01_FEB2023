@@ -41,7 +41,7 @@ namespace FrontendGestorTutorias
                 validacion = validarCampos();
                 if (!validacion.Error)
                 {
-                    registrarTutorAsync();
+                    registrarTutor();
                 }
                 else
                 {
@@ -54,7 +54,7 @@ namespace FrontendGestorTutorias
             }
         }
 
-        private async void registrarTutorAsync()
+        private async void registrarTutor()
         {
             var conexionServicios = new Service1Client();
             if (conexionServicios != null)
@@ -74,20 +74,37 @@ namespace FrontendGestorTutorias
                         password = pbPassword.Password,
                         idProgramaEducativo = this.idProgramaEducativo
                     };
-                    MessageBox.Show("Tutor registrado exitosamente", "Registro exitoso");
-                    MenuAdministrador menuAdministrador = new MenuAdministrador(this.idProgramaEducativo);
-                    menuAdministrador.Show();
-                    this.Close();
+                    var confirmarRegistro = MessageBox.Show("¿Está seguro de que desea registrar a este tutor?", "Confirmar registro", 
+                        MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (confirmarRegistro == MessageBoxResult.Yes)
+                    {
+                        ResultadoOperacion registroTutor = await conexionServicios.registrarTutorAcademicoAsync(nuevoTutor);
+                        if (!registroTutor.Error)
+                        {
+                            MessageBox.Show(registroTutor.Mensaje, "Registro exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MenuAdministrador menuAdministrador = new MenuAdministrador(this.idProgramaEducativo);
+                            menuAdministrador.Show();
+                            this.Close();
+                        }
+                        else 
+                        { 
+                            MessageBox.Show(registroTutor.Mensaje, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("El registro ha sido cancelado", "Registro cancelado", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("El nombre de usuario ya existe, por favor ingrese uno nuevo", "Error");
+                    MessageBox.Show("El nombre de usuario ya existe, por favor ingrese uno nuevo", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     tbNombreUsuario.BorderBrush = Brushes.Red;
                 }
             }
             else
             {
-                MessageBox.Show("No se pudo conectar con el servidor", "Error");
+                MessageBox.Show("No se pudo conectar con el servidor", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -102,6 +119,20 @@ namespace FrontendGestorTutorias
         {
             Validacion camposValidos = new Validacion();
             camposValidos.Mensaje = "Los siguientes campos no son válidos: ";
+            camposValidos.Error = false;
+
+            Validacion validacionNumeroPersonal = validarNumeroPersonal();
+            camposValidos.Error = validacionNumeroPersonal.Error;
+            camposValidos.Mensaje += validacionNumeroPersonal.Mensaje;
+
+            Validacion validacionNumeroTelefonico = validarTelefono();
+            camposValidos.Error = validacionNumeroTelefonico.Error;
+            camposValidos.Mensaje += validacionNumeroTelefonico.Mensaje;
+
+            //Validacion validacionPassword = validarPassword();
+
+            
+            //Validacion validacionCorreo = validarCorreoInstitucional();
             return camposValidos;
         }
         private Validacion hayCamposVacios()
@@ -220,7 +251,7 @@ namespace FrontendGestorTutorias
         private Validacion validarNumeroPersonal()
         {
             Validacion numeroPersonalValido = new Validacion();
-            numeroPersonalValido.Mensaje = "El número personal no es válido: ";
+            numeroPersonalValido.Mensaje = "\nNúmero personal:";
             numeroPersonalValido.Error = false;
             if (tbNumeroPersonal.Text.All(char.IsDigit))
             {
@@ -247,7 +278,7 @@ namespace FrontendGestorTutorias
         private Validacion validarTelefono()
         {
             Validacion telefonoValido = new Validacion();
-            telefonoValido.Mensaje = "El número telefónico no es válido: ";
+            telefonoValido.Mensaje = "Número telefónico: ";
             telefonoValido.Error = false;
             if (tbNumeroTelefonico.Text.All(char.IsDigit))
             {
