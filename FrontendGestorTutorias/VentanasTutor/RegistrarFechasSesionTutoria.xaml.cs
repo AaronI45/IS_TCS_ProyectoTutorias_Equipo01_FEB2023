@@ -25,11 +25,8 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
-<<<<<<< HEAD:FrontendGestorTutorias/VentanasTutor/RegistrarFechasSesionTutoria.xaml.cs
             this.tutorIniciado = tutorIniciado;
-=======
             cbPeriodoEscolar.SelectionChanged += cbPeriodoEscolar_SelectionChanged;
->>>>>>> f08bea95aaa67e7c1373d62e9d79c90e7516dec3:FrontendGestorTutorias/RegistrarFechasSesionTutoria.xaml.cs
         }
 
         private async void cargarCbPeriodosEscolares()
@@ -70,8 +67,6 @@ namespace FrontendGestorTutorias
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD:FrontendGestorTutorias/VentanasTutor/RegistrarFechasSesionTutoria.xaml.cs
-=======
             if (cbPeriodoEscolar_SelectionChanged != null)
             {
                 if (evaluarFechasVacias())
@@ -95,7 +90,6 @@ namespace FrontendGestorTutorias
                     }
                 }
             }
->>>>>>> f08bea95aaa67e7c1373d62e9d79c90e7516dec3:FrontendGestorTutorias/RegistrarFechasSesionTutoria.xaml.cs
         }
 
         private void cbPeriodoEscolar_SelectionChanged(object sender, SelectionChangedEventArgs e)
