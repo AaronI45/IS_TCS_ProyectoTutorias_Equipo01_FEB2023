@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Consultar Comentarios" Height="450" Width="600">
     <Grid>
-        <DataGrid x:Name="dgComentarios" Margin="66,100,66,133">
+        <DataGrid x:Name="dgComentarios" Margin="66,100,66,133" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Comentario" Binding="{Binding comentario}" Width="*"/>
+                <DataGridTextColumn Header="Comentario" Binding="{Binding comentarios}" Width="*"/>
             </DataGrid.Columns> 
         </DataGrid>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar"/>

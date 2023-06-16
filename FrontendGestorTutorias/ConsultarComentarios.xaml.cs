@@ -38,5 +38,10 @@ namespace FrontendGestorTutorias
         {
 
         }
+
+        private void dgComentarios_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+
+        }
     }
 }

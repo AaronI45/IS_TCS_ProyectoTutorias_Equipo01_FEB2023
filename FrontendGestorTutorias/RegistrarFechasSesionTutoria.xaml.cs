@@ -24,19 +24,20 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
+            cbPeriodoEscolar.SelectionChanged += cbPeriodoEscolar_SelectionChanged;
         }
 
         private async void cargarCbPeriodosEscolares()
         {
             var conexionServicios = new ServiciosTutorias.Service1Client();
-            if(conexionServicios != null)
+            if (conexionServicios != null)
             {
                 var periodosEscolares = await conexionServicios.obtenerPeriodosEscolaresAsync();
-                if(periodosEscolares != null)
+                if (periodosEscolares != null)
                 {
-                    foreach(PeriodoEscolar periodoEscolar in periodosEscolares)
+                    foreach (PeriodoEscolar periodoEscolar in periodosEscolares)
                     {
-                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo.ToString + " " + periodoEscolar.finPeriodo.ToString);
+                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo + " " + periodoEscolar.finPeriodo);
                     }
                 }
                 else
@@ -64,9 +65,81 @@ namespace FrontendGestorTutorias
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-            string primeraFecha = dpPrimeraFecha.ToString();
-            MessageBox.Show(primeraFecha);
+            if (cbPeriodoEscolar_SelectionChanged != null)
+            {
+                if (evaluarFechasVacias())
+                {
+                    MessageBox.Show("Favor de seleccionar todas las fechas", "Fechas vacías", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    DateTime? primeraFecha = dpPrimeraFecha.SelectedDate;
+                    DateTime? segundaFecha = dpSegundaFecha.SelectedDate;
+                    DateTime? terceraFecha = dpTerceraFecha.SelectedDate;
+                    var confirmacion = MessageBox.Show("¿Está seguro de querer registrar estas fechas?", "Registrar fechas",
+                                               MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (confirmacion == MessageBoxResult.Yes)
+                    {
+                        PeriodoEscolar periodoEscolar = new PeriodoEscolar();
+                        periodoEscolar.primeraFechaTutoria = primeraFecha;
+                        periodoEscolar.segundaFechaTutoria = segundaFecha;
+                        periodoEscolar.terceraFechaTutoria = terceraFecha;
+                        registrarFechasTutorias(periodoEscolar);
+                    }
+                }
+            }
         }
 
+        private void cbPeriodoEscolar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                PeriodoEscolar periodoSeleccionado = (PeriodoEscolar)cbPeriodoEscolar.SelectedItem;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+        }
+
+        private bool evaluarFechasVacias()
+        {
+            bool fechasVacias = false;
+            if(dpPrimeraFecha.Text == "")
+            {
+                fechasVacias = true;
+            }
+            if(dpSegundaFecha.Text == "")
+            {
+                fechasVacias = true;
+            }
+            if(dpTerceraFecha.Text == "")
+            {
+                fechasVacias = true;
+            }
+            return fechasVacias;
+        }
+
+        private async void registrarFechasTutorias(PeriodoEscolar periodoEscolar)
+        {
+            var conexionServicio = new ServiciosTutorias.Service1Client();
+            if (conexionServicio != null)
+            {
+                ResultadoOperacion resultado = await conexionServicio.registrarFechaSesiontutoriaAsync(periodoEscolar);
+                if(resultado.Error == false)
+                {
+                    MessageBox.Show("Registro de fechas exitoso", "Registro exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Registro de fechas fallido", "Error en el registro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Registro de fechas fallido", "Error en el registro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }
