@@ -32,6 +32,11 @@ namespace FrontendGestorTutorias.VentanasTutor
             this.reporteTutoria = reporteTutoria;
             EstudiantesAsistentesViewModel modelo = new EstudiantesAsistentesViewModel(reporteTutoria.tutoria_idTutoria,tutorIniciado.idAcademico);
             dgEstudiante.ItemsSource = modelo.EstudiantesAsistentesBd;
+            cbTipoProblematica.Items.Insert(0, "Seleccione una clasificación");
+            cbTipoProblematica.SelectedIndex = 0;
+            cbExperiencia.Items.Insert(0, "Seleccione una experiencia educativa");
+            cbExperiencia.SelectedIndex = 0;
+            llenarComboBoxes();
         }
 
         private void clicVolver(object sender, RoutedEventArgs e)
@@ -50,7 +55,16 @@ namespace FrontendGestorTutorias.VentanasTutor
         {
             if (checarCamposVacios())
             {
+                if (validarSeleccionClasificacion())
+                {
+                    if(cbTipoProblematica.SelectedIndex == 1)
+                    {
+                        if (validarEE())
+                        {
 
+                        }
+                    }
+                }
             }
         }
 
@@ -67,17 +81,47 @@ namespace FrontendGestorTutorias.VentanasTutor
             }
         }
 
+        private bool validarEE()
+        {
+            if (cbExperiencia.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe seleccionar una experiencia educativa", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        private bool validarSeleccionClasificacion()
+        {
+            if (cbTipoProblematica.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe seleccionar una clasificación", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }   
+
         private async void llenarComboBoxes()
         {
             var conexionServicios = new ServiciosTutorias.Service1Client();
-            try
+            if(conexionServicios != null)
             {
-                
-            }
-            catch
-            {
-
-            }
+                experienciasEducativas = await conexionServicios.recuperarExperienciasEducativasAsync();
+                clasificacionesProblematicas = await conexionServicios.recuperarClasificacionesAsync();
+                foreach (ExperienciaEducativa experiencia in experienciasEducativas)
+                {
+                    cbExperiencia.Items.Add(experiencia.nombre);
+                }
+                foreach (ClasificacionProblematica clasificacion in clasificacionesProblematicas)
+                {
+                    cbTipoProblematica.Items.Add(clasificacion.clasificacion);
+                }
+            }   
         }
     }
 }
