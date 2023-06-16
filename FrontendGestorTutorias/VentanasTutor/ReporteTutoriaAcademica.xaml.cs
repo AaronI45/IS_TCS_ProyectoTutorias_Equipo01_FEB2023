@@ -74,5 +74,12 @@ namespace FrontendGestorTutorias
             lbNumeroTutoria.Content = lbNumeroTutoria.Content + reporte.Tutoria.numeroTutoria.ToString();
             lbFecha.Content = lbFecha.Content + reporte.Tutoria.fechaTutoria.ToString();
         }
+
+        private void clicModificarComentariosGenerales(object sender, RoutedEventArgs e)
+        {
+            ConsultarComentarios ventanaListaComentarios = new ConsultarComentarios(tutorIniciado, reporte);
+            ventanaListaComentarios.Show();
+            this.Close();
+        }
     }
 }

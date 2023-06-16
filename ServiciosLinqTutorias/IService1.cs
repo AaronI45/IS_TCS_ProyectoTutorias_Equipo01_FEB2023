@@ -67,8 +67,6 @@ namespace ServiciosLinqTutorias
         Academico recuperarAcademicoPorId(int idAcademico);
 
         [OperationContract]
-        List<Comentario> recuperarComentarios();
-        [OperationContract]
         bool validarMatricula(string matricula);
         [OperationContract]
         List<Estudiante> recuperarEstudiantesAsistentes(int idTutoria);
@@ -82,6 +80,12 @@ namespace ServiciosLinqTutorias
         List<ClasificacionProblematica> recuperarClasificaciones();
         [OperationContract]
         List<ExperienciaEducativa> recuperarExperienciasEducativas();
+
+        [OperationContract]
+        List<Comentario> recuperarComentariosPorIdTutoria(int idReporteTutoria);
+
+        [OperationContract]
+        Comentario obtenerComentarioPorId(int idComentario);
     }
 
     [DataContract]

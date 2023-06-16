@@ -127,13 +127,13 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
+        public static ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idComentario)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
             try
             {
-                var comentario = conexionBD.Comentarios.FirstOrDefault(comentarioEncontrado => comentarioEncontrado.reporte_Tutoria_idReporte_Tutoria == idTutoria);
+                var comentario = conexionBD.Comentarios.FirstOrDefault(comentarioEncontrado => comentarioEncontrado.idComentario == idComentario);
                 if(comentario != null)
                 {
                     comentario.comentarios = nuevosComentarios;
@@ -154,14 +154,16 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static List<Comentario> recuperarComentarios()
+        public static List<Comentario> recuperarComentariosPorIdTutoria(int idReporteTutoria)
         {
-            var listaComentarios = conexionBD.Comentarios;
             List<Comentario> comentariosGenerales = new List<Comentario>();
+            var listaComentarios = conexionBD.Comentarios.Where(comentario => comentario.reporte_Tutoria_idReporte_Tutoria == idReporteTutoria);
             foreach (Comentario comentarioRegistrado in listaComentarios)
             {
-                Comentario comentarioGeneral = new Comentario()
+                var comentarioGeneral = new Comentario()
                 {
+                    idComentario = comentarioRegistrado.idComentario,
+                    reporte_Tutoria_idReporte_Tutoria = comentarioRegistrado.reporte_Tutoria_idReporte_Tutoria,
                     comentarios = comentarioRegistrado.comentarios
                 };
                 comentariosGenerales.Add(comentarioGeneral);
@@ -217,6 +219,18 @@ namespace ServiciosLinqTutorias.Modelo
                 clasifiacionesEncontradas.Add(clasificacionEncontrada);
             }
                 return clasifiacionesEncontradas;
+        }
+
+        public static Comentario recuperarComentarioPorId(int idComentario)
+        {
+            var comentario = conexionBD.Comentarios.FirstOrDefault(comentarioResultado => comentarioResultado.idComentario == idComentario);
+            Comentario comentarioEncontrado = new Comentario()
+            {
+                idComentario = comentario.idComentario,
+                reporte_Tutoria_idReporte_Tutoria = comentario.reporte_Tutoria_idReporte_Tutoria,
+                comentarios = comentario.comentarios
+            };
+            return comentarioEncontrado;
         }
     }
 }

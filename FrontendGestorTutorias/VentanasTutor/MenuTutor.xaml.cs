@@ -67,12 +67,5 @@ namespace FrontendGestorTutorias
             ventanaProblematicas.Show();
             this.Close();
         }
-
-        private void clicConsultarProblematicaAcademicaButton(object sender, RoutedEventArgs e)
-        {
-            ConsultarComentarios ventanaComentariosConsulta = new ConsultarComentarios(tutorIniciado);
-            ventanaComentariosConsulta.Show();
-            this.Close();
-        }
     }
 }

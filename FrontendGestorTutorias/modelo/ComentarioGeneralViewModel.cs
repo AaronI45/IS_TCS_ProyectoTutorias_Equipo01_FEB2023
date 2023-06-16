@@ -12,18 +12,18 @@ namespace FrontendGestorTutorias.modelo
     {
         public ObservableCollection<Comentario> ComentariosBD { get; set; }
 
-        public ComentarioGeneralViewModel()
+        public ComentarioGeneralViewModel(int idReporteTutoria)
         {
             ComentariosBD = new ObservableCollection<Comentario>();
-            solicitarInformacionServicio();
+            solicitarInformacionServicio(idReporteTutoria);
         }
 
-        private async void solicitarInformacionServicio()
+        private async void solicitarInformacionServicio(int idReporteTutoria)
         {
             var conexionServicio = new ServiciosTutorias.Service1Client();
             if (conexionServicio != null)
             {
-                Comentario[] comentarios = await conexionServicio.recuperarComentariosAsync();
+                Comentario[] comentarios = await conexionServicio.recuperarComentariosPorIdTutoriaAsync(idReporteTutoria);
                 foreach (Comentario comentario in comentarios)
                 {
                     ComentariosBD.Add(comentario);

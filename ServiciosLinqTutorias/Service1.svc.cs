@@ -105,9 +105,9 @@ namespace ServiciosLinqTutorias
             return AcademicoDAO.recuperarAcademicoPorId(idAcademico);
         }
 
-        public List<Comentario> recuperarComentarios()
+        public List<Comentario> recuperarComentariosPorIdTutoria(int idReporteTutoria)
         {
-            return TutoriaDAO.recuperarComentarios();
+            return TutoriaDAO.recuperarComentariosPorIdTutoria(idReporteTutoria);
         }
 
         public bool validarMatricula(string matricula)
@@ -143,6 +143,11 @@ namespace ServiciosLinqTutorias
         public List<ExperienciaEducativa> recuperarExperienciasEducativas()
         {
             return ExperienciaEducativaDAO.recuperarExperienciasEducativas();   
+        }
+        
+        public Comentario obtenerComentarioPorId(int idComentario)
+        {
+            return TutoriaDAO.recuperarComentarioPorId(idComentario);
         }
     }
 }
