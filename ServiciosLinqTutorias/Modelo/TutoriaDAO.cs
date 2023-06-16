@@ -10,7 +10,7 @@ namespace ServiciosLinqTutorias.Modelo
     {
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static readonly int NO_SOLUCIONADO = 1;
-        public static ResultadoOperacion registrarProblematica (RegistroProblematica problematicaPresentada)
+        public static ResultadoOperacion registrarProblematica (RegistroProblematica problematicaPresentada, List<int> estudiantesConproblematicaPresente)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
@@ -19,7 +19,7 @@ namespace ServiciosLinqTutorias.Modelo
                 var problematica = new Problematica()
                 {
                     clasificacion_problematica_idClasificacion_problematica = 
-                    problematicaPresentada.clasificacionProblematica,
+                        problematicaPresentada.clasificacionProblematica,
                     estado_problematica_idestado_problematica = NO_SOLUCIONADO,
                     reporte_Tutoria_idReporte_Tutoria   = problematicaPresentada.idReporteTutoria,
                     titulo = problematicaPresentada.titulo,

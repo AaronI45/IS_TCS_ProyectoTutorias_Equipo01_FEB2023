@@ -53,6 +53,7 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private void clicRegistrar(object sender, RoutedEventArgs e)
         {
+            int idEE = 0;
             if (checarCamposVacios())
             {
                 if (validarSeleccionClasificacion())
@@ -61,8 +62,13 @@ namespace FrontendGestorTutorias.VentanasTutor
                     {
                         if (validarEE())
                         {
-
+                            idEE = cbExperiencia.SelectedIndex;
                         }
+                        RegistroProblematica nuevaProblematica = new RegistroProblematica()
+                        {
+
+                        };
+                        registrarProblematica(nuevaProblematica);
                     }
                 }
             }
@@ -122,6 +128,19 @@ namespace FrontendGestorTutorias.VentanasTutor
                     cbTipoProblematica.Items.Add(clasificacion.clasificacion);
                 }
             }   
+        }
+
+        private async void registrarProblematica(RegistroProblematica problematicaPresentada)
+        {
+            var conexionServicios = new Service1Client();
+            if (conexionServicios != null)
+            {
+                conexionServicios.registrarProblematicaAsync(problematicaPresentada);
+            }
+            else
+            {
+
+            }
         }
     }
 }
