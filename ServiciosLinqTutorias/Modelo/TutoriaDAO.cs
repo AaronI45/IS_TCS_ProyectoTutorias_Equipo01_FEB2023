@@ -10,7 +10,7 @@ namespace ServiciosLinqTutorias.Modelo
     {
         private static DataClassesTutoriasUVDataContext conexionBD = ConexionBD.Instancia.ObtenerConexion();
         private static readonly int NO_SOLUCIONADO = 1;
-        public static ResultadoOperacion registrarProblematica (RegistroProblematica problematicaPresentada, List<int> estudiantesConproblematicaPresente)
+        public static ResultadoOperacion registrarProblematica (RegistroProblematica problematicaPresentada)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;

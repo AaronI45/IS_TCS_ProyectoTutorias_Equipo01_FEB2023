@@ -37,6 +37,7 @@ namespace FrontendGestorTutorias.VentanasTutor
             cbExperiencia.Items.Insert(0, "Seleccione una experiencia educativa");
             cbExperiencia.SelectedIndex = 0;
             llenarComboBoxes();
+            cbTipoProblematica.SelectionChanged += cbTipoProblematicaChanged;
         }
 
         private void clicVolver(object sender, RoutedEventArgs e)
@@ -54,22 +55,50 @@ namespace FrontendGestorTutorias.VentanasTutor
         private void clicRegistrar(object sender, RoutedEventArgs e)
         {
             int idEE = 0;
+            Estudiante estudianteConProblematica = verificarSeleccion();
             if (checarCamposVacios())
             {
-                if (validarSeleccionClasificacion())
+                if (validarSeleccionClasificacion() && estudianteConProblematica != null)
                 {
                     if(cbTipoProblematica.SelectedIndex == 1)
                     {
+                        cbExperiencia.Visibility = Visibility.Visible;
+                        lbExperiencia.Visibility = Visibility.Visible;
                         if (validarEE())
                         {
                             idEE = cbExperiencia.SelectedIndex;
+                            RegistroProblematica nuevaProblematica = new RegistroProblematica()
+                            {
+                                clasificacionProblematica = clasificacionesProblematicas.ElementAt(cbTipoProblematica.SelectedIndex -1).idClasificacion_problematica,
+                                idReporteTutoria = reporteTutoria.idReporte_Tutoria,
+                                titulo = txtTitulo.Text,
+                                descripcion = txtDescripcion.Text,
+                                idEstudiante = estudianteConProblematica.idEstudiante,
+                                idExperienciaEducativa = idEE
+                            };
+                            registrarProblematica(nuevaProblematica);
                         }
+                    }
+                    else
+                    {
                         RegistroProblematica nuevaProblematica = new RegistroProblematica()
                         {
-
+                            clasificacionProblematica = clasificacionesProblematicas.ElementAt(cbTipoProblematica.SelectedIndex).idClasificacion_problematica,
+                            idReporteTutoria = reporteTutoria.idReporte_Tutoria,
+                            titulo = txtTitulo.Text,
+                            descripcion = txtDescripcion.Text,
+                            idEstudiante = estudianteConProblematica.idEstudiante,
+                            idExperienciaEducativa = idEE
                         };
                         registrarProblematica(nuevaProblematica);
+                        cbExperiencia.Visibility = Visibility.Hidden;
+                        lbExperiencia.Visibility = Visibility.Hidden;
                     }
+
+                }
+                else
+                {
+
                 }
             }
         }
@@ -85,6 +114,18 @@ namespace FrontendGestorTutorias.VentanasTutor
             {
                 return true;
             }
+        }
+
+        private Estudiante verificarSeleccion()
+        {
+            Estudiante estudianteSeleccion;
+            estudianteSeleccion = dgEstudiante.SelectedItem as Estudiante;
+            if (estudianteSeleccion == null)
+            {
+                MessageBox.Show("Por favor seleccione un estudiante que presente la problemática", "Error de selección", 
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            return estudianteSeleccion;
         }
 
         private bool validarEE()
@@ -135,12 +176,40 @@ namespace FrontendGestorTutorias.VentanasTutor
             var conexionServicios = new Service1Client();
             if (conexionServicios != null)
             {
-                conexionServicios.registrarProblematicaAsync(problematicaPresentada);
+                ResultadoOperacion resultadoRegistro = await conexionServicios.registrarProblematicaAsync(problematicaPresentada);
+                if (!resultadoRegistro.Error)
+                {
+                    MessageBox.Show(resultadoRegistro.Mensaje, "Éxito de registro de problemática", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica(tutorIniciado, reporteTutoria);
+                    ventanaReporteTutoria.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(resultadoRegistro.Mensaje, "Error en el registro de problemática", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
-            else
-            {
+        }
 
+        private void cbTipoProblematicaChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                if (cbTipoProblematica.SelectedIndex == 1)
+                {
+                    cbExperiencia.Visibility = Visibility.Visible;
+                    lbExperiencia.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    cbExperiencia.Visibility = Visibility.Hidden;
+                    lbExperiencia.Visibility = Visibility.Hidden;
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            };
         }
     }
 }

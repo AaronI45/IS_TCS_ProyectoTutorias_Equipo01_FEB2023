@@ -13,7 +13,7 @@ namespace ServiciosTutorias
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ResultadoOperacion", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServiciosTutorias.ResultadoLogin))]
     public partial class ResultadoOperacion : object
@@ -51,7 +51,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ResultadoLogin", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias")]
     public partial class ResultadoLogin : ServiciosTutorias.ResultadoOperacion
     {
@@ -73,7 +73,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Academico", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Academico : object
     {
@@ -350,7 +350,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Rol", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Rol : object
     {
@@ -402,7 +402,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ProgramaEducativo", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ProgramaEducativo : object
     {
@@ -559,7 +559,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Estudiante", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Estudiante : object
     {
@@ -791,7 +791,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ExperienciaEducativa", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ExperienciaEducativa : object
     {
@@ -933,7 +933,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ReporteTutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ReporteTutoria : object
     {
@@ -1090,7 +1090,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ExperienciasEducativasCursando", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ExperienciasEducativasCursando : object
     {
@@ -1157,7 +1157,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ProblematicaAcademica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ProblematicaAcademica : object
     {
@@ -1254,7 +1254,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ProblematicaEstudiante", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ProblematicaEstudiante : object
     {
@@ -1321,7 +1321,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SesionTutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class SesionTutoria : object
     {
@@ -1403,7 +1403,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PeriodoEscolar", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class PeriodoEscolar : object
     {
@@ -1530,7 +1530,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Materia", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Materia : object
     {
@@ -1597,7 +1597,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Tutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Tutoria : object
     {
@@ -1724,7 +1724,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Comentario", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Comentario : object
     {
@@ -1791,7 +1791,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Problematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Problematica : object
     {
@@ -1978,7 +1978,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClasificacionProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class ClasificacionProblematica : object
     {
@@ -2030,7 +2030,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EstadoProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class EstadoProblematica : object
     {
@@ -2082,7 +2082,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Solucion", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
     public partial class Solucion : object
     {
@@ -2164,7 +2164,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RegistroTutor", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias")]
     public partial class RegistroTutor : object
     {
@@ -2306,7 +2306,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RegistroProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias")]
     public partial class RegistroProblematica : object
     {
@@ -2403,7 +2403,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ResultadoOperacion", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.AdministracionApp")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServiciosTutorias.ResultadoProblematica))]
     public partial class ResultadoOperacion1 : object
@@ -2441,7 +2441,7 @@ namespace ServiciosTutorias
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ResultadoProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.AdministracionApp")]
     public partial class ResultadoProblematica : ServiciosTutorias.ResultadoOperacion1
     {
@@ -2462,7 +2462,7 @@ namespace ServiciosTutorias
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiciosTutorias.IService1")]
     public interface IService1
     {
@@ -2546,13 +2546,13 @@ namespace ServiciosTutorias
         System.Threading.Tasks.Task<ServiciosTutorias.ExperienciaEducativa[]> recuperarExperienciasEducativasAsync();
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface IService1Channel : ServiciosTutorias.IService1, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class Service1Client : System.ServiceModel.ClientBase<ServiciosTutorias.IService1>, ServiciosTutorias.IService1
     {
         
@@ -2729,6 +2729,11 @@ namespace ServiciosTutorias
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
+        }
+        
+        public virtual System.Threading.Tasks.Task CloseAsync()
+        {
+            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginClose(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndClose));
         }
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)

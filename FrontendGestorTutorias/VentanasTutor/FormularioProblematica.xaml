@@ -17,12 +17,13 @@
                   HorizontalAlignment="Left" 
                   Margin="592,31,0,0" 
                   VerticalAlignment="Top" 
-                  Width="120"/>
+                  Width="180"
+                  SelectionChanged="cbTipoProblematicaChanged"/>
         <ComboBox x:Name="cbExperiencia" 
                   HorizontalAlignment="Left" 
                   Margin="592,74,0,0" 
                   VerticalAlignment="Top" 
-                  Width="120"
+                  Width="180"
                   Visibility="Hidden"/>
         <TextBox x:Name="txtTitulo" 
                  HorizontalAlignment="Left" 
