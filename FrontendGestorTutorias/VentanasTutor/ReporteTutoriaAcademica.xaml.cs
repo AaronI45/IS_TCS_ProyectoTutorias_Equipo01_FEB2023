@@ -62,8 +62,8 @@ namespace FrontendGestorTutorias
 
         private void clicVolver(object sender, RoutedEventArgs e)
         {
-            MenuTutor ventanaMenuTutor = new MenuTutor(tutorIniciado);
-            ventanaMenuTutor.Show();
+            ListadoReportes ventanaListadoReportes= new ListadoReportes(tutorIniciado);
+            ventanaListadoReportes.Show();
             this.Close();
         }
 
