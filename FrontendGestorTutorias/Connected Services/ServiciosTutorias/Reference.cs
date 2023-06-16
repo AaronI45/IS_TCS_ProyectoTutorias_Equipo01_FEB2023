@@ -2521,9 +2521,6 @@ namespace ServiciosTutorias
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarAcademicoPorId", ReplyAction="http://tempuri.org/IService1/recuperarAcademicoPorIdResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.Academico> recuperarAcademicoPorIdAsync(int idAcademico);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarComentarios", ReplyAction="http://tempuri.org/IService1/recuperarComentariosResponse")]
-        System.Threading.Tasks.Task<ServiciosTutorias.Comentario[]> recuperarComentariosAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/validarMatricula", ReplyAction="http://tempuri.org/IService1/validarMatriculaResponse")]
         System.Threading.Tasks.Task<bool> validarMatriculaAsync(string matricula);
         
@@ -2544,6 +2541,12 @@ namespace ServiciosTutorias
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarExperienciasEducativas", ReplyAction="http://tempuri.org/IService1/recuperarExperienciasEducativasResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.ExperienciaEducativa[]> recuperarExperienciasEducativasAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarComentariosPorIdTutoria", ReplyAction="http://tempuri.org/IService1/recuperarComentariosPorIdTutoriaResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Comentario[]> recuperarComentariosPorIdTutoriaAsync(int idReporteTutoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerComentarioPorId", ReplyAction="http://tempuri.org/IService1/obtenerComentarioPorIdResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Comentario> obtenerComentarioPorIdAsync(int idComentario);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -2686,11 +2689,6 @@ namespace ServiciosTutorias
             return base.Channel.recuperarAcademicoPorIdAsync(idAcademico);
         }
         
-        public System.Threading.Tasks.Task<ServiciosTutorias.Comentario[]> recuperarComentariosAsync()
-        {
-            return base.Channel.recuperarComentariosAsync();
-        }
-        
         public System.Threading.Tasks.Task<bool> validarMatriculaAsync(string matricula)
         {
             return base.Channel.validarMatriculaAsync(matricula);
@@ -2724,6 +2722,16 @@ namespace ServiciosTutorias
         public System.Threading.Tasks.Task<ServiciosTutorias.ExperienciaEducativa[]> recuperarExperienciasEducativasAsync()
         {
             return base.Channel.recuperarExperienciasEducativasAsync();
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Comentario[]> recuperarComentariosPorIdTutoriaAsync(int idReporteTutoria)
+        {
+            return base.Channel.recuperarComentariosPorIdTutoriaAsync(idReporteTutoria);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Comentario> obtenerComentarioPorIdAsync(int idComentario)
+        {
+            return base.Channel.obtenerComentarioPorIdAsync(idComentario);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
