@@ -43,7 +43,7 @@ namespace ServiciosLinqTutorias
         ResultadoProblematica consultarProblematicaPorId(int idProblematica);
 
         [OperationContract]
-        ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado);
+        ResultadoOperacion registrarComentariosGenerales(int idReporteTutoria, string comentarios);
 
         [OperationContract]
         ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria);
@@ -70,6 +70,18 @@ namespace ServiciosLinqTutorias
         List<Comentario> recuperarComentarios();
         [OperationContract]
         bool validarMatricula(string matricula);
+        [OperationContract]
+        List<Estudiante> recuperarEstudiantesAsistentes(int idTutoria);
+        [OperationContract]
+        Tutoria recuperarTutoriaPorId(int idTutoria);
+        [OperationContract]
+        ProgramaEducativo recuperarProgramaEducativoPorId(int idProgramaEducativo);
+        [OperationContract]
+        PeriodoEscolar recuperarPeriodoEscolarPorId(int idPeriodoEscolar);
+        [OperationContract]
+        List<ClasificacionProblematica> recuperarClasificaciones();
+        [OperationContract]
+        List<ExperienciaEducativa> recuperarExperienciasEducativas();
     }
 
     [DataContract]

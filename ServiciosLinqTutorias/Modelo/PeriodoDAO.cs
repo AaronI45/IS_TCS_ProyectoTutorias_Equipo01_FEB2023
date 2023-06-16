@@ -54,5 +54,21 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return periodosEscolares;
         }
+
+        public static PeriodoEscolar obtenerPeriodoEscolarPorId(int idPeriodoEscolar)
+        {
+            var periodoEscolarRegistrado = conexionBD.PeriodoEscolars.FirstOrDefault(periodoEscolarEncontrado
+                               => periodoEscolarEncontrado.idPeriodo_escolar == idPeriodoEscolar);
+            PeriodoEscolar periodoEscolar = new PeriodoEscolar()
+            {
+                idPeriodo_escolar = periodoEscolarRegistrado.idPeriodo_escolar,
+                inicioPeriodo = periodoEscolarRegistrado.inicioPeriodo,
+                finPeriodo = periodoEscolarRegistrado.finPeriodo,
+                primeraFechaTutoria = periodoEscolarRegistrado.primeraFechaTutoria,
+                segundaFechaTutoria = periodoEscolarRegistrado.segundaFechaTutoria,
+                terceraFechaTutoria = periodoEscolarRegistrado.terceraFechaTutoria
+            };
+            return periodoEscolar;
+        }
     }
 }

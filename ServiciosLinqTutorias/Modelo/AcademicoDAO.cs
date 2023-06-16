@@ -24,6 +24,7 @@ namespace ServiciosLinqTutorias.Modelo
                 {
                     Academico academico = new Academico()
                     {
+                        idAcademico = encontrarUsuario.idAcademico,
                         rol_idRol = encontrarUsuario.rol_idRol,
                         programa_educativo_idPrograma_educativo = encontrarUsuario.programa_educativo_idPrograma_educativo,
                         numerPersonal = encontrarUsuario.numerPersonal,

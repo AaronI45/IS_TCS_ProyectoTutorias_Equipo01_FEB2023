@@ -1,0 +1,73 @@
+﻿<Window x:Class="FrontendGestorTutorias.VentanasTutor.FormularioProblematica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontendGestorTutorias.VentanasTutor"
+        mc:Ignorable="d"
+        Title="Registrar problemática" Height="450" Width="800">
+    <Grid>
+        <Label Content="Estudiantes" 
+               Margin="23,24,697,381"/>
+        <Label x:Name="lbExperiencia" 
+               Content="Experiencia educativa" 
+               Margin="437,74,237,331"
+               Visibility="Hidden"/>
+        <ComboBox x:Name="cbTipoProblematica" 
+                  HorizontalAlignment="Left" 
+                  Margin="592,31,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="120"/>
+        <ComboBox x:Name="cbExperiencia" 
+                  HorizontalAlignment="Left" 
+                  Margin="592,74,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="120"
+                  Visibility="Hidden"/>
+        <TextBox x:Name="txtTitulo" 
+                 HorizontalAlignment="Left" 
+                 Margin="154,141,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="498"/>
+        <TextBox x:Name="txtDescripcion" 
+                 HorizontalAlignment="Left" 
+                 Margin="154,184,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="498" 
+                 Height="181"/>
+        <Label Content="Tipo de problemática" HorizontalAlignment="Left" Margin="440,27,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgEstudiante"
+                  AutoGenerateColumns="False"
+                  Margin="108,18,400,318"
+                  CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Matrícula"
+                                    Binding="{Binding matricula}"
+                                    Width="*"
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Nombre"
+                                    Binding="{Binding nombre}"
+                                    Width="*"
+                                    IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Título" HorizontalAlignment="Left" Margin="63,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Descripción" HorizontalAlignment="Left" Margin="63,184,0,0" VerticalAlignment="Top"/>
+        <Button Content="Volver" 
+                HorizontalAlignment="Left" 
+                Margin="43,389,0,0" 
+                VerticalAlignment="Top" 
+                Width="60"
+                Click="clicVolver"/>
+        <Button Content="Registrar Problemática" 
+                HorizontalAlignment="Left" 
+                Margin="630,389,0,0" 
+                VerticalAlignment="Top" 
+                Width="127"
+                Click="clicRegistrar"/>
+    </Grid>
+</Window>

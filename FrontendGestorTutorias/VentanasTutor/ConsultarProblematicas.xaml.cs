@@ -20,15 +20,16 @@ namespace FrontendGestorTutorias
     /// </summary>
     public partial class ConsultarProblematicas : Window
     {
-        public ConsultarProblematicas()
+        Academico tutorIniciado;
+        public ConsultarProblematicas(Academico tutorIniciado)
         {
             InitializeComponent();
-
+            this.tutorIniciado = tutorIniciado;
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            MenuTutor ventanaTutor = new MenuTutor();
+            MenuTutor ventanaTutor = new MenuTutor(tutorIniciado);
             ventanaTutor.Show();
             this.Close();
         }

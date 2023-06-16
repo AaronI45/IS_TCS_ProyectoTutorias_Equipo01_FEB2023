@@ -31,6 +31,7 @@ namespace FrontendGestorTutorias
             this.matriculaIngresada = matriculaIngresada;
             cargarCbTutores(this.idProgramaEducativo);
             cbTutorAcademico.Items.Insert(0, "Seleccionar Tutor académico");
+            cbTutorAcademico.SelectedIndex = 0;
             if (!string.IsNullOrEmpty(matriculaIngresada))
             {
                 cargarNombre(matriculaIngresada);

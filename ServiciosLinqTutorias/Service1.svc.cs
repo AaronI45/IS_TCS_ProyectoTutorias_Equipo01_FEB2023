@@ -60,9 +60,9 @@ namespace ServiciosLinqTutorias
             return TutoriaDAO.consultarProblematicaPorID(idProblematica);
         }
 
-        public ResultadoOperacion registrarComentariosGenerales(Comentario comentarioPresentado)
+        public ResultadoOperacion registrarComentariosGenerales(int idReporte, string comentarios)
         {
-            return TutoriaDAO.registrarComentariosGenerales(comentarioPresentado);
+            return TutoriaDAO.registrarComentariosGenerales(idReporte, comentarios);
         }
 
         public ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
@@ -113,6 +113,36 @@ namespace ServiciosLinqTutorias
         public bool validarMatricula(string matricula)
         {
             return EstudianteDAO.validarMatricula(matricula);
+        }
+
+        public List<Estudiante> recuperarEstudiantesAsistentes(int idTutoria)
+        {
+            return EstudianteDAO.recuperarAsistencias(idTutoria);
+        }
+
+        public Tutoria recuperarTutoriaPorId(int idTutoria)
+        {
+            return TutoriaDAO.recuperarTutoriaPorId(idTutoria);
+        }
+
+        public ProgramaEducativo recuperarProgramaEducativoPorId(int idProgramaEducativo)
+        {
+            return ProgramaEducativoDAO.recuperarProgramaEducativoPorId(idProgramaEducativo);
+        }
+
+        public PeriodoEscolar recuperarPeriodoEscolarPorId(int idPeriodoEscolar)
+        {
+            return PeriodoDAO.obtenerPeriodoEscolarPorId(idPeriodoEscolar);
+        }
+
+        public List<ClasificacionProblematica> recuperarClasificaciones()
+        {
+            return TutoriaDAO.recuperarClasificaciones();
+        }
+
+        public List<ExperienciaEducativa> recuperarExperienciasEducativas()
+        {
+            return ExperienciaEducativaDAO.recuperarExperienciasEducativas();   
         }
     }
 }

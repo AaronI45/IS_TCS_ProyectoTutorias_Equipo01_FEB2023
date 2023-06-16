@@ -20,10 +20,14 @@ namespace FrontendGestorTutorias
     /// </summary>
     public partial class ComentariosGenerales : Window
     {
-        public ComentariosGenerales()
+        Academico tutorIniciado;
+        ReporteTutoria reporte;
+        public ComentariosGenerales(Academico tutorIniciado, ReporteTutoria reporte)
         {
+            this.tutorIniciado = tutorIniciado;
             InitializeComponent();
             tbComentarioGeneral.PreviewTextInput += new TextCompositionEventHandler(soloLetras);
+            this.reporte = reporte;
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -32,7 +36,7 @@ namespace FrontendGestorTutorias
                 MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (confirmacion == MessageBoxResult.Yes)
             {
-                ReporteTutoriaAcademica ventanaReporte = new ReporteTutoriaAcademica();
+                ReporteTutoriaAcademica ventanaReporte = new ReporteTutoriaAcademica(tutorIniciado, reporte);
                 ventanaReporte.Show();
                 this.Close();
             }
@@ -53,10 +57,19 @@ namespace FrontendGestorTutorias
             {
                 Comentario comentarioGeneral = new Comentario()
                 {
-                    comentarios = tbComentarioGeneral.Text
+                    comentarios = tbComentarioGeneral.Text,
+                    reporte_Tutoria_idReporte_Tutoria = reporte.idReporte_Tutoria
                 };
-                MessageBox.Show("Comentario registrado exitosamente", "Registro exitoso");
-                ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica();
+                ResultadoOperacion resultadoRegistroComentario =  await conexionServicios.registrarComentariosGeneralesAsync(comentarioGeneral);
+                if (!resultadoRegistroComentario.Error)
+                {
+                    MessageBox.Show(resultadoRegistroComentario.Mensaje, "Registro exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show(resultadoRegistroComentario.Mensaje, "Error en el registro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica(tutorIniciado, reporte);
                 ventanaReporteTutoria.Show();
                 this.Close();
             }

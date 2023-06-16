@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FrontendGestorTutorias.VentanasTutor;
+using ServiciosTutorias;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +21,14 @@ namespace FrontendGestorTutorias
     /// </summary>
     public partial class MenuTutor : Window
     {
-        public MenuTutor()
+        Academico tutorIniciado;
+        public MenuTutor(Academico tutor)
         {
+            this.tutorIniciado = tutor;
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void clicCerrarSesion(object sender, RoutedEventArgs e)
         {
             var confirmacion = MessageBox.Show("¿Está seguro de querer cerrar sesión?", "Cerrar sesión",
                 MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -36,37 +40,37 @@ namespace FrontendGestorTutorias
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void clicRegistrarFechasDeSesiones(object sender, RoutedEventArgs e)
         {
-            RegistrarFechasSesionTutoria ventanaFechasTutorias = new RegistrarFechasSesionTutoria();
+            RegistrarFechasSesionTutoria ventanaFechasTutorias = new RegistrarFechasSesionTutoria(tutorIniciado);
             ventanaFechasTutorias.Show();
             this.Close();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void clicConsultarReporteDeTutoriaAcademica(object sender, RoutedEventArgs e)
         {
-            ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica();
+            ListadoReportes ventanaReporteTutoria = new ListadoReportes(tutorIniciado);
             ventanaReporteTutoria.Show();
             this.Close();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void clicModificarFechasDeSesiones(object sender, RoutedEventArgs e)
         {
-            ModificarFechasSesionTutoria ventanaModificarFechas = new ModificarFechasSesionTutoria();
+            ModificarFechasSesionTutoria ventanaModificarFechas = new ModificarFechasSesionTutoria(tutorIniciado);
             ventanaModificarFechas.Show();
             this.Close();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void clicConsultarProblematicaAcademica(object sender, RoutedEventArgs e)
         {
-            ConsultarProblematicas ventanaProblematicas = new ConsultarProblematicas();
+            ConsultarProblematicas ventanaProblematicas = new ConsultarProblematicas(tutorIniciado);
             ventanaProblematicas.Show();
             this.Close();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private void clicConsultarProblematicaAcademicaButton(object sender, RoutedEventArgs e)
         {
-            ConsultarComentarios ventanaComentariosConsulta = new ConsultarComentarios();
+            ConsultarComentarios ventanaComentariosConsulta = new ConsultarComentarios(tutorIniciado);
             ventanaComentariosConsulta.Show();
             this.Close();
         }

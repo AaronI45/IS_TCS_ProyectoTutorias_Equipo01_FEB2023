@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiciosTutorias;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,12 +18,13 @@ namespace FrontendGestorTutorias
     /// <summary>
     /// Interaction logic for ProblematicasAcademicas.xaml
     /// </summary>
-    public partial class ProblematicasAcademicas : Window
+    public partial class MenuProblematicas : Window
     {
-        public ProblematicasAcademicas()
+        Academico tutorIniciado;
+        public MenuProblematicas(Academico tutorIniciado)
         {
+            this.tutorIniciado = tutorIniciado;
             InitializeComponent();
-            
         }
 
     }

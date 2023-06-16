@@ -16,44 +16,29 @@ using System.Windows.Shapes;
 namespace FrontendGestorTutorias
 {
     /// <summary>
-    /// Lógica de interacción para ModificarFechasSesionTutoria.xaml
+    /// Lógica de interacción para RegistrarFechasSesionTutoria.xaml
     /// </summary>
-    public partial class ModificarFechasSesionTutoria : Window
+    public partial class RegistrarFechasSesionTutoria : Window
     {
-        public ModificarFechasSesionTutoria()
+        Academico tutorIniciado;
+        public RegistrarFechasSesionTutoria(Academico tutorIniciado)
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
-        }
-
-        private void btnCancelar_Click(object sender, RoutedEventArgs e)
-        {
-            var confirmacion = MessageBox.Show("¿Está seguro de querer cancelar la operacion?", "Cancelar",
-                MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (confirmacion == MessageBoxResult.Yes)
-            {
-                MenuTutor ventanaMenuTutor = new MenuTutor();
-                ventanaMenuTutor.Show();
-                this.Close();
-            }
-        }
-
-        private void btnGuardar_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.tutorIniciado = tutorIniciado;
         }
 
         private async void cargarCbPeriodosEscolares()
         {
             var conexionServicios = new ServiciosTutorias.Service1Client();
-            if (conexionServicios != null)
+            if(conexionServicios != null)
             {
                 var periodosEscolares = await conexionServicios.obtenerPeriodosEscolaresAsync();
-                if (periodosEscolares != null)
+                if(periodosEscolares != null)
                 {
-                    foreach (PeriodoEscolar periodoEscolar in periodosEscolares)
+                    foreach(PeriodoEscolar periodoEscolar in periodosEscolares)
                     {
-                        cbPeriodosEscolares.Items.Add(periodoEscolar.inicioPeriodo + " " + periodoEscolar.finPeriodo);
+                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo + " " + periodoEscolar.finPeriodo);
                     }
                 }
                 else
@@ -66,5 +51,22 @@ namespace FrontendGestorTutorias
                 MessageBox.Show("No se pudo conectar con el servidor", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            var confirmacion = MessageBox.Show("¿Está seguro de querer cancelar la operación?", "Cancelar",
+                MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (confirmacion == MessageBoxResult.Yes)
+            {
+                MenuTutor ventanaMenuTutor = new MenuTutor(tutorIniciado);
+                ventanaMenuTutor.Show();
+                this.Close();
+            }
+        }
+
+        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
     }
 }

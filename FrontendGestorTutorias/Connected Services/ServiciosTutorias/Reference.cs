@@ -9,6 +9,7 @@
 
 namespace ServiciosTutorias
 {
+    using System;
     using System.Runtime.Serialization;
     
     
@@ -572,8 +573,6 @@ namespace ServiciosTutorias
         
         private ServiciosTutorias.ProblematicaEstudiante[] ProblematicaEstudiantesField;
         
-        private ServiciosTutorias.SesionTutoria[] SesionTutoriasField;
-        
         private System.Nullable<int> academico_idAcademicoField;
         
         private string apellidoMaternoField;
@@ -591,6 +590,8 @@ namespace ServiciosTutorias
         private string nombreField;
         
         private System.Nullable<int> semestreCursandoField;
+        
+        private ServiciosTutorias.sesion_tutoria[] sesion_tutoriasField;
         
         private System.Nullable<long> telefonoField;
         
@@ -643,19 +644,6 @@ namespace ServiciosTutorias
             set
             {
                 this.ProblematicaEstudiantesField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServiciosTutorias.SesionTutoria[] SesionTutorias
-        {
-            get
-            {
-                return this.SesionTutoriasField;
-            }
-            set
-            {
-                this.SesionTutoriasField = value;
             }
         }
         
@@ -773,6 +761,19 @@ namespace ServiciosTutorias
             set
             {
                 this.semestreCursandoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ServiciosTutorias.sesion_tutoria[] sesion_tutorias
+        {
+            get
+            {
+                return this.sesion_tutoriasField;
+            }
+            set
+            {
+                this.sesion_tutoriasField = value;
             }
         }
         
@@ -1322,17 +1323,17 @@ namespace ServiciosTutorias
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SesionTutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
-    public partial class SesionTutoria : object
+    [System.Runtime.Serialization.DataContractAttribute(Name="sesion_tutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
+    public partial class sesion_tutoria : object
     {
         
         private ServiciosTutorias.Estudiante EstudianteField;
         
         private ServiciosTutorias.Tutoria TutoriaField;
         
-        private int estudiante_idEstudianteField;
+        private System.Nullable<byte> asistenciaField;
         
-        private string listaComentariosField;
+        private int estudiante_idEstudianteField;
         
         private int tutoria_idTutoriaField;
         
@@ -1363,6 +1364,19 @@ namespace ServiciosTutorias
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<byte> asistencia
+        {
+            get
+            {
+                return this.asistenciaField;
+            }
+            set
+            {
+                this.asistenciaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int estudiante_idEstudiante
         {
             get
@@ -1372,19 +1386,6 @@ namespace ServiciosTutorias
             set
             {
                 this.estudiante_idEstudianteField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string listaComentarios
-        {
-            get
-            {
-                return this.listaComentariosField;
-            }
-            set
-            {
-                this.listaComentariosField = value;
             }
         }
         
@@ -1527,6 +1528,11 @@ namespace ServiciosTutorias
                 this.terceraFechaTutoriaField = value;
             }
         }
+
+        public override string ToString()
+        {
+            return  inicioPeriodo != null && finPeriodo != null? inicioPeriodo.Value.ToString("dd-MM-yyyy") + " / " + finPeriodo.Value.ToString("dd-MM-yyyy"): "n/a";
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1606,8 +1612,6 @@ namespace ServiciosTutorias
         
         private ServiciosTutorias.ReporteTutoria[] ReporteTutoriasField;
         
-        private ServiciosTutorias.SesionTutoria[] SesionTutoriasField;
-        
         private System.Nullable<System.DateTime> fechaEntregaField;
         
         private System.Nullable<System.DateTime> fechaTutoriaField;
@@ -1617,6 +1621,8 @@ namespace ServiciosTutorias
         private System.Nullable<int> numeroTutoriaField;
         
         private int periodo_escolar_idPeriodo_escolarField;
+        
+        private ServiciosTutorias.sesion_tutoria[] sesion_tutoriasField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public ServiciosTutorias.PeriodoEscolar PeriodoEscolar
@@ -1641,19 +1647,6 @@ namespace ServiciosTutorias
             set
             {
                 this.ReporteTutoriasField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServiciosTutorias.SesionTutoria[] SesionTutorias
-        {
-            get
-            {
-                return this.SesionTutoriasField;
-            }
-            set
-            {
-                this.SesionTutoriasField = value;
             }
         }
         
@@ -1719,6 +1712,19 @@ namespace ServiciosTutorias
             set
             {
                 this.periodo_escolar_idPeriodo_escolarField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ServiciosTutorias.sesion_tutoria[] sesion_tutorias
+        {
+            get
+            {
+                return this.sesion_tutoriasField;
+            }
+            set
+            {
+                this.sesion_tutoriasField = value;
             }
         }
     }
@@ -2526,6 +2532,18 @@ namespace ServiciosTutorias
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/validarMatricula", ReplyAction="http://tempuri.org/IService1/validarMatriculaResponse")]
         System.Threading.Tasks.Task<bool> validarMatriculaAsync(string matricula);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarEstudiantesAsistentes", ReplyAction="http://tempuri.org/IService1/recuperarEstudiantesAsistentesResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Estudiante[]> recuperarEstudiantesAsistentesAsync(int idTutoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarTutoriaPorId", ReplyAction="http://tempuri.org/IService1/recuperarTutoriaPorIdResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.Tutoria> recuperarTutoriaPorIdAsync(int idTutoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarProgramaEducativoPorId", ReplyAction="http://tempuri.org/IService1/recuperarProgramaEducativoPorIdResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.ProgramaEducativo> recuperarProgramaEducativoPorIdAsync(int idProgramaEducativo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarPeriodoEscolarPorId", ReplyAction="http://tempuri.org/IService1/recuperarPeriodoEscolarPorIdResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar> recuperarPeriodoEscolarPorIdAsync(int idPeriodoEscolar);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -2676,6 +2694,26 @@ namespace ServiciosTutorias
         public System.Threading.Tasks.Task<bool> validarMatriculaAsync(string matricula)
         {
             return base.Channel.validarMatriculaAsync(matricula);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Estudiante[]> recuperarEstudiantesAsistentesAsync(int idTutoria)
+        {
+            return base.Channel.recuperarEstudiantesAsistentesAsync(idTutoria);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.Tutoria> recuperarTutoriaPorIdAsync(int idTutoria)
+        {
+            return base.Channel.recuperarTutoriaPorIdAsync(idTutoria);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.ProgramaEducativo> recuperarProgramaEducativoPorIdAsync(int idProgramaEducativo)
+        {
+            return base.Channel.recuperarProgramaEducativoPorIdAsync(idProgramaEducativo);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar> recuperarPeriodoEscolarPorIdAsync(int idPeriodoEscolar)
+        {
+            return base.Channel.recuperarPeriodoEscolarPorIdAsync(idPeriodoEscolar);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

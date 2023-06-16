@@ -1,4 +1,5 @@
 ﻿using FrontendGestorTutorias.modelo;
+using ServiciosTutorias;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,10 @@ namespace FrontendGestorTutorias
     /// </summary>
     public partial class ConsultarComentarios : Window
     {
-        public ConsultarComentarios()
+        Academico tutorIniciado;
+        public ConsultarComentarios(Academico tutorIniciado)
         {
+            this.tutorIniciado = tutorIniciado;
             InitializeComponent();
             ComentarioGeneralViewModel modelo = new ComentarioGeneralViewModel();
             dgComentarios.ItemsSource = modelo.ComentariosBD;
@@ -29,7 +32,7 @@ namespace FrontendGestorTutorias
 
         private void Button_ClickCancelar(object sender, RoutedEventArgs e)
         {
-            MenuTutor ventanaTutor = new MenuTutor();
+            MenuTutor ventanaTutor = new MenuTutor(tutorIniciado);
             ventanaTutor.Show();
             this.Close();
         }

@@ -62,7 +62,7 @@ namespace FrontendGestorTutorias
                             this.Close();
                             break;
                         case LOGIN_TUTOR:
-                            MenuTutor ventanaTutor = new MenuTutor();
+                            MenuTutor ventanaTutor = new MenuTutor(resultado.AcademicoEncontrado);
                             ventanaTutor.Show();
                             this.Close();
                             break;

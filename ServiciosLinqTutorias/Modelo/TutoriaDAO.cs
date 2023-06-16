@@ -103,7 +103,7 @@ namespace ServiciosLinqTutorias.Modelo
             return resultado;
         }
 
-        public static ResultadoOperacion registrarComentariosGenerales(Comentario nuevosComentarios)
+        public static ResultadoOperacion registrarComentariosGenerales(int idReporteTutoria, string comentarios)
         {
             ResultadoOperacion resultado = new ResultadoOperacion();
             resultado.Error = true;
@@ -111,8 +111,8 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 var comentariosRegistro = new Comentario
                 {
-                    comentarios = nuevosComentarios.comentarios,
-                    reporte_Tutoria_idReporte_Tutoria = nuevosComentarios.reporte_Tutoria_idReporte_Tutoria
+                    comentarios = comentarios,
+                    reporte_Tutoria_idReporte_Tutoria = idReporteTutoria
                 };
                 conexionBD.Comentarios.InsertOnSubmit(comentariosRegistro);
                 conexionBD.SubmitChanges();
@@ -170,10 +170,10 @@ namespace ServiciosLinqTutorias.Modelo
             return comentariosGenerales;
         }
 
-        public static List<ReporteTutoria> recuperarReportesPorTutor (int tutorAcademico)
+        public static List<ReporteTutoria> recuperarReportesPorTutor (int idTutorAcademico)
         {
             List<ReporteTutoria> reportes = new List<ReporteTutoria>();
-            var listaReportes = conexionBD.ReporteTutorias.Where(reporte => reporte.academico_idAcademico == tutorAcademico);
+            var listaReportes = conexionBD.ReporteTutorias.Where(reporte => reporte.academico_idAcademico == idTutorAcademico);
             foreach (ReporteTutoria reporte in listaReportes)
             {
                 var reporteEncontrado = new ReporteTutoria()
@@ -187,6 +187,36 @@ namespace ServiciosLinqTutorias.Modelo
                 reportes.Add(reporteEncontrado);
             }
             return reportes;
+        }
+
+        public static Tutoria recuperarTutoriaPorId(int idTutoria)
+        {
+            var tutoria = conexionBD.Tutorias.FirstOrDefault(tutoriaResultado => tutoriaResultado.idTutoria == idTutoria);
+            Tutoria tutoriaEncontrada = new Tutoria()
+            {
+                idTutoria = tutoria.idTutoria,
+                periodo_escolar_idPeriodo_escolar = tutoria.periodo_escolar_idPeriodo_escolar,
+                numeroTutoria = tutoria.numeroTutoria,
+                fechaTutoria = tutoria.fechaTutoria,
+                fechaEntrega = tutoria.fechaEntrega,
+            };
+            return tutoriaEncontrada;
+        }
+        
+        public static List<ClasificacionProblematica> recuperarClasificaciones()
+        {
+            List<ClasificacionProblematica> clasifiacionesEncontradas = new List<ClasificacionProblematica>();
+            var clasificaciones = conexionBD.ClasificacionProblematicas;
+            foreach (ClasificacionProblematica clasificacion in clasificaciones)
+            {
+                ClasificacionProblematica clasificacionEncontrada = new ClasificacionProblematica()
+                {
+                    idClasificacion_problematica = clasificacion.idClasificacion_problematica,
+                    clasificacion = clasificacion.clasificacion
+                };
+                clasifiacionesEncontradas.Add(clasificacionEncontrada);
+            }
+                return clasifiacionesEncontradas;
         }
     }
 }

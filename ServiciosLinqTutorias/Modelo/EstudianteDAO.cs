@@ -157,5 +157,32 @@ namespace ServiciosLinqTutorias.Modelo
             }
             return matriculaValida;
         }
+
+        public static List<Estudiante> recuperarAsistencias(int idTutoria)
+        {
+            List<Estudiante> asistencias = new List<Estudiante>();
+            var asistenciasEncontradas = conexionBD.sesion_tutorias.Where(asistenciaEncontrada => asistenciaEncontrada.tutoria_idTutoria == idTutoria
+                                        && asistenciaEncontrada.asistencia == 1);
+            foreach (var asistencia in asistenciasEncontradas)
+            {
+                var estudiante = conexionBD.Estudiantes.FirstOrDefault(estudianteEncontrado => 
+                        estudianteEncontrado.idEstudiante == asistencia.estudiante_idEstudiante);
+                var estudianteAsistente = new Estudiante()
+                {
+                    idEstudiante = estudiante.idEstudiante,
+                    academico_idAcademico = estudiante.academico_idAcademico,
+                    enRiesgo = estudiante.enRiesgo,
+                    matricula = estudiante.matricula,
+                    nombre = estudiante.nombre,
+                    apellidoPaterno = estudiante.apellidoPaterno,
+                    apellidoMaterno = estudiante.apellidoMaterno,
+                    correoElectronico = estudiante.correoElectronico,
+                    semestreCursando = estudiante.semestreCursando,
+                    telefono = estudiante.telefono
+                };
+                asistencias.Add(estudianteAsistente);
+            }
+            return asistencias;
+        }
     }
 }
