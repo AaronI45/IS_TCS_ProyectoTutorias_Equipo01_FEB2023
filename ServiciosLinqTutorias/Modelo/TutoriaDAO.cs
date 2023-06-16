@@ -19,7 +19,7 @@ namespace ServiciosLinqTutorias.Modelo
                 var problematica = new Problematica()
                 {
                     clasificacion_problematica_idClasificacion_problematica = 
-                    problematicaPresentada.clasificacionProblematica,
+                        problematicaPresentada.clasificacionProblematica,
                     estado_problematica_idestado_problematica = NO_SOLUCIONADO,
                     reporte_Tutoria_idReporte_Tutoria   = problematicaPresentada.idReporteTutoria,
                     titulo = problematicaPresentada.titulo,
