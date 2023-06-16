@@ -56,14 +56,9 @@ namespace FrontendGestorTutorias
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            var confirmacion = MessageBox.Show("¿Está seguro de querer cancelar la operación?", "Cancelar",
-                MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (confirmacion == MessageBoxResult.Yes)
-            {
                 MenuTutor ventanaMenuTutor = new MenuTutor(tutorIniciado);
                 ventanaMenuTutor.Show();
                 this.Close();
-            }
         }
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
