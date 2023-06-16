@@ -72,11 +72,20 @@ namespace FrontendGestorTutorias.VentanasTutor
             var conexionServicios = new ServiciosTutorias.Service1Client();
             try
             {
-                
+                experienciasEducativas = await conexionServicios.recuperarExperienciasEducativasAsync();
+                clasificacionesProblematicas = await conexionServicios.recuperarClasificacionesAsync();
+                foreach (ExperienciaEducativa experiencia in experienciasEducativas)
+                {
+                    cbExperiencia.Items.Add(experiencia.nombre);
+                }
+                foreach (ClasificacionProblematica clasificacion in clasificacionesProblematicas)
+                {
+                    cbTipoProblematica.Items.Add(clasificacion.clasificacion);
+                }
             }
             catch
             {
-
+                MessageBox.Show("No se pudo conectar con la base de datos", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

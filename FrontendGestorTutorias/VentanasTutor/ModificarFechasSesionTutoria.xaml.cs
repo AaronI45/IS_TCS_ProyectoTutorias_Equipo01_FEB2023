@@ -25,11 +25,8 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
-<<<<<<< HEAD:FrontendGestorTutorias/VentanasTutor/ModificarFechasSesionTutoria.xaml.cs
             this.tutorIniciado = tutorIniciado;
-=======
             cbPeriodosEscolares.SelectionChanged += cbPeriodosEscolares_SelectionChanged;
->>>>>>> f08bea95aaa67e7c1373d62e9d79c90e7516dec3:FrontendGestorTutorias/ModificarFechasSesionTutoria.xaml.cs
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
