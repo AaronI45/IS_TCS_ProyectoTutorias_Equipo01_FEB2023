@@ -81,9 +81,9 @@ namespace ServiciosLinqTutorias.Modelo
     partial void InsertTutoria(Tutoria instance);
     partial void UpdateTutoria(Tutoria instance);
     partial void DeleteTutoria(Tutoria instance);
-    partial void Insertsesion_tutoria(sesion_tutoria instance);
-    partial void Updatesesion_tutoria(sesion_tutoria instance);
-    partial void Deletesesion_tutoria(sesion_tutoria instance);
+    partial void InsertSesionTutoria(SesionTutoria instance);
+    partial void UpdateSesionTutoria(SesionTutoria instance);
+    partial void DeleteSesionTutoria(SesionTutoria instance);
     #endregion
 		
 		public DataClassesTutoriasUVDataContext(string connection) : 
@@ -246,11 +246,11 @@ namespace ServiciosLinqTutorias.Modelo
 			}
 		}
 		
-		public System.Data.Linq.Table<sesion_tutoria> sesion_tutorias
+		public System.Data.Linq.Table<SesionTutoria> SesionTutorias
 		{
 			get
 			{
-				return this.GetTable<sesion_tutoria>();
+				return this.GetTable<SesionTutoria>();
 			}
 		}
 	}
@@ -1190,7 +1190,7 @@ namespace ServiciosLinqTutorias.Modelo
 		
 		private EntitySet<ProblematicaEstudiante> _ProblematicaEstudiantes;
 		
-		private EntitySet<sesion_tutoria> _sesion_tutorias;
+		private EntitySet<SesionTutoria> _sesion_tutorias;
 		
 		private EntityRef<Academico> _Academico;
 		
@@ -1225,7 +1225,7 @@ namespace ServiciosLinqTutorias.Modelo
 			this._ExperienciasEducativasCursandos = new EntitySet<ExperienciasEducativasCursando>(new Action<ExperienciasEducativasCursando>(this.attach_ExperienciasEducativasCursandos), new Action<ExperienciasEducativasCursando>(this.detach_ExperienciasEducativasCursandos));
 			this._ProblematicaAcademicas = new EntitySet<ProblematicaAcademica>(new Action<ProblematicaAcademica>(this.attach_ProblematicaAcademicas), new Action<ProblematicaAcademica>(this.detach_ProblematicaAcademicas));
 			this._ProblematicaEstudiantes = new EntitySet<ProblematicaEstudiante>(new Action<ProblematicaEstudiante>(this.attach_ProblematicaEstudiantes), new Action<ProblematicaEstudiante>(this.detach_ProblematicaEstudiantes));
-			this._sesion_tutorias = new EntitySet<sesion_tutoria>(new Action<sesion_tutoria>(this.attach_sesion_tutorias), new Action<sesion_tutoria>(this.detach_sesion_tutorias));
+			this._sesion_tutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_sesion_tutorias), new Action<SesionTutoria>(this.detach_sesion_tutorias));
 			this._Academico = default(EntityRef<Academico>);
 			OnCreated();
 		}
@@ -1474,7 +1474,7 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Estudiante_sesion_tutoria", Storage="_sesion_tutorias", ThisKey="idEstudiante", OtherKey="estudiante_idEstudiante")]
-		public EntitySet<sesion_tutoria> sesion_tutorias
+		public EntitySet<SesionTutoria> SesionTutorias
 		{
 			get
 			{
@@ -1576,13 +1576,13 @@ namespace ServiciosLinqTutorias.Modelo
 			entity.Estudiante = null;
 		}
 		
-		private void attach_sesion_tutorias(sesion_tutoria entity)
+		private void attach_sesion_tutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
 			entity.Estudiante = this;
 		}
 		
-		private void detach_sesion_tutorias(sesion_tutoria entity)
+		private void detach_sesion_tutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
 			entity.Estudiante = null;
@@ -4200,7 +4200,7 @@ namespace ServiciosLinqTutorias.Modelo
 		
 		private EntitySet<ReporteTutoria> _ReporteTutorias;
 		
-		private EntitySet<sesion_tutoria> _sesion_tutorias;
+		private EntitySet<SesionTutoria> _sesion_tutorias;
 		
 		private EntityRef<PeriodoEscolar> _PeriodoEscolar;
 		
@@ -4223,7 +4223,7 @@ namespace ServiciosLinqTutorias.Modelo
 		public Tutoria()
 		{
 			this._ReporteTutorias = new EntitySet<ReporteTutoria>(new Action<ReporteTutoria>(this.attach_ReporteTutorias), new Action<ReporteTutoria>(this.detach_ReporteTutorias));
-			this._sesion_tutorias = new EntitySet<sesion_tutoria>(new Action<sesion_tutoria>(this.attach_sesion_tutorias), new Action<sesion_tutoria>(this.detach_sesion_tutorias));
+			this._sesion_tutorias = new EntitySet<SesionTutoria>(new Action<SesionTutoria>(this.attach_sesion_tutorias), new Action<SesionTutoria>(this.detach_sesion_tutorias));
 			this._PeriodoEscolar = default(EntityRef<PeriodoEscolar>);
 			OnCreated();
 		}
@@ -4346,7 +4346,7 @@ namespace ServiciosLinqTutorias.Modelo
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tutoria_sesion_tutoria", Storage="_sesion_tutorias", ThisKey="idTutoria", OtherKey="tutoria_idTutoria")]
-		public EntitySet<sesion_tutoria> sesion_tutorias
+		public EntitySet<SesionTutoria> SesionTutorias
 		{
 			get
 			{
@@ -4424,13 +4424,13 @@ namespace ServiciosLinqTutorias.Modelo
 			entity.Tutoria = null;
 		}
 		
-		private void attach_sesion_tutorias(sesion_tutoria entity)
+		private void attach_sesion_tutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
 			entity.Tutoria = this;
 		}
 		
-		private void detach_sesion_tutorias(sesion_tutoria entity)
+		private void detach_sesion_tutorias(SesionTutoria entity)
 		{
 			this.SendPropertyChanging();
 			entity.Tutoria = null;
@@ -4438,7 +4438,7 @@ namespace ServiciosLinqTutorias.Modelo
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="sistematutorias.sesion_tutoria")]
-	public partial class sesion_tutoria : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class SesionTutoria : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -4465,7 +4465,7 @@ namespace ServiciosLinqTutorias.Modelo
     partial void OnasistenciaChanged();
     #endregion
 		
-		public sesion_tutoria()
+		public SesionTutoria()
 		{
 			this._Estudiante = default(EntityRef<Estudiante>);
 			this._Tutoria = default(EntityRef<Tutoria>);
@@ -4557,12 +4557,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Estudiante.Entity = null;
-						previousValue.sesion_tutorias.Remove(this);
+						previousValue.SesionTutorias.Remove(this);
 					}
 					this._Estudiante.Entity = value;
 					if ((value != null))
 					{
-						value.sesion_tutorias.Add(this);
+						value.SesionTutorias.Add(this);
 						this._estudiante_idEstudiante = value.idEstudiante;
 					}
 					else
@@ -4591,12 +4591,12 @@ namespace ServiciosLinqTutorias.Modelo
 					if ((previousValue != null))
 					{
 						this._Tutoria.Entity = null;
-						previousValue.sesion_tutorias.Remove(this);
+						previousValue.SesionTutorias.Remove(this);
 					}
 					this._Tutoria.Entity = value;
 					if ((value != null))
 					{
-						value.sesion_tutorias.Add(this);
+						value.SesionTutorias.Add(this);
 						this._tutoria_idTutoria = value.idTutoria;
 					}
 					else

@@ -58,7 +58,7 @@
       <Association Name="Estudiante_ExperienciasEducativasCursando" Member="ExperienciasEducativasCursandos" ThisKey="idEstudiante" OtherKey="Estudiante_idEstudiante" Type="ExperienciasEducativasCursando" />
       <Association Name="Estudiante_ProblematicaAcademica" Member="ProblematicaAcademicas" ThisKey="idEstudiante" OtherKey="Estudiante_idEstudiante" Type="ProblematicaAcademica" />
       <Association Name="Estudiante_ProblematicaEstudiante" Member="ProblematicaEstudiantes" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="ProblematicaEstudiante" />
-      <Association Name="Estudiante_sesion_tutoria" Member="sesion_tutorias" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="sesion_tutoria" />
+      <Association Name="Estudiante_sesion_tutoria" Member="SesionTutorias" Storage="_sesion_tutorias" ThisKey="idEstudiante" OtherKey="estudiante_idEstudiante" Type="SesionTutoria" />
       <Association Name="Academico_Estudiante" Member="Academico" ThisKey="academico_idAcademico" OtherKey="idAcademico" Type="Academico" IsForeignKey="true" />
     </Type>
   </Table>
@@ -189,12 +189,12 @@
       <Column Name="fechaTutoria" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="fechaEntrega" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Association Name="Tutoria_ReporteTutoria" Member="ReporteTutorias" ThisKey="idTutoria" OtherKey="tutoria_idTutoria" Type="ReporteTutoria" />
-      <Association Name="Tutoria_sesion_tutoria" Member="sesion_tutorias" ThisKey="idTutoria" OtherKey="tutoria_idTutoria" Type="sesion_tutoria" />
+      <Association Name="Tutoria_sesion_tutoria" Member="SesionTutorias" Storage="_sesion_tutorias" ThisKey="idTutoria" OtherKey="tutoria_idTutoria" Type="SesionTutoria" />
       <Association Name="PeriodoEscolar_Tutoria" Member="PeriodoEscolar" ThisKey="periodo_escolar_idPeriodo_escolar" OtherKey="idPeriodo_escolar" Type="PeriodoEscolar" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="sistematutorias.sesion_tutoria" Member="sesion_tutorias">
-    <Type Name="sesion_tutoria">
+  <Table Name="sistematutorias.sesion_tutoria" Member="SesionTutorias">
+    <Type Name="SesionTutoria">
       <Column Name="tutoria_idTutoria" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="estudiante_idEstudiante" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="asistencia" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />

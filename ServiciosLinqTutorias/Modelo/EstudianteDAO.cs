@@ -161,7 +161,7 @@ namespace ServiciosLinqTutorias.Modelo
         public static List<Estudiante> recuperarAsistencias(int idTutoria)
         {
             List<Estudiante> asistencias = new List<Estudiante>();
-            var asistenciasEncontradas = conexionBD.sesion_tutorias.Where(asistenciaEncontrada => asistenciaEncontrada.tutoria_idTutoria == idTutoria
+            var asistenciasEncontradas = conexionBD.SesionTutorias.Where(asistenciaEncontrada => asistenciaEncontrada.tutoria_idTutoria == idTutoria
                                         && asistenciaEncontrada.asistencia == 1);
             foreach (var asistencia in asistenciasEncontradas)
             {

@@ -9,7 +9,6 @@
 
 namespace ServiciosTutorias
 {
-    using System;
     using System.Runtime.Serialization;
     
     
@@ -573,6 +572,8 @@ namespace ServiciosTutorias
         
         private ServiciosTutorias.ProblematicaEstudiante[] ProblematicaEstudiantesField;
         
+        private ServiciosTutorias.SesionTutoria[] SesionTutoriasField;
+        
         private System.Nullable<int> academico_idAcademicoField;
         
         private string apellidoMaternoField;
@@ -590,8 +591,6 @@ namespace ServiciosTutorias
         private string nombreField;
         
         private System.Nullable<int> semestreCursandoField;
-        
-        private ServiciosTutorias.sesion_tutoria[] sesion_tutoriasField;
         
         private System.Nullable<long> telefonoField;
         
@@ -644,6 +643,19 @@ namespace ServiciosTutorias
             set
             {
                 this.ProblematicaEstudiantesField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ServiciosTutorias.SesionTutoria[] SesionTutorias
+        {
+            get
+            {
+                return this.SesionTutoriasField;
+            }
+            set
+            {
+                this.SesionTutoriasField = value;
             }
         }
         
@@ -761,19 +773,6 @@ namespace ServiciosTutorias
             set
             {
                 this.semestreCursandoField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServiciosTutorias.sesion_tutoria[] sesion_tutorias
-        {
-            get
-            {
-                return this.sesion_tutoriasField;
-            }
-            set
-            {
-                this.sesion_tutoriasField = value;
             }
         }
         
@@ -1323,8 +1322,8 @@ namespace ServiciosTutorias
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="sesion_tutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
-    public partial class sesion_tutoria : object
+    [System.Runtime.Serialization.DataContractAttribute(Name="SesionTutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosLinqTutorias.Modelo")]
+    public partial class SesionTutoria : object
     {
         
         private ServiciosTutorias.Estudiante EstudianteField;
@@ -1528,11 +1527,6 @@ namespace ServiciosTutorias
                 this.terceraFechaTutoriaField = value;
             }
         }
-
-        public override string ToString()
-        {
-            return  inicioPeriodo != null && finPeriodo != null? inicioPeriodo.Value.ToString("dd-MM-yyyy") + " / " + finPeriodo.Value.ToString("dd-MM-yyyy"): "n/a";
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1612,6 +1606,8 @@ namespace ServiciosTutorias
         
         private ServiciosTutorias.ReporteTutoria[] ReporteTutoriasField;
         
+        private ServiciosTutorias.SesionTutoria[] SesionTutoriasField;
+        
         private System.Nullable<System.DateTime> fechaEntregaField;
         
         private System.Nullable<System.DateTime> fechaTutoriaField;
@@ -1621,8 +1617,6 @@ namespace ServiciosTutorias
         private System.Nullable<int> numeroTutoriaField;
         
         private int periodo_escolar_idPeriodo_escolarField;
-        
-        private ServiciosTutorias.sesion_tutoria[] sesion_tutoriasField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public ServiciosTutorias.PeriodoEscolar PeriodoEscolar
@@ -1647,6 +1641,19 @@ namespace ServiciosTutorias
             set
             {
                 this.ReporteTutoriasField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ServiciosTutorias.SesionTutoria[] SesionTutorias
+        {
+            get
+            {
+                return this.SesionTutoriasField;
+            }
+            set
+            {
+                this.SesionTutoriasField = value;
             }
         }
         
@@ -1712,19 +1719,6 @@ namespace ServiciosTutorias
             set
             {
                 this.periodo_escolar_idPeriodo_escolarField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServiciosTutorias.sesion_tutoria[] sesion_tutorias
-        {
-            get
-            {
-                return this.sesion_tutoriasField;
-            }
-            set
-            {
-                this.sesion_tutoriasField = value;
             }
         }
     }
@@ -2501,7 +2495,7 @@ namespace ServiciosTutorias
         System.Threading.Tasks.Task<ServiciosTutorias.ResultadoProblematica> consultarProblematicaPorIdAsync(int idProblematica);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarComentariosGenerales", ReplyAction="http://tempuri.org/IService1/registrarComentariosGeneralesResponse")]
-        System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarComentariosGeneralesAsync(ServiciosTutorias.Comentario comentarioPresentado);
+        System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarComentariosGeneralesAsync(int idReporteTutoria, string comentarios);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editarComentariosGenerales", ReplyAction="http://tempuri.org/IService1/editarComentariosGeneralesResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> editarComentariosGeneralesAsync(string nuevosComentarios, int idTutoria);
@@ -2544,6 +2538,12 @@ namespace ServiciosTutorias
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarPeriodoEscolarPorId", ReplyAction="http://tempuri.org/IService1/recuperarPeriodoEscolarPorIdResponse")]
         System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar> recuperarPeriodoEscolarPorIdAsync(int idPeriodoEscolar);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarClasificaciones", ReplyAction="http://tempuri.org/IService1/recuperarClasificacionesResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.ClasificacionProblematica[]> recuperarClasificacionesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarExperienciasEducativas", ReplyAction="http://tempuri.org/IService1/recuperarExperienciasEducativasResponse")]
+        System.Threading.Tasks.Task<ServiciosTutorias.ExperienciaEducativa[]> recuperarExperienciasEducativasAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -2641,9 +2641,9 @@ namespace ServiciosTutorias
             return base.Channel.consultarProblematicaPorIdAsync(idProblematica);
         }
         
-        public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarComentariosGeneralesAsync(ServiciosTutorias.Comentario comentarioPresentado)
+        public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> registrarComentariosGeneralesAsync(int idReporteTutoria, string comentarios)
         {
-            return base.Channel.registrarComentariosGeneralesAsync(comentarioPresentado);
+            return base.Channel.registrarComentariosGeneralesAsync(idReporteTutoria, comentarios);
         }
         
         public System.Threading.Tasks.Task<ServiciosTutorias.ResultadoOperacion> editarComentariosGeneralesAsync(string nuevosComentarios, int idTutoria)
@@ -2714,6 +2714,16 @@ namespace ServiciosTutorias
         public System.Threading.Tasks.Task<ServiciosTutorias.PeriodoEscolar> recuperarPeriodoEscolarPorIdAsync(int idPeriodoEscolar)
         {
             return base.Channel.recuperarPeriodoEscolarPorIdAsync(idPeriodoEscolar);
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.ClasificacionProblematica[]> recuperarClasificacionesAsync()
+        {
+            return base.Channel.recuperarClasificacionesAsync();
+        }
+        
+        public System.Threading.Tasks.Task<ServiciosTutorias.ExperienciaEducativa[]> recuperarExperienciasEducativasAsync()
+        {
+            return base.Channel.recuperarExperienciasEducativasAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

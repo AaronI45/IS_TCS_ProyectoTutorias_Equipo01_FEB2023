@@ -23,4 +23,8 @@
     <Resource Include="LogoUV.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
 </Project>
