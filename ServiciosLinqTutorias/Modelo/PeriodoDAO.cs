@@ -44,6 +44,7 @@ namespace ServiciosLinqTutorias.Modelo
             {
                 PeriodoEscolar periodoEscolar = new PeriodoEscolar()
                 {
+                    idPeriodo_escolar = periodoEscolarRegistrado.idPeriodo_escolar,
                     inicioPeriodo = periodoEscolarRegistrado.inicioPeriodo,
                     finPeriodo = periodoEscolarRegistrado.finPeriodo,
                     primeraFechaTutoria = periodoEscolarRegistrado.primeraFechaTutoria,

@@ -21,15 +21,13 @@ namespace FrontendGestorTutorias
     public partial class RegistrarFechasSesionTutoria : Window
     {
         Academico tutorIniciado;
+        PeriodoEscolar periodoSeleccionado = null;
         public RegistrarFechasSesionTutoria(Academico tutorIniciado)
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
-<<<<<<< HEAD:FrontendGestorTutorias/VentanasTutor/RegistrarFechasSesionTutoria.xaml.cs
             this.tutorIniciado = tutorIniciado;
-=======
             cbPeriodoEscolar.SelectionChanged += cbPeriodoEscolar_SelectionChanged;
->>>>>>> f08bea95aaa67e7c1373d62e9d79c90e7516dec3:FrontendGestorTutorias/RegistrarFechasSesionTutoria.xaml.cs
         }
 
         private async void cargarCbPeriodosEscolares()
@@ -42,7 +40,7 @@ namespace FrontendGestorTutorias
                 {
                     foreach (PeriodoEscolar periodoEscolar in periodosEscolares)
                     {
-                        cbPeriodoEscolar.Items.Add(periodoEscolar.inicioPeriodo + " " + periodoEscolar.finPeriodo);
+                        cbPeriodoEscolar.Items.Add(periodoEscolar);
                     }
                 }
                 else
@@ -70,8 +68,6 @@ namespace FrontendGestorTutorias
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD:FrontendGestorTutorias/VentanasTutor/RegistrarFechasSesionTutoria.xaml.cs
-=======
             if (cbPeriodoEscolar_SelectionChanged != null)
             {
                 if (evaluarFechasVacias())
@@ -87,28 +83,26 @@ namespace FrontendGestorTutorias
                                                MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (confirmacion == MessageBoxResult.Yes)
                     {
-                        PeriodoEscolar periodoEscolar = new PeriodoEscolar();
-                        periodoEscolar.primeraFechaTutoria = primeraFecha;
-                        periodoEscolar.segundaFechaTutoria = segundaFecha;
-                        periodoEscolar.terceraFechaTutoria = terceraFecha;
+                        PeriodoEscolar periodoEscolar = periodoSeleccionado;
+                        periodoEscolar.primeraFechaTutoria = primeraFecha.Value;
+                        periodoEscolar.segundaFechaTutoria = segundaFecha.Value;
+                        periodoEscolar.terceraFechaTutoria = terceraFecha.Value;
                         registrarFechasTutorias(periodoEscolar);
                     }
                 }
             }
->>>>>>> f08bea95aaa67e7c1373d62e9d79c90e7516dec3:FrontendGestorTutorias/RegistrarFechasSesionTutoria.xaml.cs
         }
 
         private void cbPeriodoEscolar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try
             {
-                PeriodoEscolar periodoSeleccionado = (PeriodoEscolar)cbPeriodoEscolar.SelectedItem;
+                periodoSeleccionado = (PeriodoEscolar)cbPeriodoEscolar.SelectedItem;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-            
+            };
         }
 
         private bool evaluarFechasVacias()
@@ -138,6 +132,9 @@ namespace FrontendGestorTutorias
                 if(resultado.Error == false)
                 {
                     MessageBox.Show("Registro de fechas exitoso", "Registro exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MenuTutor ventanaTutor = new MenuTutor(tutorIniciado);
+                    ventanaTutor.Show();
+                    this.Close();
                 }
                 else
                 {

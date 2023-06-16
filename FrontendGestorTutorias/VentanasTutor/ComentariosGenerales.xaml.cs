@@ -60,7 +60,7 @@ namespace FrontendGestorTutorias
                     comentarios = tbComentarioGeneral.Text,
                     reporte_Tutoria_idReporte_Tutoria = reporte.idReporte_Tutoria
                 };
-                ResultadoOperacion resultadoRegistroComentario =  await conexionServicios.registrarComentariosGeneralesAsync(comentarioGeneral);
+                ResultadoOperacion resultadoRegistroComentario = await conexionServicios.registrarComentariosGeneralesAsync(reporte.idReporte_Tutoria, tbComentarioGeneral.Text);
                 if (!resultadoRegistroComentario.Error)
                 {
                     MessageBox.Show(resultadoRegistroComentario.Mensaje, "Registro exitoso", MessageBoxButton.OK, MessageBoxImage.Information);
