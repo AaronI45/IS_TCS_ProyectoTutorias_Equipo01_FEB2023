@@ -1,4 +1,5 @@
-﻿using ServiciosTutorias;
+﻿using FrontendGestorTutorias.modelo;
+using ServiciosTutorias;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,8 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             this.tutorIniciado = tutorIniciado;
+            ProblematicaViewModel modelo = new ProblematicaViewModel();
+            dgProblematicasConsulta.ItemsSource = modelo.problematicasBD;
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)

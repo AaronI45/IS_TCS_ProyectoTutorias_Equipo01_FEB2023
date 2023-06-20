@@ -26,9 +26,9 @@ namespace FrontendGestorTutorias
         ReporteTutoria reporteTutoria;
         public ConsultarComentarios(Academico tutorIniciado, ReporteTutoria reporteTutoria)
         {
+            InitializeComponent();
             this.reporteTutoria = reporteTutoria;
             this.tutorIniciado = tutorIniciado;
-            InitializeComponent();
             ComentarioGeneralViewModel modelo = new ComentarioGeneralViewModel(reporteTutoria.idReporte_Tutoria);
             dgComentarios.ItemsSource = modelo.ComentariosBD;
         }

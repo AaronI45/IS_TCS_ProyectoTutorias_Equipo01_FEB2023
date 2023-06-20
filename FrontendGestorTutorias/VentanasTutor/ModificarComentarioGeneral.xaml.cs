@@ -41,7 +41,7 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-
+            modificarComentario();
         }
 
         private async void cargarComentario()
@@ -62,6 +62,27 @@ namespace FrontendGestorTutorias.VentanasTutor
             else
             {
                 MessageBox.Show("No se pudo conectar con el servidor", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private async void modificarComentario()
+        {
+            var conexionServicios = new ServiciosTutorias.Service1Client();
+            if(conexionServicios != null)
+            {
+                string comentarios = tbComentarioGeneral.Text;
+                ResultadoOperacion resultado = await conexionServicios.editarComentariosGeneralesAsync(comentarios, comentarioSeleccionado.idComentario);
+                if (!resultado.Error)
+                {
+                    MessageBox.Show(resultado.Mensaje, "Éxito en la edición de comentario", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica(tutorIniciado, reporteTutoria);
+                    ventanaReporteTutoria.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(resultado.Mensaje, "Error en la edición de comentario", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
     }

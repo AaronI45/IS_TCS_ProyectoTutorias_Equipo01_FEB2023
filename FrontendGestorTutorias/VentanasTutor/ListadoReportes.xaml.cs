@@ -32,7 +32,7 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private void clicRegresar(object sender, RoutedEventArgs e)
         {
-            ListadoReportes ventanaListadoReportes= new ListadoReportes(tutorIniciado);
+            MenuTutor ventanaListadoReportes= new MenuTutor(tutorIniciado);
             ventanaListadoReportes.Show();
             this.Close();
         }
@@ -54,10 +54,6 @@ namespace FrontendGestorTutorias.VentanasTutor
                 ReporteTutoriaAcademica ventanaReporte = new ReporteTutoriaAcademica(tutorIniciado, reporteSeleccionado);
                 ventanaReporte.Show();
                 this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Debe seleccionar un reporte", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

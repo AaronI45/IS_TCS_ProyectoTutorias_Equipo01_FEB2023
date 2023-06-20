@@ -46,7 +46,7 @@ namespace ServiciosLinqTutorias
         ResultadoOperacion registrarComentariosGenerales(int idReporteTutoria, string comentarios);
 
         [OperationContract]
-        ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria);
+        ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idComentario);
 
         [OperationContract]
         List<ReporteTutoria> recuperarReportesPorTutor (int idTutor);

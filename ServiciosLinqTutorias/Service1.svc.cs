@@ -65,9 +65,9 @@ namespace ServiciosLinqTutorias
             return TutoriaDAO.registrarComentariosGenerales(idReporte, comentarios);
         }
 
-        public ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idTutoria)
+        public ResultadoOperacion editarComentariosGenerales(string nuevosComentarios, int idComentario)
         {
-            return TutoriaDAO.editarComentariosGenerales(nuevosComentarios, idTutoria);
+            return TutoriaDAO.editarComentariosGenerales(nuevosComentarios, idComentario);
         }
 
         public List<ReporteTutoria> recuperarReportesPorTutor(int idTutor)
