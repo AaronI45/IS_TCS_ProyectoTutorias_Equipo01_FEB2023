@@ -26,6 +26,7 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
+            cbPeriodosEscolares.SelectedIndex = 0;
             this.tutorIniciado = tutorIniciado;
         }
 
@@ -96,9 +97,30 @@ namespace FrontendGestorTutorias
                 DateTime? segundaFecha = periodoSeleccionado.segundaFechaTutoria;
                 DateTime? terceraFecha = periodoSeleccionado.terceraFechaTutoria;
 
-                tbPrimeraFecha.Text = primeraFecha.Value.ToString("dd/MM/yy");
-                tbSegundaFecha.Text = segundaFecha.Value.ToString("dd/MM/yy");
-                tbTerceraFecha.Text = terceraFecha.Value.ToString("dd/MM/yy");
+                if (primeraFecha != null)
+                {
+                    tbPrimeraFecha.Text = primeraFecha.Value.ToString("dd/MM/yy");
+                }
+                else
+                {
+                    tbPrimeraFecha.Text = "No registrada";
+                }
+                if (segundaFecha != null)
+                {
+                    tbSegundaFecha.Text = segundaFecha.Value.ToString("dd/MM/yy");
+                }
+                else
+                {
+                    tbSegundaFecha.Text = "No registrada";
+                }
+                if (terceraFecha != null)
+                {
+                    tbTerceraFecha.Text = terceraFecha.Value.ToString("dd/MM/yy");
+                }
+                else
+                {
+                    tbTerceraFecha.Text = "No registrada";
+                }
 
             }
             catch (Exception ex)

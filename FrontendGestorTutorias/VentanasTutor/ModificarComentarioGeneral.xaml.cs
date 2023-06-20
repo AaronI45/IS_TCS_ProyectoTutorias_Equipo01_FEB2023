@@ -44,25 +44,9 @@ namespace FrontendGestorTutorias.VentanasTutor
             modificarComentario();
         }
 
-        private async void cargarComentario()
+        private void cargarComentario()
         {
-            var conexionServicios = new ServiciosTutorias.Service1Client();
-            if (conexionServicios != null)
-            {
-                var comentarioGeneral = await conexionServicios.obtenerComentarioPorIdAsync(comentarioSeleccionado.idComentario);
-                if(comentarioGeneral != null)
-                {
-                    tbComentarioGeneral.Text = comentarioGeneral.comentarios;
-                }
-                else
-                {
-                    MessageBox.Show("No se encontró el comentario", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("No se pudo conectar con el servidor", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            tbComentarioGeneral.Text = comentarioSeleccionado.comentarios;
         }
 
         private async void modificarComentario()
@@ -70,8 +54,8 @@ namespace FrontendGestorTutorias.VentanasTutor
             var conexionServicios = new ServiciosTutorias.Service1Client();
             if(conexionServicios != null)
             {
-                string comentarios = tbComentarioGeneral.Text;
-                ResultadoOperacion resultado = await conexionServicios.editarComentariosGeneralesAsync(comentarios, comentarioSeleccionado.idComentario);
+                string nuevosComentarios = tbComentarioGeneral.Text;
+                ResultadoOperacion resultado = await conexionServicios.editarComentariosGeneralesAsync(nuevosComentarios, comentarioSeleccionado.idComentario);
                 if (!resultado.Error)
                 {
                     MessageBox.Show(resultado.Mensaje, "Éxito en la edición de comentario", MessageBoxButton.OK, MessageBoxImage.Information);
