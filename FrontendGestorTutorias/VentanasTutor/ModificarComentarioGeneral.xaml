@@ -9,7 +9,7 @@
     <Grid>
         <TextBox x:Name="tbComentarioGeneral" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Center" Width="360" Height="200"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="292,329,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="387,329,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FF44ECE0" Height="30" Width="80" Foreground="White" Click="btnGuardar_Click"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="387,329,0,0" VerticalAlignment="Top" BorderBrush="#FF868686" Background="#FF44ECE0" Height="30" Width="80" Foreground="White" Click="btnGuardar_Click"/>
         <Label Content="Modifique el comentario general" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top"/>
 
     </Grid>

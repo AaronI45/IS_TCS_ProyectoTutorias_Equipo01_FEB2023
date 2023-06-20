@@ -66,13 +66,13 @@
                 Margin="43,389,0,0" 
                 VerticalAlignment="Top" 
                 Width="60"
-                Click="clicVolver"/>
+                Click="clicVolver" Background="Red" Foreground="White"/>
         <Button Content="Registrar Problemática" 
                 HorizontalAlignment="Left" 
                 Margin="630,389,0,0" 
                 VerticalAlignment="Top" 
                 Width="127"
-                Click="clicRegistrar"/>
+                Click="clicRegistrar" Foreground="White" Background="#FF00EDFF"/>
         <Label x:Name="lbExperiencia"  
                Content="Experiencia educativa" 
                HorizontalAlignment="Left" 

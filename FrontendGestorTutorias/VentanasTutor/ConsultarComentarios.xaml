@@ -12,8 +12,8 @@
                 <DataGridTextColumn Header="Comentario" Binding="{Binding comentarios}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns> 
         </DataGrid>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar"/>
-        <Button Content="Consultar" HorizontalAlignment="Left" Margin="476,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickConsultar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar" Foreground="White" Background="Red"/>
+        <Button Content="Consultar" HorizontalAlignment="Left" Margin="476,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickConsultar" BorderBrush="#FF888888" Foreground="White" Background="#FF00E2FF"/>
 
     </Grid>
 </Window>

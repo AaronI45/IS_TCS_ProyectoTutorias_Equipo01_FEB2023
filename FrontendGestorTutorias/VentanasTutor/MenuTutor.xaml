@@ -13,7 +13,7 @@
                 VerticalAlignment="Top" 
                 Height="30" 
                 Width="100" 
-                Click="clicCerrarSesion"/>
+                Click="clicCerrarSesion" Background="Red" Foreground="White"/>
         <Button Content="Registrar Fechas de Sesiones de Tutoría" 
                 HorizontalAlignment="Left" 
                 Margin="68,83,0,0" 

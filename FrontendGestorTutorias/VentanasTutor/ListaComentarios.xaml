@@ -11,12 +11,12 @@
                 Content="Cancelar" 
                 HorizontalAlignment="Left" 
                 Margin="26,390,0,0" 
-                VerticalAlignment="Top"/>
+                VerticalAlignment="Top" Background="Red" Foreground="White"/>
         <Button x:Name="btnConsultar" 
                 Content="Consultar" 
                 HorizontalAlignment="Left" 
                 Margin="314,390,0,0" 
-                VerticalAlignment="Top"/>
+                VerticalAlignment="Top" Foreground="White" Background="#FF00F9FF"/>
         <DataGrid x:Name="dgComentarios" 
                   AutoGenerateColumns="False" 
                   CanUserAddRows="False" 

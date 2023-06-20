@@ -15,7 +15,7 @@
         <Label Content="Estudiante:" HorizontalAlignment="Left" Margin="122,164,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbTutorAcademico" HorizontalAlignment="Left" Margin="489,0,0,0" VerticalAlignment="Center" Width="210"/>
         <Label Content="Tutor académico:" HorizontalAlignment="Left" Margin="489,164,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAsignarTutorAcademico" Content="Asignar tutor académico" HorizontalAlignment="Left" Margin="594,362,0,0" VerticalAlignment="Top" IsEnabled="True" Height="30" Click="clicAsignarTutor"/>
+        <Button x:Name="btnAsignarTutorAcademico" Content="Asignar tutor académico" HorizontalAlignment="Left" Margin="594,362,0,0" VerticalAlignment="Top" IsEnabled="True" Height="30" Click="clicAsignarTutor" Foreground="White" Background="#FF00F9FF"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="478,362,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicCancelar"/>
 
     </Grid>

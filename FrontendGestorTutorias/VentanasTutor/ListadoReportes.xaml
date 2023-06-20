@@ -41,12 +41,12 @@
                 Margin="56,380,0,0" 
                 VerticalAlignment="Top" 
                 Width="75"
-                Click="clicRegresar"/>
+                Click="clicRegresar" Background="Red" Foreground="White"/>
         <Button Content="Consultar"
                 HorizontalAlignment="Left"
                 Margin="669,380,0,0"
                 VerticalAlignment="Top"
                 Width="75"
-                Click="clicConsultar"/>
+                Click="clicConsultar" Foreground="White" Background="#FF00FFF9"/>
     </Grid>
 </Window>
