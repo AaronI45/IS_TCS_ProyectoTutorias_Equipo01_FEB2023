@@ -27,7 +27,6 @@ namespace FrontendGestorTutorias
             InitializeComponent();
             cargarCbPeriodosEscolares();
             this.tutorIniciado = tutorIniciado;
-            cbPeriodosEscolares.SelectionChanged += cbPeriodosEscolares_SelectionChanged;
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -97,9 +96,9 @@ namespace FrontendGestorTutorias
                 DateTime? segundaFecha = periodoSeleccionado.segundaFechaTutoria;
                 DateTime? terceraFecha = periodoSeleccionado.terceraFechaTutoria;
 
-                tbPrimeraFecha.Text = primeraFecha.ToString();
-                tbSegundaFecha.Text = segundaFecha.ToString();
-                tbTerceraFecha.Text = terceraFecha.ToString();
+                tbPrimeraFecha.Text = primeraFecha.Value.ToString("dd/MM/yy");
+                tbSegundaFecha.Text = segundaFecha.Value.ToString("dd/MM/yy");
+                tbTerceraFecha.Text = terceraFecha.Value.ToString("dd/MM/yy");
 
             }
             catch (Exception ex)

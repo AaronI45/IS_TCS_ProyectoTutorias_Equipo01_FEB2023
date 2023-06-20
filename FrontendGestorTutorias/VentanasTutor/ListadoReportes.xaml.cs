@@ -56,5 +56,6 @@ namespace FrontendGestorTutorias.VentanasTutor
                 this.Close();
             }
         }
+
     }
 }

@@ -8,7 +8,7 @@
         Title="Modificar Fechas de Sesion de Tutoria" Height="350" Width="600">
     <Grid>
         <Label Content="Seleccione periodo escolar:" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbPeriodosEscolares" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="209" Height="30"/>
+        <ComboBox x:Name="cbPeriodosEscolares" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="209" Height="30" SelectionChanged="cbPeriodosEscolares_SelectionChanged"/>
         <TextBox x:Name="tbPrimeraFecha" HorizontalAlignment="Left" Margin="32,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False"/>
         <TextBox x:Name="tbSegundaFecha" HorizontalAlignment="Left" Margin="32,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="210" IsEnabled="False"/>
         <TextBox x:Name="tbTerceraFecha" HorizontalAlignment="Left" Margin="32,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False"/>

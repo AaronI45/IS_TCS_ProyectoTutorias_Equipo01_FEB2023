@@ -1527,6 +1527,11 @@ namespace ServiciosTutorias
                 this.terceraFechaTutoriaField = value;
             }
         }
+
+        public override string ToString()
+        {
+            return inicioPeriodo.Value.ToString("MMM/yyyy") + " - " + finPeriodo.Value.ToString("MMM/yyyy");
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
