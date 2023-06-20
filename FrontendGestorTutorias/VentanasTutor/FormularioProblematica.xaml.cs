@@ -32,12 +32,9 @@ namespace FrontendGestorTutorias.VentanasTutor
             this.reporteTutoria = reporteTutoria;
             EstudiantesAsistentesViewModel modelo = new EstudiantesAsistentesViewModel(reporteTutoria.tutoria_idTutoria,tutorIniciado.idAcademico);
             dgEstudiante.ItemsSource = modelo.EstudiantesAsistentesBd;
-            cbTipoProblematica.Items.Insert(0, "Seleccione una clasificación");
             cbTipoProblematica.SelectedIndex = 0;
-            cbExperiencia.Items.Insert(0, "Seleccione una experiencia educativa");
             cbExperiencia.SelectedIndex = 0;
             llenarComboBoxes();
-            cbTipoProblematica.SelectionChanged += cbTipoProblematicaChanged;
         }
 
         private void clicVolver(object sender, RoutedEventArgs e)
@@ -54,51 +51,36 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private void clicRegistrar(object sender, RoutedEventArgs e)
         {
-            int idEE = 0;
             Estudiante estudianteConProblematica = verificarSeleccion();
             if (checarCamposVacios())
             {
-                if (validarSeleccionClasificacion() && estudianteConProblematica != null)
+                ClasificacionProblematica seleccionClasificacion = (ClasificacionProblematica)cbTipoProblematica.SelectedValue;
+                if(seleccionClasificacion == clasificacionesProblematicas.GetValue(0))
                 {
-                    if(cbTipoProblematica.SelectedIndex == 1)
+                    ExperienciaEducativa seleccionExperienciaEducativa = (ExperienciaEducativa)cbExperiencia.SelectedValue;
+                    RegistroProblematica nuevaProblematica = new RegistroProblematica()
                     {
-                        cbExperiencia.Visibility = Visibility.Visible;
-                        lbExperiencia.Visibility = Visibility.Visible;
-                        if (validarEE())
-                        {
-                            idEE = cbExperiencia.SelectedIndex;
-                            RegistroProblematica nuevaProblematica = new RegistroProblematica()
-                            {
-                                clasificacionProblematica = clasificacionesProblematicas.ElementAt(cbTipoProblematica.SelectedIndex -1).idClasificacion_problematica,
-                                idReporteTutoria = reporteTutoria.idReporte_Tutoria,
-                                titulo = txtTitulo.Text,
-                                descripcion = txtDescripcion.Text,
-                                idEstudiante = estudianteConProblematica.idEstudiante,
-                                idExperienciaEducativa = idEE
-                            };
-                            registrarProblematica(nuevaProblematica);
-                        }
-                    }
-                    else
-                    {
-                        RegistroProblematica nuevaProblematica = new RegistroProblematica()
-                        {
-                            clasificacionProblematica = clasificacionesProblematicas.ElementAt(cbTipoProblematica.SelectedIndex).idClasificacion_problematica,
-                            idReporteTutoria = reporteTutoria.idReporte_Tutoria,
-                            titulo = txtTitulo.Text,
-                            descripcion = txtDescripcion.Text,
-                            idEstudiante = estudianteConProblematica.idEstudiante,
-                            idExperienciaEducativa = idEE
-                        };
-                        registrarProblematica(nuevaProblematica);
-                        cbExperiencia.Visibility = Visibility.Hidden;
-                        lbExperiencia.Visibility = Visibility.Hidden;
-                    }
-
+                        clasificacionProblematica = seleccionClasificacion.idClasificacion_problematica,
+                        idReporteTutoria = reporteTutoria.idReporte_Tutoria,
+                        titulo = txtTitulo.Text,
+                        descripcion = txtDescripcion.Text,
+                        idEstudiante = estudianteConProblematica.idEstudiante,
+                        idExperienciaEducativa = seleccionExperienciaEducativa.idExperiencia_educativa
+                    };
+                    registrarProblematica(nuevaProblematica);
                 }
                 else
                 {
-
+                    RegistroProblematica nuevaProblematica = new RegistroProblematica()
+                    {
+                        clasificacionProblematica = seleccionClasificacion.idClasificacion_problematica,
+                        idReporteTutoria = reporteTutoria.idReporte_Tutoria,
+                        titulo = txtTitulo.Text,
+                        descripcion = txtDescripcion.Text,
+                        idEstudiante = estudianteConProblematica.idEstudiante,
+                        idExperienciaEducativa = 0
+                    };
+                    registrarProblematica(nuevaProblematica);
                 }
             }
         }
@@ -128,31 +110,6 @@ namespace FrontendGestorTutorias.VentanasTutor
             return estudianteSeleccion;
         }
 
-        private bool validarEE()
-        {
-            if (cbExperiencia.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe seleccionar una experiencia educativa", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-        private bool validarSeleccionClasificacion()
-        {
-            if (cbTipoProblematica.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe seleccionar una clasificación", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }   
-
         private async void llenarComboBoxes()
         {
             var conexionServicios = new ServiciosTutorias.Service1Client();
@@ -162,11 +119,13 @@ namespace FrontendGestorTutorias.VentanasTutor
                 clasificacionesProblematicas = await conexionServicios.recuperarClasificacionesAsync();
                 foreach (ExperienciaEducativa experiencia in experienciasEducativas)
                 {
-                    cbExperiencia.Items.Add(experiencia.nombre);
+                    cbExperiencia.Items.Add(experiencia);
+                    cbExperiencia.DisplayMemberPath = "nombre";
                 }
                 foreach (ClasificacionProblematica clasificacion in clasificacionesProblematicas)
                 {
-                    cbTipoProblematica.Items.Add(clasificacion.clasificacion);
+                    cbTipoProblematica.Items.Add(clasificacion);
+                    cbTipoProblematica.DisplayMemberPath = "clasificacion";
                 }
             }   
         }
@@ -193,23 +152,16 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private void cbTipoProblematicaChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
+            if (cbTipoProblematica.SelectedIndex == 0)
             {
-                if (cbTipoProblematica.SelectedIndex == 1)
-                {
-                    cbExperiencia.Visibility = Visibility.Visible;
-                    lbExperiencia.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    cbExperiencia.Visibility = Visibility.Hidden;
-                    lbExperiencia.Visibility = Visibility.Hidden;
-                }
+                cbExperiencia.Visibility = Visibility.Visible;
+                lbExperiencia.Visibility = Visibility.Visible;
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine(ex.Message);
-            };
+                cbExperiencia.Visibility = Visibility.Hidden;
+                lbExperiencia.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
