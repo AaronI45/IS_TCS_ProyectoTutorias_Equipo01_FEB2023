@@ -23,7 +23,7 @@ namespace FrontendGestorTutorias.VentanasTutor
         Academico tutorIniciado;
         ReporteTutoria reporteTutoria;
         Comentario comentarioSeleccionado;
-        public ModificarComentarioGeneral(Academico tutorIniciado, ReporteTutoria reporte, Comentario comentarioSeleccionado)
+        public ModificarComentarioGeneral(Academico tutorIniciado, ReporteTutoria reporteTutoria, Comentario comentarioSeleccionado)
         {
             this.reporteTutoria = reporteTutoria;
             this.tutorIniciado = tutorIniciado;
@@ -75,7 +75,7 @@ namespace FrontendGestorTutorias.VentanasTutor
                 if (!resultado.Error)
                 {
                     MessageBox.Show(resultado.Mensaje, "Éxito en la edición de comentario", MessageBoxButton.OK, MessageBoxImage.Information);
-                    ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica(tutorIniciado, reporteTutoria);
+                    ReporteTutoriaAcademica ventanaReporteTutoria = new ReporteTutoriaAcademica(this.tutorIniciado, this.reporteTutoria);
                     ventanaReporteTutoria.Show();
                     this.Close();
                 }
