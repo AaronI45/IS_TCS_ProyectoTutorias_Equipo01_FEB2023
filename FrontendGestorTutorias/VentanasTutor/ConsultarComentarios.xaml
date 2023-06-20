@@ -9,7 +9,7 @@
     <Grid>
         <DataGrid x:Name="dgComentarios" Margin="66,100,66,133" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Comentario" Binding="{Binding comentarios}" Width="*"/>
+                <DataGridTextColumn Header="Comentario" Binding="{Binding comentarios}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns> 
         </DataGrid>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar"/>
