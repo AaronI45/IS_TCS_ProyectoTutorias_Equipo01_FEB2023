@@ -5,29 +5,138 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-    Title="Registrar tutor académico" Height="550" Width="700">
+        Title="Registrar tutor académico" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Llene cada uno de los campos con la información correspondiente al tutor académico:" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre(s):" HorizontalAlignment="Left" Margin="146,77,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbNombre" HorizontalAlignment="Center" Margin="0,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbApellidoPaterno" HorizontalAlignment="Center" Margin="0,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbApellidoMaterno" HorizontalAlignment="Center" Margin="0,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbNumeroPersonal" HorizontalAlignment="Center" Margin="0,274,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbCorreoInstitucional" HorizontalAlignment="Center" Margin="0,197,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbNumeroTelefonico" HorizontalAlignment="Center" Margin="0,237,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbNombreUsuario" HorizontalAlignment="Center" Margin="0,311,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Center" Margin="0,351,0,0" VerticalAlignment="Top" Height="20" Width="210"/>
-        <PasswordBox x:Name="pbCopiaPassword" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Height="20" Width="210"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="451,439,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicCancelar"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="571,439,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White" Click="clicRegistrar"/>
-        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="119,118,0,0" VerticalAlignment="Top"/>
-        <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="115,157,0,0" VerticalAlignment="Top"/>
-        <Label Content="Correo institucional:" HorizontalAlignment="Left" Margin="104,194,0,0" VerticalAlignment="Top"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="157,234,0,0" VerticalAlignment="Top"/>
-        <Label Content="Numero de personal:" HorizontalAlignment="Left" Margin="93,271,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre de usuario:" HorizontalAlignment="Left" Margin="100,308,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="147,348,0,0" VerticalAlignment="Top"/>
-        <Label Content="Confirmar contraseña:" HorizontalAlignment="Left" Margin="89,389,0,0" VerticalAlignment="Top"/>
+        <Label Content="Registrar tutor académico"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,507" />
+        <Label Content="Llene cada uno de los campos con la información correspondiente al tutor académico:" 
+               HorizontalAlignment="Left" 
+               Margin="71,77,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Nombre(s):" 
+               HorizontalAlignment="Left" 
+               Margin="146,122,0,0" 
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNombre" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,125,0,0"
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbApellidoPaterno" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,162,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbApellidoMaterno" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,204,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbNumeroPersonal"
+                 HorizontalAlignment="Left" 
+                 Margin="253,332,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbCorreoInstitucional" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,248,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbNumeroTelefonico" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,292,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbNombreUsuario" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,378,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top"
+                 Height="20" 
+                 Width="364"/>
+        <PasswordBox x:Name="pbPassword" 
+                     HorizontalAlignment="Left" 
+                     Margin="253,416,0,0" 
+                     VerticalAlignment="Top" 
+                     Height="20" 
+                     Width="364"/>
+        <PasswordBox x:Name="pbCopiaPassword" 
+                     HorizontalAlignment="Left"
+                     Margin="253,460,0,0" 
+                     VerticalAlignment="Top" 
+                     Height="20" 
+                     Width="364"/>
+        <Button x:Name="btnCancelar" 
+                Content="Cancelar" 
+                HorizontalAlignment="Left"
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117" 
+                Click="clicCancelar"/>
+        <Button x:Name="btnRegistrar" 
+                Content="Registrar" 
+                HorizontalAlignment="Left"
+                Margin="625,509,0,0" 
+                VerticalAlignment="Top" 
+                BorderBrush="#FF848282" 
+                Background="#005BAA"
+                Height="30" 
+                Width="117" 
+                Foreground="White" 
+                Click="clicRegistrar"/>
+        <Label Content="Apellido paterno:" 
+               HorizontalAlignment="Left" 
+               Margin="119,159,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Apellido materno:"
+               HorizontalAlignment="Left"
+               Margin="115,201,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Correo institucional:" 
+               HorizontalAlignment="Left" 
+               Margin="104,245,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Telefono:" 
+               HorizontalAlignment="Left"
+               Margin="159,289,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Numero de personal:" 
+               HorizontalAlignment="Left" 
+               Margin="97,329,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Nombre de usuario:" 
+               HorizontalAlignment="Left"
+               Margin="102,375,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Contraseña:" 
+               HorizontalAlignment="Left"
+               Margin="144,413,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Confirmar contraseña:"
+               HorizontalAlignment="Left" 
+               Margin="89,457,0,0" 
+               VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

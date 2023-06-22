@@ -5,21 +5,97 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Modificar Fechas de Sesion de Tutoria" Height="350" Width="600">
+        Title="Modificar Fechas de Sesion de Tutoria" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Seleccione periodo escolar:" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbPeriodosEscolares" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="209" Height="30" SelectionChanged="cbPeriodosEscolares_SelectionChanged"/>
-        <TextBox x:Name="tbPrimeraFecha" HorizontalAlignment="Left" Margin="32,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False"/>
-        <TextBox x:Name="tbSegundaFecha" HorizontalAlignment="Left" Margin="32,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="210" IsEnabled="False"/>
-        <TextBox x:Name="tbTerceraFecha" HorizontalAlignment="Left" Margin="32,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False"/>
-        <Label Content="Primera fecha de tutoría" HorizontalAlignment="Left" Margin="32,68,0,0" VerticalAlignment="Top"/>
-        <Label Content="Segunda fecha de tutoría" HorizontalAlignment="Left" Margin="32,127,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tercera fecha de tutoría" HorizontalAlignment="Left" Margin="32,188,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpPrimeraFechaEdicion" HorizontalAlignment="Left" Margin="324,91,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpSegundaFechaEdicion" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Center"/>
-        <DatePicker x:Name="dpTerceraFechaEdicion" HorizontalAlignment="Left" Margin="324,216,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="356,279,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="464,279,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White" Click="btnGuardar_Click"/>
+        <Label Content="Modificar fechas de sesión de tutoría"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,0" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Content="Seleccione las nuevas fechas para las tutorías del periodo escolar"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="71,77,0,0" />
+        <Label Content="Seleccione periodo escolar:" 
+               HorizontalAlignment="Left" 
+               Margin="200,139,0,0" 
+               VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbPeriodosEscolares" 
+                  HorizontalAlignment="Left" 
+                  Margin="436,141,0,0"
+                  VerticalAlignment="Top"
+                  Width="208" 
+                  Height="30"
+                  SelectionChanged="cbPeriodosEscolares_SelectionChanged"/>
+        <TextBox x:Name="tbPrimeraFecha" 
+                 HorizontalAlignment="Left" 
+                 Margin="186,231,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="210" 
+                 IsEnabled="False"/>
+        <TextBox x:Name="tbSegundaFecha" 
+                 HorizontalAlignment="Left"
+                 Margin="186,318,0,0" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="210" 
+                 IsEnabled="False"/>
+        <TextBox x:Name="tbTerceraFecha" 
+                 HorizontalAlignment="Left" 
+                 Margin="186,413,0,0"
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="210" 
+                 IsEnabled="False"/>
+        <Label Content="Primera fecha de tutoría"
+               HorizontalAlignment="Left" 
+               Margin="184,200,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Segunda fecha de tutoría" 
+               HorizontalAlignment="Left"
+               Margin="184,0,0,0" 
+               VerticalAlignment="Center"/>
+        <Label Content="Tercera fecha de tutoría"
+               HorizontalAlignment="Left" 
+               Margin="184,382,0,0" 
+               VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpPrimeraFechaEdicion"
+                    HorizontalAlignment="Left"
+                    Margin="465,228,0,0" 
+                    VerticalAlignment="Top" Width="150"/>
+        <DatePicker x:Name="dpSegundaFechaEdicion" 
+                    HorizontalAlignment="Left"
+                    Margin="465,410,0,0" 
+                    VerticalAlignment="Top" Width="150"/>
+        <DatePicker x:Name="dpTerceraFechaEdicion" 
+                    HorizontalAlignment="Left"
+                    Margin="465,315,0,0" 
+                    VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="btnCancelar"
+                Content="Cancelar" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0"  
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117" 
+                Click="btnCancelar_Click"/>
+        <Button x:Name="btnGuardar" 
+                Content="Guardar" 
+                HorizontalAlignment="Left" 
+                Margin="625,509,0,0" 
+                VerticalAlignment="Top"
+                BorderBrush="#FF848282" 
+                Background="#005BAA"
+                Foreground="White"
+                Height="30" 
+                Width="117" 
+                Click="btnGuardar_Click"/>
 
     </Grid>
 </Window>

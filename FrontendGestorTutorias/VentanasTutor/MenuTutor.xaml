@@ -5,42 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Menu Tutor" Height="400" Width="700">
+        Title="Menu Tutor" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
+        <Label Content="Menú Tutor" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               Margin="39,26,0,0" 
+               FontWeight="Bold"
+               FontSize="18"/>
         <Button Content="Cerrar Sesión" 
                 HorizontalAlignment="Left" 
-                Margin="493,298,0,0" 
+                Margin="55,509,0,0"  
                 VerticalAlignment="Top" 
                 Height="30" 
-                Width="100" 
-                Click="clicCerrarSesion" Background="Red" Foreground="White"/>
+                Width="117" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White"
+                Click="clicCerrarSesion"/>
         <Button Content="Registrar Fechas de Sesiones de Tutoría" 
                 HorizontalAlignment="Left" 
-                Margin="68,83,0,0" 
+                Margin="114,173,0,0" 
                 VerticalAlignment="Top" 
                 Height="50" 
                 Width="230" 
                 Click="clicRegistrarFechasDeSesiones"/>
         <Button Content="Modificar Fechas de Sesiones de Tutoría" 
                 HorizontalAlignment="Left" 
-                Margin="383,83,0,0" 
+                Margin="468,173,0,0"
                 VerticalAlignment="Top" 
                 Height="50"
                 Width="230" 
                 Click="clicModificarFechasDeSesiones"/>
         <Button Content="Reportes de Tutorías Académicas" 
                 HorizontalAlignment="Left" 
-                Margin="78,162,0,0" 
+                Margin="114,343,0,0" 
                 VerticalAlignment="Top" 
-                Height="50" 
-                Width="210" 
+                Height="50"
+                Width="230" 
                 Click="clicConsultarReporteDeTutoriaAcademica"/>
         <Button Content="Consultar Problemática academica" 
                 HorizontalAlignment="Left" 
-                Margin="393,162,0,0" 
+                Margin="468,343,0,0"
                 VerticalAlignment="Top" 
-                Height="50" 
-                Width="210" 
+                Height="50"
+                Width="230" 
                 Click="clicConsultarProblematicaAcademica"/>
     </Grid>
 </Window>

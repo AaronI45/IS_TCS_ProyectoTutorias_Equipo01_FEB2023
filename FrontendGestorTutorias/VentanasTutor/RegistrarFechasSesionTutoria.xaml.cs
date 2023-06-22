@@ -26,6 +26,7 @@ namespace FrontendGestorTutorias
         {
             InitializeComponent();
             cargarCbPeriodosEscolares();
+            cbPeriodoEscolar.SelectedIndex = 0;
             this.tutorIniciado = tutorIniciado;
             cbPeriodoEscolar.SelectionChanged += cbPeriodoEscolar_SelectionChanged;
         }

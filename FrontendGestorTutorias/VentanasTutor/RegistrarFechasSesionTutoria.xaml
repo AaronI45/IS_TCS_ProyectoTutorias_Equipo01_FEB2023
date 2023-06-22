@@ -5,18 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Registrar fechas de sesion de tutoria" Height="350" Width="600">
+        Title="Registrar fechas de sesion de tutoria" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <ComboBox x:Name="cbPeriodoEscolar" HorizontalAlignment="Left" Margin="300,47,0,0" VerticalAlignment="Top" Width="210" Height="30" SelectionChanged="cbPeriodoEscolar_SelectionChanged" />
-        <Label Content="Seleccione periodo escolar:" HorizontalAlignment="Left" Margin="141,49,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="365,276,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="478,276,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White" Click="btnRegistrar_Click"/>
-        <DatePicker x:Name="dpPrimeraFecha" HorizontalAlignment="Left" Margin="300,117,0,0" VerticalAlignment="Top" Width="145"/>
-        <Label Content="Primera fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="102,116,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpSegundaFecha" HorizontalAlignment="Left" Margin="300,164,0,0" VerticalAlignment="Top"/>
-        <Label Content="Segunda fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="96,163,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpTerceraFecha" HorizontalAlignment="Left" Margin="300,210,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tercera fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="105,208,0,0" VerticalAlignment="Top"/>
-
+        <Label Content="Registrar fecha de sesiones de tutoría"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,0" 
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"/>
+        <Label Content= "Seleccione el periodo escolar y seleccione las fechas para las sesiones de tutoría"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="71,77,0,0" />
+        <ComboBox x:Name="cbPeriodoEscolar" 
+                  HorizontalAlignment="Left" 
+                  Margin="400,130,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="210" 
+                  Height="30" 
+                  SelectionChanged="cbPeriodoEscolar_SelectionChanged"/>
+        <Label Content="Seleccione periodo escolar:" 
+               HorizontalAlignment="Left" 
+               Margin="201,132,0,0" 
+               VerticalAlignment="Top"/>
+        <Button x:Name="btnCancelar" 
+                Content="Cancelar" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0"  
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117" 
+                Click="btnCancelar_Click"/>
+        <Button x:Name="btnRegistrar" 
+                Content="Registrar"
+                HorizontalAlignment="Left" 
+               Margin="625,509,0,0"  
+                VerticalAlignment="Top" 
+                BorderBrush="#FF848282" 
+                Background="#005BAA"
+                Foreground="White"
+                Height="30" 
+                Width="117" 
+                Click="btnRegistrar_Click"/>
+        <DatePicker x:Name="dpPrimeraFecha" 
+                    HorizontalAlignment="Left"
+                    Margin="426,223,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="147"/>
+        <Label Content="Primera fecha de sesión de tutoría:"
+               HorizontalAlignment="Left"
+               Margin="162,217,0,0" 
+               VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpSegundaFecha" 
+                    HorizontalAlignment="Left"
+                    Margin="423,312,0,0" 
+                    VerticalAlignment="Top" Width="150"/>
+        <Label Content="Segunda fecha de sesión de tutoría:" 
+               HorizontalAlignment="Left" 
+               Margin="156,311,0,0" 
+               VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpTerceraFecha" 
+                    HorizontalAlignment="Left"
+                    Margin="423,408,0,0" 
+                    VerticalAlignment="Top" Width="150"/>
+        <Label Content="Tercera fecha de sesión de tutoría:"
+               HorizontalAlignment="Left" 
+               Margin="165,402,0,0" 
+               VerticalAlignment="Top"/>
     </Grid>
 </Window>

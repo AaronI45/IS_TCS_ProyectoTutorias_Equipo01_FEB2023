@@ -5,18 +5,84 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Asingar tutor académico a estudiante" Height="450" Width="800">
+        Title="Asingar tutor académico a estudiante" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Ingrese la matricula del estudiante:" HorizontalAlignment="Left" Margin="59,49,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbMatricula" HorizontalAlignment="Left" Margin="253,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
-        <Button Content="Buscar alumno" HorizontalAlignment="Left" Margin="539,52,0,0" VerticalAlignment="Top" Width="110" Click="clicBuscar"/>
-        <Label Content="Seleccione un tutor académico para el estudiante:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbEstudiante" HorizontalAlignment="Left" Margin="122,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="211" IsEnabled="False"/>
-        <Label Content="Estudiante:" HorizontalAlignment="Left" Margin="122,164,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbTutorAcademico" HorizontalAlignment="Left" Margin="489,0,0,0" VerticalAlignment="Center" Width="210"/>
-        <Label Content="Tutor académico:" HorizontalAlignment="Left" Margin="489,164,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAsignarTutorAcademico" Content="Asignar tutor académico" HorizontalAlignment="Left" Margin="594,362,0,0" VerticalAlignment="Top" IsEnabled="True" Height="30" Click="clicAsignarTutor" Foreground="White" Background="#FF00F9FF"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="478,362,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicCancelar"/>
+        <Label Content="Asignar tutor académico a estudiante"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="39,26,0,0" 
+               FontWeight="Bold"
+               FontSize="18"/>
+        <Label Content="Ingrese la matrícula del estudiante y seleccione un nuevo tutor"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="71,77,0,0"/>
+        <Label Content="Ingrese la matricula del estudiante:" 
+               HorizontalAlignment="Left" 
+               Margin="59,147,0,0" 
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMatricula" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,155,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="210"/>
+        <Button Content="Buscar alumno" 
+                HorizontalAlignment="Left" 
+                Margin="544,158,0,0" 
+                VerticalAlignment="Top"
+                Width="110" 
+                Click="clicBuscar"/>
+        <Label Content="Seleccione un tutor académico para el estudiante:" 
+               HorizontalAlignment="Center" 
+               Margin="0,248,0,0" 
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Bold"/>
+        <TextBox x:Name="tbEstudiante" 
+                 HorizontalAlignment="Left" 
+                 Margin="122,362,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="211" 
+                 IsEnabled="False"/>
+        <Label Content="Estudiante:"
+               HorizontalAlignment="Left" 
+               Margin="122,287,0,0" 
+               VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbTutorAcademico"
+                  HorizontalAlignment="Left"
+                  Margin="489,358,0,0" 
+                  VerticalAlignment="Top"
+                  Width="210"/>
+        <Label Content="Tutor académico:" 
+               HorizontalAlignment="Left" 
+               Margin="493,292,0,0" 
+               VerticalAlignment="Top"/>
+        <Button x:Name="btnAsignarTutorAcademico" 
+                Content="Asignar tutor académico" 
+                HorizontalAlignment="Left" 
+                Margin="625,509,0,0" 
+                VerticalAlignment="Top" 
+                IsEnabled="True" 
+                Height="30" 
+                Width="141" 
+                Click="clicAsignarTutor" 
+                BorderBrush="#FF848282" 
+                Background="#005BAA" 
+                Foreground="White"/>
+        <Button x:Name="btnCancelar" 
+                Content="Cancelar" 
+                HorizontalAlignment="Left"
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top"
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454"
+                Height="30" 
+                Width="117" 
+                Foreground="White" 
+                Click="clicCancelar"/>
 
     </Grid>
 </Window>

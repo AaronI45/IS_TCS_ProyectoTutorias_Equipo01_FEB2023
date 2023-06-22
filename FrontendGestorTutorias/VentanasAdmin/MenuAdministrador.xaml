@@ -5,13 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Menu Principal" Height="450" Width="800">
+        Title="Menu Principal" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="Registrar Tutor Académico" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="50" Width="210" Click="clicRegistrarTutor"/>
-        <Button Content="Registrar Estudiante" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Height="50" Width="210" Click="clicRegistrarEstudiante"/>
-        <Button Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="632,370,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="clicCerrarSesion" Background="Red" Foreground="White"/>
-        <Button Content="Asignar tutor a estudiante" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="210" Margin="0,217,0,0" Click="clicAsignarTutorAEstudiante"/>
-        <Button Content="Modificar asignación de tutor" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="210" Margin="0,295,0,0" Click="clicModificarAsignacion"/>
+        <Label Content="Menú administrador"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,0" 
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"/>
+        <Button Content="Registrar Tutor Académico" 
+                HorizontalAlignment="Left" 
+                Margin="114,173,0,0" 
+                VerticalAlignment="Top" 
+                Height="50" 
+                Width="210" 
+                Click="clicRegistrarTutor"/>
+        <Button Content="Registrar Estudiante" 
+                HorizontalAlignment="Left" 
+                Margin="114,343,0,0" 
+                VerticalAlignment="Top" 
+                Height="50" 
+                Width="210" 
+                Click="clicRegistrarEstudiante"/>
+        <Button Content="Cerrar Sesion" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                Height="30" 
+                Width="117" 
+                Click="clicCerrarSesion" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White"/>
+        <Button Content="Asignar tutor a estudiante"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Height="50" 
+                Width="210" 
+                Margin="468,173,0,0"
+                Click="clicAsignarTutorAEstudiante"/>
+        <Button Content="Modificar asignación de tutor" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+                Height="50"
+                Width="210"
+                Margin="468,343,0,0"
+                Click="clicModificarAsignacion"/>
 
     </Grid>
 </Window>

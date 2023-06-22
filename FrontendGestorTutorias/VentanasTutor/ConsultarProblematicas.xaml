@@ -5,17 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Consultar Problematicas" Height="400" Width="600">
+        Title="Consultar Problematicas" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid x:Name="dgProblematicasConsulta" AutoGenerateColumns="False" CanUserAddRows="False" Height="200" Width="550" Margin="25,92,25,92">
+        <DataGrid x:Name="dgProblematicasConsulta" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  Margin="55,120,55,119" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Titulo" Binding="{Binding titulo}" Width="*" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Descripcion" Binding="{Binding descripcion}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Titulo" 
+                                    Binding="{Binding titulo}"
+                                    Width="*" 
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Descripcion" 
+                                    Binding="{Binding descripcion}" 
+                                    Width="*" 
+                                    IsReadOnly="True">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Problemáticas" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="466,330,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="btnCancelar_Click"/>
-        <Image HorizontalAlignment="Left" Height="82" Margin="-461,10,0,0" VerticalAlignment="Top" Width="1471"/>
-
+        <Label Content="Problemáticas" 
+               HorizontalAlignment="Left" 
+               Margin="39,26,0,0" 
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Bold"/>
+        <Label Content="Mostrando las problemáticas presentes por los estudiantes"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="71,77,0,0" />
+        <Button x:Name="btnVolver" 
+                Content="Volver" 
+                HorizontalAlignment="Left"
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117" 
+                Click="btnCancelar_Click"/>
     </Grid>
 </Window>

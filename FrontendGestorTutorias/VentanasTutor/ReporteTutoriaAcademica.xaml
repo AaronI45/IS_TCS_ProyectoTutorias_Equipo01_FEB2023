@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Reporte de tutoria académica" Height="450" Width="900">
+        Title="Reporte de tutoria académica" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="lbNumeroTutoria" 
                Content="Reporte de tutoría académica: " 
@@ -29,7 +30,7 @@
                VerticalAlignment="Top"/>
         <DataGrid x:Name="dgEstudiantes" 
                   AutoGenerateColumns="False" 
-                  Margin="52,163,321,118" 
+                  Margin="52,163,296,114" 
                   CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Matricula"
@@ -46,10 +47,39 @@
                                         IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Registrar problemática académica" HorizontalAlignment="Left" Margin="665,140,0,0" VerticalAlignment="Top" Height="36" Click="clicRegistrarProblematicaAcademica"/>
-        <Button Content="Registrar comentarios generales" HorizontalAlignment="Left" Margin="665,0,0,0" VerticalAlignment="Center" Height="38" Click="clicRegistrarComentariosGenerales" Width="183"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Margin="52,361,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicVolver"/>
-        <Label Content="Asistentes a sesión de tutoría" HorizontalAlignment="Left" Margin="54,127,0,0" VerticalAlignment="Top"/>
-        <Button Content="Modificar comentarios generales" HorizontalAlignment="Left" Margin="665,257,0,0" VerticalAlignment="Top" Height="38" Click="clicModificarComentariosGenerales" Width="183"/>
+        <Button Content="Registrar problemática académica" 
+                HorizontalAlignment="Left" 
+                Margin="567,188,0,0" 
+                VerticalAlignment="Top" 
+                Height="36" 
+                Click="clicRegistrarProblematicaAcademica"/>
+        <Button Content="Registrar comentarios generales" 
+                HorizontalAlignment="Left" 
+                Margin="567,361,0,0" 
+                VerticalAlignment="Top"
+                Height="38" 
+                Click="clicRegistrarComentariosGenerales"
+                Width="183"/>
+        <Button Content="Volver" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454"
+                Height="30" 
+                Width="117" 
+                Foreground="White" 
+                Click="clicVolver"/>
+        <Label Content="Asistentes a sesión de tutoría"
+               HorizontalAlignment="Left" 
+               Margin="54,127,0,0" 
+               VerticalAlignment="Top"/>
+        <Button Content="Modificar comentarios generales" 
+                HorizontalAlignment="Left" 
+                Margin="567,275,0,0" 
+                VerticalAlignment="Top" 
+                Height="38" 
+                Click="clicModificarComentariosGenerales"
+                Width="183"/>
     </Grid>
 </Window>

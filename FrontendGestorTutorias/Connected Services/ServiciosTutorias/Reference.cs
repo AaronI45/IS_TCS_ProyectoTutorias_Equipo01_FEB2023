@@ -347,6 +347,11 @@ namespace ServiciosTutorias
                 this.usernameField = value;
             }
         }
+
+        public override string ToString()
+        {
+            return nombre + " " + apellidoPaterno + " " + apellidoMaterno;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]

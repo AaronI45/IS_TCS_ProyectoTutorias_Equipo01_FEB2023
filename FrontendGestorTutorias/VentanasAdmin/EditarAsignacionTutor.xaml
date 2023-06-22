@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Editar Asignacion de tutor académico" Height="450" Width="800">
+        Title="Editar Asignacion de tutor académico" 
+        Height="600" 
+        Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <DataGrid x:Name="dgEstudiantes" 
                   AutoGenerateColumns="False" 
-                  Margin="39,120,39,119" 
+                  Margin="55,120,55,119" 
                   CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre" 
@@ -34,9 +37,33 @@
                                     IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Asignar nuevo tutor" HorizontalAlignment="Left" Margin="600,354,0,0" VerticalAlignment="Top" Height="30" Width="129" Click="clicAsignarNuevoTutor" Foreground="White" Background="#FF00FFE2"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Margin="71,354,0,0" VerticalAlignment="Top" Height="30" Width="129" Click="clicVolver" Background="Red" Foreground="White"/>
-        <Label Content="Seleccione al estudiante para realizar una modificación de tutor académico" HorizontalAlignment="Left" Margin="71,77,0,0" VerticalAlignment="Top"/>
-        <Label Content="Mostrando estudiantes con tutores asignados" HorizontalAlignment="Left" Margin="39,26,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Button Content="Asignar nuevo tutor" 
+                HorizontalAlignment="Left" 
+                Margin="625,509,0,0" 
+                VerticalAlignment="Top" 
+                Height="30" 
+                Width="117" 
+                Click="clicAsignarNuevoTutor" 
+                Foreground="White" 
+                Background="#005BAA"/>
+        <Button Content="Volver" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top"
+                Height="30" 
+                Width="117" 
+                Click="clicVolver" 
+                Background="#FFF15454" 
+                Foreground="White"/>
+        <Label Content="Seleccione al estudiante para realizar una modificación de tutor académico" 
+               HorizontalAlignment="Left" 
+               Margin="71,77,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Mostrando estudiantes con tutores asignados" 
+               HorizontalAlignment="Left" 
+               Margin="39,26,0,0" 
+               VerticalAlignment="Top"
+               FontWeight="Bold"
+               FontSize="18"/>
     </Grid>
 </Window>

@@ -5,25 +5,117 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Registrar estudiante" Height="450" Width="650">
+        Title="Registrar estudiante" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Llene cada uno de los campos con la información correspondiente al estudiante:" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbNombre" HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbApellidoPaterno" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbApellidoMaterno" HorizontalAlignment="Center" Margin="0,143,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbMatricula" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210"/>
-        <TextBox x:Name="tbCorreoElectronico" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210" Margin="0,176,0,0"/>
-        <TextBox x:Name="tbSemestre" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210" Margin="0,238,0,0"/>
-        <TextBox x:Name="tbTelefono" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top" Height="20" Width="210" Margin="0,271,0,0"/>
-        <Label Content="Nombre(s):" HorizontalAlignment="Left" Margin="135,67,0,0" VerticalAlignment="Top"/>
-        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="103,104,0,0" VerticalAlignment="Top"/>
-        <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="99,140,0,0" VerticalAlignment="Top"/>
-        <Label Content="Matricula:" HorizontalAlignment="Left" Margin="142,207,0,0" VerticalAlignment="Top"/>
-        <Label Content="Correo electronico:" HorizontalAlignment="Left" Margin="93,173,0,0" VerticalAlignment="Top"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="152,268,0,0" VerticalAlignment="Top"/>
-        <Label Content="Semestre:" HorizontalAlignment="Left" Margin="148,235,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="424,340,0,0" VerticalAlignment="Top" BorderBrush="#FFC13A3A" Background="#FFF15454" Height="30" Width="80" Foreground="White" Click="clicCancelar"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="533,340,0,0" VerticalAlignment="Top" BorderBrush="#FF3CC3D4" Background="#FF54F1D8" Height="30" Width="80" Foreground="White" Click="clicRegistrar"/>
-
+        <Label Content="Registrar Estudiante"
+               Margin="39,26,0,0" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Bold"/>
+        <Label Content="Llene cada uno de los campos con la información correspondiente al estudiante:" 
+               HorizontalAlignment="Left" 
+               Margin="71,77,0,0" 
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNombre" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,132,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbApellidoPaterno" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,181,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbApellidoMaterno" 
+                 HorizontalAlignment="Left" 
+                 Margin="253,233,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbMatricula"
+                 HorizontalAlignment="Left" 
+                 Margin="253,335,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364"/>
+        <TextBox x:Name="tbCorreoElectronico" 
+                 HorizontalAlignment="Left" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Center" 
+                 Height="20"
+                 Width="364" 
+                 Margin="253,0,0,0"/>
+        <TextBox x:Name="tbSemestre"
+                 HorizontalAlignment="Left"
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364" 
+                 Margin="253,390,0,0"/>
+        <TextBox x:Name="tbTelefono" 
+                 HorizontalAlignment="Left" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="20" 
+                 Width="364" 
+                 Margin="253,444,0,0"/>
+        <Label Content="Nombre(s):" 
+               HorizontalAlignment="Left" 
+               Margin="146,129,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Apellido paterno:" 
+               HorizontalAlignment="Left" 
+               Margin="117,173,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Apellido materno:" 
+               HorizontalAlignment="Left" 
+               Margin="110,230,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Matricula:" 
+               HorizontalAlignment="Left" 
+               Margin="151,332,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Correo electronico:" 
+               HorizontalAlignment="Left" 
+               Margin="108,0,0,0" 
+               VerticalAlignment="Center"/>
+        <Label Content="Telefono:" 
+               HorizontalAlignment="Left" 
+               Margin="155,441,0,0" 
+               VerticalAlignment="Top"/>
+        <Label Content="Semestre:" 
+               HorizontalAlignment="Left" 
+               Margin="150,387,0,0" 
+               VerticalAlignment="Top"/>
+        <Button x:Name="btnCancelar" 
+                Content="Cancelar" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117" 
+                Click="clicCancelar"/>
+        <Button x:Name="btnRegistrar" 
+                Content="Registrar" 
+                HorizontalAlignment="Left" 
+                Margin="625,509,0,0"  
+                VerticalAlignment="Top" 
+                BorderBrush="#FF848282" 
+                Background="#005BAA"
+                Foreground="White"
+                Height="30" 
+                Width="117" 
+                Click="clicRegistrar"/>
     </Grid>
 </Window>

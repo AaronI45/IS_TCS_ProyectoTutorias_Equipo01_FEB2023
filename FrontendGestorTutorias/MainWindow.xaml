@@ -5,16 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Inicio Sesion" Height="450" Width="400">
+        Title="Inicio Sesion" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
     <Grid>
 
-        <Image HorizontalAlignment="Left" Height="184" Margin="129,54,0,0" VerticalAlignment="Top" Width="152" Source="/LogoUV.png"/>
-        <Label Content="Inicio de sesión" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <TextBox x:Name="tbUsername" HorizontalAlignment="Center" Margin="0,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="20"/>
-        <Label Content="Nombre de usuario" HorizontalAlignment="Left" Margin="93,290,0,0" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Width="210" Height="20"/>
-        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="95,336,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnIniciarSesion" Content="Iniciar Sesion" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="btnIniciarSesion_Click"/>
+        <Image HorizontalAlignment="Left" 
+               Height="184" 
+               Margin="129,33,0,0" 
+               VerticalAlignment="Top" 
+               Width="152" 
+               Source="/LogoUV.png"/>
+        <Label Content="Inicio de sesión" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               FontSize="24"/>
+        <TextBox x:Name="tbUsername" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,270,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="210" 
+                 Height="20"/>
+        <Label Content="Nombre de usuario" 
+               HorizontalAlignment="Left" 
+               Margin="85,239,0,0" 
+               VerticalAlignment="Top"/>
+        <PasswordBox x:Name="pbPassword" 
+                     HorizontalAlignment="Center" 
+                     Margin="0,321,0,0" 
+                     VerticalAlignment="Top" 
+                     Width="210" 
+                     Height="20"/>
+        <Label Content="Contraseña" 
+               HorizontalAlignment="Left" 
+               Margin="85,290,0,0" 
+               VerticalAlignment="Top"/>
+        <Button x:Name="btnIniciarSesion" 
+                Content="Iniciar Sesion" 
+                HorizontalAlignment="Center" 
+                Margin="0,364,0,0" 
+                VerticalAlignment="Top" 
+                Height="30" 
+                Width="100"
+                Background="#005BAA"
+                Foreground="White"
+                Click="btnIniciarSesion_Click"/>
 
     </Grid>
 </Window>

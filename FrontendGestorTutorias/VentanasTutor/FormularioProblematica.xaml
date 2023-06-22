@@ -5,42 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias.VentanasTutor"
         mc:Ignorable="d"
-        Title="Registrar problemática" Height="450" Width="800">
+        Title="Registrar problemática" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
+        <Label Content="Formulario de problemática"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,0" />
+        <Label Content="Ingrese la información necesaria para la problemática y seleccione el estudiante que presenta la problemática"
+               Margin="71,77,0,0" 
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"/>
         <ComboBox x:Name="cbTipoProblematica" 
                   HorizontalAlignment="Left" 
-                  Margin="592,31,0,0" 
+                  Margin="592,168,0,0" 
                   VerticalAlignment="Top" 
                   Width="180"
                   SelectionChanged="cbTipoProblematicaChanged"/>
         <ComboBox x:Name="cbExperiencia" 
                   HorizontalAlignment="Left" 
-                  Margin="592,74,0,0" 
+                  Margin="592,225,0,0" 
                   VerticalAlignment="Top" 
                   Width="180"
                   Visibility="Visible"/>
         <TextBox x:Name="txtTitulo" 
-                 HorizontalAlignment="Left" 
-                 Margin="154,141,0,0" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,292,0,0" 
                  TextWrapping="Wrap" 
                  Text="" 
                  VerticalAlignment="Top" 
                  Width="498"/>
         <TextBox x:Name="txtDescripcion" 
-                 HorizontalAlignment="Left" 
-                 Margin="154,184,0,0" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,338,0,0" 
                  TextWrapping="Wrap" 
                  Text="" 
                  VerticalAlignment="Top" 
                  Width="498" 
-                 Height="181"/>
+                 Height="136"/>
         <Label Content="Tipo de problemática" 
                HorizontalAlignment="Left" 
-               Margin="464,29,0,0" 
+               Margin="464,161,0,0" 
                VerticalAlignment="Top"/>
         <DataGrid x:Name="dgEstudiante"
                   AutoGenerateColumns="False"
-                  Margin="148,22,360,314"
+                  Margin="151,148,357,322"
                   CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Matrícula"
@@ -55,32 +66,39 @@
         </DataGrid>
         <Label Content="Título" 
                HorizontalAlignment="Left" 
-               Margin="63,137,0,0" 
+               Margin="79,283,0,0" 
                VerticalAlignment="Top"/>
         <Label Content="Descripción" 
                HorizontalAlignment="Left" 
-               Margin="63,184,0,0" 
+               Margin="63,338,0,0" 
                VerticalAlignment="Top"/>
         <Button Content="Volver" 
                 HorizontalAlignment="Left" 
-                Margin="43,389,0,0" 
                 VerticalAlignment="Top" 
-                Width="60"
-                Click="clicVolver" Background="Red" Foreground="White"/>
+                Click="clicVolver" 
+                Margin="55,509,0,0" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" 
+                Height="30" 
+                Width="117"/>
         <Button Content="Registrar Problemática" 
                 HorizontalAlignment="Left" 
-                Margin="630,389,0,0" 
+                Margin="616,509,0,0" 
                 VerticalAlignment="Top" 
-                Width="127"
-                Click="clicRegistrar" Foreground="White" Background="#FF00EDFF"/>
+                Height="30" 
+                Width="126" 
+                Click="clicRegistrar" 
+                Foreground="White" 
+                Background="#005BAA"/>
         <Label x:Name="lbExperiencia"  
                Content="Experiencia educativa" 
                HorizontalAlignment="Left" 
-               Margin="463,72,0,0" 
+               Margin="463,223,0,0" 
                VerticalAlignment="Top"/>
         <Label Content="Estudiante que&#xD;&#xA;presenta problemática" 
                HorizontalAlignment="Left"
-               Margin="11,40,0,0" 
+               Margin="10,184,0,0" 
                VerticalAlignment="Top"/>
     </Grid>
 </Window>

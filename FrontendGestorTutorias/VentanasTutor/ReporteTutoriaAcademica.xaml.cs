@@ -72,7 +72,7 @@ namespace FrontendGestorTutorias
             lbPeriodo.Content = lbPeriodo.Content + reporte.Tutoria.PeriodoEscolar.ToString();
             lbProgramaEducativo.Content = lbProgramaEducativo.Content + reporte.ProgramaEducativo.nombre;
             lbNumeroTutoria.Content = lbNumeroTutoria.Content + reporte.Tutoria.numeroTutoria.ToString();
-            lbFecha.Content = lbFecha.Content + reporte.Tutoria.fechaTutoria.ToString();
+            lbFecha.Content = lbFecha.Content + reporte.Tutoria.fechaTutoria.Value.ToString("dd/MM/yyyy");
         }
 
         private void clicModificarComentariosGenerales(object sender, RoutedEventArgs e)

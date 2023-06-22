@@ -5,15 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontendGestorTutorias"
         mc:Ignorable="d"
-        Title="Consultar Comentarios" Height="450" Width="600">
+        Title="Consultar Comentarios" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid x:Name="dgComentarios" Margin="66,100,66,133" AutoGenerateColumns="False">
+        <Label Content="Comentarios registrados para la tutoría"
+               FontSize="18"
+               FontWeight="Bold"
+               Margin="39,26,0,0" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Content="Seleccione un comentario para consultar"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="71,77,0,0" />
+        <DataGrid x:Name="dgComentarios" 
+                  Margin="55,120,55,119"
+                  AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Comentario" Binding="{Binding comentarios}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn
+                    Header="Comentario" 
+                    Binding="{Binding comentarios}" 
+                    Width="*" 
+                    IsReadOnly="True">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns> 
         </DataGrid>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="358,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickCancelar" Foreground="White" Background="Red"/>
-        <Button Content="Consultar" HorizontalAlignment="Left" Margin="476,374,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_ClickConsultar" BorderBrush="#FF888888" Foreground="White" Background="#FF00E2FF"/>
+        <Button Content="Cancelar" 
+                HorizontalAlignment="Left" 
+                Margin="55,509,0,0" 
+                VerticalAlignment="Top" 
+                Height="30" 
+                Width="117" 
+                Click="Button_ClickCancelar" 
+                BorderBrush="#FFC13A3A" 
+                Background="#FFF15454" 
+                Foreground="White" />
+        <Button Content="Consultar" 
+                HorizontalAlignment="Left" 
+                Margin="625,509,0,0" 
+                VerticalAlignment="Top"
+                Height="30" 
+                Width="117" 
+                Click="Button_ClickConsultar" 
+                Foreground="White" 
+                BorderBrush="#FF848282" 
+                Background="#005BAA" />
 
     </Grid>
 </Window>
