@@ -87,7 +87,7 @@ namespace FrontendGestorTutorias.VentanasTutor
 
         private bool checarCamposVacios()
         {
-            if (txtDescripcion.Text == "" && txtTitulo.Text == "")
+            if (string.IsNullOrEmpty(txtDescripcion.Text) || string.IsNullOrEmpty(txtTitulo.Text))
             {
                 MessageBox.Show("Debe llenar todos los campos", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
